@@ -1,0 +1,7 @@
+{
+  "name": "roadmap-to-html",
+  "private": true,
+  "devDependencies": {
+    "mammoth": "^1.2.1"
+  }
+}
