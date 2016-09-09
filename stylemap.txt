@@ -1,0 +1,5 @@
+p.RR-SideboxHeading => div.sidebox > header.sidebox-heading
+p.RR-SideboxText => p.sidebox-text
+p.RR-TextboxHeading => div.textbox-heading
+p.RR-WhatwillIlearn-bullets => div.learn-bullets
+p.RR-ImportantBox => div.important-box
