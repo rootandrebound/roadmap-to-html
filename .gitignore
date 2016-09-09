@@ -1,1 +1,6 @@
 node_modules
+roadmap/*.html
+roadmap/*.png
+roadmap/*.x-emf
+roadmap/*.jpeg
+*.docx
