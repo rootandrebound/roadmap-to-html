@@ -1,6 +1,6 @@
 # Roadmap to HTML
 
-A github repo for code to convert the Roadmap to Reentry into HTML.
+A github repo for code to convert the [Roadmap to Reentry](https://objects-us-west-1.dream.io/roadmapguide/RoadmapGuide-2016.pdf) into HTML.
 
 ### Getting started
 
@@ -30,3 +30,15 @@ make
 ```
 
 This will produce an output similar to [what is described here](https://github.com/rootandrebound/roadmap-to-html/issues/1).
+
+### The script
+
+The Makefile includes one command for producing the HTML output:
+
+```bash
+node_modules/mammoth/bin/mammoth \  # the path to mammoth's executable
+    2016-04-12_Final_st.docx \      # the path to the input word document
+    --output-dir=roadmap \          # the output directory
+    --style-map=stylemap.txt        # the stylemap
+```
+
