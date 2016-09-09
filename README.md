@@ -11,7 +11,7 @@ git clone https://github.com/rootandrebound/roadmap-to-html.git
 cd roadmap-to-html
 ```
 
-#### 2. Get `2016-04-12_Final_st.docx.docx`
+#### 2. Get `2016-04-12_Final_st.docx`
 
 To get started, you need to [download the original word document](https://drive.google.com/uc?export=download&id=0BzNrkiCWAqHZdDNzdlNlY2FKNVU) and put it in this folder. Note that the preceding link should only be accessible to staff members at Root & Rebound or people who have been given specific access to the containing folder.
 
