@@ -1,3 +1,7 @@
 default:
 	node_modules/mammoth/bin/mammoth \
-		2016-04-12_Final_st.docx --output-dir=roadmap --style-map=stylemap.txt
+		--output-dir=output \
+		--style-map=stylemap.txt \
+		2016-04-12_Final_st.docx
+	mv output/2016-04-12_Final_st.html \
+		output/raw_index.html

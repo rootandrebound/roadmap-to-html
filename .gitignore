@@ -1,6 +1,6 @@
+.DS_Store
 node_modules
-roadmap/*.html
-roadmap/*.png
-roadmap/*.x-emf
-roadmap/*.jpeg
+output/*.png
+output/*.x-emf
+output/*.jpeg
 *.docx
