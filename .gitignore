@@ -9,3 +9,4 @@ share
 pip-selfcheck.json
 bin
 pyvenv.cfg
+notes.md
