@@ -1,0 +1,15 @@
+.sidebox {
+	color: white;
+	background-color: #001f3f;
+	padding: .5em;
+}
+
+.textbox {
+	background-color: #7FDBFF;
+	padding: .5em;
+}
+
+.important {
+	background-color: #FFDC00;
+	padding: .5em;
+}
