@@ -13,3 +13,7 @@
 	background-color: #FFDC00;
 	padding: .5em;
 }
+
+main {
+	display: block;
+}

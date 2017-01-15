@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ document_title }} - Roadmap to Reentry</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+
+        <header role="banner">
+            <h1>{{ document_title }}</h1>
+            <nav id="site-navigation">
+                <ul>
+                    <li><a href="introduction/">Introduction</a></li>
+                    <li><a href="building-blocks-of-reentry/">Building Blocks of Reentry</a></li>
+                    <li><a href="parole-and-probation/">Parole &amp; Probation</a></li>
+                    <li><a href="housing/">Housing</a></li>
+                    <li><a href="public-benefits/">Public Benefits</a></li>
+                    <li><a href="employment/">Employment</a></li>
+                    <li><a href="court-ordered-debt/">Court-ordered Debt</a></li>
+                    <li><a href="family-and-children/">Family &amp; Children</a></li>
+                    <li><a href="education/">Education</a></li>
+                    <li><a href="your-criminal-record/">Understanding &amp; Cleaning Up Your Criminal Record</a></li>
+                    <li><a href="legal-aid-providers/">Legal Aid Providers</a></li>
+                    <li><a href="ca-social-services/">California Social Services</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main role="main">
+            {%- for chunk in contents %}
+                {{ chunk }}
+            {%- endfor }
+        </main>
+
+        <footer>
+            <p class="copyright-statement">© 2017 Root &amp; Rebound</p>
+        </footer>
+
+        </body>
+</html>
