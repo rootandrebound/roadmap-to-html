@@ -1,12 +1,33 @@
 import os
 import data
 from bs4 import BeautifulSoup
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+
 
 
 DOCX_PATH = '2016-04-12_Final_st.docx'
 STYLE_MAP_PATH = 'stylemap.txt'
 RAW_OUTPUT = 'output/raw_index.html'
 OUTPUT_PATH = 'output/index.html'
+
+TEMPLATE_FOLDER = 'templates'
+PAGE_BASE = 'base.html'
+
+"""
+For Jinja, I'll need an Environment instance. It's used to store
+configuration and global objects.
+
+Create on Environment on initialization and use that to load templates.
+"""
+
+
+env = Environment(
+    loader=FileSystemLoader(TEMPLATE_FOLDER),
+    autoescape=select_autoescape(['html', 'xml'])
+)
+
+base_template = env.get_template(PAGE_BASE)
 
 
 def get_element_index(soup, id):
@@ -15,6 +36,13 @@ def get_element_index(soup, id):
     while not parent_element.parent == soup:
         parent_element = parent_element.parent
     return soup.index(parent_element)
+
+
+def render_page_index(chapter, contents):
+    return base_template.render(
+        chapter=chapter,
+        contents=contents
+    )
 
 
 def run():
@@ -40,7 +68,7 @@ def run():
             filepath = os.path.join(folder, 'index.html')
             with open(filepath, 'w') as chapter_index_file:
                 chapter_index_file.write(
-                    '\n'.join([str(tag) for tag in subsection])
+                    render_page_index(chapter, subsection)
                 )
 
 if __name__ == '__main__':

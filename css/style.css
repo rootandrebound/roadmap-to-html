@@ -14,6 +14,18 @@
 	padding: .5em;
 }
 
-main {
+main, .main-header-contents {
 	display: block;
+	max-width: 43em;
+	margin: 0 auto;
 }
+
+html {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
