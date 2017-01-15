@@ -8,3 +8,6 @@ default:
 	python main.py
 
 
+install:
+	npm install
+	pip install -r ./requirements.txt
