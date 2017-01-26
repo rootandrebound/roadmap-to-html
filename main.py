@@ -16,9 +16,15 @@ def get_element_index(soup, id):
     return soup.index(parent_element)
 
 
+def write_prettified_raw_index(soup):
+    with open('output/index.html', 'w') as index_file:
+        index_file.write(soup.prettify())
+
+
 def run():
     with open(RAW_OUTPUT, 'r') as raw_html_input:
         soup = BeautifulSoup(raw_html_input, 'html.parser')
+        write_prettified_raw_index(soup)
         final_index = len(data.ALL_CHAPTERS) - 1
         for i, Chapter in enumerate(data.ALL_CHAPTERS):
             if i == 0:
@@ -35,7 +41,7 @@ def run():
                 subsection = soup.contents[
                     element_index:next_chapter_element_index]
             chapter = Chapter(subsection)
-            chapter.parse_table_of_contents()
+            # chapter.parse_table_of_contents()
             chapter.render()
 
 if __name__ == '__main__':
