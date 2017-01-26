@@ -1,7 +1,39 @@
+import os
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+TEMPLATE_FOLDER = 'templates'
+PAGE_BASE = 'base.html'
+
+
+env = Environment(
+    loader=FileSystemLoader(TEMPLATE_FOLDER),
+    autoescape=select_autoescape(['html', 'xml'])
+)
+
+base_template = env.get_template(PAGE_BASE)
 
 
 class Chapter:
-    pass
+
+    def __init__(self, contents):
+        self.contents = contents
+        self.folder_path = os.path.join('output', self.slug)
+        self.template = base_template
+
+    def create_folder(self):
+        os.makedirs(self.folder_path, exist_ok=True)
+
+    def write_index(self):
+        filepath = os.path.join(self.folder_path, 'index.html')
+        with open(filepath, 'w') as chapter_index_file:
+            chapter_index_file.write(
+                self.template.render(
+                    chapter=self,
+                    contents=self.contents))
+
+    def render(self):
+        self.create_folder()
+        self.write_index()
 
 
 class Introduction(Chapter):
