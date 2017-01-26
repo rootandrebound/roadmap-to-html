@@ -1,3 +1,4 @@
+from collections import OrderedDict
 import data
 from bs4 import BeautifulSoup
 
@@ -21,9 +22,28 @@ def write_prettified_raw_index(soup):
         index_file.write(soup.prettify())
 
 
+def parse_toc(soup):
+    index = OrderedDict()
+    tocs = soup.find_all('p', {"class" : "chaptertoc"})
+    print(tocs)
+    for toc in tocs:
+        index[toc.text] = OrderedDict()
+        sibling = toc.find_next('p')
+        l = [sibling.text]
+        while sibling.get('class')[0] in ['toc1', 'toc2', 'toc3', 'toc4']:
+            #print(sibling)
+            l.append(sibling.text)
+            sibling = sibling.find_next('p')
+        l.append(sibling.text)
+        #print(sibling)
+    print(l)
+
+
 def run():
     with open(RAW_OUTPUT, 'r') as raw_html_input:
         soup = BeautifulSoup(raw_html_input, 'html.parser')
+        parse_toc(soup)
+        exit()
         write_prettified_raw_index(soup)
         final_index = len(data.ALL_CHAPTERS) - 1
         for i, Chapter in enumerate(data.ALL_CHAPTERS):
