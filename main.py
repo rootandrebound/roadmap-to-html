@@ -1,12 +1,12 @@
-from collections import OrderedDict
 import data
 from bs4 import BeautifulSoup
-
 
 DOCX_PATH = '2016-04-12_Final_st.docx'
 STYLE_MAP_PATH = 'stylemap.txt'
 RAW_OUTPUT = 'output/raw_index.html'
 OUTPUT_PATH = 'output/index.html'
+
+TOC_CLASSES = {'toc1', 'toc2', 'toc3', 'toc4'}
 
 
 def get_element_index(soup, id):
@@ -17,26 +17,27 @@ def get_element_index(soup, id):
     return soup.index(parent_element)
 
 
+def is_toc_item(class_name):
+    return class_name in TOC_CLASSES
+
+
 def write_prettified_raw_index(soup):
     with open('output/index.html', 'w') as index_file:
         index_file.write(soup.prettify())
 
 
 def parse_toc(soup):
-    index = OrderedDict()
-    tocs = soup.find_all('p', {"class" : "chaptertoc"})
-    print(tocs)
-    for toc in tocs:
-        index[toc.text] = OrderedDict()
-        sibling = toc.find_next('p')
-        l = [sibling.text]
-        while sibling.get('class')[0] in ['toc1', 'toc2', 'toc3', 'toc4']:
-            #print(sibling)
-            l.append(sibling.text)
-            sibling = sibling.find_next('p')
-        l.append(sibling.text)
-        #print(sibling)
-    print(l)
+    toc_items = soup.find_all(class_=is_toc_item)
+    total = len(toc_items)
+    digits = len(str(total))
+    for i, toc_entry in enumerate(toc_items):
+        level = int(toc_entry['class'][0][-1:])
+        indent = level * '    '
+        print('{}{}{}. "{}"'.format(
+            str(i).rjust(digits),
+            indent,
+            level,
+            toc_entry.text))
 
 
 def run():
