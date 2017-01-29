@@ -32,11 +32,10 @@ def parse_toc(soup):
     digits = len(str(total))
     for i, toc_entry in enumerate(toc_items):
         level = int(toc_entry['class'][0][-1:])
-        indent = level * '    '
-        print('{}{}{}. "{}"'.format(
+        indent = level * '·   '
+        print('{}{}{}'.format(
             str(i).rjust(digits),
             indent,
-            level,
             toc_entry.text))
 
 
