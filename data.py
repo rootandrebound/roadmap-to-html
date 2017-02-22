@@ -13,6 +13,41 @@ env = Environment(
 base_template = env.get_template(PAGE_BASE)
 
 
+class TOCEntry:
+
+    def __init__(self, level, soup_index, element):
+        self.level = level
+        self.soup_index = soup_index
+        self.element = element
+        self.raw_text = element.text
+        self.text = element.text.split("\t")[0]
+
+
+class TOCLinkItem:
+
+    def __init__(
+            self, element, soup_index, ms_word_index, text, contents=None):
+        self.element = element
+        self.soup_index = soup_index
+        self.ms_word_index = ms_word_index
+        self.text = text
+        self.contents = contents
+        self.linked_entry = None
+
+
+class ContentItem:
+
+    def __init__(
+            self, title, parent, contents=None, next_item=None,
+            prev_item=None):
+        self.title = title
+        self.parent = parent
+        self.contents = contents
+        self.next = next_item
+        self.prev = prev_item
+
+
+
 class Chapter:
 
     def __init__(self, contents):
