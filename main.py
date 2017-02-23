@@ -125,6 +125,42 @@ def extract_toc_entry_contents(toc_items, soup):
                 soup, this_soup_index)
 
 
+def find_parent_of_index(index, items):
+    # the next previous entry that has a lower level
+    # should return a chapter if level == 1
+    item = items[index]
+    for i in range(index - 1, -1, -1):
+        possible_parent = items[i]
+        if possible_parent.level < item.level:
+            return possible_parent
+    return None
+
+
+def build_content_items(toc_entries):
+    items = []
+    for i, entry in enumerate(toc_entries):
+        init_kwargs = dict(
+            title=entry.text,
+            contents=entry.content_link.contents,
+            level=entry.level
+        )
+        items.append(data.ContentItem(**init_kwargs))
+    return items
+
+
+def link_parents_and_neighbors(content_items):
+    last_index = len(content_items) - 1
+    for index, item in enumerate(content_items):
+        if index > 0:
+            item.prev = content_items[index - 1]
+        if index < last_index:
+            item.next = content_items[index + 1]
+        parent = find_parent_of_index(index, content_items)
+        item.parent = parent
+        if parent:
+            parent.children.append(item)
+
+
 def run():
     with open(RAW_OUTPUT, 'r') as raw_html_input:
         soup = BeautifulSoup(raw_html_input, 'html.parser')
@@ -138,6 +174,8 @@ def run():
         for link in link_items:
             toc_entry = toc_entry_lookup.get(link.text, None)
             link.linked_entry = toc_entry
+            if toc_entry:
+                toc_entry.content_link = link
         usable_entries = [
             link for link in link_items
             if link.linked_entry]
@@ -146,6 +184,13 @@ def run():
             key=lambda e: e.soup_index
         )
         extract_toc_entry_contents(sorted_toc_links, soup)
+        usable_sorted_toc_entries = sorted(
+            [entry for entry in toc_entries if entry.content_link],
+            key=lambda e: e.soup_index
+        )
+        content_items = build_content_items(usable_sorted_toc_entries)
+        link_parents_and_neighbors(content_items)
+        import ipdb; ipdb.set_trace()
 
         # exit()
         # write_prettified_raw_index(soup)

@@ -21,6 +21,7 @@ class TOCEntry:
         self.element = element
         self.raw_text = element.text
         self.text = element.text.split("\t")[0]
+        self.content_link = None
 
 
 class TOCLinkItem:
@@ -38,14 +39,18 @@ class TOCLinkItem:
 class ContentItem:
 
     def __init__(
-            self, title, parent, contents=None, next_item=None,
+            self, title, level, parent=None, contents=None, next_item=None,
             prev_item=None):
+        self.level = level
         self.title = title
         self.parent = parent
         self.contents = contents
         self.next = next_item
         self.prev = prev_item
+        self.children = []
 
+    def __repr__(self):
+        return 'ContentItem("{title}")'.format(**vars(self))
 
 
 class Chapter:
