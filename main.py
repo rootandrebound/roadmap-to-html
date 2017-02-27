@@ -12,14 +12,6 @@ TOC_CLASSES = {'toc1', 'toc2', 'toc3', 'toc4'}
 TOC_CONTENT_SIGNIFIER = "_Toc"
 
 
-def get_chapter_index(soup, id):
-    element = soup.find("a", id=id)
-    parent_element = element
-    while not parent_element.parent == soup:
-        parent_element = parent_element.parent
-    return soup.index(parent_element)
-
-
 def get_soup_index(soup, element):
     indexes = []
     parent_element = element
@@ -148,6 +140,10 @@ def build_content_items(toc_entries):
     return items
 
 
+def soup_top_index(soup_index):
+    return int(soup_index.split('.')[0])
+
+
 def link_parents_and_neighbors(content_items):
     last_index = len(content_items) - 1
     for index, item in enumerate(content_items):
@@ -161,10 +157,69 @@ def link_parents_and_neighbors(content_items):
             parent.children.append(item)
 
 
+def are_the_same_chapter(a, b):
+    if not a or not b:
+        return False
+    prev_index = soup_top_index(a.soup_index)
+    this_index = soup_top_index(b.soup_index)
+    if (this_index - prev_index) < 4:
+        return True
+    elif (a.text in b.text) or (b.text in a.text):
+        return True
+    return False
+
+
+def merge_two(a, b):
+    if (a.text in b.text) or (b.text in a.text):
+        text = a.text
+    else:
+        text = a.text + b.text
+    return data.Chapter(text=text, soup_index=a.soup_index)
+
+
+def merge_adjacent_chapter_items(chapters):
+    merged_chapters = []
+    last_chapter = None
+    while chapters:
+        next_chapter = chapters.pop(0)
+        if last_chapter:
+            if are_the_same_chapter(last_chapter, next_chapter):
+                merged = merge_two(last_chapter, next_chapter)
+                merged_chapters.append(merged)
+                last_chapter = None
+            else:
+                merged_chapters.append(last_chapter)
+                last_chapter = next_chapter
+        else:
+            last_chapter = next_chapter
+    if not chapters and last_chapter:
+        merged_chapters.append(last_chapter)
+    return merged_chapters
+
+
+def clean_chapter_text(chapters):
+    for chapter in chapters:
+        text = chapter.text.split('(')[0]
+        text = text.split(':')[0]
+        chapter.text = text.strip()
+
+
+def parse_chapters(soup):
+    results = soup.find_all('h1')
+    raw_chapters = [
+        data.Chapter(
+            text=result.text,
+            soup_index=get_soup_index(soup, result))
+        for result in results]
+    chapters = merge_adjacent_chapter_items(raw_chapters)
+    clean_chapter_text(chapters)
+
+
 def run():
     with open(RAW_OUTPUT, 'r') as raw_html_input:
         soup = BeautifulSoup(raw_html_input, 'html.parser')
-        # write_prettified_raw_index(soup)
+        write_prettified_raw_index(soup)
+        chapters = parse_chapters(soup)
         link_items = parse_toc_content(soup)
         toc_entries = parse_toc_entries(soup)
         toc_entry_lookup = {
@@ -190,7 +245,7 @@ def run():
         )
         content_items = build_content_items(usable_sorted_toc_entries)
         link_parents_and_neighbors(content_items)
-        import ipdb; ipdb.set_trace()
+        # import ipdb; ipdb.set_trace()
 
         # exit()
         # write_prettified_raw_index(soup)
