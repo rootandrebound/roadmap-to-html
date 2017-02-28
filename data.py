@@ -13,6 +13,15 @@ env = Environment(
 base_template = env.get_template(PAGE_BASE)
 
 
+level_definitions = {
+    0: "ChapterIndex",
+    1: "ChapterSection",
+    2: "ChapterSubsection",
+    3: "CompoundArticle",
+    4: "SingleArticle"
+}
+
+
 class Chapter:
 
     def __init__(self, text, soup_index):
@@ -46,10 +55,11 @@ class TOCLinkItem:
 class ContentItem:
 
     def __init__(
-            self, title, level, parent=None, contents=None, next_item=None,
-            prev_item=None):
+            self, title, level, soup_index=None, parent=None, contents=None,
+            next_item=None, prev_item=None):
         self.level = level
         self.title = title
+        self.soup_index = soup_index
         self.parent = parent
         self.contents = contents
         self.next = next_item

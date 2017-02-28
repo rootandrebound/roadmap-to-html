@@ -134,6 +134,7 @@ def build_content_items(toc_entries):
         init_kwargs = dict(
             title=entry.text,
             contents=entry.content_link.contents,
+            soup_index=entry.content_link.soup_index,
             level=entry.level
         )
         items.append(data.ContentItem(**init_kwargs))
@@ -144,11 +145,21 @@ def soup_top_index(soup_index):
     return int(soup_index.split('.')[0])
 
 
+def find_prev_from_index(index, items):
+    # defined as prev sibling or parent
+    item = items[index]
+    for i in range(index - 1, -1, -1):
+        possible_prev = items[i]
+        if possible_prev.level <= item.level:
+            return possible_prev
+    return None
+
+
 def link_parents_and_neighbors(content_items):
     last_index = len(content_items) - 1
     for index, item in enumerate(content_items):
         if index > 0:
-            item.prev = content_items[index - 1]
+            item.prev = find_prev_from_index(index, content_items)
         if index < last_index:
             item.next = content_items[index + 1]
         parent = find_parent_of_index(index, content_items)
@@ -213,6 +224,21 @@ def parse_chapters(soup):
         for result in results]
     chapters = merge_adjacent_chapter_items(raw_chapters)
     clean_chapter_text(chapters)
+    return chapters
+
+
+def add_chapters_to_content_items(content_items, chapters):
+    # turn chapters into content items
+    chapter_content_items = [
+        data.ContentItem(
+            title=chapter.text,
+            level=0,
+            soup_index=chapter.soup_index
+        )
+        for chapter in chapters
+    ]
+    content_items.extend(chapter_content_items)
+    return sorted(content_items, key=lambda e: e.soup_index)
 
 
 def run():
@@ -244,29 +270,16 @@ def run():
             key=lambda e: e.soup_index
         )
         content_items = build_content_items(usable_sorted_toc_entries)
+        content_items = add_chapters_to_content_items(content_items, chapters)
         link_parents_and_neighbors(content_items)
-        # import ipdb; ipdb.set_trace()
+        for content in content_items:
+            print("-" * 20)
+            print('"{}" ({})'.format(
+                content.title, data.level_definitions[content.level]))
+            print('\tparent: {}'.format(content.parent))
+            print('\tprev: {}'.format(content.prev))
+            print('\tnext: {}'.format(content.next))
 
-        # exit()
-        # write_prettified_raw_index(soup)
-        # final_index = len(data.ALL_CHAPTERS) - 1
-        # for i, Chapter in enumerate(data.ALL_CHAPTERS):
-        #     if i == 0:
-        #         next_chapter_element_index = get_element_index(
-        #             soup, data.ALL_CHAPTERS[i + 1].id_string)
-        #         subsection = soup.contents[:next_chapter_element_index]
-        #     elif i == final_index:
-        #         element_index = get_element_index(soup, Chapter.id_string)
-        #         subsection = soup.contents[element_index:]
-        #     else:
-        #         next_chapter_element_index = get_element_index(
-        #             soup, data.ALL_CHAPTERS[i + 1].id_string)
-        #         element_index = get_element_index(soup, Chapter.id_string)
-        #         subsection = soup.contents[
-        #             element_index:next_chapter_element_index]
-        #     chapter = Chapter(subsection)
-        #     # chapter.parse_table_of_contents()
-        #     chapter.render()
 
 if __name__ == '__main__':
     run()
