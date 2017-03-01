@@ -1,0 +1,14 @@
+{% extends "base.jinja" %}
+
+{% block main %}
+<article>
+  <h2><a href="/{{ page.get_path() }}/index.html">{{ page.title }}</a></h2>
+
+  {% for tag in page.contents %}
+  <p>
+    {{ tag.text }}
+  </p>
+  {% endfor %}
+  
+</article>
+{% endblock main %}
