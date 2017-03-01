@@ -1,9 +1,10 @@
 import os
+from slugify import slugify
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 TEMPLATE_FOLDER = 'templates'
-PAGE_BASE = 'base.html'
-
+PAGE_BASE = 'base.jinja'
+OUTPUT_DIR = 'output'
 
 env = Environment(
     loader=FileSystemLoader(TEMPLATE_FOLDER),
@@ -15,121 +16,114 @@ base_template = env.get_template(PAGE_BASE)
 
 class Chapter:
 
-    def __init__(self, contents):
+    def __init__(self, text, soup_index):
+        self.text = text
+        self.soup_index = soup_index
+
+
+class TOCEntry:
+
+    def __init__(self, level, soup_index, element):
+        self.level = level
+        self.soup_index = soup_index
+        self.element = element
+        self.raw_text = element.text
+        self.text = element.text.split("\t")[0]
+        self.content_link = None
+
+
+class TOCLinkItem:
+
+    def __init__(
+            self, element, soup_index, ms_word_index, text, contents=None):
+        self.element = element
+        self.soup_index = soup_index
+        self.ms_word_index = ms_word_index
+        self.text = text
         self.contents = contents
-        self.folder_path = os.path.join('output', self.slug)
-        self.template = base_template
+        self.linked_entry = None
 
-    def create_folder(self):
-        os.makedirs(self.folder_path, exist_ok=True)
 
-    def write_index(self):
-        filepath = os.path.join(self.folder_path, 'index.html')
-        with open(filepath, 'w') as chapter_index_file:
-            chapter_index_file.write(
-                self.template.render(
-                    chapter=self,
-                    contents=self.contents))
+class ContentItem:
+
+    def __init__(
+            self, title, level, soup_index=None, parent=None, contents=None,
+            next_item=None, prev_item=None):
+        self.level = level
+        self.title = title
+        self.soup_index = soup_index
+        self.parent = parent
+        self.next = next_item
+        self.prev = prev_item
+        self.children = []
+        self.contents = contents
+
+    def __repr__(self):
+        return '{class_}("{title}")'.format(
+            class_=self.__class__.__name__, **vars(self))
+
+    def get_slug(self):
+        return slugify(self.title)[:50]
+
+    def get_path(self):
+        fragments = [self.get_slug()]
+        parent = self.parent
+        while parent:
+            fragments.insert(0, parent.get_slug())
+            parent = parent.parent
+        return os.path.join(*fragments)
+
+    def get_context(self):
+        return dict(page=self)
 
     def render(self):
-        self.create_folder()
-        self.write_index()
+        template = env.get_template(self.template)
+        return template.render(self.get_context())
+
+    def write(self):
+        output_directory = os.path.join(OUTPUT_DIR, self.get_path())
+        os.makedirs(output_directory, exist_ok=True)
+        output_path = os.path.join(output_directory, 'index.html')
+        with open(output_path, 'w') as output_file:
+            output_file.write(self.render())
 
 
-class Introduction(Chapter):
-    slug = 'introduction'
-    name = 'Introduction'
-    id_string = None
+class ContentPage(ContentItem):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
 
-class Chapter1(Chapter):
-    slug = 'building-blocks-of-reentry'
-    name_prefix = "Chapter 1"
-    name = 'Building Blocks of Reentry'
-    id_string = "CHAPTER1_ID"
+class ContentIndex(ContentItem):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
 
-class Chapter2(Chapter):
-    slug = 'parole-and-probation'
-    name_prefix = "Chapter 2"
-    name = 'Parole & Probation'
-    id_string = "CHAPTER2_PP"
+class SingleArticle(ContentPage):
+    template = "single_article.jinja"
 
 
-class Chapter3(Chapter):
-    slug = 'housing'
-    name_prefix = "Chapter 3"
-    name = 'Housing'
-    id_string = "CHAPTER4_HS"
+class CompoundArticle(ContentPage):
+    template = "compound_article.jinja"
 
 
-class Chapter4(Chapter):
-    slug = 'public-benefits'
-    name_prefix = "Chapter 4"
-    name = 'Public Benefits'
-    id_string = "CHAPTER5_PB"
+class ChapterSubsection(ContentIndex):
+    template = "chapter_subsection.jinja"
 
 
-class Chapter5(Chapter):
-    slug = 'employment'
-    name_prefix = "Chapter 5"
-    name = 'Employment'
-    id_string = "CHAPTER6_EM"
+class ChapterSection(ContentIndex):
+    template = "chapter_section.jinja"
 
 
-class Chapter6(Chapter):
-    slug = 'court-ordered-debt'
-    name_prefix = "Chapter 6"
-    name = 'Court-ordered Debt'
-    id_string = "CHAPTER7_COD"
+class ChapterIndex(ContentIndex):
+    template = "chapter.jinja"
 
 
-class Chapter7(Chapter):
-    slug = 'family-and-children'
-    name_prefix = "Chapter 7"
-    name = 'Family & Children'
-    id_string = "CHAPTER8_FC"
-
-
-class Chapter8(Chapter):
-    slug = 'education'
-    name_prefix = "Chapter 8"
-    name = 'Education'
-    id_string = "CHAPTER9_ED"
-
-
-class Chapter9(Chapter):
-    slug = 'your-criminal-record'
-    name_prefix = "Chapter 9"
-    name = 'Understanding & Cleaning Up Your Criminal Record'
-    id_string = "CHAPTER3_EX"
-
-
-class Appendix(Chapter):
-    slug = 'legal-aid-providers'
-    name_prefix = "Appendix A"
-    name = 'Legal Aid Providers'
-    id_string = "App_LegalAidProvidersList"
-
-
-class Appendix2(Chapter):
-    slug = 'ca-social-services'
-    name_prefix = "Appendix B"
-    name = 'California Social Services'
-    id_string = "App_CommunityResourceList"
-
-
-ALL_CHAPTERS = [
-    Introduction,
-    Chapter1,
-    Chapter2,
-    Chapter3,
-    Chapter4,
-    Chapter5,
-    Chapter6,
-    Chapter7,
-    Chapter8,
-    Chapter9,
-    Appendix,
-    Appendix2,
-]
+level_definitions = {
+    0: ChapterIndex,
+    1: ChapterSection,
+    2: ChapterSubsection,
+    3: CompoundArticle,
+    4: SingleArticle,
+}
