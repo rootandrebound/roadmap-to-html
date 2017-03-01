@@ -1,9 +1,10 @@
 import os
+from slugify import slugify
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 TEMPLATE_FOLDER = 'templates'
-PAGE_BASE = 'base.html'
-
+PAGE_BASE = 'base.jinja'
+OUTPUT_DIR = 'output'
 
 env = Environment(
     loader=FileSystemLoader(TEMPLATE_FOLDER),
@@ -11,15 +12,6 @@ env = Environment(
 )
 
 base_template = env.get_template(PAGE_BASE)
-
-
-level_definitions = {
-    0: "ChapterIndex",
-    1: "ChapterSection",
-    2: "ChapterSubsection",
-    3: "CompoundArticle",
-    4: "SingleArticle"
-}
 
 
 class Chapter:
@@ -61,10 +53,77 @@ class ContentItem:
         self.title = title
         self.soup_index = soup_index
         self.parent = parent
-        self.contents = contents
         self.next = next_item
         self.prev = prev_item
         self.children = []
+        self.contents = contents
 
     def __repr__(self):
-        return 'ContentItem("{title}")'.format(**vars(self))
+        return '{class_}("{title}")'.format(
+            class_=self.__class__.__name__, **vars(self))
+
+    def get_slug(self):
+        return slugify(self.title)[:50]
+
+    def get_path(self):
+        fragments = [self.get_slug()]
+        parent = self.parent
+        while parent:
+            fragments.insert(0, parent.get_slug())
+            parent = parent.parent
+        return os.path.join(*fragments)
+
+    def get_context(self):
+        return dict(page=self)
+
+    def render(self):
+        template = env.get_template(self.template)
+        return template.render(self.get_context())
+
+    def write(self):
+        output_directory = os.path.join(OUTPUT_DIR, self.get_path())
+        os.makedirs(output_directory, exist_ok=True)
+        output_path = os.path.join(output_directory, 'index.html')
+        with open(output_path, 'w') as output_file:
+            output_file.write(self.render())
+
+
+class ContentPage(ContentItem):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class ContentIndex(ContentItem):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+class SingleArticle(ContentPage):
+    template = "single_article.jinja"
+
+
+class CompoundArticle(ContentPage):
+    template = "compound_article.jinja"
+
+
+class ChapterSubsection(ContentIndex):
+    template = "chapter_subsection.jinja"
+
+
+class ChapterSection(ContentIndex):
+    template = "chapter_section.jinja"
+
+
+class ChapterIndex(ContentIndex):
+    template = "chapter.jinja"
+
+
+level_definitions = {
+    0: ChapterIndex,
+    1: ChapterSection,
+    2: ChapterSubsection,
+    3: CompoundArticle,
+    4: SingleArticle,
+}

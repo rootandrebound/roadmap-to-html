@@ -12,6 +12,10 @@ TOC_CLASSES = {'toc1', 'toc2', 'toc3', 'toc4'}
 TOC_CONTENT_SIGNIFIER = "_Toc"
 
 
+def idx_to_str(index):
+    return "{num:06d}".format(num=index)
+
+
 def get_soup_index(soup, element):
     indexes = []
     parent_element = element
@@ -21,7 +25,7 @@ def get_soup_index(soup, element):
                 parent_element))
         parent_element = parent_element.parent
     indexes.append(soup.index(parent_element))
-    return '.'.join([str(index) for index in reversed(indexes)])
+    return '.'.join([idx_to_str(index) for index in reversed(indexes)])
 
 
 def is_toc_content(element_id):
@@ -137,7 +141,8 @@ def build_content_items(toc_entries):
             soup_index=entry.content_link.soup_index,
             level=entry.level
         )
-        items.append(data.ContentItem(**init_kwargs))
+        ContentClass = data.level_definitions[entry.level]
+        items.append(ContentClass(**init_kwargs))
     return items
 
 
@@ -230,7 +235,7 @@ def parse_chapters(soup):
 def add_chapters_to_content_items(content_items, chapters):
     # turn chapters into content items
     chapter_content_items = [
-        data.ContentItem(
+        data.ChapterIndex(
             title=chapter.text,
             level=0,
             soup_index=chapter.soup_index
@@ -239,6 +244,18 @@ def add_chapters_to_content_items(content_items, chapters):
     ]
     content_items.extend(chapter_content_items)
     return sorted(content_items, key=lambda e: e.soup_index)
+
+
+def update_contents(soup, items):
+    last_index = len(items) - 1
+    for i, item in enumerate(items):
+        if i < last_index:
+            next_item = items[i + 1]
+            item.contents = get_soup_contents_between_compound_indices(
+                soup, item.soup_index, next_item.soup_index)
+        else:
+            item.contents = get_soup_contents_between_compound_indices(
+                soup, item.soup_index)
 
 
 def run():
@@ -272,13 +289,10 @@ def run():
         content_items = build_content_items(usable_sorted_toc_entries)
         content_items = add_chapters_to_content_items(content_items, chapters)
         link_parents_and_neighbors(content_items)
-        for content in content_items:
-            print("-" * 20)
-            print('"{}" ({})'.format(
-                content.title, data.level_definitions[content.level]))
-            print('\tparent: {}'.format(content.parent))
-            print('\tprev: {}'.format(content.prev))
-            print('\tnext: {}'.format(content.next))
+        update_contents(soup, content_items)
+        for item in content_items:
+            item.write()
+            print(item.get_path())
 
 
 if __name__ == '__main__':
