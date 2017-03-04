@@ -128,6 +128,13 @@ class ChapterIndex(ContentIndex):
         self.title = self.title.title()
 
 
+class SplashPage(ContentPage):
+    template = "splash_page.jinja"
+
+    def get_path(self):
+        return ''
+
+
 level_definitions = {
     0: ChapterIndex,
     1: ChapterSection,

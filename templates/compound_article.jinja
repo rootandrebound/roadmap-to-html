@@ -11,7 +11,7 @@
 
 {% for child in page.children %}
 <article>
-  <h2><a href="/{{ child.get_path() }}/index.html">{{ child.title }}</a></h2>
+  <h2><a href="/{{ child.get_path() }}/">{{ child.title }}</a></h2>
 
   {% for tag in child.contents %}
   <p>

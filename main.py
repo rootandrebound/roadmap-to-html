@@ -5,7 +5,7 @@ from bs4.element import Tag
 DOCX_PATH = '2016-04-12_Final_st.docx'
 STYLE_MAP_PATH = 'stylemap.txt'
 RAW_OUTPUT = 'output/raw_index.html'
-OUTPUT_PATH = 'output/index.html'
+OUTPUT_PATH = 'output/nice_index.html'
 
 TOC_CLASSES = {'toc1', 'toc2', 'toc3', 'toc4'}
 
@@ -295,6 +295,10 @@ def run():
         for item in content_items:
             item.write()
             print(item.get_path())
+
+        splash_page = data.SplashPage(title='Home', level="splash")
+        splash_page.write()
+        print(splash_page.get_path())
 
 
 if __name__ == '__main__':
