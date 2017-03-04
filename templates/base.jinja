@@ -6,7 +6,7 @@
           {%- block title %}{{ page.title }} - Roadmap to Reentry{% endblock title -%}
         </title>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700normal,700italic,900normal">
-        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="{{ prefix }}/css/style.css">
     </head>
     <body class="content-level-{{ page.level }}">
         <header role="banner">
@@ -15,7 +15,7 @@
             <nav id="site-navigation">
               <ul>
               {%- for chapter in chapters %}
-                <li><a href="/{{ chapter.get_path() }}/">{{ chapter.title }}</a></li>
+                <li><a href="{{ prefix }}/{{ chapter.get_path() }}/">{{ chapter.title }}</a></li>
               {%- endfor %}
               </ul>
             </nav>

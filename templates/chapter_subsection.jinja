@@ -11,9 +11,9 @@
 
 {% for child in page.children %}
   {% if child.level == 3 %}
-  <h2><a href="/{{ child.get_path() }}/">{{ child.title }}</a></h2>
+  <h2><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h2>
   {% elif child.level == 4 %}
-  <h3><a href="/{{ child.get_path() }}/">{{ child.title }}</a></h3>
+  <h3><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h3>
   {% endif %}
 {% endfor %}
 {% endblock main %}

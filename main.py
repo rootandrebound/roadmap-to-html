@@ -291,6 +291,7 @@ def run():
         link_parents_and_neighbors(content_items)
         update_contents(soup, content_items)
         data.global_context.update(
+            prefix='/roadmap-to-html',
             chapters=[item for item in content_items if item.level == 0])
         for item in content_items:
             item.write()
