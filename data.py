@@ -13,6 +13,8 @@ env = Environment(
 
 base_template = env.get_template(PAGE_BASE)
 
+global_context = dict()
+
 
 class Chapter:
 
@@ -74,7 +76,9 @@ class ContentItem:
         return os.path.join(*fragments)
 
     def get_context(self):
-        return dict(page=self)
+        global_context.update(
+            page=self)
+        return global_context
 
     def render(self):
         template = env.get_template(self.template)
@@ -118,6 +122,10 @@ class ChapterSection(ContentIndex):
 
 class ChapterIndex(ContentIndex):
     template = "chapter.jinja"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.title = self.title.title()
 
 
 level_definitions = {

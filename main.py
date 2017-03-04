@@ -290,6 +290,8 @@ def run():
         content_items = add_chapters_to_content_items(content_items, chapters)
         link_parents_and_neighbors(content_items)
         update_contents(soup, content_items)
+        data.global_context.update(
+            chapters=[item for item in content_items if item.level == 0])
         for item in content_items:
             item.write()
             print(item.get_path())
