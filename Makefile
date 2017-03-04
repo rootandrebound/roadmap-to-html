@@ -11,3 +11,7 @@ default:
 install:
 	npm install
 	pip install -r ./requirements.txt
+
+
+deploy:
+	git subtree push --prefix output origin gh-pages
