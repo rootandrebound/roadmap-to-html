@@ -26,6 +26,19 @@
         </header>
         
         <main role="main">
+        {%- if page.parent %}
+        <nav class="breadcrumbs">
+          <ol>
+            {%- if page.parent.parent.parent %}
+            <li><a href="{{ prefix }}/{{ page.parent.parent.parent.get_path() }}">{{ page.parent.parent.parent.title }}</a></li>
+            {%- endif %}
+            {%- if page.parent.parent %}
+            <li><a href="{{ prefix }}/{{ page.parent.parent.get_path() }}">{{ page.parent.parent.title }}</a></li>
+            {%- endif %}
+            <li><a href="{{ prefix }}/{{ page.parent.get_path() }}">{{ page.parent.title }}</a></li>
+          </ol>
+        </nav>
+        {%- endif %}
         {%- block main %}
         <article>
           <h1>{{ page.title }}</h1>
