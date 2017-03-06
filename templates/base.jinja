@@ -60,6 +60,24 @@
         {% endfor %}
         {%- endblock main %}
 
+        {%- if page.prev or page.next %}
+        <nav class="neighbors">
+          <ol>
+            {%- if page.prev %}
+            <li><a href="{{ prefix }}/{{ page.prev.get_path() }}">
+            <span class="neighbor-label">Previous</span>
+            <span class="neighbor-title">{{ page.prev.title }}</span>
+            </a></li>
+            {%- endif %}
+            {%- if page.next %}
+            <li><a href="{{ prefix }}/{{ page.next.get_path() }}">
+            <span class="neighbor-label">Next</span>
+            <span class="neighbor-title">{{ page.next.title }}</span>
+            </a></li>
+            {%- endif %}
+          </ol>
+        </nav>
+        {%- endif %}
 
         </main>
 
