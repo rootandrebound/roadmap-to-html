@@ -47,6 +47,7 @@ class TOCLinkItem:
 
 
 class ContentItem:
+    template = "base.jinja"
 
     def __init__(
             self, title, level, soup_index=None, parent=None, contents=None,
@@ -105,23 +106,22 @@ class ContentIndex(ContentItem):
 
 
 class SingleArticle(ContentPage):
-    template = "single_article.jinja"
+    pass
 
 
 class CompoundArticle(ContentPage):
-    template = "compound_article.jinja"
+    pass
 
 
 class ChapterSubsection(ContentIndex):
-    template = "chapter_subsection.jinja"
+    pass
 
 
 class ChapterSection(ContentIndex):
-    template = "chapter_section.jinja"
+    pass
 
 
 class ChapterIndex(ContentIndex):
-    template = "chapter.jinja"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
