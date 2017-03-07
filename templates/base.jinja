@@ -46,18 +46,33 @@
           {{ tag|safe }}
           {%- endfor %}
         </article>
-        {%- for child in page.children %}
-          {%- if page.level >= 3 %}
-          <article>
-          <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
-          {%- for tag in child.contents %}
-          {{ tag|safe }}
-          {%- endfor %}
-          </article>
-          {%- else %}
-          <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
-          {%- endif %}
-        {% endfor %}
+        {%- if page.level >= 3 %}
+          {%- for child in page.children %}
+            <article>
+            <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
+            {%- for tag in child.contents %}
+              {{ tag|safe }}
+            {%- endfor %}
+            </article>
+          {% endfor %}
+        {%- else %}
+          {#- we are on a chapter #}
+          <ol>
+            {%- for child in page.children %}
+            <li>
+              <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
+              {%- if child.children %}
+                <ol>
+                {%- for grandchild in child.children %}
+                  <li><h{{ 1 + (grandchild.level - page.level) }}><a href="{{ prefix }}/{{ grandchild.get_path() }}/">{{ grandchild.title }}</a></h{{ 1 + (grandchild.level - page.level) }}>
+                  </li>
+                {%- endfor %}
+                </ol>
+              {%- endif %}
+            </li>
+            {%- endfor %}
+          </ol>
+        {%- endif %}
         {%- endblock main %}
 
         {%- if page.prev or page.next %}
