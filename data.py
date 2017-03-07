@@ -127,6 +127,14 @@ class ChapterIndex(ContentIndex):
         super().__init__(*args, **kwargs)
         self.title = self.title.title()
 
+    def remove_toc_items_from_contents(self):
+        self.contents = [
+            item for item in self.contents
+            if 'toc' not in item.attrs.get('class', [''])[0]]
+
+    def post_process_contents(self):
+        self.remove_toc_items_from_contents()
+
 
 class SplashPage(ContentPage):
     template = "splash_page.jinja"

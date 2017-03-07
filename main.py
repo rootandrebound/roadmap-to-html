@@ -256,6 +256,8 @@ def update_contents(soup, items):
         else:
             item.contents = get_soup_contents_between_compound_indices(
                 soup, item.soup_index)
+        if hasattr(item, 'post_process_contents'):
+            item.post_process_contents()
 
 
 def run():
