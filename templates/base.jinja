@@ -46,7 +46,7 @@
           {{ tag|safe }}
           {%- endfor %}
         </article>
-        {%- if page.level >= 3 %}
+        {%- if page.level >= 3 or page.children|length == 1 %}
           {%- for child in page.children %}
             <article>
             <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
