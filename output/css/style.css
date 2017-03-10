@@ -10,7 +10,10 @@ html, body {
 header { background-color: #e2c221; padding: 1em 0; }
 footer { 
   background-color: rgba(26, 26, 26, 0.9);
-  color: white; padding: 1em 0; }
+  color: white; padding: 2em 0; 
+  border-top: 8px solid #e2c221;
+  font-weight: 100;
+}
 
 main, .main-header-contents, .main-header-contents {
   display: block;
@@ -45,13 +48,19 @@ h1 a:visited, h2 a:visited, h3 a:visited { color: inherit }
 }
 
 ul.footer-links {
-  padding: 0;
-  margin: 0;
+  padding: 0; margin: 0;
+}
+.footer-links li + li {
+  margin-bottom: 0.5em;
+}
+.disclaimer {
+  font-size: 8px;
 }
 
+.footer-links a { font-weight: 700; }
 ul a { color: inherit; text-decoration: none; }
 ul a:visited { color: inherit; }
-footer ul, footer p {text-align: center; }
+footer ul, footer p { text-align: center; }
 
 
 /* Portrait */
