@@ -21,14 +21,17 @@ main, .main-header-contents, .main-header-contents {
   margin: 0 auto;
 }
 
+.table-of-contents {
+  list-style-type: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", "Open Sans", sans-serif;
   color: rgba(26, 26, 26, 0.9);
 }
 h1 { font-weight: 900; }
-h1 a, h2 a, h3 a { color: inherit }
-h1 a:visited, h2 a:visited, h3 a:visited { color: inherit }
+h1 a, h2 a, h3 a, h4 a, h5 a { color: inherit }
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited { color: inherit }
 
 .sidebox {
   background: white;
