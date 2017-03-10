@@ -24,6 +24,9 @@ main, .main-header-contents, .main-header-contents {
 .table-of-contents {
   list-style-type: none;
 }
+.table-of-contents ol {
+  list-style-type: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", "Open Sans", sans-serif;
