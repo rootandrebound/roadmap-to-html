@@ -13,7 +13,44 @@ env = Environment(
 
 base_template = env.get_template(PAGE_BASE)
 
-global_context = dict()
+global_context = dict(
+    links=dict(
+        donate=['Donate', 'http://www.rootandrebound.org/donate'],
+        about_rnr=[
+            'About Root & Rebound', str('http://www.rootandrebound.org/'
+                                        'mission-and-vision')],
+        rnr_home=['Root & Rebound', 'http://www.rootandrebound.org/'],
+        take_action=[
+            'Take action', 'http://www.rootandrebound.org/get-involved'],
+        model_for_change=[
+            'What We Do', 'http://www.rootandrebound.org/model-for-change'],
+        training_hub=['Online Training Hub', 'http://reentrytraininghub.org/'],
+        about_roadmap=[
+            'About the Roadmap to Reentry', str('http://www.rootandrebound.org'
+                                                '/roadmap-to-reentry-guide')],
+        hotline_number=['510-279-4662', '5102794662'],
+    ),
+    disclaimer=str(
+        'THE ONLINE TRAINING HUB DOES NOT PROVIDE LEGAL ADVICE, '
+        'BUT RATHER PROVIDES GENERAL LEGAL INFORMATION. NO ATTORNEY-CLIENT '
+        'RELATIONSHIP IS CREATED BY USING ANY INFORMATION ON THE ONLINE '
+        'TRAINING HUB, OR ANY DOWNLOADS OR EXTERNAL LINKS ON THE SITE. YOU '
+        'SHOULD CONSULT AND RETAIN YOUR OWN ATTORNEY IF YOU NEED LEGAL ADVICE '
+        'SPECIFIC TO YOUR SITUATION. ROOT & REBOUND OFFERS THIS ONLINE '
+        'TRAINING HUB “AS-IS” AND MAKES NO REPRESENTATIONS OR WARRANTIES OF '
+        'ANY KIND CONCERNING CONTENT, EXPRESS, IMPLIED, STATUTORY OR '
+        'OTHERWISE, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF ACCURACY, '
+        'COMPLETENESS, TITLE, MARKETABILITY, MERCHANTABILITY, FITNESS FOR A '
+        'PARTICULAR PURPOSE, NONINFRINGEMENT, OR THE PRESENCE OF ABSENCE OF '
+        'ERRORS, WHETHER OR NOT DISCOVERABLE. IN PARTICULAR, ROOT & REBOUND '
+        'DOES NOT MAKE ANY REPRESENTATIONS OR WARRANTIES THAT THE ONLINE '
+        'TRAINING HUB, OR ANY INFORMATION WITHIN IT OR WITHIN ANY DOWNLOADS '
+        'OR EXTERNAL LINKS, IS ACCURATE, COMPLETE, OR UP-TO-DATE OR THAT IT '
+        'WILL APPLY TO YOUR CIRCUMSTANCES. IF YOU OR YOUR COMPANY/AGENCY USES '
+        'INFORMATION FROM THE ONLINE TRAINING HUB, IT IS YOUR RESPONSIBILITY '
+        'TO MAKE SURE THAT THE LAW HAS NOT CHANGED AND APPLIES TO YOUR '
+        'PARTICULAR SITUATION.')
+)
 
 
 class Chapter:

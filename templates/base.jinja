@@ -1,104 +1,101 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <title>
-          {%- block title %}{{ page.title }} - Roadmap to Reentry{% endblock title -%}
-        </title>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700normal,700italic,900normal">
-        <link rel="stylesheet" href="{{ prefix }}/css/style.css">
-    </head>
-    <body class="content-level-{{ page.level }}">
-        <header role="banner">
-          <div class="main-header-contents">
-            <p class="subtitle">
-            <a href="{{ prefix }}/">Roadmap to Reentry: A California Legal Guide</a>
-            </p>
-            <nav id="site-navigation">
-              <ul>
-              {%- for chapter in chapters %}
-                <li><a href="{{ prefix }}/{{ chapter.get_path() }}/">{{ chapter.title }}</a></li>
-              {%- endfor %}
-              </ul>
-            </nav>
-            
-          </div>
-        </header>
-        
-        <main role="main">
-        {%- if page.parent %}
-        <nav class="breadcrumbs">
-          <ol>
-            {%- if page.parent.parent.parent %}
-            <li><a href="{{ prefix }}/{{ page.parent.parent.parent.get_path() }}">{{ page.parent.parent.parent.title }}</a></li>
-            {%- endif %}
-            {%- if page.parent.parent %}
-            <li><a href="{{ prefix }}/{{ page.parent.parent.get_path() }}">{{ page.parent.parent.title }}</a></li>
-            {%- endif %}
-            <li><a href="{{ prefix }}/{{ page.parent.get_path() }}">{{ page.parent.title }}</a></li>
-          </ol>
-        </nav>
-        {%- endif %}
-        {%- block main %}
-        <article>
-          <h1>{{ page.title }}</h1>
-          {%- for tag in page.contents %}
-          {{ tag|safe }}
+  <head>
+      <meta charset="utf-8">
+      <title>
+        {%- block title %}{{ page.title }} - Roadmap to Reentry{% endblock title -%}
+      </title>
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700normal,700italic,900normal">
+      <link rel="stylesheet" href="{{ prefix }}/css/style.css">
+  </head>
+  <body class="content-level-{{ page.level }}">
+    <header role="banner">
+      <div class="main-header-contents">
+        <p class="subtitle">
+        <a href="{{ prefix }}/">Roadmap to Reentry: A California Legal Guide</a>
+        </p>
+        <nav id="site-navigation">
+          <ul>
+          {%- for chapter in chapters %}
+            <li><a href="{{ prefix }}/{{ chapter.get_path() }}/">{{ chapter.title }}</a></li>
           {%- endfor %}
-        </article>
-        {%- if page.level >= 3 or page.children|length == 1 %}
-          {%- for child in page.children %}
-            <article>
-            <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
-            {%- for tag in child.contents %}
-              {{ tag|safe }}
-            {%- endfor %}
-            </article>
-          {% endfor %}
-        {%- else %}
-          {#- we are on a chapter #}
-          <ol>
-            {%- for child in page.children %}
-            <li>
-              <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
-              {%- if child.children %}
-                <ol>
-                {%- for grandchild in child.children %}
-                  <li><h{{ 1 + (grandchild.level - page.level) }}><a href="{{ prefix }}/{{ grandchild.get_path() }}/">{{ grandchild.title }}</a></h{{ 1 + (grandchild.level - page.level) }}>
-                  </li>
-                {%- endfor %}
-                </ol>
-              {%- endif %}
-            </li>
-            {%- endfor %}
-          </ol>
-        {%- endif %}
-        {%- endblock main %}
-
-        {%- if page.prev or page.next %}
-        <nav class="neighbors">
-          <ol>
-            {%- if page.prev %}
-            <li><a href="{{ prefix }}/{{ page.prev.get_path() }}">
-            <span class="neighbor-label">Previous</span>
-            <span class="neighbor-title">{{ page.prev.title }}</span>
-            </a></li>
-            {%- endif %}
-            {%- if page.next %}
-            <li><a href="{{ prefix }}/{{ page.next.get_path() }}">
-            <span class="neighbor-label">Next</span>
-            <span class="neighbor-title">{{ page.next.title }}</span>
-            </a></li>
-            {%- endif %}
-          </ol>
+          </ul>
         </nav>
-        {%- endif %}
+      </div>
+    </header>
+      
+    <main role="main">
+      {%- if page.parent %}
+      <nav class="breadcrumbs">
+        <ol>
+          {%- if page.parent.parent.parent %}
+          <li><a href="{{ prefix }}/{{ page.parent.parent.parent.get_path() }}">{{ page.parent.parent.parent.title }}</a></li>
+          {%- endif %}
+          {%- if page.parent.parent %}
+          <li><a href="{{ prefix }}/{{ page.parent.parent.get_path() }}">{{ page.parent.parent.title }}</a></li>
+          {%- endif %}
+          <li><a href="{{ prefix }}/{{ page.parent.get_path() }}">{{ page.parent.title }}</a></li>
+        </ol>
+      </nav>
+      {%- endif %}
+      {%- block main %}
+      <article>
+        <h1>{{ page.title }}</h1>
+        {%- for tag in page.contents %}
+        {{ tag|safe }}
+        {%- endfor %}
+      </article>
+      {%- if page.level >= 3 or page.children|length == 1 %}
+        {%- for child in page.children %}
+          <article>
+          <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
+          {%- for tag in child.contents %}
+            {{ tag|safe }}
+          {%- endfor %}
+          </article>
+        {% endfor %}
+      {%- else %}
+        {#- we are on a chapter #}
+        <ol>
+          {%- for child in page.children %}
+          <li>
+            <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
+            {%- if child.children %}
+              <ol>
+              {%- for grandchild in child.children %}
+                <li><h{{ 1 + (grandchild.level - page.level) }}><a href="{{ prefix }}/{{ grandchild.get_path() }}/">{{ grandchild.title }}</a></h{{ 1 + (grandchild.level - page.level) }}>
+                </li>
+              {%- endfor %}
+              </ol>
+            {%- endif %}
+          </li>
+          {%- endfor %}
+        </ol>
+      {%- endif %}
+      {%- endblock main %}
 
-        </main>
+      {%- if page.prev or page.next %}
+      <nav class="neighbors">
+        <ol>
+          {%- if page.prev %}
+          <li><a href="{{ prefix }}/{{ page.prev.get_path() }}">
+          <span class="neighbor-label">Previous</span>
+          <span class="neighbor-title">{{ page.prev.title }}</span>
+          </a></li>
+          {%- endif %}
+          {%- if page.next %}
+          <li><a href="{{ prefix }}/{{ page.next.get_path() }}">
+          <span class="neighbor-label">Next</span>
+          <span class="neighbor-title">{{ page.next.title }}</span>
+          </a></li>
+          {%- endif %}
+        </ol>
+      </nav>
+      {%- endif %}
 
-        <footer>
-            <p class="copyright-statement">© 2017 Root &amp; Rebound</p>
-        </footer>
+    </main>
 
-        </body>
+    {% include "footer.jinja" %}
+
+  </body>
 </html>

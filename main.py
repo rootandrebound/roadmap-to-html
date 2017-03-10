@@ -40,7 +40,7 @@ def is_toc_item(class_name):
 
 
 def write_prettified_raw_index(soup):
-    with open('output/index.html', 'w') as index_file:
+    with open(OUTPUT_PATH, 'w') as index_file:
         index_file.write(soup.prettify())
 
 
