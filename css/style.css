@@ -8,7 +8,9 @@ html, body {
 }
 
 header { background-color: #e2c221; padding: 1em 0; }
-footer { background-color: rgba(26, 26, 26, 0.9); padding: 1em 0; }
+footer { 
+  background-color: rgba(26, 26, 26, 0.9);
+  color: white; padding: 1em 0; }
 
 main, .main-header-contents, .main-header-contents {
 	display: block;
@@ -47,9 +49,9 @@ ul.footer-links {
   margin: 0;
 }
 
-footer ul, footer, p {
-  text-align: center;
-}
+ul a { color: inherit; text-decoration: none; }
+ul a:visited { color: inherit; }
+footer ul, footer p {text-align: center; }
 
 
 /* Portrait */
