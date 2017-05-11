@@ -1,10 +1,13 @@
-* { sizing: border-box; }
+* { box-sizing: border-box; }
 html { font-family: "Open Sans", sans-serif; }
 
 html, body {
   margin: 0;
   padding: 0;
   color: rgba(26, 26, 26, 0.7);
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 header { background-color: #e2c221; padding: 1em 0; }
@@ -15,11 +18,6 @@ footer {
   font-weight: 100;
 }
 
-main, .main-header-contents, .main-header-contents {
-  display: block;
-  max-width: 43em;
-  margin: 0 auto;
-}
 
 .table-of-contents {
   list-style-type: none;
@@ -28,32 +26,26 @@ main, .main-header-contents, .main-header-contents {
   list-style-type: none;
 }
 
+/* HEADINGS */
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", "Open Sans", sans-serif;
   color: rgba(26, 26, 26, 0.9);
 }
 h1 { font-weight: 900; }
-h1 a, h2 a, h3 a, h4 a, h5 a { color: inherit }
-h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited { color: inherit }
+h1 a, h2 a, h3 a, h4 a, h5 a { color: inherit; }
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited { color: inherit; }
 
-.sidebox {
-  background: white;
-  color
-  padding: .5em;
-  background-color: rgba(26, 26, 26, 0.9);
+
+ul.footer-links {
+  padding: 0; margin: 0;
 }
 
-.textbox {
-  padding: .5em;
-  border: 1px solid rgba(26, 26, 26, 0.9);
+#site-navigation ul,
+footer ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.important {
-  background-color: #FFDC00;
-  padding: .5em;
-}
-
-ul.footer-links { padding: 0; margin: 0; }
 .footer-links li + li { margin-top: 0.5em; }
 .disclaimer { font-size: 9px; }
 
@@ -62,85 +54,75 @@ ul a { color: inherit; text-decoration: none; }
 ul a:visited { color: inherit; }
 footer ul, footer p { text-align: center; }
 
+main, #site-navigation {
+  position: absolute;
+  transition: left 0.5s ease-in-out;
+}
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    header {
-      padding: 0;
-    }
-    main {
-      margin: 0;
-      padding: 1em;
-    }
-    main > h1:first-child {
-      margin-top: 0;
+#content, header, footer {
+  padding-left: 2rem;
+}
 
-    }
-    .main-header-contents {
-      position: relative;
-      overflow: auto;
-    }
-    .main-header-contents > * {
-      float: left;
-    }
-    .site-navigation {
-      background-color: #303030;
-      color: #fff;
-      width: 4rem;
-      height: 4rem;
-      text-align: center;
-    }
-    .site-navigation .icon {
-      font-size: 2rem;
-    margin: 0;
-    padding: 0;
-    }
-    .site-navigation h1 {
-    text-transform: uppercase;
-    font-size: 0.6rem;
-    letter-spacing: 2px;
-    color: inherit;
-    margin: 0;
-    padding: 0;
-    font-weight: 500;
-    }
-    .titleblock {
-      width: 15rem;
-      border-left: 2px solid #fff;
-      padding: 0 0 0 0;
-      height: 4rem;
-    }
-    .titleblock > * {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      margin: 0;
-      padding: 0 0 0 .8rem;
-      letter-spacing: 1px;
-    }
-    .titleblock > h1 {
-      font-weight: 700;
-    }
-    .titleblock > .subtitle {
-      padding-top: 1rem;
-      color: #fff;
-      font-weight: 600;
-    }
-    .table-of-contents li {
-      text-decoration: underline;
-    }
-    ol.table-of-contents {
-      padding-left: 0;
-      list-style-type: none;
-    }
-    .table-of-contents ol {
-      padding-left: 0;
-      list-style-type: none;
-    }
-    .table-of-contents li + li {
-      margin-top: .5em;
-    }
+main {
+  left: 0;
+}
+
+/* Menu styles
+ TODO: change % to percentage of body width
+ */
+#site-navigation {
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(26, 26, 26, 0.9);
+  color: white;
+  width: 20rem;
+  left: -20rem;
+  overflow: hidden;
+}
+
+.menu-active #site-navigation {
+  left: 0;
+}
+
+.menu-active main {
+  left: 20rem;
+}
+
+/*
+@media only screen  and (min-width : 1224px) {
+  #site-navigation {
+    left: 0;
+    width: 25%;
+  }
+  .menu-active main {
+    left: 25%;
+  }
+}
+*/
+
+/* Menu item styling */
+#site-navigation > ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#site-navigation li > a {
+  display: block;
+  padding: .3em 1em;
+}
+
+#search-input {
+  position: relative;
+}
+
+#search-input input[type='text'] {
+  width: 80%;
+  padding: 0;
+  margin: 0;
+}
+
+#search-input input[type='submit'] {
+  width: 20%;
+  padding: 0;
+  margin: 0;
 }
