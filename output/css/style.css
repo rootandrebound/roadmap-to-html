@@ -75,8 +75,8 @@ main {
   z-index: 2;
   background-color: rgba(26, 26, 26, 0.9);
   color: white;
-  width: 20rem;
-  left: -20rem;
+  width: 15rem;
+  left: -15rem;
   overflow: hidden;
 }
 
@@ -85,10 +85,10 @@ main {
 }
 
 .menu-active main {
-  left: 20rem;
+  left: 15rem;
 }
 
-/*
+
 @media only screen  and (min-width : 1224px) {
   #site-navigation {
     left: 0;
@@ -98,7 +98,6 @@ main {
     left: 25%;
   }
 }
-*/
 
 /* Menu item styling */
 #site-navigation > ul {
