@@ -5,26 +5,20 @@ html, body {
   margin: 0;
   padding: 0;
   color: rgba(26, 26, 26, 0.7);
-  position: relative;
   height: 100%;
-  width: 100%;
 }
 
+main { color: white; background-color: rgba(26, 26, 26, 0.9); }
 header { background-color: #e2c221; padding: 1em 0; }
-footer { 
-  background-color: rgba(26, 26, 26, 0.9);
-  color: white; padding: 2em 0; 
-  border-top: 8px solid #e2c221;
-  font-weight: 100;
-}
+#content { background-color: #fff; color: rgba(26, 26, 26, 0.9);
+           padding: 1rem 2rem;}
+footer { padding: 2em 0;
+         border-top: 8px solid #e2c221;
+         font-weight: 100; }
 
 
-.table-of-contents {
-  list-style-type: none;
-}
-.table-of-contents ol {
-  list-style-type: none;
-}
+.table-of-contents { list-style-type: none; }
+.table-of-contents ol { list-style-type: none; }
 
 /* HEADINGS */
 h1, h2, h3, h4, h5, h6 {
@@ -54,50 +48,49 @@ ul a { color: inherit; text-decoration: none; }
 ul a:visited { color: inherit; }
 footer ul, footer p { text-align: center; }
 
-main, #site-navigation {
-  position: absolute;
-  transition: left 0.5s ease-in-out;
-}
 
 #content, header, footer {
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-main {
-  left: 0;
-}
 
-/* Menu styles
- TODO: change % to percentage of body width
- */
-#site-navigation {
+/* Sidebar menu toggling */
+body {
+  position: relative;
+}
+body > #site-navigation, body > main {
+  position: absolute;
+  top: 0;
   height: 100%;
-  z-index: 2;
+  overflow-y: auto;
+  transition: left 0.5s ease-in-out;
+}
+body > #site-navigation {
+  width: 260px;
+  left: -260px;
+}
+body > main {
+  left: 0;
+  width: 100%;
+}
+
+body.menu-active > #site-navigation { left: 0; }
+body.menu-active main { left: 260px; }
+
+#site-navigation {
   background-color: rgba(26, 26, 26, 0.9);
   color: white;
-  width: 15rem;
-  left: -15rem;
-  overflow: hidden;
 }
 
-.menu-active #site-navigation {
-  left: 0;
-}
-
-.menu-active main {
-  left: 15rem;
-}
-
-
-@media only screen  and (min-width : 1224px) {
-  #site-navigation {
-    left: 0;
-    width: 25%;
+@media only screen  and (min-width : 900px) {
+  body > main {
+    width: auto;
   }
-  .menu-active main {
-    left: 25%;
-  }
+
 }
+
+
 
 /* Menu item styling */
 #site-navigation > ul {
