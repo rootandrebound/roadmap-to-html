@@ -1,4 +1,5 @@
 $(function() {
+
   // Runs as soon as the page loads
   var isOnSmallScreen = $('body').width() < 900;
   var doc = $(document);
@@ -15,26 +16,25 @@ $(function() {
     openSideMenu();
   }
 
+  function catchAllClicksAndCloseSideMenu(event){
+    event.stopImmediatePropagation();
+    closeSideMenu();
+  }
+
   function openSideMenu(){
     body.addClass('menu-active');
     if (isOnSmallScreen){
       // catch any clicks on the main node and use it to trigger collapse
-      mainNode.on('click', function(event){
-        event.stopImmediatePropagation();
-        closeSideMenu();
-      });
-
+      mainNode.on('click', catchAllClicksAndCloseSideMenu);
     }
   }
 
   function closeSideMenu(){
     if (isOnSmallScreen){
-      mainNode.off('click');
+      mainNode.off('click', catchAllClicksAndCloseSideMenu);
     }
     body.removeClass('menu-active')
   }
-
-
 
   doc.on('click', '#js-toggle-menu', function(){
     if (menuIsOpen()){
@@ -43,6 +43,5 @@ $(function() {
       openSideMenu();
     }
   });
-
 
 });
