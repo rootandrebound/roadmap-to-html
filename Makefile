@@ -7,14 +7,15 @@ default:
 	# renames the raw HTML
 	mv output/2017.02.18_Final.html \
 		output/raw_index.html
-	# parses the raw HTML & rerenders the templates 
+	# parses the raw HTML & rerenders the templates
 	python main.py
 
+server:
+	python server.py
 
 install:
 	npm install
 	pip install -r ./requirements.txt
-
 
 deploy:
 	git subtree push --prefix output origin gh-pages
