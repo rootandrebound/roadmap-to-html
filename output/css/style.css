@@ -64,8 +64,9 @@ body > #site-navigation, body > main {
   top: 0;
   height: 100%;
   overflow-y: auto;
-  transition: left 0.5s ease-in-out;
 }
+
+/* default to closed nav on mobile */
 body > #site-navigation {
   width: 260px;
   left: -260px;
@@ -75,21 +76,21 @@ body > main {
   width: 100%;
 }
 
-body.menu-active > #site-navigation { left: 0; }
-body.menu-active main { left: 260px; }
+
 
 #site-navigation {
   background-color: rgba(26, 26, 26, 0.9);
   color: white;
 }
 
-@media only screen  and (min-width : 900px) {
+@media only screen and (min-width: 900px) {
+  /* default to open on desktop */
+  body > #site-navigation { left: 0; }
   body > main {
     width: auto;
+    left: 260px;
   }
 }
-
-
 
 /* Menu item styling */
 #site-navigation > ul {
