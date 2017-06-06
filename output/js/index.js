@@ -16,6 +16,10 @@ $(function() {
     openSideMenu();
   }
 
+  // $('body > #site-navigation, body > main').css({
+  // 		'transition': 'left 0.5s ease-in-out'
+  // });
+
   function catchAllClicksAndCloseSideMenu(event){
     event.stopImmediatePropagation();
     closeSideMenu();
@@ -43,5 +47,10 @@ $(function() {
       openSideMenu();
     }
   });
+
+  //if screen is larger than 900px:
+  	// add class
+  //if open page the menu is already open
+  //if screen is smaller close menu automatically
 
 });

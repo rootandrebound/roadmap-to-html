@@ -75,21 +75,24 @@ body > main {
   width: 100%;
 }
 
-body.menu-active > #site-navigation { left: 0; }
-body.menu-active main { left: 260px; }
+
 
 #site-navigation {
   background-color: rgba(26, 26, 26, 0.9);
   color: white;
 }
 
-@media only screen  and (min-width : 900px) {
+@media only screen and (min-width: 900px) {
   body > main {
     width: auto;
+    left: 260px;
   }
+  body > #site-navigation { left: 0; }
 }
 
-
+.menu-active {
+  left: -260px;
+}
 
 /* Menu item styling */
 #site-navigation > ul {
