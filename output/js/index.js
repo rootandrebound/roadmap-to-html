@@ -70,9 +70,4 @@ $(function() {
     }
   });
 
-  //if screen is larger than 900px:
-    // add class
-  //if open page the menu is already open
-  //if screen is smaller close menu automatically
-
 });
