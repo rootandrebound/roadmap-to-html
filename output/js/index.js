@@ -1,4 +1,22 @@
+function px(value){
+  // coerce to string
+  value = value + '';
+  if( value.indexOf('px') === -1) {
+    value += 'px';
+  }
+  return value;
+}
+
 $(function() {
+
+  /*
+  open state:
+    #site-navigation left = 0
+    main left = width
+  closed state:
+    #site-navigation left = -width
+    main left = 0
+  */
 
   // Runs as soon as the page loads
   var isOnSmallScreen = $('body').width() < 900;
@@ -6,9 +24,15 @@ $(function() {
   var body = $('body');
 
   var mainNode = $('main');
+  var sideNav = $('#site-navigation');
+  var sideNavWidth = px(sideNav.css('width'));
 
   function menuIsOpen(){
-    return body.hasClass('menu-active');
+    return (
+      sideNav.css('left') === px(0)
+    ) && (
+      mainNode.css('left') === px(sideNavWidth)
+    );
   }
 
   if (isOnSmallScreen === false && menuIsOpen() === false){
@@ -16,17 +40,14 @@ $(function() {
     openSideMenu();
   }
 
-  // $('body > #site-navigation, body > main').css({
-  // 		'transition': 'left 0.5s ease-in-out'
-  // });
-
   function catchAllClicksAndCloseSideMenu(event){
     event.stopImmediatePropagation();
     closeSideMenu();
   }
 
   function openSideMenu(){
-    body.addClass('menu-active');
+    sideNav.animate({'left': px(0)});
+    mainNode.animate({'left': px(sideNavWidth)});
     if (isOnSmallScreen){
       // catch any clicks on the main node and use it to trigger collapse
       mainNode.on('click', catchAllClicksAndCloseSideMenu);
@@ -37,7 +58,8 @@ $(function() {
     if (isOnSmallScreen){
       mainNode.off('click', catchAllClicksAndCloseSideMenu);
     }
-    body.removeClass('menu-active')
+    sideNav.animate({'left': '-' + px(sideNavWidth)});
+    mainNode.animate({'left': px(0)});
   }
 
   doc.on('click', '#js-toggle-menu', function(){
@@ -49,7 +71,7 @@ $(function() {
   });
 
   //if screen is larger than 900px:
-  	// add class
+    // add class
   //if open page the menu is already open
   //if screen is smaller close menu automatically
 

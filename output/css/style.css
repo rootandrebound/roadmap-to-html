@@ -64,8 +64,9 @@ body > #site-navigation, body > main {
   top: 0;
   height: 100%;
   overflow-y: auto;
-  transition: left 0.5s ease-in-out;
 }
+
+/* default to closed nav on mobile */
 body > #site-navigation {
   width: 260px;
   left: -260px;
@@ -83,15 +84,12 @@ body > main {
 }
 
 @media only screen and (min-width: 900px) {
+  /* default to open on desktop */
+  body > #site-navigation { left: 0; }
   body > main {
     width: auto;
     left: 260px;
   }
-  body > #site-navigation { left: 0; }
-}
-
-.menu-active {
-  left: -260px;
 }
 
 /* Menu item styling */
