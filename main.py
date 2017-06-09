@@ -1,4 +1,5 @@
 import data
+import json
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 
@@ -260,6 +261,12 @@ def update_contents(soup, items):
             item.post_process_contents()
 
 
+def write_to_json(items):
+    with open('all_contents.json', 'w') as outfile:
+        json.dump([item.as_dict() for item in items], outfile, indent=2)
+    print("wrote JSON")
+
+
 def run():
     with open(RAW_OUTPUT, 'r') as raw_html_input:
         soup = BeautifulSoup(raw_html_input, 'html.parser')
@@ -292,13 +299,13 @@ def run():
         content_items = add_chapters_to_content_items(content_items, chapters)
         link_parents_and_neighbors(content_items)
         update_contents(soup, content_items)
+        write_to_json(content_items)
         data.global_context.update(
             prefix='/roadmap-to-html',
             chapters=[item for item in content_items if item.level == 0])
         for item in content_items:
             item.write()
             print(item.get_path())
-
         splash_page = data.SplashPage(title='Home', level="splash")
         splash_page.write()
         print(splash_page.get_path())

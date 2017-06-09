@@ -129,6 +129,22 @@ class ContentItem:
         with open(output_path, 'w') as output_file:
             output_file.write(self.render())
 
+    def heading_text(self):
+        return '\n'.join([
+            tag.text
+            for tag in self.contents
+            if tag.name in ('h1', 'h2', 'h3', 'h4', 'h5')
+        ])
+
+    def text(self):
+        return '\n'.join([tag.text for tag in self.contents])
+
+    def as_dict(self):
+        return dict(
+            title=self.title,
+            level=self.level,
+            heading_text=self.heading_text())
+
 
 class ContentPage(ContentItem):
 
