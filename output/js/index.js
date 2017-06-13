@@ -4,6 +4,7 @@ var ALGOLIA_PUBLIC_KEY = "ad6b289aa74181fef926dc6133bfece7";
 function initializeSearch() {
   var client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_PUBLIC_KEY);
   var index = client.initIndex('test_ROADMAP');
+  console.log("initialized search", client)
   $('#search-input input[type="text"]').autocomplete({ hint: false }, [
     {
       source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 10 }),
@@ -94,4 +95,5 @@ $(function() {
     }
   });
 
+  initializeSearch();
 });
