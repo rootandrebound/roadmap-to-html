@@ -143,7 +143,8 @@ class ContentItem:
         return dict(
             title=self.title,
             level=self.level,
-            heading_text=self.heading_text())
+            heading_text=self.heading_text(),
+            path=self.get_path())
 
 
 class ContentPage(ContentItem):
