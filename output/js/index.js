@@ -2,20 +2,26 @@ var ALGOLIA_APP_ID = "ER4XGAZU3H";
 var ALGOLIA_PUBLIC_KEY = "ad6b289aa74181fef926dc6133bfece7";
 
 function initializeSearch() {
+  var searchInput = $('#search-input input[type="text"]');
+  console.log('searchInput', searchInput);
   var client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_PUBLIC_KEY);
   var index = client.initIndex('test_ROADMAP');
   console.log("initialized search", client)
-  $('#search-input input[type="text"]').autocomplete({ hint: false }, [
-    {
-      source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 10 }),
-      displayKey: 'title',
-      templates: {
-        suggestion: function(suggestion) {
-          return suggestion._highlightResult.title.value+"<super>2<super>";
+  searchInput.autocomplete(
+    { hint: false },
+    [
+      {
+        source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 10 }),
+        displayKey: 'title',
+        templates: {
+          suggestion: function(suggestion) {
+            console.log('suggestion', suggestion);
+            return suggestion._highlightResult.title.value+"<super>2<super>";
+          }
         }
       }
-    }
-  ]).on('autocomplete:selected', function(event, suggestion, dataset) {
+    ]
+  ).on('autocomplete:selected', function(event, suggestion, dataset) {
     console.log(suggestion, dataset);
   });
 }
