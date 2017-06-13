@@ -58,6 +58,16 @@ make
 
 This will produce an output similar to [what is described here](https://github.com/rootandrebound/roadmap-to-html/issues/1).
 
+### 5. View the HTML locally
+
+You can view the HTML locally by running:
+
+```bash
+make server
+```
+
+and then opening http://0.0.0.0:8080 in your browser.
+
 ### The script
 
 The Makefile includes one command for producing the HTML output:
