@@ -3,10 +3,8 @@ var ALGOLIA_PUBLIC_KEY = "ad6b289aa74181fef926dc6133bfece7";
 
 function initializeSearch() {
   var searchInput = $('#search-input input[type="text"]');
-  console.log('searchInput', searchInput);
   var client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_PUBLIC_KEY);
   var index = client.initIndex('test_ROADMAP');
-  console.log("initialized search", client)
   searchInput.autocomplete(
     { hint: false },
     [
@@ -15,14 +13,15 @@ function initializeSearch() {
         displayKey: 'title',
         templates: {
           suggestion: function(suggestion) {
-            console.log('suggestion:', suggestion);
-            return suggestion._highlightResult.title.value+"<super>2<super>";
+            var hrefValue = suggestion.path;
+            var display = suggestion._highlightResult.title.value;
+            var anchorString = '<a href="/roadmap-to-html/' + hrefValue + '">' + display + '</a>';
+            return anchorString;
           }
         }
       }
     ]
   ).on('autocomplete:selected', function(event, suggestion, dataset) {
-    console.log("this is suggestion:", suggestion, "this is dataset:", dataset);
   });
 }
 
