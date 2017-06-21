@@ -21,8 +21,7 @@ function initializeSearch() {
         }
       }
     ]
-  ).on('autocomplete:selected', function(event, suggestion, dataset) {
-  });
+  );
 }
 
 function px(value){

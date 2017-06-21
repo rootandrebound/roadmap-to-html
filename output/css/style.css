@@ -106,14 +106,13 @@ body > main {
 #search-input {
   position: relative;
   color: #000000;
-  padding-top: 6px;
   padding-bottom: 6px;
-  padding-left: 14px;
 }
 
 #search-input input[type='text'] {
-  width: 80%;
-  padding: 0;
+  font-size: 1em;
+  width: 100%;
+  padding: 0.6em 1em;
   margin: 0;
 }
 
@@ -122,8 +121,6 @@ body > main {
   padding: 0;
   margin: 0;
 }
-
-
 
 /* ALGOLIA DEFAULT STYLES */
 .algolia-autocomplete {
@@ -141,10 +138,6 @@ body > main {
   border: 1px solid #999;
   border-top: none;
 }
-.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-  cursor: pointer;
-  padding: 5px 4px;
-}
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
   background-color: #B2D7FF;
 
@@ -155,4 +148,26 @@ body > main {
 }
 .algolia-autocomplete-listbox-0 {
   color: #800080;
+}
+
+.aa-dropdown-menu {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+.aa-suggestion {
+  margin: 0;
+  padding: 0;
+}
+.aa-suggestion + .aa-suggestion {
+  border-top: 1px solid #ddd;
+}
+
+.aa-dropdown-menu .aa-suggestion a {
+  padding: 0.6em 1em;
+  display: block;
+  color: inherit;
+}
+.aa-dropdown-menu .aa-suggestion a:visited {
+  color: inherit;
 }
