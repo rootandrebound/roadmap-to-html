@@ -15,17 +15,16 @@ function initializeSearch() {
         displayKey: 'title',
         templates: {
           suggestion: function(suggestion) {
-            console.log('suggestion', suggestion);
+            console.log('suggestion:', suggestion);
             return suggestion._highlightResult.title.value+"<super>2<super>";
           }
         }
       }
     ]
   ).on('autocomplete:selected', function(event, suggestion, dataset) {
-    console.log(suggestion, dataset);
+    console.log("this is suggestion:", suggestion, "this is dataset:", dataset);
   });
 }
-
 
 function px(value){
   // coerce to string

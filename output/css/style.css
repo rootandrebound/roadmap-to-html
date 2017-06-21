@@ -105,6 +105,10 @@ body > main {
 
 #search-input {
   position: relative;
+  color: #000000;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
 }
 
 #search-input input[type='text'] {
@@ -129,7 +133,7 @@ body > main {
   width: 100%;
 }
 .algolia-autocomplete .aa-hint {
-  color: #999;
+  color: #ffffff;
 }
 .algolia-autocomplete .aa-dropdown-menu {
   width: 100%;
@@ -143,8 +147,12 @@ body > main {
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
   background-color: #B2D7FF;
+
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
   font-weight: bold;
   font-style: normal;
+}
+.algolia-autocomplete-listbox-0 {
+  color: #800080;
 }
