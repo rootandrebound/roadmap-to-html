@@ -10,8 +10,7 @@ html, body {
 
 main { color: white; background-color: rgba(26, 26, 26, 0.9); }
 header { background-color: #e2c221; padding: 1em 0; }
-#content { background-color: #fff; color: rgba(26, 26, 26, 0.9);
-           padding: 1rem 2rem;}
+#content { background-color: #fff; color: rgba(26, 26, 26, 0.9);}
 footer { padding: 2em 0;
          border-top: 8px solid #e2c221;
          font-weight: 100; }
@@ -26,8 +25,24 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(26, 26, 26, 0.9);
 }
 h1 { font-weight: 900; }
-h1 a, h2 a, h3 a, h4 a, h5 a { color: inherit; }
-h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited { color: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: .8em 0;
+  margin: 0;
+}
+
+a, a:visited { color: inherit; }
+ol {
+  margin: 0;
+  padding: 1em 0 1em 2.5em;
+}
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+nav ol {
+  padding: 1em 0;
+}
 
 
 ul.footer-links {
@@ -44,17 +59,23 @@ footer ul {
 .disclaimer { font-size: 9px; }
 
 .footer-links a { font-weight: 700; }
-ul a { color: inherit; text-decoration: none; }
-ul a:visited { color: inherit; }
+ul a { text-decoration: none; }
 footer ul, footer p { text-align: center; }
 
 
-#content, header, footer {
+header, footer, article {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-
+.breadcrumbs, .neighbors {
+  color: #fff;
+  background-color: #4d4d4d;
+}
+article, .table-of-contents {
+  color: #000;
+  background-color: #fff;
+}
 /* Sidebar menu toggling */
 body {
   position: relative;
@@ -121,6 +142,120 @@ body > main {
   padding: 0;
   margin: 0;
 }
+
+
+/* BREADCRUMBS */
+/* nav.breadcrumbs > ol > li > a */
+/* 1 - 4 li elements */
+
+.breadcrumbs ol {
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumbs a {
+  display: block;
+  text-decoration: none;
+}
+.breadcrumbs a:after {
+  content: "›";
+  margin-left: .3em;
+  font-size: 2em;
+  line-height: .5em;
+  position: absolute;
+  /*font-weight: bold;*/
+  color: #ccc;
+}
+.breadcrumbs li a {
+  padding: 0.25em 2em;
+  text-decoration: underline;
+}
+.breadcrumbs li:first-child a {
+  padding-top: 0.6em;
+}
+.breadcrumbs li:last-child a {
+  padding-bottom: 0.75em;
+}
+.breadcrumbs li:nth-child(2) a {
+  padding-left: 3em;
+}
+.breadcrumbs li:nth-child(3) a {
+  padding-left: 4em;
+}
+.breadcrumbs li:nth-child(4) a {
+  padding-left: 5em;
+}
+
+
+/* NEXT & PREVIOUS NAV */
+/* nav.neighbors > ol > li > a */
+/* 1-2 li elements */
+
+.neighbors ol {
+  overflow: auto;
+  position: relative;
+}
+.neighbors li {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  top: 0;
+}
+.neighbors li a {
+  display: block;
+  padding: 0.25em 2em;
+  text-decoration: none;
+}
+.neighbors li:first-child {
+  float: left;
+}
+.neighbors li:last-child {
+  float: right;
+}
+
+.neighbors li:last-child a {
+  text-align: right;
+}
+.neighbors .neighbor-title {
+  text-decoration: underline;
+}
+.neighbor-label {
+  display: block;
+  font-size: 0.9em;
+  padding-bottom: 0.25em;
+  color: #ccc;
+}
+.neighbors li:first-child .neighbor-label {
+  padding-left: 1em;
+}
+.neighbors li:first-child .neighbor-label:before {
+  content: "‹";
+  font-size: 2em;
+  line-height: .5em;
+  position: absolute;
+  /*font-weight: bold;*/
+  color: #888;
+  margin-left: -0.5em;
+
+}
+
+.neighbors li:last-child .neighbor-label {
+  padding-right: 1em;
+}
+.neighbors li:last-child .neighbor-label:after {
+  content: "›";
+  font-size: 2em;
+  line-height: .5em;
+  position: absolute;
+  /*font-weight: bold;*/
+  color: #888;
+  margin-left: .25em;
+}
+
+
+/* TABLE OF CONTENTS */
+
+
 
 /* ALGOLIA DEFAULT STYLES */
 .algolia-autocomplete {
