@@ -15,7 +15,7 @@ server:
 
 install:
 	npm install
-	pip install -r ./requirements.txt
+	python -m pip install -r ./requirements.txt
 
 deploy:
 	git subtree push --prefix output origin gh-pages
