@@ -33,7 +33,20 @@ function px(value){
   return value;
 }
 
+function handleTopPages(topPages){
+  topPages.forEach(function(page){
+    $('ul.top-pages').append(
+      '<li><h4><a href="'+page.url+'">'+page.title+'</a></h4></li>'
+    );
+  })
+}
 
+function pullTopPages(){
+  $.getJSON(
+    'https://s3.amazonaws.com/rr-roadmap-top-pages-checker/top_pages.json',
+    handleTopPages
+  );
+}
 
 $(function() {
 
@@ -45,7 +58,7 @@ $(function() {
     #site-navigation left = -width
     main left = 0
   */
-
+  pullTopPages();
   // Runs as soon as the page loads
   var isOnSmallScreen = $('body').width() < 900;
   var doc = $(document);
