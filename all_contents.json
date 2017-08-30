@@ -1,35 +1,5 @@
 [
   {
-    "title": "Questions About The Guide",
-    "level": 0,
-    "heading_text": "QUESTIONS ABOUT THE GUIDE:",
-    "path": "questions-about-the-guide"
-  },
-  {
-    "title": "Questions About You",
-    "level": 0,
-    "heading_text": "QUESTIONS ABOUT YOU:",
-    "path": "questions-about-you"
-  },
-  {
-    "title": "Connecting With Root & Rebound",
-    "level": 0,
-    "heading_text": "CONNECTING WITH ROOT & REBOUND:",
-    "path": "connecting-with-root-rebound"
-  },
-  {
-    "title": "Any Other Comments/Feedback",
-    "level": 0,
-    "heading_text": "ANY OTHER COMMENTS/FEEDBACK:",
-    "path": "any-other-comments-feedback"
-  },
-  {
-    "title": "Follow-Up Survey Contact Information",
-    "level": 0,
-    "heading_text": "FOLLOW-UP SURVEY CONTACT INFORMATION:",
-    "path": "follow-up-survey-contact-information"
-  },
-  {
     "title": "The Building Blocks Of Reentry",
     "level": 0,
     "heading_text": "THE BUILDING BLOCKS OF REENTRY:\nGetting ID & Other Key Documents, Voting & Civic Participation\nWHAT WILL I LEARN in the ID & Voting Chapter?\nGeneral Tips for Getting ID\nINTRODUCTION",
@@ -566,14 +536,8 @@
   {
     "title": "ID & VOTING APPENDIX",
     "level": 1,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry/id-voting-appendix"
-  },
-  {
-    "title": "",
-    "level": 0,
     "heading_text": "\nCommunity Supervision:",
-    "path": ""
+    "path": "the-building-blocks-of-reentry/id-voting-appendix"
   },
   {
     "title": "Parole & Probation",

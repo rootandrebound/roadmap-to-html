@@ -12,6 +12,14 @@ TOC_CLASSES = {'toc1', 'toc2', 'toc3', 'toc4'}
 
 TOC_CONTENT_SIGNIFIER = "_Toc"
 
+CHAPTER_TITLES_TO_EXCLUDE = [
+    'questions about the guide',
+    'questions about you',
+    'connecting with root & rebound',
+    'any other comments/feedback',
+    'follow-up survey contact information'
+]
+
 
 def idx_to_str(index):
     return "{num:06d}".format(num=index)
@@ -221,6 +229,13 @@ def clean_chapter_text(chapters):
         chapter.text = text.strip()
 
 
+def should_be_excluded(chapter):
+    chapter_text = chapter.text.strip().lower()
+    is_empty = not bool(chapter_text)
+    return is_empty or any(
+        [title in chapter_text for title in CHAPTER_TITLES_TO_EXCLUDE])
+
+
 def parse_chapters(soup):
     results = soup.find_all('h1')
     raw_chapters = [
@@ -230,6 +245,9 @@ def parse_chapters(soup):
         for result in results]
     chapters = merge_adjacent_chapter_items(raw_chapters)
     clean_chapter_text(chapters)
+    chapters = [
+        chapter for chapter in chapters
+        if not should_be_excluded(chapter)]
     return chapters
 
 

@@ -58,7 +58,6 @@ $(function() {
     #site-navigation left = -width
     main left = 0
   */
-  pullTopPages();
   // Runs as soon as the page loads
   var isOnSmallScreen = $('body').width() < 900;
   var doc = $(document);
@@ -112,4 +111,7 @@ $(function() {
   });
 
   initializeSearch();
+  
+  pullTopPages();
+
 });

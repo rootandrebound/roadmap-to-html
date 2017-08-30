@@ -217,14 +217,14 @@ body > main {
   padding: 0.25em 2em;
   text-decoration: none;
 }
-.neighbors li:first-child {
+.neighbors li.previous {
   float: left;
 }
-.neighbors li:last-child {
+.neighbors li.next {
   float: right;
 }
 
-.neighbors li:last-child a {
+.neighbors li.next a {
   text-align: right;
 }
 .neighbors .neighbor-title {
@@ -236,10 +236,10 @@ body > main {
   padding-bottom: 0.25em;
   color: #ccc;
 }
-.neighbors li:first-child .neighbor-label {
+.neighbors li.previous .neighbor-label {
   padding-left: 1em;
 }
-.neighbors li:first-child .neighbor-label:before {
+.neighbors li.previous .neighbor-label:before {
   content: "‹";
   font-size: 2em;
   line-height: .5em;
@@ -250,10 +250,10 @@ body > main {
 
 }
 
-.neighbors li:last-child .neighbor-label {
+.neighbors li.next .neighbor-label {
   padding-right: 1em;
 }
-.neighbors li:last-child .neighbor-label:after {
+.neighbors li.next .neighbor-label:after {
   content: "›";
   font-size: 2em;
   line-height: .5em;
