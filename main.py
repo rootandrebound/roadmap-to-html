@@ -285,20 +285,6 @@ def write_to_json(items):
     print("wrote JSON")
 
 
-def fix_footnotes():
-    '''
-    <a href="#footnote-66" id="footnote-ref-66">[65]</a>
-    <li id="footnote-66">
-        <p>
-            State of California Department of Justice, Identity Theft Victim
-            Checklist, https://oag.ca.gov/idtheft/facts/victim-checklist
-            <a href="#footnote-ref-66">↑</a>
-        </p>
-    </li>
-    '''
-    pass
-
-
 def is_footnote(id_string):
     if id_string:
         return ('footnote' in id_string) and ('-ref-' not in id_string)
@@ -333,6 +319,14 @@ def add_footnotes_to_article(content_item, footnote_index):
                 footnote_index[footnote_id])
 
 
+def extract_redundant_title_heading(content_item):
+    first_item = content_item.contents[0]
+    is_heading = first_item.name in ('h1', 'h2', 'h3', 'h4')
+    is_title = content_item.title.lower() in first_item.text.lower()
+    if is_heading and is_title:
+        content_item.contents.pop(0)
+
+
 def run():
     with open(RAW_OUTPUT, 'r') as raw_html_input:
         soup = BeautifulSoup(raw_html_input, 'html.parser')
@@ -365,9 +359,9 @@ def run():
         content_items = add_chapters_to_content_items(content_items, chapters)
         link_parents_and_neighbors(content_items)
         update_contents(soup, content_items)
-        import ipdb; ipdb.set_trace()
         for content_item in content_items:
             add_footnotes_to_article(content_item, footnote_index)
+            extract_redundant_title_heading(content_item)
         write_to_json(content_items)
         data.global_context.update(
             prefix='/roadmap-to-html',
