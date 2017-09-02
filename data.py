@@ -114,8 +114,7 @@ class ContentItem:
         return os.path.join(*fragments)
 
     def get_context(self):
-        global_context.update(
-            page=self)
+        global_context.update(page=self)
         return global_context
 
     def render(self):
