@@ -285,17 +285,65 @@ def write_to_json(items):
     print("wrote JSON")
 
 
+def fix_footnotes():
+    '''
+    <a href="#footnote-66" id="footnote-ref-66">[65]</a>
+    <li id="footnote-66">
+        <p>
+            State of California Department of Justice, Identity Theft Victim
+            Checklist, https://oag.ca.gov/idtheft/facts/victim-checklist
+            <a href="#footnote-ref-66">↑</a>
+        </p>
+    </li>
+    '''
+    pass
+
+
+def is_footnote(id_string):
+    if id_string:
+        return ('footnote' in id_string) and ('-ref-' not in id_string)
+
+
+def is_footnote_ref(id_string):
+    if id_string:
+        return 'footnote-ref' in id_string
+
+
+def extract_footnotes(soup):
+    footnotes = soup.find_all(
+        name='li', attrs={'id': is_footnote})
+    index = {}
+    for footnote in footnotes:
+        index[footnote['id'].split('-')[-1]] = footnote
+        footnote.extract()
+    return index
+
+
+def add_footnotes_to_article(content_item, footnote_index):
+    footnote_refs = []
+    for node in content_item.contents:
+        footnote_refs.extend(
+            node.find_all(name='a', attrs={'id': is_footnote_ref}))
+    footnote_ids = []
+    if footnote_refs:
+        for ref in footnote_refs:
+            footnote_ids.append(ref['id'].split('-')[-1])
+        for footnote_id in sorted(footnote_ids):
+            content_item.contents.append(
+                footnote_index[footnote_id])
+
+
 def run():
     with open(RAW_OUTPUT, 'r') as raw_html_input:
         soup = BeautifulSoup(raw_html_input, 'html.parser')
         write_prettified_raw_index(soup)
+        footnote_index = extract_footnotes(soup)
         chapters = parse_chapters(soup)
         link_items = parse_toc_content(soup)
         toc_entries = parse_toc_entries(soup)
         toc_entry_lookup = {
             entry.text: entry
-            for entry in toc_entries
-        }
+            for entry in toc_entries}
         for link in link_items:
             toc_entry = toc_entry_lookup.get(link.text, None)
             link.linked_entry = toc_entry
@@ -317,6 +365,9 @@ def run():
         content_items = add_chapters_to_content_items(content_items, chapters)
         link_parents_and_neighbors(content_items)
         update_contents(soup, content_items)
+        import ipdb; ipdb.set_trace()
+        for content_item in content_items:
+            add_footnotes_to_article(content_item, footnote_index)
         write_to_json(content_items)
         data.global_context.update(
             prefix='/roadmap-to-html',
