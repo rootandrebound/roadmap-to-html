@@ -11,7 +11,8 @@ default:
 	python main.py
 
 server:
-	python server.py
+	gulp
+	# todo remove python server dependencies
 
 install:
 	npm install
