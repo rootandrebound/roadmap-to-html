@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 
 /* Server with hot reload and CSS injection */
@@ -29,7 +30,8 @@ gulp.task('sass', function() {
 // move JS files to output folder.
 gulp.task('js', function () {
     return gulp.src('js/*.js')
-        .pipe(gulp.dest('./output/js/'));
+    .pipe(uglify())
+    .pipe(gulp.dest('./output/js/'));
 });
 
 // ensures the `js` task is complete before
