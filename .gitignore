@@ -1,11 +1,7 @@
 .DS_Store
 node_modules
-output/*.png
-output/*.x-emf
-output/*.jpeg
-output/css
+output
 *.docx
-output/**/*.html
 lib
 share
 pip-selfcheck.json
