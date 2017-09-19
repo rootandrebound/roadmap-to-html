@@ -74,8 +74,7 @@ th {
   background-color: #f4f4f4;
   font-weight: bold;
 }
-th,
-td {
+th, td {
   background-color: #f9f9f9;
   border: 0.05em solid #ddd;
   line-height: 1.5;
@@ -98,14 +97,13 @@ td {
     border-bottom: 0;
   }
 
-	/* Add a space between table rows */
+  /* Add a space between table rows */
   tr + tr {
     margin-top: 1.5em;
   }
 
   /* Table cells to act like rows */
-  tr,
-  td {
+  tr, td {
 		display: block;
 	}
 	td {
