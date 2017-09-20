@@ -32,7 +32,8 @@ cd roadmap-to-html
 
 ### 2. Get `2016-04-12_Final_st.docx`
 
-To get started, you need to [download the original word document](https://drive.google.com/uc?export=download&id=0BzNrkiCWAqHZdDNzdlNlY2FKNVU) and put it in this folder. Note that the preceding link should only be accessible to staff members at Root & Rebound or people who have been given specific access to the containing folder.
+To get started, you need to [download the original word document](https://drive.google.com/uc?export=download&id=0BzNrkiCWAqHZdDNzdlNlY2FKNVU) and put it in the root project folder. Rename the word document to `source.docx`
+Note that the preceding link should only be accessible to staff members at Root & Rebound or people who have been given specific access to the containing folder.
 
 ### 3. Create and activate a python virtual environment
 
@@ -74,11 +75,10 @@ The Makefile includes one command for producing the HTML output:
 
 ```bash
 node_modules/mammoth/bin/mammoth \  # the path to mammoth's executable
-    2016-04-12_Final_st.docx \      # the path to the input word document
+    ./source.docx \      # the path to the input word document
     --output-dir=roadmap \          # the output directory
     --style-map=stylemap.txt        # the stylemap
-    mv output/2016-04-12_Final_st.html \  # rename the resulting html doc
+    mv output/source.html \  # rename the resulting html doc
         output/raw_index.html
     python main.py                  # chop up and output each chapter
 ```
-
