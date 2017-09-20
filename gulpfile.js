@@ -7,10 +7,10 @@ var browserSync = require('browser-sync').create();
 gulp.task('serve', ['sass', 'js'], function() {
     browserSync.init({
       server: {
-        baseDir: "output",
+        baseDir: "roadmap-to-html",
         /* Defines custom route to load resources as if they were requested from /roadmap-to-html */
         routes: {
-          "/roadmap-to-html": "output"
+          "/roadmap-to-html": "roadmap-to-html"
         }
       }
     }
