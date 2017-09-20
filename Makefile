@@ -5,8 +5,8 @@ default:
 		--style-map=stylemap.txt \
 		./source.docx
 	# renames the raw HTML
-	mv roadmap-to-html//source.html \
-		roadmap-to-html//raw_index.html
+	mv roadmap-to-html/source.html \
+		roadmap-to-html/raw_index.html
 	# parses the raw HTML & rerenders the templates
 	python main.py
 
