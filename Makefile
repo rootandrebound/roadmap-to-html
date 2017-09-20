@@ -1,12 +1,12 @@
 default:
 	# converts Word docx to raw HTML
 	node_modules/mammoth/bin/mammoth \
-		--output-dir=output \
+		--output-dir=roadmap-to-html/ \
 		--style-map=stylemap.txt \
 		./source.docx
 	# renames the raw HTML
-	mv output/source.html \
-		output/raw_index.html
+	mv roadmap-to-html//source.html \
+		roadmap-to-html//raw_index.html
 	# parses the raw HTML & rerenders the templates
 	python main.py
 

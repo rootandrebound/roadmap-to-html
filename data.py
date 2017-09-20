@@ -4,7 +4,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 TEMPLATE_FOLDER = 'templates'
 PAGE_BASE = 'base.jinja'
-OUTPUT_DIR = 'output'
+OUTPUT_DIR = 'roadmap-to-html'
 
 env = Environment(
     loader=FileSystemLoader(TEMPLATE_FOLDER),

@@ -3,10 +3,9 @@ import json
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 
-DOCX_PATH = '2016-04-12_Final_st.docx'
 STYLE_MAP_PATH = 'stylemap.txt'
-RAW_OUTPUT = 'output/raw_index.html'
-OUTPUT_PATH = 'output/nice_index.html'
+RAW_OUTPUT = 'roadmap-to-html/raw_index.html'
+OUTPUT_PATH = 'roadmap-to-html/nice_index.html'
 
 TOC_CLASSES = {'toc1', 'toc2', 'toc3', 'toc4'}
 
