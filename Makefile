@@ -19,5 +19,3 @@ install:
 
 deploy:
 	git subtree push --prefix roadmap-to-html origin gh-pages
-
-	git push origin `git subtree split --prefix roadmap-to-html master`:gh-pages --force
