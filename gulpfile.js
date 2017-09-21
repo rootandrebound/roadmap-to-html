@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 var buildPath = 'roadmap-to-html'
 
 /* Server with hot reload and CSS injection */
@@ -24,6 +25,9 @@ gulp.task('serve', ['sass', 'js'], function() {
 gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+        }))
         .pipe(gulp.dest('./' + buildPath + '/css/'))
         .pipe(browserSync.stream());
 });
