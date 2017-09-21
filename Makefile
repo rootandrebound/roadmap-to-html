@@ -18,4 +18,6 @@ install:
 	python -m pip install -r ./requirements.txt
 
 deploy:
-	git subtree push --prefix output origin gh-pages
+	git subtree push --prefix roadmap-to-html origin gh-pages
+
+	git push origin `git subtree split --prefix roadmap-to-html master`:gh-pages --force
