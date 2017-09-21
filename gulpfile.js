@@ -2,22 +2,16 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
+var buildPath = 'roadmap-to-html'
 
 /* Server with hot reload and CSS injection */
 gulp.task('serve', ['sass', 'js'], function() {
     browserSync.init({
       server: {
-<<<<<<< HEAD
-        baseDir: "roadmap-to-html",
+        baseDir: buildPath,
         /* Defines custom route to load resources as if they were requested from /roadmap-to-html */
         routes: {
-          "/roadmap-to-html": "roadmap-to-html"
-=======
-        baseDir: "output",
-        /* Defines custom route to load resources as if they were requested from /roadmap-to-html */
-        routes: {
-          "/roadmap-to-html": "output"
->>>>>>> e0a71c2f09101d5d1a44b6089775e65045f31036
+          "/roadmap-to-html": buildPath
         }
       }
     }
@@ -30,7 +24,7 @@ gulp.task('serve', ['sass', 'js'], function() {
 gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./output/css/'))
+        .pipe(gulp.dest('./' + buildPath + '/css/'))
         .pipe(browserSync.stream());
 });
 
@@ -38,7 +32,7 @@ gulp.task('sass', function() {
 gulp.task('js', function () {
     return gulp.src('js/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./output/js/'));
+    .pipe(gulp.dest('./' + buildPath + '/js/'));
 });
 
 // ensures the `js` task is complete before
