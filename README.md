@@ -53,21 +53,21 @@ make install
 
 ### 4. Run the script to make HTML
 
+This command will:
+- Produce an output similar to [what is described here](https://github.com/rootandrebound/roadmap-to-html/issues/1).
+- Run the necesary gulp tasks to compile and minify CSS & Javascript
+
 ```bash
 make
 ```
 
-This will produce an output similar to [what is described here](https://github.com/rootandrebound/roadmap-to-html/issues/1).
-
 ### 5. View the HTML locally
 
-You can view the HTML locally by running:
+This command will fire up a development server and you will be able to see the site opening http://localhost:3000/ in your browser.
 
 ```bash
 make server
 ```
-
-and then opening http://0.0.0.0:8080 in your browser.
 
 ### The script
 

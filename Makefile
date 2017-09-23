@@ -9,9 +9,13 @@ default:
 		roadmap-to-html/raw_index.html
 	# parses the raw HTML & rerenders the templates
 	python main.py
+	#create js and css bundles
+	gulp sass
+	gulp js
 
 server:
-	python server.py
+	gulp
+	# todo remove python server dependencies
 
 install:
 	npm install
