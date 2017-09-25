@@ -1,6 +1,6 @@
 var ALGOLIA_APP_ID = "ER4XGAZU3H";
 var ALGOLIA_PUBLIC_KEY = "ad6b289aa74181fef926dc6133bfece7";
- 
+
 function initializeSearch() {
   var searchInput = $('#search-input input[type="text"]');
   var client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_PUBLIC_KEY);
