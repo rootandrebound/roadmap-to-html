@@ -192,7 +192,11 @@ body > main {
 
 #site-navigation li > a {
   display: block;
-  padding: .3em 1em; }
+  padding: .5em 1em;
+  border-top: 1px solid #4d4d4d; }
+
+#site-navigation li:last-child > a {
+  border-bottom: 1px solid #4d4d4d; }
 
 #search-input {
   position: relative;
