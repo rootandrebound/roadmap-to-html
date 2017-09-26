@@ -34,6 +34,7 @@
 
       <nav>
         {# TODO: Add skiplink to main content #}
+        <h2>Chapters</h2>
         <ul>
         {%- for chapter in chapters %}
           <li><a href="{{ prefix }}/{{ chapter.get_path() }}/">{{ chapter.title }}</a></li>
