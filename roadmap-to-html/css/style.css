@@ -363,8 +363,11 @@ body > main {
 .banner {
   width: 100%;
   text-align: center; }
+  .banner p {
+    padding: 0px;
+    line-height: 1.75em; }
   .banner__content {
-    padding: 10px;
+    padding: 20px;
     background-color: #000; }
   .banner__text {
     display: inline-block;
