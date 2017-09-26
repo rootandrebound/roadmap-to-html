@@ -1,22 +1,12 @@
-$bannerHeight: 60px;
-$bannerBackgroundPrimaryColor: #3C59A0;
-
-body > main, #site-navigation {
-  margin-top: $bannerHeight;
-}
+$bannerBackgroundPrimaryColor: #000;
 
 .banner {
- z-index: 999;
- position: absolute;
  width: 100%;
- height: $bannerHeight;
  text-align: center;
- box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 
     &__content {
       padding:10px;
       background-color: $bannerBackgroundPrimaryColor;
-      font-size: 12px;
     }
 
    &__text {
@@ -24,24 +14,12 @@ body > main, #site-navigation {
      color: #FFFFFF;
    }
 
-   &__button {
-     transition: box-shadow 0.1s ease-in-out;
-     display: inline-block;
-     background: #FFFFFF;
-     height: 40px;
-     border: 0;
-     border-radius: 2px;
-     box-shadow: 0 2px 4px rgba(#000, 0.1);
-     padding: 0 10px;
-     margin-left: 20px;
-     color: $bannerBackgroundPrimaryColor;
-     font-weight: 700;
-     line-height: 40px;
-     text-decoration: none;
-     white-space: nowrap;
-
+   &__link {
       &:hover {
-        box-shadow: 6px 6px 14px rgba(#000, 0.4);
+
+      }
+      @media only screen and (max-width: 900px) {
+        display: block;
       }
    }
 

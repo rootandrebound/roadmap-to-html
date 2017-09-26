@@ -27,7 +27,6 @@
       <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
   </head>
   <body class="content-level-{{ page.level }}">
-    {% include "banner.jinja" %}
     <div id="site-navigation">
       <form id="search-input">
         <input type="text" placeholder="🔍 Search">
@@ -45,7 +44,7 @@
     </div>
 
     <main role="main">
-
+      {% include "banner.jinja" %}
       <header role="banner">
 
         <a href="#" id="js-toggle-menu">Menu & Search</a>
