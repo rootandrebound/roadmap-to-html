@@ -192,7 +192,11 @@ body > main {
 
 #site-navigation li > a {
   display: block;
-  padding: .3em 1em;
+  padding: .5em 1em;
+  border-top: 1px solid lighten(rgba(26, 26, 26, 1), 20%);
+}
+#site-navigation li:last-child > a {
+  border-bottom: 1px solid lighten(rgba(26, 26, 26, 1), 20%);
 }
 
 #search-input {
