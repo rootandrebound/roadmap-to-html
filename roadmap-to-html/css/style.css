@@ -201,7 +201,7 @@ body > main {
 #search-input {
   position: relative;
   color: #000000;
-  padding-bottom: 6px; }
+  padding: 16px 10px; }
 
 #search-input input[type='text'] {
   font-size: 1em;
@@ -359,3 +359,19 @@ body > main {
 
 .aa-dropdown-menu .aa-suggestion a:visited {
   color: inherit; }
+
+.banner {
+  width: 100%;
+  text-align: center; }
+  .banner p {
+    padding: 0px;
+    line-height: 1.75em; }
+  .banner__content {
+    padding: 20px;
+    background-color: #000; }
+  .banner__text {
+    display: inline-block;
+    color: #FFFFFF; }
+  @media only screen and (max-width: 900px) {
+    .banner__link {
+      display: block; } }

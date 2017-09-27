@@ -202,7 +202,7 @@ body > main {
 #search-input {
   position: relative;
   color: #000000;
-  padding-bottom: 6px;
+  padding: 16px 10px;
 }
 
 #search-input input[type='text'] {
@@ -381,3 +381,5 @@ body > main {
 .aa-dropdown-menu .aa-suggestion a:visited {
   color: inherit;
 }
+
+@import 'partials/_banner.scss';
