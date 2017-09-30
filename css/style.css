@@ -390,12 +390,30 @@ body > main {
         margin: 0; }
   @media only screen and (max-width: 900px) {
     .main-header {
-      height: 190px; }
+      height: 160px; }
       .main-header__links {
         width: 100%;
         float: right;
-        margin-top: 10px;
+        margin-top: 0px;
         text-decoration: none; }
+        .main-header__links a {
+          display: block;
+          margin-bottom: 10px;
+          width: 70%;
+          float: right;
+          padding-left: 10px;
+          font-size: 18px;
+          text-decoration: none; }
+          .main-header__links a#js-toggle-menu {
+            float: left;
+            width: 22%;
+            padding: 16px;
+            text-align: center;
+            background-color: #414141;
+            font-size: 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            border-bottom: 5px solid #000; }
       .main-header__search {
         width: 100%;
         float: left;
