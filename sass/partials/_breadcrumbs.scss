@@ -1,0 +1,57 @@
+.breadcrumbs {
+  color: #fff;
+  background-color: #4d4d4d;
+}
+
+
+/* BREADCRUMBS */
+/* nav.breadcrumbs > ol > li > a */
+/* 1 - 4 li elements */
+
+.breadcrumbs ol {
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumbs a {
+  display: block;
+  text-decoration: none;
+}
+.breadcrumbs a:after {
+  content: "›";
+  margin-left: .3em;
+  font-size: 2em;
+  line-height: .5em;
+  position: absolute;
+  /*font-weight: bold;*/
+  color: #ccc;
+}
+.breadcrumbs li + li {
+	border-top: 1px solid lighten(#4d4d4d, 20%)
+}
+.breadcrumbs li a {
+  padding: 1em 2em;
+  text-decoration: underline;
+}
+// .breadcrumbs li:first-child a {
+//   padding-top: 0.6em;
+// }
+// .breadcrumbs li:last-child a {
+//   padding-bottom: 0.75em;
+// }
+.breadcrumbs li:nth-child(2) a {
+  padding-left: 3em;
+}
+.breadcrumbs li:nth-child(3) a {
+  padding-left: 4em;
+}
+.breadcrumbs li:nth-child(4) a {
+  padding-left: 5em;
+}
+.breadcrumbs li:nth-child(5) a {
+  padding-left: 6em;
+}
+.breadcrumbs li:nth-child(6) a {
+  padding-left: 7em;
+}
+

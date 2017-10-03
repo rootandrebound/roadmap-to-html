@@ -1,5 +1,4 @@
 .main-header{
-  height: 110px;
   &__links {
     width:50%;
     float:left;
@@ -36,7 +35,6 @@
     }
   }
   @media only screen and (max-width: 900px) {
-    height: 160px;
     &__links {
       width:100%;
       float:right;
@@ -50,18 +48,6 @@
         padding-left: 10px;
         font-size: 18px;
         text-decoration: none;
-
-        &#js-toggle-menu {
-          float: left;
-          width: 22%;
-          padding: 16px;
-          text-align: center;
-          background-color: #414141;
-          font-size: 12px;
-          text-decoration: none;
-          border-radius: 4px;
-          border-bottom: 5px solid #000;
-        }
       }
     }
 

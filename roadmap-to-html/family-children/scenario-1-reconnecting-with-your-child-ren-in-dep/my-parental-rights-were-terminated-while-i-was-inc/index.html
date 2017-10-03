@@ -17,7 +17,7 @@
 
       </script>
       <!-- End Google Analytics -->
-      
+
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
@@ -25,51 +25,38 @@
       <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
   </head>
   <body class="content-level-4">
-    <div id="site-navigation">
-      <form id="search-input">
-        <input type="text" placeholder="🔍 Search">
-      </form>
-
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
 
     <main role="main">
-
-      <header role="banner">
-
-        <a href="#" id="js-toggle-menu">Menu & Search</a>
-
-        <div class="main-header-contents">
-          <p class="subtitle">
-            <a href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-          </p>
+      <!-- Header includes search, sites title and mobile menu -->
+      <aside role="note" class="banner">
+    <p class="banner__text">
+    	Welcome! This website is an experiment.
+    	<a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
+      <header role="banner" class="main-header">
+        <div class="main-header__links">
+          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
+        </div>
+        <div class="main-header__search">
+          <form id="search-input">
+            <input type="text" placeholder="🔍 Search">
+          </form>
         </div>
       </header>
+
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/family-children/scenario-1-reconnecting-with-your-child-ren-in-dep">Scenario 1: Reconnecting with your Child(ren) in Dependency Court</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
+    <li><a href="/roadmap-to-html/family-children/scenario-1-reconnecting-with-your-child-ren-in-dep">Scenario 1: Reconnecting with your Child(ren) in Dependency Court</a></li>
+    <li><a href="/roadmap-to-html/family-children/scenario-1-reconnecting-with-your-child-ren-in-dep/my-parental-rights-were-terminated-while-i-was-inc">My parental rights were terminated while I was incarcerated. What can I do? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>My parental rights were terminated while I was incarcerated. What can I do?</h1>
-        <h4 class="step">Speak to an attorney about appealing.<strong> If your parental rights were terminated recently, you may be able to appeal. For example, if you did not get advance notice of a hearing at which you had the right to be present, and the hearing resulted in an unfavorable decision, your absence at the hearing may be grounds for an appeal.<sup><a href="#footnote-2426" id="footnote-ref-2426">[2425]</a></sup> You should speak to an attorney about your particular circumstances to see whether an appeal is an appropriate solution.</strong> If your child has not been adopted, he or she may be able to file a 388 petition to reinstate your parental rights. <strong>This remedy may be available under two circumstances: if your child hasn’t been adopted within three years of the termination of your parental rights, OR, regardless of how much time has passed, if both your child and the social service agency agree that adoption is unlikely. See  </strong>Appendix E<strong> - PG. 794 for more information about 388 petitions.</strong></h4>
+        <h4 class="step">Speak to an attorney about appealing. If your parental rights were terminated recently, you may be able to appeal. For example, if you did not get advance notice of a hearing at which you had the right to be present, and the hearing resulted in an unfavorable decision, your absence at the hearing may be grounds for an appeal.<sup><a href="#footnote-2426" id="footnote-ref-2426">[2425]</a></sup> You should speak to an attorney about your particular circumstances to see whether an appeal is an appropriate solution. If your child has not been adopted, he or she may be able to file a 388 petition to reinstate your parental rights. This remedy may be available under two circumstances: if your child hasn’t been adopted within three years of the termination of your parental rights, OR, regardless of how much time has passed, if both your child and the social service agency agree that adoption is unlikely. See  Appendix E - PG. 794 for more information about 388 petitions.</h4>
         <li id="footnote-2426"><p> Manual on Transportation to Court for Hearings Affecting Prisoners’ Parental Righs, available at <a href="http://www.prisonerswithchildren.org/wp-content/uploads/2013/07/Transportation-to-Court-2013.pdf">http://www.prisonerswithchildren.org/wp-content/uploads/2013/07/Transportation-to-Court-2013.pdf</a>.  <a href="#footnote-ref-2426">↑</a></p></li>
       </article>
       <nav class="neighbors">
@@ -88,7 +75,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -113,11 +99,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

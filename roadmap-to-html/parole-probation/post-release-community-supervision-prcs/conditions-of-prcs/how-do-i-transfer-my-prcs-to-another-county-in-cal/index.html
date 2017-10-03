@@ -17,7 +17,7 @@
 
       </script>
       <!-- End Google Analytics -->
-      
+
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
@@ -25,56 +25,43 @@
       <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
   </head>
   <body class="content-level-4">
-    <div id="site-navigation">
-      <form id="search-input">
-        <input type="text" placeholder="🔍 Search">
-      </form>
-
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
 
     <main role="main">
-
-      <header role="banner">
-
-        <a href="#" id="js-toggle-menu">Menu & Search</a>
-
-        <div class="main-header-contents">
-          <p class="subtitle">
-            <a href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-          </p>
+      <!-- Header includes search, sites title and mobile menu -->
+      <aside role="note" class="banner">
+    <p class="banner__text">
+    	Welcome! This website is an experiment.
+    	<a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
+      <header role="banner" class="main-header">
+        <div class="main-header__links">
+          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
+        </div>
+        <div class="main-header__search">
+          <form id="search-input">
+            <input type="text" placeholder="🔍 Search">
+          </form>
         </div>
       </header>
+
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs">Post-Release Community Supervision (PRCS)</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/conditions-of-prcs">Conditions of PRCS</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs">Post-Release Community Supervision (PRCS)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/conditions-of-prcs">Conditions of PRCS</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/conditions-of-prcs/how-do-i-transfer-my-prcs-to-another-county-in-cal">How do I transfer my PRCS to another county in California? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>How do I transfer my PRCS to another county in California?</h1>
         <p class="text">California state law governs the process for transferring a person’s PRCS between counties.<sup><a href="#footnote-771" id="footnote-ref-771">[770]</a></sup> Unlike with transfers of informal probation, PG. 190, formal probation, PG. 194, and Mandatory Supervision, PG. 202,<sup><a href="#footnote-772" id="footnote-ref-772">[771]</a></sup> the Court does NOT have the authority to transfer a person’s PRCS. Instead, the PRCS transfer process is administrative, and happens directly from one county to another.<sup><a href="#footnote-773" id="footnote-ref-773">[772]</a></sup> The internal policy of probation departments is to accept post-release transfers only, so once you are released, the process for transferring counties on PRCS is as follows:</p>
         <h4 class="step">Write a letter to your probation officer formally stating your intention to live in another county. The probation department must find that transfer is appropriate under the circumstances. In addition to considering factors such as the victim’s safety, the probation officer must determine that:</h4>
         <ol class="text">You have proof of permanent residence in another county (see box), AND</ol>
         <ol class="text">Your change of residence was either approved by probation OR didn’t violate the terms and conditions of your PRCS.<sup><a href="#footnote-774" id="footnote-ref-774">[773]</a></sup></ol>
-        <h4 class="step">The supervising agency (the county probation department) then has two weeks to send any information it received from CDCR before you were released to the probation department in your new county of permanent residence.<strong><sup><a href="#footnote-775" id="footnote-ref-775">[774]</a></sup></strong>Once the new county’s probation department has verified your permanent residency in its county, the agency must accept you on PRCS there.<strong><sup><a href="#footnote-776" id="footnote-ref-776">[775]</a></sup></strong> </h4>
+        <h4 class="step">The supervising agency (the county probation department) then has two weeks to send any information it received from CDCR before you were released to the probation department in your new county of permanent residence.<sup><a href="#footnote-775" id="footnote-ref-775">[774]</a></sup>Once the new county’s probation department has verified your permanent residency in its county, the agency must accept you on PRCS there.<sup><a href="#footnote-776" id="footnote-ref-776">[775]</a></sup> </h4>
         <p class="importantbox">IMPORTANT NOTE: Your supervising agency (the county probation department) is not required to transfer your PRCS to another county unless you have shown your ability to establish <em>permanent residence</em> within another county without violating the terms and conditions of your PRCS. </p>
         <h5 class="question">How do I prove I have a permanent residence to transfer my PRCS to a new county?</h5>
         <p class="text">To verify that you live in the requested county, the county probation department will need proof of permanent residence. This may include:</p>
@@ -92,7 +79,7 @@
         <li id="footnote-774"><p> Cal. Penal Code § 3460(a). <a href="#footnote-ref-774">↑</a></p></li>
         <li id="footnote-775"><p> Cal. Penal Code § 3460(a). <a href="#footnote-ref-775">↑</a></p></li>
         <li id="footnote-776"><p> Cal. Penal Code § 3460(b). <a href="#footnote-ref-776">↑</a></p></li>
-        <li id="footnote-777"><p> See Cal Pen. Code § 3460(c); Chief Probation Officers of California, Protocol for Transfers of Postrelease Community Supervision Offenders (rev'd Dec. 10, 2015), http://www.cpoc.org/assets/Realignment/prcs%20transfer%20protocols%20rev%2012102015%20final.docx. <a href="#footnote-ref-777">↑</a></p></li>
+        <li id="footnote-777"><p> See Cal Pen. Code § 3460(c); Chief Probation Officers of California, Protocol for Transfers of Postrelease Community Supervision Offenders (rev'd Dec. 10, 2015), <a href='http://www.cpoc.org/assets/Realignment/prcs%20transfer%20protocols%20rev%2012102015%20final.docx" \t "_blank'>http://www.cpoc.org/assets/Realignment/prcs%20transfer%20protocols%20rev%2012102015%20final.docx</a>. <a href="#footnote-ref-777">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -110,7 +97,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -135,11 +121,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>
