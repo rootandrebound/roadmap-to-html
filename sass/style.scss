@@ -199,26 +199,6 @@ body > main {
   border-bottom: 1px solid lighten(rgba(26, 26, 26, 1), 20%);
 }
 
-#search-input {
-  position: relative;
-  color: #000000;
-  padding: 16px 10px;
-}
-
-#search-input input[type='text'] {
-  font-size: 1em;
-  width: 100%;
-  padding: 0.6em 1em;
-  margin: 0;
-}
-
-#search-input input[type='submit'] {
-  width: 20%;
-  padding: 0;
-  margin: 0;
-}
-
-
 /* BREADCRUMBS */
 /* nav.breadcrumbs > ol > li > a */
 /* 1 - 4 li elements */
@@ -383,3 +363,4 @@ body > main {
 }
 
 @import 'partials/_banner.scss';
+@import 'partials/_header.scss';
