@@ -21,10 +21,9 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-splash">
+  <body class="content-level-splash" data-page-path="">
 
     <main role="main">
   <header role="banner" class="main-header">
@@ -32,9 +31,10 @@
     <h1>Roadmap to Reentry</h1>
     <p>A California legal guide for incarcerated people and their advocates.</p>
     <div class="main-header__search">
-      <form id="search-input">
-        <input type="text" placeholder="🔍 Search">
-      </form>
+      <form id="search-input" action="/roadmap-to-html/search/" method="get">
+  <input type="text" name="q">
+  <button type="submit">🔍 Search</button>
+</form>
     </div>
   </header>
   <article>  

@@ -23,10 +23,9 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="{{ prefix }}/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-{{ page.level }}">
+  <body class="content-level-{{ page.level }}" data-page-path="{{ page.get_path() }}">
 
     <main role="main">
     {%- block main %}
@@ -37,9 +36,7 @@
           <a class="subtitle" href="{{ prefix }}/">Roadmap to Reentry: A California Legal Guide</a>
         </div>
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          {% include "search_form.jinja" %}
         </div>
       </header>
 

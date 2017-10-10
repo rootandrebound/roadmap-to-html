@@ -21,10 +21,9 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
+  <body class="content-level-4" data-page-path="the-building-blocks-of-reentry/if-you-were-born-outside-of-the-u-s-a-different-si/3-if-you-are-a-naturalized-citizen/i-am-a-naturalized-citizen-do-i-need-my-birth-cert">
 
     <main role="main">
       <!-- Header includes search, sites title and mobile menu -->
@@ -39,9 +38,10 @@
           <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
         </div>
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form id="search-input" action="/roadmap-to-html/search/" method="get">
+  <input type="text" name="q">
+  <button type="submit">🔍 Search</button>
+</form>
         </div>
       </header>
 

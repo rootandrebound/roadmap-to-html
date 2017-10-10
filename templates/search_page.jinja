@@ -1,0 +1,20 @@
+{% extends "base.jinja" %}
+
+{%- block title %}Roadmap to Reentry - Root &amp; Rebound{% endblock title -%}
+
+
+{% block main %}
+  <header role="banner" class="main-header">
+    <h3>Root &amp; Rebound</h3>
+    <h1>Roadmap to Reentry</h1>
+    <div class="main-header__search">
+      {% include "search_form.jinja" %}
+    </div>
+  </header>
+  <section class="search-results__section">
+    <h3 class="search-results__heading">Search Results</h3>
+    <ol class="search-results__list">
+    </ol>
+  </section>
+  
+{% endblock main %}
