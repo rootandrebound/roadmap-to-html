@@ -1,0 +1,87 @@
+
+/* NEXT & PREVIOUS NAV */
+/* nav.neighbors > ol > li > a */
+/* 1-2 li elements */
+.neighbors {
+  color: #fff;
+  background-color: $dark-gray;
+  margin-top: 2em;
+}
+
+
+.neighbors ol {
+  overflow: auto;
+  position: relative;
+}
+.neighbors li {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  top: 0;
+}
+.neighbors li a {
+  display: block;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  text-decoration: none;
+}
+.neighbors li.previous {
+  float: left;
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding * 0.5;
+}
+.neighbors li.next {
+  float: right;
+  padding-left: $horizontal-padding * 0.5;
+  padding-right: $horizontal-padding;
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .neighbors li.previous {
+    padding-left: $horizontal-padding--mobile;
+    padding-right: $horizontal-padding--mobile * 0.5;
+  }
+  .neighbors li.next {
+    padding-left: $horizontal-padding--mobile * 0.5;
+    padding-right: $horizontal-padding--mobile;
+  }
+}
+
+.neighbors li.next a {
+  text-align: right;
+}
+.neighbors .neighbor-title {
+  text-decoration: underline;
+}
+.neighbor-label {
+  display: block;
+  font-size: 0.9em;
+  padding-bottom: 0.25em;
+  color: #ccc;
+}
+.neighbors li.previous .neighbor-label {
+  padding-left: 1em;
+}
+.neighbors li.previous .neighbor-label:before {
+  content: "‹";
+  font-size: 2em;
+  line-height: .5em;
+  position: absolute;
+  /*font-weight: bold;*/
+  color: #888;
+  margin-left: -0.5em;
+
+}
+
+.neighbors li.next .neighbor-label {
+  padding-right: 1em;
+}
+.neighbors li.next .neighbor-label:after {
+  content: "›";
+  font-size: 2em;
+  line-height: .5em;
+  position: absolute;
+  /*font-weight: bold;*/
+  color: #888;
+  margin-left: .25em;
+}

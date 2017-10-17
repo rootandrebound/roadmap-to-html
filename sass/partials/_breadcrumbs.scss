@@ -1,6 +1,6 @@
 .breadcrumbs {
   color: #fff;
-  background-color: #4d4d4d;
+  background-color: $dark-gray;
 }
 
 
@@ -27,7 +27,7 @@
   color: #ccc;
 }
 .breadcrumbs li + li {
-	border-top: 1px solid lighten(#4d4d4d, 20%)
+	border-top: 1px solid lighten($dark-gray, 20%)
 }
 .breadcrumbs li a {
   padding: 1em 2em;

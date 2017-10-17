@@ -1,7 +1,7 @@
 var ALGOLIA_APP_ID = "ER4XGAZU3H";
 var ALGOLIA_PUBLIC_KEY = "ad6b289aa74181fef926dc6133bfece7";
 var ALGOLIA_INDEX_NAME = "test_ROADMAP";
-var PREFIX = "road-to-html"
+var PREFIX = "roadmap-to-html"
 
 
 function getParameterByName(name, url) {
