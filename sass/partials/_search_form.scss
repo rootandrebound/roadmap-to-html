@@ -1,0 +1,43 @@
+.search-form {
+  width: 100%;
+  overflow: hidden;
+  .search-form__input {
+    border: 3px solid $black-light;
+    outline: 0;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0;
+    padding: 0.6em 0.5em;
+    font-family: $base-font;
+    width: 100%;
+    &:focus {
+      outline: 3px solid blue;
+    }
+  }
+  &__input-wrapper {
+    overflow: hidden;
+    display: block;
+  }
+  &__button {
+    background-color: $black-light;
+    border: 3px solid $black-light;
+    color: #fff;
+    outline: 0;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.6em 0.7em;
+    font-family: $base-font;
+    width: 5rem;
+    border-radius: 0;
+    float: right;
+  }
+  &:focus {
+    outline: 3px solid blue;
+  }
+}
+
+@media (min-width: $mobile-breakpoint) {
+  .search-form {
+    max-width: 32rem;
+  }
+}

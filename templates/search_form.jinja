@@ -1,4 +1,6 @@
-<form id="search-input" action="{{ prefix }}/search/" method="get">
-  <input type="text" name="q">
-  <button type="submit">🔍 Search</button>
+<form class="search-form" id="search-form" action="{{ prefix }}/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
 </form>

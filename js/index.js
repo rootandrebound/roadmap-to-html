@@ -54,6 +54,7 @@ function initializeSearch() {
           resultsElement.append($(renderedResult))
       }
     });
+    $('.search-form input').val(search_term);
   }
 
 }

@@ -1,4 +1,4 @@
-.main-header{
+.main-header {
   &__links {
     width:50%;
     float:left;
@@ -7,32 +7,6 @@
         display: block;
         margin-bottom: 10px
       }
-    }
-  &__search {
-    width:50%;
-    float:right;
-    margin-top: 20px;
-
-    #search-input {
-      width: 250px;
-      float:right;
-      position: relative;
-      color: #000000;
-      padding-bottom: 6px;
-
-      & input[type='text'] {
-        font-size: 1em;
-        width: 100%;
-        padding: 0.6em 1em;
-        margin: 0;
-      }
-
-      & input[type='submit'] {
-        width: 20%;
-        padding: 0;
-        margin: 0;
-      }
-    }
   }
   @media only screen and (max-width: 900px) {
     &__links {
@@ -48,16 +22,6 @@
         padding-left: 10px;
         font-size: 18px;
         text-decoration: none;
-      }
-    }
-
-    &__search {
-      width:100%;
-      float:left;
-      margin-top: 20px;
-      #search-input {
-        width: 100%;
-        float:none;
       }
     }
   }

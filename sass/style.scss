@@ -1,7 +1,7 @@
 @import 'partials/_variables.scss';
 
 * { box-sizing: border-box; }
-html { font-family: "Open Sans", sans-serif; }
+html { font-family: $base-font; }
 
 html, body {
   margin: 0;
@@ -192,10 +192,16 @@ article, .table-of-contents {
   border-bottom: 1px solid lighten(rgba(26, 26, 26, 1), 20%);
 }
 
+mark {
+  background: none;
+  font-weight: bold;
+}
 
 
 
+@import 'partials/_search_form.scss';
 @import 'partials/_neighbors.scss';
 @import 'partials/_banner.scss';
 @import 'partials/_header.scss';
 @import 'partials/_breadcrumbs.scss';
+@import 'partials/_search_results.scss';
