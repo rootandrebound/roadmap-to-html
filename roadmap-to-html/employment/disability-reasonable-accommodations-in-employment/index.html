@@ -21,110 +21,78 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-2">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-2" data-page-path="employment/disability-reasonable-accommodations-in-employment">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/employment">Employment</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/employment">Employment</a></li>
+    <li><a href="/roadmap-to-html/employment/disability-reasonable-accommodations-in-employment">Disability & reasonable accommodations in employment (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Disability & reasonable accommodations in employment</h1>
-        <a id="_Toc448153486"></a>
-        <h2 class="subheading">Disability &amp; reasonable accommodations in employment</h2>
-        <h4 class="textbox">WHAT WILL I LEARN? </h4>
-        <ul class="learn-bullets">What is considered a disability under the lawHow your disability might affect your job searchWhat a “reasonable accommodation” is, and what kinds of accommodations you can requestHow to request a “reasonable accommodation,” and what you will need to showWhen an employer is NOT required to provide a “reasonable accommodation” for your disabilityWhat to do if an employer refuses to provide a “reasonable accommodation” How to learn more about your employment rights and your disability</ul>
-        <p class="text">This section will explain the laws that protect workers (including job applicants and employees) with disabilities against employment discrimination. It will explain what types of disabilities are protected against discrimination, what your rights are if you have a disability, and what you can do if an employer violates your rights or discriminates against you based on your disability. </p>
-        <h4 class="textbox">KNOW YOUR RIGHTSGeneral Overview of the Law &amp; Your Rights</h4>
-        <ol class="text">Under state and federal law, past drug addiction, alcoholism, and mental illness are all considered disabilities </ol>
-        <ol class="text">Current drug use OR using drugs or alcohol at work are NOT considered disabilities</ol>
-        <ol class="text">An employer CANNOT discriminate against you based on a disability</ol>
-        <ol class="text">An employer MUST provide you with “reasonable accommodations” for your disability (with 3 exceptions)</ol>
-        <ol class="text">If your conviction was CAUSED by your disability, an employer MUST make a “reasonable accommodation” for your criminal record (with 3 exceptions)</ol>
-        <ol class="text">The federal EEOC and state DFEH are the government civil rights agencies that enforce your rights against discrimination based on your disability </ol>
+        <h4 class="textbox">For individuals with disabilities: KNOW YOUR RIGHTS</h4>
+        <ul class="textbox">Under state and federal law, past drug addiction, alcoholism, and mental illness are considered disabilities.Current drug use OR using drugs or alcohol at work are NOT considered disabilities.An employer CANNOT discriminate against you based on a disability.An employer MUST provide you with “reasonable accommodations” for your disability (with 3 exceptions).If your conviction was CAUSED by your disability, an employer MUST make a “reasonable accommodation” for your criminal record (with 3 exceptions).The federal EEOC and state DFEH are the government civil rights agencies that enforce your rights against discrimination based on your disability </ul>
+        <p class="text">This section will explain the laws that protect workers (including job applicants and employees) with disabilities against employment discrimination. It will explain what types of disabilities are protected against discrimination, what your rights are if you have a disability, and what you can do if an employer violates your rights or discriminates against you based on your disability.</p>
         <h4 class="textbox">Employment discrimination resourcesFind an attorney or civil rights agency to help you </h4>
-        <p class="textbox">If you think an employer has illegally discriminated against you based on your disability, you may want to contact a lawyer who can help you decide what to do next. There are 3 types of resources that may be able help you:</p>
-        <h4 class="textbox">(1) Legal aid or employment attorney</h4>
-        <p class="textbox">Legal aid attorneys provide FREE legal assistance to people who cannot afford to hire a lawyer (like a public defender, but for lawsuits and other civil legal cases). Many private employment attorneys only charge fees if you win or settle a case, so you may not have to pay anything out-of-pocket UNLESS you win money from the employer. To find a local legal aid attorney or employment attorney in your area:</p>
-        <ul class="textbox">Call 211;Contact the local county bar association, or look on the State Bar website at <a href="http://lawhelpca.org/find-legal-help">http://lawhelpca.org/find-legal-help</a>; orVisit the California Employment Lawyers Association website at <a href="http://www.cela.org/?page=4">http://www.cela.org/?page=4</a>;For a list of legal aid offices throughout California, see PG. 1180.</ul>
-        <h4 class="textbox">(2) Government civil rights agencies </h4>
-        <p class="textbox">There are 2 government agencies responsible for enforcing your rights against illegal discrimination by employers. Because federal and state law are very similar, you can generally ask either agency to enforce your rights if you think an employer has illegally discriminated against you. For more information about how to report discrimination and file a complaint with the EEOC and DFEH, see PG. 669. </p>
-        <div class="textboxnumber">The Equal Employment Opportunity Commission (EEOC) is the federal agency that enforces federal civil rights laws; andThe Department of Fair Employment &amp; Housing (DFEH) is the California state agency that enforces your rights under state law. Non-profit organizations</div>
+        <p class="textbox">If you think an employer has illegally discriminated against you based on your disability, a lawyer could help you decide what your legal options are. There are 3 types of resources that may be able help you:<strong><em>(1) Legal aid or employment attorney:</em></strong>Legal aid attorneys provide FREE legal assistance to people who cannot afford to hire a lawyer (like a public defender, but for lawsuits and other civil legal cases). Many private employment attorneys only charge fees if you win or settle a case, so you may not have to pay anything out-of-pocket UNLESS you win money from the employer. To find a local legal aid attorney or employment attorney in your area:</p>
+        <ul class="textbox">Call 211;Contact the local county bar association, or look on the State Bar website at <a href="http://lawhelpca.org/find-legal-help">http://lawhelpca.org/find-legal-help</a>; orVisit the California Employment Lawyers Association website at <a href="http://www.cela.org/?page=4">http://www.cela.org/?page=4</a>;For a list of legal aid offices throughout California, see PG. 1075.</ul>
         <p class="textbox">You can also contact a non-profit organization that helps people who have been discriminated against by employers based on their disability:</p>
-        <div class="textboxnumber">Disability Rights California—<a href="http://www.disabilityrightsca.org/">http://www.disabilityrightsca.org/</a></div>
-        <ul class="textbox">Offices in Oakland, Fresno, Los Angeles, Sacramento, San Diego—see PG. 1180 for local office contact information</ul>
-        <div class="textboxnumber">Disability Rights Legal Center—<a href="http://www.disabilityrightslegalcenter.org/">http://www.disabilityrightslegalcenter.org/</a></div>
-        <ul class="textbox">Call (213) 736-1334 or (866) 999-DRLC (3752) for assistance</ul>
-        <div class="textboxnumber">Disability Rights Education &amp; Defense Fund—<a href="http://dredf.org/">http://dredf.org/</a></div>
-        <ul class="textbox">Call (510) 644-2555</ul>
-        <div class="textboxnumber">For other local organizations or clinics in your area—see PG. 1180.</div>
-        <a id="_Toc448153487"></a>
-        <h3>What is a disability under law? </h3>
+        <div class="textboxnumber">Disability Rights California—Website: <a href="http://www.disabilityrightsca.org/">http://www.disabilityrightsca.org/</a>. Offices in Oakland, Fresno, Los Angeles, Sacramento, San Diego—see PG. 1075 for local office contact information.Disability Rights Legal Center—Website: <a href="http://www.disabilityrightslegalcenter.org/">http://www.disabilityrightslegalcenter.org/</a>. Phone: (213) 736-1334 or (866) 999-DRLC (3752).Disability Rights Education &amp; Defense Fund— Website: <a href="http://dredf.org/">http://dredf.org/</a>. Phone:(510) 644-2555.Legal Aid at Work—Website: <a href="http://www.legalaidatwork.org">legalaidatwork.org</a>. Find your local clinics and helplines here: <a href="http://legalaidatwork.org/clinics-and-helplines/">http://legalaidatwork.org/clinics-and-helplines/</a> For other local organizations or clinics in your area—see PG. 1075.</div>
+        <p class="textbox"><em>Resource list continues on next page.</em><strong><em>(2) Government civil rights agencies </em></strong>There are 2 government agencies responsible for enforcing your rights against illegal discrimination by employers. Because federal and state law are very similar, you can generally ask either agency to enforce your rights if you think an employer has illegally discriminated against you. For more information about how to report discrimination and file a complaint with the EEOC and DFEH, see PG. 607. </p>
+        <div class="textboxnumber">The Equal Employment Opportunity Commission (EEOC) is the federal agency that enforces federal civil rights laws; andThe Department of Fair Employment &amp; Housing (DFEH) is the California state agency that enforces your rights under state law. Non-profit organizations</div>
+        <h3><a id="_Toc352861750"></a>What is a disability under the law? </h3>
         <h4 class="sidebox">What is a MAJOR LIFE ACTIVITY</h4>
         <p class="sidebox">Under<s> </s>California law, “major life activity” means those activities that are of central importance to daily life. Under California law, major life activities include any physical, mental, and social activities, and working. Examples of these activities include taking care of yourself, performing manual tasks, seeing, hearing, walking, learning, and working.</p>
-        <p class="text">California law defines a disability as any physical or mental impairment that limits one or more of your major life activities (such as walking, talking, working, or taking care of yourself).<sup><a href="#footnote-1922" id="footnote-ref-1922">[1922]</a></sup> </p>
+        <p class="text">California law defines a disability as any physical or mental impairment that limits one or more of your major life activities (such as walking, talking, working, or taking care of yourself).<sup><a href="#footnote-2025" id="footnote-ref-2025">[2024]</a></sup> </p>
         <h5 class="question">What counts as a physical disability in California?</h5>
-        <p class="answer">A physical impairment is any disease, physical disorder, physical condition, or disfigurement that:</p>
+        <p class="text">A physical impairment is any disease, physical disorder, physical condition, or disfigurement that:</p>
         <ol class="text">Affects one or more of your body systems (i.e. your heart, your eyes) or functions (i.e. breathing, speaking); AND </ol>
-        <ol class="text">Limits a major life activity.<sup><a href="#footnote-1923" id="footnote-ref-1923">[1923]</a></sup> </ol>
-        <p class="normal1"><strong>What counts as a mental impairment?</strong> </p>
-        <p class="answer">A mental impairment is any mental or psychological condition that limits a major life activity. Examples of mental impairments are:</p>
+        <ol class="text">Limits a major life activity.<sup><a href="#footnote-2026" id="footnote-ref-2026">[2025]</a></sup> </ol>
+        <h5 class="question">What counts as a mental impairment? </h5>
+        <p class="text">A mental impairment is any mental or psychological condition that limits a major life activity. Examples of mental impairments are:</p>
+        <ol class="text">Intellectual disabilities </ol>
         <h4 class="sidebox">Examples of physical disabilities:</h4>
         <ul class="sidebox">Deafness, blindness, missing limbs (leg, arm, finger, foot, etc.), using a wheelchair, and any bodily condition that limits your ability to see, hear, walk, talk, move around, work, or take care of yourself.Diseases like HIV/AIDS, epilepsy, diabetes, heart disease, cancer, or other medical conditions that limit your ability to see, hear, walk, talk, move around, work, or take care of yourself.</ul>
-        <ol class="text">Intellectual disabilities </ol>
         <ol class="text">Brain disease </ol>
         <ol class="text">Emotional or mental illnesses (such as schizophrenia, bipolar disorder, or clinical depression)</ol>
         <ol class="text">Learning disabilities</ol>
-        <ol class="text">Any other mental or psychological condition that requires special attention or services (such as autism, obsessive compulsive disorder, or PTSD).<sup><a href="#footnote-1924" id="footnote-ref-1924">[1924]</a></sup> </ol>
+        <ol class="text">Any other mental or psychological condition that requires special attention or services (such as autism, obsessive compulsive disorder, or PTSD).<sup><a href="#footnote-2027" id="footnote-ref-2027">[2026]</a></sup> </ol>
         <p class="importantbox">IMPORTANT: Disabilities based on substance abuse Under state and federal law, the following conditions are considered disabilities that are protected against discrimination: </p>
-        <ul class="importantbox">PAST drug addiction (NOT current drug use)<sup><a href="#footnote-1925" id="footnote-ref-1925">[1925]</a></sup>Alcoholism (past or present)<sup><a href="#footnote-1926" id="footnote-ref-1926">[1926]</a></sup>If you were or currently are affected by either of these conditions, you are protected against discrimination based on your condition, and employers are required to make “reasonable accommodations” for your condition.BUT it will NOT count as a protected disability IF:You are currently using illegal drugs; ORYou use drugs or alcohol at work in violation of the employer’s rules or policies.<sup><a href="#footnote-1927" id="footnote-ref-1927">[1927]</a></sup></ul>
-        <li id="footnote-1922"><p> Cal. Gov’t Code §§ 12925-12928.  <a href="#footnote-ref-1922">↑</a></p></li>
-        <li id="footnote-1923"><p> Cal. Gov’t Code §§ 12925-12928. <a href="#footnote-ref-1923">↑</a></p></li>
-        <li id="footnote-1924"><p> Cal. Gov’t Code §§ 12925-12928.  <a href="#footnote-ref-1924">↑</a></p></li>
-        <li id="footnote-1925"><p> 42 U.S.C. §§ 12114(a)-(b), 12210; Cal. Gov’t Code § 12926; 2 Cal. Code Regs. § 7293.6.  <a href="#footnote-ref-1925">↑</a></p></li>
-        <li id="footnote-1926"><p> Crewe v. U.S. Office of Personnel Mgmt, 834 F. 2d 140 (8th Cir. 1987).  <a href="#footnote-ref-1926">↑</a></p></li>
-        <li id="footnote-1927"><p> 42 U.S.C. § 12114(a),(c); 2 Cal. Code Regs. § 7294.2(d)(2). <a href="#footnote-ref-1927">↑</a></p></li>
+        <ul class="importantbox">PAST drug addiction (NOT current drug use)<sup><a href="#footnote-2028" id="footnote-ref-2028">[2027]</a></sup>Alcoholism (past or present)<strong><sup><a href="#footnote-2029" id="footnote-ref-2029">[2028]</a></sup></strong></ul>
+        <p class="importantbox">If you were or currently are affected by either of these conditions, you are protected against discrimination based on your condition, and employers are required to make “reasonable accommodations” for your condition.</p>
+        <ul class="importantbox">BUT it will NOT count as a protected disability IF:You are currently using illegal drugs; ORYou use drugs or alcohol at work in violation of the employer’s rules or policies.<strong><sup><a href="#footnote-2030" id="footnote-ref-2030">[2029]</a></sup></strong></ul>
+        <li id="footnote-2025"><p> Cal. Gov’t Code §§ 12925-12928.  <a href="#footnote-ref-2025">↑</a></p></li>
+        <li id="footnote-2026"><p> Cal. Gov’t Code §§ 12925-12928. <a href="#footnote-ref-2026">↑</a></p></li>
+        <li id="footnote-2027"><p> Cal. Gov’t Code §§ 12925-12928.  <a href="#footnote-ref-2027">↑</a></p></li>
+        <li id="footnote-2028"><p> 42 U.S.C. §§ 12114(a)-(b), 12210; Cal. Gov’t Code § 12926; 2 Cal. Code Regs. § 7293.6.  <a href="#footnote-ref-2028">↑</a></p></li>
+        <li id="footnote-2029"><p> Crewe v. U.S. Office of Personnel Mgmt, 834 F. 2d 140 (8th Cir. 1987).  <a href="#footnote-ref-2029">↑</a></p></li>
+        <li id="footnote-2030"><p> 42 U.S.C. § 12114(a),(c); 2 Cal. Code Regs. § 7294.2(d)(2). <a href="#footnote-ref-2030">↑</a></p></li>
       </article>
         <ol class="table-of-contents">
           <li>
@@ -149,9 +117,9 @@
       <nav class="neighbors">
         <ol>
           <li class="previous">
-            <a href="/roadmap-to-html/employment/take-short-term-jobs-or-temporary-positions-to-get">
+            <a href="/roadmap-to-html/employment/get-your-foot-in-the-door-through-temporary-positi">
               <span class="neighbor-label">Previous</span>
-              <span class="neighbor-title">Take short-term jobs or temporary positions to get your foot in the door</span>
+              <span class="neighbor-title">Get Your Foot in the Door Through Temporary Positions</span>
             </a>
           </li>
           <li class="next">
@@ -162,7 +130,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -187,11 +154,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

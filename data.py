@@ -195,6 +195,11 @@ class SplashPage(ContentPage):
     def get_path(self):
         return ''
 
+class SearchPage(ContentPage):
+    template = "search_page.jinja"
+
+    def get_path(self):
+        return 'search'
 
 level_definitions = {
     0: ChapterIndex,

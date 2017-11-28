@@ -23,51 +23,33 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="{{ prefix }}/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-{{ page.level }}">
-    <div id="site-navigation">
-      <nav>
-        {# TODO: Add skiplink to main content #}
-        <h2>Chapters</h2>
-        <ul>
-        {%- for chapter in chapters %}
-          <li><a href="{{ prefix }}/{{ chapter.get_path() }}/">{{ chapter.title }}</a></li>
-        {%- endfor %}
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-{{ page.level }}" data-page-path="{{ page.get_path() }}">
 
     <main role="main">
+    {% include "beta_disclaimer.jinja" %}
+    {%- block main %}
       <!-- Header includes search, sites title and mobile menu -->
-      {% include "banner.jinja" %}
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="{{ prefix }}/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+      {%- block header %}
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+        
+        {%- block header_content %}
+        {%- endblock header_content %}
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          {% include "search_form.jinja" %}
         </div>
+      {%- endblock header %}
       </header>
 
-      {%- if page.parent %}
-      <nav class="breadcrumbs">
-        <ol>
-          {%- if page.parent.parent.parent %}
-          <li><a href="{{ prefix }}/{{ page.parent.parent.parent.get_path() }}">{{ page.parent.parent.parent.title }}</a></li>
-          {%- endif %}
-          {%- if page.parent.parent %}
-          <li><a href="{{ prefix }}/{{ page.parent.parent.get_path() }}">{{ page.parent.parent.title }}</a></li>
-          {%- endif %}
-          <li><a href="{{ prefix }}/{{ page.parent.get_path() }}">{{ page.parent.title }}</a></li>
-        </ol>
-      </nav>
-      {%- endif %}
-      {%- block main %}
+
+
+      {%- block main_content %}
+      {% include "breadcrumbs.jinja" %}
+
       <article>
         <h1>{{ page.title }}</h1>
         {%- for tag in page.contents %}
@@ -101,7 +83,6 @@
           {%- endfor %}
         </ol>
       {%- endif %}
-      {%- endblock main %}
 
       {%- if page.prev or page.next %}
       <nav class="neighbors">
@@ -125,16 +106,12 @@
         </ol>
       </nav>
       {%- endif %}
-
+    {%- endblock main_content %}
+    {%- endblock main %}
       {% include "footer.jinja" %}
 
     </main>
     <script src="{{ prefix }}/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

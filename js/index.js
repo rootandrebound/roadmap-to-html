@@ -1,45 +1,88 @@
 var ALGOLIA_APP_ID = "ER4XGAZU3H";
 var ALGOLIA_PUBLIC_KEY = "ad6b289aa74181fef926dc6133bfece7";
+var ALGOLIA_INDEX_NAME = "test_ROADMAP";
+var PREFIX = "roadmap-to-html"
+
+
+function getParameterByName(name, url) {
+  // taken from https://stackoverflow.com/a/901144/399726
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+
+function searchResultTemplate(searchResult){
+  return '<li class="search-result">' + 
+           '<h3 class="search-result__title">' +
+            '<a href="' +
+               '/' + PREFIX + '/' + searchResult.path + '/"' +
+              'class="search-result__link">' +
+                searchResult._highlightResult.title.value +
+            '</a>' +
+           '</h3>' +
+         '</li>'
+}
+
+function searchQueryMetadataTemplate(searchData){
+  return '<p class="search-metadata">' + 
+            searchData.resultsCount + ' results found ' +
+            'for <mark>“' + searchData.searchTerm + '”</mark>' +
+         '</p>'
+}
 
 function initializeSearch() {
-  var searchInput = $('#search-input input[type="text"]');
   var client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_PUBLIC_KEY);
-  var index = client.initIndex('test_ROADMAP');
-  searchInput.autocomplete(
-    { hint: false },
-    [
-      {
-        source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 10 }),
-        displayKey: 'title',
-        templates: {
-          suggestion: function(suggestion) {
-            var hrefValue = suggestion.path;
-            var display = suggestion._highlightResult.title.value;
-            var anchorString = '<a href="/roadmap-to-html/' + hrefValue + '">' + display + '</a>';
-            return anchorString;
-          }
+  var index = client.initIndex(ALGOLIA_INDEX_NAME);
+  var search_term = getParameterByName('q');
+  if( search_term ){
+    // from:
+    //   https://www.algolia.com/doc/api-reference/api-methods/search/
+    index.search({ 
+      query: search_term,
+      hitsPerPage: 50,
+      attributesToRetrieve: [
+        'title', 'heading_text', 'path', 'level', 'objectID']
+      },
+      function searchDone(err, content) {
+        if (err) {
+          console.error(err);
+          return;
         }
+        var resultsCount = content.hits.length;
+        var metadataElement = $('.search-results__metadata');
+        var metadataHTML = searchQueryMetadataTemplate({
+          resultsCount: resultsCount,
+          searchTerm: search_term
+        });
+        metadataElement.append($(metadataHTML));
+
+        var resultsElement = $('.search-results__list');
+        for (var h in content.hits) {
+          var result = content.hits[h];
+          var renderedResult = searchResultTemplate(result);
+          resultsElement.append($(renderedResult))
       }
-    ]
-  );
+    });
+    $('.search-form input').val(search_term);
+  }
+
 }
 
-function px(value){
-  // coerce to string
-  value = value + '';
-  if( value.indexOf('px') === -1) {
-    value += 'px';
-  }
-  return value;
-}
 
 function handleTopPages(topPages){
-  topPages.forEach(function(page){
-    $('ul.top-pages').append(
-      '<li><h4><a href="'+page.url+'">'+page.title+'</a></h4></li>'
+  var veryTopPages = topPages.slice(1, 6);
+  veryTopPages.forEach(function(page){
+    $('.popular-pages__list').append(
+      '<li class="popular-page"><a href="'+page.url+'">'+page.title+'</a></li>'
     );
   })
 }
+
 
 function pullTopPages(){
   $.getJSON(
@@ -48,70 +91,19 @@ function pullTopPages(){
   );
 }
 
+
+function callByBodyDataPagePath(path, func){
+  // this looks for a 'data-page-path' attribute on the body tag
+  // and calls the function if the input path strictly matches the value
+  // of that attribute
+  var bodyPagePath = $('body').data('page-path');
+  if (bodyPagePath == path){
+    func();
+  }
+}
+
+
 $(function() {
-
-  /*
-  open state:
-    #site-navigation left = 0
-    main left = width
-  closed state:
-    #site-navigation left = -width
-    main left = 0
-  */
-  // Runs as soon as the page loads
-  var isOnSmallScreen = $('body').width() < 900;
-  var doc = $(document);
-  var body = $('body');
-
-  var mainNode = $('main');
-  var sideNav = $('#site-navigation');
-  var sideNavWidth = px(sideNav.css('width'));
-
-  function menuIsOpen(){
-    return (
-      sideNav.css('left') === px(0)
-    ) && (
-      mainNode.css('left') === px(sideNavWidth)
-    );
-  }
-
-  if (isOnSmallScreen === false && menuIsOpen() === false){
-    // if we are on a big screen, open the menu by default
-    openSideMenu();
-  }
-
-  function catchAllClicksAndCloseSideMenu(event){
-    event.stopImmediatePropagation();
-    closeSideMenu();
-  }
-
-  function openSideMenu(){
-    sideNav.animate({'left': px(0)});
-    mainNode.animate({'left': px(sideNavWidth)});
-    if (isOnSmallScreen){
-      // catch any clicks on the main node and use it to trigger collapse
-      mainNode.on('click', catchAllClicksAndCloseSideMenu);
-    }
-  }
-
-  function closeSideMenu(){
-    if (isOnSmallScreen){
-      mainNode.off('click', catchAllClicksAndCloseSideMenu);
-    }
-    sideNav.animate({'left': '-' + px(sideNavWidth)});
-    mainNode.animate({'left': px(0)});
-  }
-
-  doc.on('click', '#js-toggle-menu', function(){
-    if (menuIsOpen()){
-      closeSideMenu();
-    } else {
-      openSideMenu();
-    }
-  });
-
-  initializeSearch();
-
-  pullTopPages();
-
+  callByBodyDataPagePath('search', initializeSearch);
+  callByBodyDataPagePath('', pullTopPages);
 });

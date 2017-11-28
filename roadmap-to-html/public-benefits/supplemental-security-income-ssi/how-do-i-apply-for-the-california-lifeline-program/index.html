@@ -21,68 +21,46 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="public-benefits/supplemental-security-income-ssi/how-do-i-apply-for-the-california-lifeline-program">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/public-benefits">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/supplemental-security-income-ssi">Supplemental Security Income (SSI)</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/public-benefits">Public Benefits</a></li>
+    <li><a href="/roadmap-to-html/public-benefits/supplemental-security-income-ssi">Supplemental Security Income (SSI)</a></li>
+    <li><a href="/roadmap-to-html/public-benefits/supplemental-security-income-ssi/how-do-i-apply-for-the-california-lifeline-program">How do I apply for the California LifeLine program? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>How do I apply for the California LifeLine program?</h1>
-        <h4 class="step">First select a participating telephone company. If you already use a specific phone company, it may already participate in the LifeLine program (you can call the company and ask), or you may select a <em>new</em> telephone company that serves your area by searching online at: <a href="https://www.californialifeline.com/en/provider_search">https://www.californialifeline.com/en/provider_search</a>.</h4>
+        <h4 class="step">First select a participating telephone company. If you already use a specific phone company, it may already participate in the LifeLine program (you can call the company and ask), or you may select a <em>new</em> telephone company that serves your area by searching online at: <a href="https://www.californialifeline.com/en/provider_search"><strong>https://www.californialifeline.com/en/provider_search</strong></a>.</h4>
         <ol class="text">Remember, different phone companies provide different service plans, so you might want to shop around!</ol>
-        <h4 class="step">The telephone company will give you a Lifeline application form, with an Enrollment Code and/or a Personal Identification Number (PIN) in a pink envelope. To view a copy of a sample California LifeLife application form, go to <a href="https://www.californialifeline.com/pdf/new/applications/st_en_10_app_0114.pdf">https://www.californialifeline.com/pdf/new/applications/st_en_10_app_0114.pdf</a>.In order to receive the California LifeLine benefits, you must complete this form, sign it, and send it to the California LifeLine Administrator along with any required documents by the due date listed on the form. You may also apply online at <a href="https://www.californialifeline.com/en/login">https://www.californialifeline.com/en/login</a></h4>
-        <ol class="text">Next, the telephone company will confirm your identity and whether you meet the one phone per household requirement, and then process your application.</ol>
+        <h4 class="step">The telephone company will give you a Lifeline application form, with an Enrollment Code and/or a Personal Identification Number (PIN) in a pink envelope. To view a copy of a sample California LifeLife application form, go to <a href="https://www.californialifeline.com/pdf/new/applications/st_en_10_app_0114.pdf"><strong>https://www.californialifeline.com/pdf/new/applications/st_en_10_app_0114.pdf</strong></a>.In order to receive the California LifeLine benefits, you must complete this form, sign it, and send it to the California LifeLine Administrator along with any required documents by the due date listed on the form. You may also apply online at <a href="https://www.californialifeline.com/en/login"><strong>https://www.californialifeline.com/en/login</strong></a>Next, the telephone company will confirm your identity and whether you meet the one phone per household requirement, and then process your application.</h4>
         <ol class="text">If you have any additional questions about your application, status, or due dates, please call the California LifeLine Administrator's hotline at 1-866-272-0349.</ol>
-        <ol class="text">What documents do I need to be found eligible?</ol>
-        <p class="text">First, you will need documents that prove who you are (your identity) to the phone company. You may need to show your Social Security card, birth certificate, and/or unexpired Driver License. For a complete list of acceptable forms of ID, see <a href="http://www.californialifeline.com">www.californialifeline.com</a>, or call 1-877-858-7463. See https://www.californialifeline.com/pdf/identity/st_en_10_nc_id_0915.pdf for a “Sample ID Authentication Form”.<sup><a href="#footnote-1716" id="footnote-ref-1716">[1716]</a></sup></p>
-        <p class="text">Second, you will need to prove that you require financial assistance. One way to prove this is to show that you receive public benefits from a qualifying state or federal assistance program. You may need to show a copy of your benefits program agreement or benefit card.<sup><a href="#footnote-1717" id="footnote-ref-1717">[1717]</a></sup></p>
-        <p class="text">Finally, if you want to prove your eligibility based on your income, you must provide an official document proving your income—for example, an income statement from an employer, a prior year's tax return, a Social Security income statement, a Veterans Administration income statement, and/or a document proving you receive unemployment or some other public benefits. See https://www.californialifeline.com/pdf/new/applications/st_en_10_app_eg_0615.pdf  for a complete list.</p>
-        <li id="footnote-1716"><p> <em>See</em> CPUC, LifeLine, <a href="http://www.cpuc.ca.gov/General.aspx?id=2752#qualify">http://www.cpuc.ca.gov/General.aspx?id=2752#qualify</a>. <a href="#footnote-ref-1716">↑</a></p></li>
-        <li id="footnote-1717"><p> <em>See</em> California LifeLine, <a href="https://www.californialifeline.com/en/eligibility_requirements#important_information_cell">https://www.californialifeline.com/en/eligibility_requirements#important_information_cell</a>. <a href="#footnote-ref-1717">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -93,14 +71,13 @@
             </a>
           </li>
           <li class="next">
-            <a href="/roadmap-to-html/public-benefits/supplemental-security-income-ssi/can-my-criminal-backround-limit-my-ability-to-get-">
+            <a href="/roadmap-to-html/public-benefits/supplemental-security-income-ssi/what-documents-do-i-need-to-be-found-eligible">
               <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">Can my criminal backround limit my ability to get a California Lifeline phone?</span>
+              <span class="neighbor-title">What documents do I need to be found eligible?</span>
             </a>
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -125,11 +102,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

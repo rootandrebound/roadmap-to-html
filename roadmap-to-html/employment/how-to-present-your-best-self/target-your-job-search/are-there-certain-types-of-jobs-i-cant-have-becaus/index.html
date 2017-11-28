@@ -21,78 +21,51 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="employment/how-to-present-your-best-self/target-your-job-search/are-there-certain-types-of-jobs-i-cant-have-becaus">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/employment">Employment</a></li>
-          <li><a href="/roadmap-to-html/employment/how-to-present-your-best-self">How to present your best self</a></li>
-          <li><a href="/roadmap-to-html/employment/how-to-present-your-best-self/target-your-job-search">Target your job search</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/employment">Employment</a></li>
+    <li><a href="/roadmap-to-html/employment/how-to-present-your-best-self">How to present your best self</a></li>
+    <li><a href="/roadmap-to-html/employment/how-to-present-your-best-self/target-your-job-search">Target your job search</a></li>
+    <li><a href="/roadmap-to-html/employment/how-to-present-your-best-self/target-your-job-search/are-there-certain-types-of-jobs-i-cant-have-becaus">Are there certain types of jobs I can’t have because of my criminal record? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Are there certain types of jobs I can’t have because of my criminal record?</h1>
-        <p class="text">It’s possible. Before applying for work, you should know that a few types of jobs have legal restrictions that disqualify people with certain past convictions from working in that position. Also, certain types of jobs require you to have a professional or occupational license from the state, and such licenses have their own legal restrictions and can be difficult to get depending on what’s in your record. For more information on legal restrictions and professional licenses—and how you can become re-eligible to work in some cases—see “Jobs &amp; Professions Your Record Might Exclude You From,” starting on PG. 652.</p>
-        <p class="text"><em>Examples of jobs with legal restrictions for certain types of convictions:</em></p>
-        <ol class="text">Airport security screeners;</ol>
-        <ol class="text">Federal law enforcement officers;</ol>
-        <ol class="text">Bank employees;</ol>
-        <ol class="text">Childcare workers in federal facilities or agencies;</ol>
-        <ol class="text">Port workers.</ol>
-        <p class="text"><em>Examples of jobs that require a professional or occupational license:</em></p>
-        <ol class="text">Barber;</ol>
-        <ol class="text">Beautician / Cosmetologist;</ol>
-        <ol class="text">Pharmacist;</ol>
-        <ol class="text">Nurse;</ol>
-        <ol class="text">Cemetery / funeral home worker;</ol>
-        <ol class="text">Real estate agent.</ol>
+        <p class="text">It’s possible. Before applying for work, you should know that certain jobs have legal restrictions that disqualify people with certain past convictions from working in that position. Also, certain types of jobs require you to have a professional or occupational license from the state, and such licenses have their own legal restrictions and can be difficult to get depending on what’s in your record. For more information on legal restrictions and professional licenses—and how you can become re-eligible to work in some cases—see “Jobs &amp; Professions Your Record Might Exclude You From,” starting on PG. 595.</p>
+        <p class="text"><em>Examples of jobs with legal restrictions for certain types of convictions: </em>Airport security screeners; Federal law enforcement officers; Bank employees; Childcare workers in federal facilities or agencies; Port workers.</p>
+        <p class="text"><em>Examples of jobs that require a professional or occupational license: </em>Barber; Beautician/Cosmetologist; Pharmacist; Nurse; Cemetery / funeral home worker; Real estate agent.</p>
         <p class="importantbox">IMPORTANT: Most jobs do NOT have legal restrictions. The information here isn’t intended to discourage you, but to help you understand your options and find the job that’s right for you. Also, even if an employer cannot hire you for one type of job based on your record, they may have other types of jobs available that you ARE eligible for and could do instead.</p>
-        <a id="EM_JobApplication"></a>
         <h4 class="textbox">HELPFUL HINTConsider All Your Job Options </h4>
         <p class="textbox">As you’re thinking about jobs or looking for work, it can be helpful to think about other work options—alternatives to traditional employment—like starting your own business, joining a worker-run cooperative business, or going through a temp agency. You may decide that one of these alternatives is more exciting, more convenient for your schedule and needs, or just a good way to get your foot in the door with an employer.Here are some other ways of working and earning an income that are different from traditional employment:</p>
         <ul class="textbox">Consider self-employment or become an independent contractorStart your own businessJoin a worker-run cooperative businessApply through a temp agencyTake short-term jobs or temporary positions to get your foot in the door.</ul>
-        <p class="textbox">For more information on each of these options, read section on Alternatives to Traditional Employment, starting on PG. 660 below.</p>
+        <p class="textbox">For more information on each of these options, read section on Alternatives to Traditional Employment, starting on PG. 601 below.</p>
       </article>
       <nav class="neighbors">
         <ol>
@@ -110,7 +83,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -135,11 +107,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

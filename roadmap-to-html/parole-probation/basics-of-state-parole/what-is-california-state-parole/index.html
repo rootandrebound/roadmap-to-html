@@ -21,61 +21,46 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="parole-probation/basics-of-state-parole/what-is-california-state-parole">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/basics-of-state-parole">Basics of State Parole</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/basics-of-state-parole">Basics of State Parole</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/basics-of-state-parole/what-is-california-state-parole">What is California state parole? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What is California state parole?</h1>
-        <p class="text">In California, parole is a condition of release for a person coming out of prison.<sup><sup><a href="#footnote-325" id="footnote-ref-325">[325]</a></sup></sup> It will only apply to people convicted of a state felony and sentenced to state prison. State parole only takes effect after you are released from prison.</p>
-        <p>People on parole—sometimes called parolees—remain under the control of CDCR. Within CDCR, parolees are more specifically under the control of the Division of Adult Parole Operations (DAPO), a division of CDCR. As a parolee, you are supervised by CDCR parole agents, and must satisfy certain rules or “conditions” of parole.<sup><a href="#footnote-326" id="footnote-ref-326">[326]</a></sup></p>
-        <li id="footnote-325"><p> 15 Cal. Code Regs. § 2355. <a href="#footnote-ref-325">↑</a></p></li>
-        <li id="footnote-326"><p> People who are sentenced to state prison for potential life sentences (for example, “25 years to life”) are only eligible for parole after they serve the determinate part of their sentence, and only after the Bd. of Parole Hearings (BPH, commonly called the “parole board”) determines that you are ready to re-enter society. That determination takes place during a California Bd. of Parole Hearings suitability hearing (also known as a “Lifer hearing”). Some people released from California state prison are required to serve a period of parole after they are released. Lifer Parole Process, Cal. Dep’t of Corr. &amp; Rehab., <a href="http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html">http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html</a>.  <a href="#footnote-ref-326">↑</a></p></li>
+        <p class="text">In California, parole is a condition of release for a person coming out of prison.<sup><sup><a href="#footnote-322" id="footnote-ref-322">[321]</a></sup></sup> It applies only to people convicted of a state felony and sentenced to state prison. State parole takes effect only after you are released from prison.</p>
+        <p class="text">People on parole — sometimes called “parolees” — remain under the control of CDCR. Within CDCR, parolees are more specifically under the control of the Division of Adult Parole Operations (DAPO), a division of CDCR. As a parolee, you are supervised by CDCR parole agents, and you must satisfy certain rules or “conditions” of parole.<sup><a href="#footnote-323" id="footnote-ref-323">[322]</a></sup></p>
+        <li id="footnote-322"><p> 15 Cal. Code Regs. § 2355. <a href="#footnote-ref-322">↑</a></p></li>
+        <li id="footnote-323"><p> People who are sentenced to state prison for potential life sentences (for example, “25 years to life”) are only eligible for parole after they serve the determinate part of their sentence, and only after the Bd. of Parole Hearings (BPH, commonly called the “parole board”) determines that you are ready to re-enter society. That determination takes place during a California Bd. of Parole Hearings suitability hearing (also known as a “Lifer hearing”). Some people released from California state prison are required to serve a period of parole after they are released. Lifer Parole Process, Cal. Dep’t of Corr. &amp; Rehab., <a href="http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html">http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html</a>.  <a href="#footnote-ref-323">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -86,14 +71,13 @@
             </a>
           </li>
           <li class="next">
-            <a href="/roadmap-to-html/parole-probation/basics-of-state-parole/i-am-currently-incarcerated-in-california-state-pr">
+            <a href="/roadmap-to-html/parole-probation/basics-of-state-parole/i-am-incarcerated-in-a-california-state-prison-and">
               <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">I am currently incarcerated in California state prison, and preparing for release. Will I be required to serve a parole term after I get released from prison?</span>
+              <span class="neighbor-title">I am incarcerated in a California state prison and preparing for release. Will I be required to serve a parole term after my release?</span>
             </a>
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -118,11 +102,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

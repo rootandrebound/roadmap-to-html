@@ -371,6 +371,9 @@ def run():
         splash_page = data.SplashPage(title='Home', level="splash")
         splash_page.write()
         print(splash_page.get_path())
+        search_page = data.SearchPage(title='Search', level="search")
+        search_page.write()
+        print(search_page.get_path())
 
 
 if __name__ == '__main__':

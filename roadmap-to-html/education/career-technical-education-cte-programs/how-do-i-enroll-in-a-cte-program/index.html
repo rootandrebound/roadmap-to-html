@@ -21,66 +21,51 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="education/career-technical-education-cte-programs/how-do-i-enroll-in-a-cte-program">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/education">Education</a></li>
-          <li><a href="/roadmap-to-html/education/career-technical-education-cte-programs">Career & Technical Education (CTE) Programs</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/education">Education</a></li>
+    <li><a href="/roadmap-to-html/education/career-technical-education-cte-programs">Career & Technical Education (CTE) Programs</a></li>
+    <li><a href="/roadmap-to-html/education/career-technical-education-cte-programs/how-do-i-enroll-in-a-cte-program">How do I enroll in a CTE program? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>How do I enroll in a CTE program?</h1>
         <p class="text">Generally, to enroll in a CTE program at a community or technical college, you just need to fill out the paperwork and register for classes. Most programs have “open admissions,” meaning that if you meet the educational requirements, you will be admitted automatically, if space is available. For programs that are very popular, you may have to submit an application and be accepted to the program before you can enroll (admission is not automatic). To learn more about program requirements and enrollment policies, you can call the admissions office of the school you are interested in. This information is also usually available on the school’s website. </p>
         <p class="text">Four-year colleges generally require you to submit an application for admission and be accepted to the school before you can enroll and register for classes. Applications often are available online (and can be submitted online), or you can call the school’s admissions office and ask them to send you an application by regular mail or email. There is usually a nonrefundable fee for applying, but you may be able to get the fee waived. </p>
-        <h4><span class="emphasisheavy">Other Options for Career and Technical Training</span></h4>
-        <p class="text"><span class="emphasisitalic">Apprenticeships:</span> These are usually offered through trade unions that pay you a salary while you learn a specific trade or profession. Apprenticeships allow you to gain knowledge and hands-on experience in your chosen field, under the guidance of more experienced employees.<sup><a href="#footnote-2710" id="footnote-ref-2710">[2710]</a></sup> Many federal and state facilities offer apprenticeships through contracts with colleges and technical schools, and many are registered through the Department of Labor’s Office of Apprenticeship.<sup><a href="#footnote-2711" id="footnote-ref-2711">[2711]</a></sup> For more information on apprenticeship programs, check these resources: </p>
+        <p class="text"><strong><em>Other Options for Career and Technical Training:</em></strong></p>
+        <ol class="text"><strong>Apprenticeships:</strong> These are usually offered through trade unions that pay you a salary while you learn a specific trade or profession. Apprenticeships allow you to gain knowledge and hands-on experience in your chosen field, under the guidance of more experienced employees.<sup><a href="#footnote-2824" id="footnote-ref-2824">[2823]</a></sup> Many federal and state facilities offer apprenticeships through contracts with colleges and technical schools, and many are registered through the Department of Labor’s Office of Apprenticeship.<sup><a href="#footnote-2825" id="footnote-ref-2825">[2824]</a></sup> For more information on apprenticeship programs, check these resources:</ol>
         <ol class="text">U.S. Department of Labor’s Office of Apprenticeship at <a href="http://www.doleta.gov/oa/">http://www.doleta.gov/oa/</a>;</ol>
-        <ol class="text">CareerOneStop at <a href="http://www.careeronestop.org">http://www.careeronestop.org</a>. </ol>
-        <p class="text"><span class="emphasisitalic">Job Corps</span>: Job Corps offers young people aged 16–24 the chance to get a free education and skills training while being paid a monthly allowance. Usually Job Corps participants live at a Job Corps residence while getting their training. To learn more about Job Corps and find the Job Corps center near you, call 1 (800) 733-5627 or go to <a href="http://www.jobcorps.dol.gov">http://www.jobcorps.dol.gov</a>.</p>
-        <li id="footnote-2710"><p> U.S. Dep’t of Educ. Office of Vocational &amp; Adult Educ., Take Charge of Your Future: Get the Education and Training You Need (2012). <a href="#footnote-ref-2710">↑</a></p></li>
-        <li id="footnote-2711"><p> U.S. Dep’t Justice Fed. Bureau of Prisons, A Directory of Prisons’ National Programs (May 21, 2012). <a href="#footnote-ref-2711">↑</a></p></li>
+        <ol class="text">CareerOneStop at <a href="http://www.careeronestop.org">http://www.careeronestop.org</a>.</ol>
+        <ol class="text"><strong>Job Corps:</strong> Job Corps offers young people aged 16–24 the chance to get a free education and skills training while being paid a monthly allowance. Usually Job Corps participants live at a Job Corps residence while getting their training. To learn more about Job Corps and find the Job Corps center near you, call 1 (800) 733-5627 or go to <a href="http://www.jobcorps.dol.gov">http://www.jobcorps.dol.gov</a>.</ol>
+        <li id="footnote-2824"><p> U.S. Dep’t of Educ. Office of Vocational &amp; Adult Educ., Take Charge of Your Future: Get the Education and Training You Need (2012). <a href="#footnote-ref-2824">↑</a></p></li>
+        <li id="footnote-2825"><p> U.S. Dep’t Justice Fed. Bureau of Prisons, A Directory of Prisons’ National Programs (May 21, 2012). <a href="#footnote-ref-2825">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -98,7 +83,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -123,11 +107,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

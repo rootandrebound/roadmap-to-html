@@ -21,74 +21,59 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="employment/errors-in-employers-in-house-background-checks/which-employers-can-see-my-rap-sheet">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/employment">Employment</a></li>
-          <li><a href="/roadmap-to-html/employment/errors-in-employers-in-house-background-checks">Errors in employers' in-house background checks:</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/employment">Employment</a></li>
+    <li><a href="/roadmap-to-html/employment/errors-in-employers-in-house-background-checks">Errors in employers' in-house background checks:</a></li>
+    <li><a href="/roadmap-to-html/employment/errors-in-employers-in-house-background-checks/which-employers-can-see-my-rap-sheet">Which employers can see my RAP sheet? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Which employers can see my RAP sheet?</h1>
-        <p class="text">Under California law, only certain people are allowed to see your RAP sheet for employment purposes:<sup><a href="#footnote-1808" id="footnote-ref-1808">[1808]</a></sup></p>
-        <ol class="text">Most public employers can see your RAP sheet. These include all federal, state and local government agencies—including police and fire departments, the California Department of Corrections (CDCR), local Boards of Education, and the U.S. Postal Service.<sup><a href="#footnote-1809" id="footnote-ref-1809">[1809]</a></sup></ol>
-        <ol class="text">Certain private employers can see your RAP sheet if you are applying for a job that involves access to sensitive information (e.g., nuclear power plants, public utilities, private security companies, and financial institutions like banks) OR you will be working with children, elderly, disabled, or other vulnerable people.<sup><a href="#footnote-1810" id="footnote-ref-1810">[1810]</a></sup></ol>
-        <ol class="text">State occupational licensing agencies<sup><a href="#footnote-1811" id="footnote-ref-1811">[1811]</a></sup> can see your RAP sheet if you apply for a professional license. For more information on licensing restrictions based on a criminal record, see PG. 652.</ol>
-        <ol class="text">Law enforcement &amp; criminal justice agencies<sup><a href="#footnote-1812" id="footnote-ref-1812">[1812]</a></sup> have full access to your RAP sheet, including juvenile cases, expunged/dismissed cases, and sometimes even sealed records! </ol>
-        <p class="text">In order to get a copy of your RAP sheet, these employers are allowed to ask for your fingerprints, including making you do Live Scan (electronic) fingerprinting.<sup><a href="#footnote-1813" id="footnote-ref-1813">[1813]</a></sup></p>
+        <p class="text">Under California law, only certain people are allowed to see your RAP sheet for employment purposes:<sup><a href="#footnote-1909" id="footnote-ref-1909">[1908]</a></sup></p>
+        <ol class="text">Most public employers can see your RAP sheet. These include all federal, state and local government agencies—including police and fire departments, the California Department of Corrections (CDCR), local Boards of Education, and the U.S. Postal Service.<sup><a href="#footnote-1910" id="footnote-ref-1910">[1909]</a></sup></ol>
+        <ol class="text">Certain private employers can see your RAP sheet if you are applying for a job that involves access to sensitive information (e.g., nuclear power plants, public utilities, private security companies, and financial institutions like banks) OR you will be working with children, elderly, disabled, or other vulnerable people.<sup><a href="#footnote-1911" id="footnote-ref-1911">[1910]</a></sup></ol>
+        <ol class="text">State occupational licensing agencies<sup><a href="#footnote-1912" id="footnote-ref-1912">[1911]</a></sup> can see your RAP sheet if you apply for a professional license. For more information on licensing restrictions based on a criminal record, see PG. 595.</ol>
+        <ol class="text">Law enforcement &amp; criminal justice agencies<sup><a href="#footnote-1913" id="footnote-ref-1913">[1912]</a></sup> have full access to your RAP sheet, including juvenile cases, expunged/dismissed cases, and sometimes even sealed records! </ol>
+        <p class="text">In order to get a copy of your RAP sheet, these employers are allowed to ask for your fingerprints, including making you do Live Scan (electronic) fingerprinting.<sup><a href="#footnote-1914" id="footnote-ref-1914">[1913]</a></sup></p>
         <p class="text">It is illegal for a regular employer (i.e., NOT an employer listed above) to do any of the following:</p>
         <ol class="text">Ask you for a copy of your RAP sheet;</ol>
         <ol class="text">Get a copy of your RAP sheet through any other means; or</ol>
-        <ol class="text">Make you prove that you do NOT have a record—for example, by requiring you to get fingerprinted, or asking you for a “notice of no record”.<sup><a href="#footnote-1814" id="footnote-ref-1814">[1814]</a></sup></ol>
-        <li id="footnote-1808"><p> Cal. Penal Code § 11105 et seq. In addition, federal law requires background checks for the following jobs, which mean that these employers will be able to see your RAP sheet: Airport security screeners; federal law enforcement officers; defense contractor; prisoner transportation; port workers; childcare workers in federal facilities or agencies; bank employees; insurance personnel; and any personnel involved in the administration of an employee benefits plan. <em>See</em> 49 U.S.C § 44935(e)(2)(B); 5 U.S.C. § 7371(b); 10 U.S.C. § 2408(a); 42 U.S.C. § 13726b(b)(1); 46 U.S.C. § 70105(c); 42 U.S.C. § 13041(a); 12 U.S.C. § 1829; 18 U.S.C. § 1033(e); 29 U.S.C. § 1111(a). Note: Other people and agencies (not listed here) may be able see your RAP sheet for non-employment services—for example, public housing authorities, court investigators if you are applying to be the guardian of a child, and certain medical officials. <a href="#footnote-ref-1808">↑</a></p></li>
-        <li id="footnote-1809"><p> Cal. Penal Code § 11105(b). <a href="#footnote-ref-1809">↑</a></p></li>
-        <li id="footnote-1810"><p> These employers include: nuclear power plants; public utilities; agencies directly responsible for the care of children, the elderly, or the mentally or physically disabled; youth organizations; in-home supportive care agencies; security organizations; financial institutions; private schools. <em>See</em> Cal. Penal Code §§ 11105(c)(1); 11105.3, 11105.4; Cal. Fin. Code § 777.5; Cal. Health &amp; Safety Code § 1596.871; Cal. Veh. Code § 44237. However, private employers must still get authorization from the DOJ in order to view RAP sheets.  <a href="#footnote-ref-1810">↑</a></p></li>
-        <li id="footnote-1811"><p> Occupational licenses are required for: accounting, acupuncture, architects, automotive repairs, barbering and cosmetology, cemetery and funeral services, contractors, court reporters, dental services, electronic and appliance repair, occupational therapy, physical therapy, real estate, security and investigative positions, structural pest control, vocational and registered nursing. For a list of the 200+ occupational licenses available in California, <em>see</em> <a href="http://www.labormarketinfo.edd.ca.gov/occguides/">http://www.labormarketinfo.edd.ca.gov/occguides/</a>. <a href="#footnote-ref-1811">↑</a></p></li>
-        <li id="footnote-1812"><p> This includes police and sheriff departments, courts, district attorney and public defender offices, parole and probation departments, and corrections agencies. <a href="#footnote-ref-1812">↑</a></p></li>
-        <li id="footnote-1813"><p> Cal. Penal Code § 11105(i). <a href="#footnote-ref-1813">↑</a></p></li>
-        <li id="footnote-1814"><p> Cal. Penal Code §§ 11125, 11143. <a href="#footnote-ref-1814">↑</a></p></li>
+        <ol class="text">Make you prove that you do NOT have a record—for example, by requiring you to get fingerprinted, or asking you for a “notice of no record”.<sup><a href="#footnote-1915" id="footnote-ref-1915">[1914]</a></sup></ol>
+        <li id="footnote-1909"><p> Cal. Penal Code § 11105 et seq. In addition, federal law requires background checks for the following jobs, which mean that these employers will be able to see your RAP sheet: Airport security screeners; federal law enforcement officers; defense contractor; prisoner transportation; port workers; childcare workers in federal facilities or agencies; bank employees; insurance personnel; and any personnel involved in the administration of an employee benefits plan. See 49 U.S.C § 44935(e)(2)(B); 5 U.S.C. § 7371(b); 10 U.S.C. § 2408(a); 42 U.S.C. § 13726b(b)(1); 46 U.S.C. § 70105(c); 42 U.S.C. § 13041(a); 12 U.S.C. § 1829; 18 U.S.C. § 1033(e); 29 U.S.C. § 1111(a). Note: Other people and agencies (not listed here) may be able see your RAP sheet for non-employment services—for example, public housing authorities, court investigators if you are applying to be the guardian of a child, and certain medical officials. <a href="#footnote-ref-1909">↑</a></p></li>
+        <li id="footnote-1910"><p> Cal. Penal Code § 11105(b). <a href="#footnote-ref-1910">↑</a></p></li>
+        <li id="footnote-1911"><p> These employers include: nuclear power plants; public utilities; agencies directly responsible for the care of children, the elderly, or the mentally or physically disabled; youth organizations; in-home supportive care agencies; security organizations; financial institutions; private schools. See Cal. Penal Code §§ 11105(c)(1); 11105.3, 11105.4; Cal. Fin. Code § 777.5; Cal. Health &amp; Safety Code § 1596.871; Cal. Veh. Code § 44237. However, private employers must still get authorization from the DOJ in order to view RAP sheets.  <a href="#footnote-ref-1911">↑</a></p></li>
+        <li id="footnote-1912"><p> Occupational licenses are required for: accounting, acupuncture, architects, automotive repairs, barbering and cosmetology, cemetery and funeral services, contractors, court reporters, dental services, electronic and appliance repair, occupational therapy, physical therapy, real estate, security and investigative positions, structural pest control, vocational and registered nursing. For a list of the 200+ occupational licenses available in California, see <a href="http://www.labormarketinfo.edd.ca.gov/occguides/">http://www.labormarketinfo.edd.ca.gov/occguides/</a>. <a href="#footnote-ref-1912">↑</a></p></li>
+        <li id="footnote-1913"><p> This includes police and sheriff departments, courts, district attorney and public defender offices, parole and probation departments, and corrections agencies. <a href="#footnote-ref-1913">↑</a></p></li>
+        <li id="footnote-1914"><p> Cal. Penal Code § 11105(i). <a href="#footnote-ref-1914">↑</a></p></li>
+        <li id="footnote-1915"><p> Cal. Penal Code §§ 11125, 11143. <a href="#footnote-ref-1915">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -106,7 +91,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -131,11 +115,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

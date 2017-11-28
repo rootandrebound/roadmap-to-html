@@ -21,59 +21,47 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-0">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-0" data-page-path="housing">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
+      <nav class="breadcrumbs">
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/housing">Housing (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Housing</h1>
-        <p><img src="70.png"/></p>
-        <p><strong>Housing is one of the most important parts of a strong reentry. In the HOUSING CHAPTER, you will learn more about your housing options and legal rights; what kind of housing you can and cannot get into because your criminal record; and things you can do if your legal rights are violated.</strong></p>
-        <p class="text"><em>DISCLAIMER</em> – YOUR RESPONSIBILITY WHEN USING THIS GUIDE: When putting together the <em>Roadmap to Reentry: A California Legal Guide</em>, we did our best to give you useful and accurate information because we know that people who are currently or formerly incarcerated often have difficulty getting legal information, and we cannot provide specific advice to every person who requests it. The laws change frequently and are subject to differing interpretations. We do not always have the resources to make changes to this informational material every time the law changes. If you use information from the <em>Roadmap to Reentry</em> legal guide, it is <em>your responsibility</em> to make sure that the law has not changed and applies to your particular situation. If you are incarcerated, most of the materials you need should be available in your institution’s law library. The <em>Roadmap to Reentry</em> guide is not intending to give legal advice, but rather legal information. No attorney-client relationship is created by using any information in this guide. You should always consult your own attorney if you need legal advice specific to your situation.</p>
-        <p><strong>TABLE OF CONTENTS</strong></p>
+        <p><img src="76.png"/></p>
+        <p class="description">Housing is one of the most immediate and important parts of a strong reentry. In the HOUSING CHAPTER, you will learn more about your housing options and legal rights; what kind of housing you can and cannot get into because of your criminal record; and things you can do if your legal rights are violated.</p>
+        <p class="text"><em>DISCLAIMER</em> – YOUR RESPONSIBILITY WHEN USING THIS GUIDE: When putting together the <em>Roadmap to Reentry: A California Legal Guide</em>, we did our best to give you useful and accurate information because we know that people who are currently or formerly incarcerated often have difficulty getting legal information, and we cannot provide specific advice to every person who requests it. The laws change frequently and are subject to differing interpretations. We do not always have the resources to make changes to this material every time the law changes. If you use information from the <em>Roadmap to Reentry</em> legal guide, it is <em>your responsibility</em> to make sure whether the law has changed and applies to your situation. If you are incarcerated, most of the materials you need should be available in your institution’s law library. The <em>Roadmap to Reentry</em> guide is not intending to give legal advice, but rather legal information. No attorney-client relationship is created by using any information in this guide. You should always consult your own attorney if you need legal advice specific to your situation.</p>
         <p><strong> </strong></p>
         <h4 class="textbox">WHAT WILL I LEARN in the housing chapter?</h4>
-        <ul class="learn-bullets">Your housing options in reentryWhat kind of housing you are or are not eligible for because of your criminal recordHow to put your best foot forward in applying for housingWhat you can do if you believe you were <em>illegally</em> <em>denied</em> housing</ul>
-        <h2><a id="_Toc448153097"></a>Introduction</h2>
+        <ul class="learn-bullets">Your housing options in reentry—both in the short-term and long-termThe different between private and government-assisted housing, and how this affects your rightsWhat kind of housing you can and cannot get because of your criminal recordHow to put your best foot forward in applying for housingOptions for what you can do if you believe you were <em>illegally</em> <em>denied</em> housing</ul>
+        <h2><a id="_Toc352861341"></a>Introduction</h2>
         <p class="text">This Chapter explains common housing issues and questions for people with criminal records and the friends and family who live with them. This section will give you information about:</p>
         <ol class="text">Your housing options in reentry;</ol>
         <ol class="text">What kind of housing you can and cannot live in based on your criminal record;</ol>
@@ -95,20 +83,24 @@
               </ol>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/housing/short-term-housing-overview/">Short-term housing overview</a></h3>
+            <h3><a href="/roadmap-to-html/housing/short-term-housing-overview/">Short-Term Housing Overview</a></h3>
               <ol>
-                <li><h4><a href="/roadmap-to-html/housing/short-term-housing-overview/staying-with-family-or-friends/">Staying with family or friends:</a></h4>
+                <li><h4><a href="/roadmap-to-html/housing/short-term-housing-overview/staying-with-family-or-friends/">Staying with family or friends</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/housing/short-term-housing-overview/shelters/">Shelters:</a></h4>
+                <li><h4><a href="/roadmap-to-html/housing/short-term-housing-overview/shelters/">Shelters</a></h4>
+                </li>
+                <li><h4><a href="/roadmap-to-html/housing/short-term-housing-overview/special-needs-housing-short-or-long-term/">Special needs housing—short- or long-term</a></h4>
+                </li>
+                <li><h4><a href="/roadmap-to-html/housing/short-term-housing-overview/pre-release-transitional-housing-programs/">Pre-Release Transitional housing programs</a></h4>
                 </li>
               </ol>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/housing/long-term-housing-overview/">Long-term housing overview</a></h3>
+            <h3><a href="/roadmap-to-html/housing/long-term-housing-overview/">Long-Term Housing Overview</a></h3>
               <ol>
-                <li><h4><a href="/roadmap-to-html/housing/long-term-housing-overview/permanent-housing/">Permanent housing:</a></h4>
+                <li><h4><a href="/roadmap-to-html/housing/long-term-housing-overview/permanent-housing/">Permanent Housing</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/housing/long-term-housing-overview/special-needs-housing-short-or-long-term/">Special needs housing—short- or long-term</a></h4>
+                <li><h4><a href="/roadmap-to-html/housing/long-term-housing-overview/special-needs-housing-short-or-long-term/">Special Needs Housing—Short- or Long-Term</a></h4>
                 </li>
               </ol>
           </li>
@@ -122,6 +114,8 @@
                 <li><h4><a href="/roadmap-to-html/housing/housing-for-special-needs-populations/seniors-elders/">Seniors/Elders</a></h4>
                 </li>
                 <li><h4><a href="/roadmap-to-html/housing/housing-for-special-needs-populations/veterans/">Veterans</a></h4>
+                </li>
+                <li><h4><a href="/roadmap-to-html/housing/housing-for-special-needs-populations/substance-abuse-treatment-recovery-housing-also-ca/">Substance Abuse Treatment & Recovery Housing (also called “Sober Living Environments”)</a></h4>
                 </li>
                 <li><h4><a href="/roadmap-to-html/housing/housing-for-special-needs-populations/290-sex-offender-registrants-residency-restriction/">290 Sex Offender Registrants & Residency Restrictions</a></h4>
                 </li>
@@ -144,6 +138,8 @@
                 <li><h5><a href="/roadmap-to-html/housing/understanding-housing-eligibility/what-does-it-mean-to-be-eligible-for-housing/">What does it mean to be “eligible” for housing?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/housing/understanding-housing-eligibility/why-is-it-important-to-understand-the-eligibility-/">Why is it important to understand the eligibility rules of different types of housing?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/housing/understanding-housing-eligibility/i-was-receiving-section-8-housing-and-was-then-inc/">I was receiving Section 8 housing and was then incarcerated. Do I need to reapply? </a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/housing/understanding-housing-eligibility/how-will-my-criminal-record-affect-my-eligibility-/">How will my criminal record affect my eligibility and application to different types of housing?</a></h5>
                 </li>
@@ -180,7 +176,7 @@
                 </li>
                 <li><h5><a href="/roadmap-to-html/housing/improving-your-chances-of-getting-into-government-/when-could-i-show-proof-of-mitigating-circumstance/">When could i show proof of mitigating circumstances and rehabilitation to the PHA or owner of government-assisted housing?</a></h5>
                 </li>
-                <li><h4><a href="/roadmap-to-html/housing/improving-your-chances-of-getting-into-government-/specific-types-of-evidence-that-show-proof-of-miti/">Specific Types of Evidence that Show proof of Mitigating Circumstances & Rehabilitation to Strengthen Your Application to Government-Assisted Housing</a></h4>
+                <li><h4><a href="/roadmap-to-html/housing/improving-your-chances-of-getting-into-government-/specific-examples-of-evidence-that-can-strengthen-/">Specific Examples of Evidence that can Strengthen Your Application to Government-Assisted Housing</a></h4>
                 </li>
               </ol>
           </li>
@@ -189,7 +185,7 @@
               <ol>
                 <li><h5><a href="/roadmap-to-html/housing/an-overview-of-the-types-of-criminal-records-that-/what-criminal-records-could-show-up-as-i-apply-for/">What criminal records could show up as I apply for any type of housing?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/housing/an-overview-of-the-types-of-criminal-records-that-/does-this-chapter-cover-what-can-and-cannot-show-u/">Does this Chapter cover what can and Cannot show up in my credit report?</a></h5>
+                <li><h5><a href="/roadmap-to-html/housing/an-overview-of-the-types-of-criminal-records-that-/does-this-chapter-cover-what-can-and-cannot-show-u/">Does this Chapter cover what can and cannot show up in my credit report?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/housing/an-overview-of-the-types-of-criminal-records-that-/can-a-private-landlord-public-housing-authority-ph/">Can a private landlord, Public Housing Authority (PHA), or owner of government-assisted housing charge me a fee for running a background check/ tenant report on me?</a></h5>
                 </li>
@@ -204,7 +200,7 @@
                 </li>
                 <li><h4><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-p/your-rights-when-a-private-landlord-directly-asks-/">Your Rights When a Private Landlord Directly Asks You About Your Criminal Record</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-p/your-rights-to-confidentiality-when-a-private-land/">Your Rights to Confidentiality When a Private Landlord gathers criminal record information on you</a></h4>
+                <li><h4><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-p/your-rights-to-confidentiality-when-a-private-land/">Your Rights to Confidentiality When a Private Landlord Gathers Criminal Record Information on You</a></h4>
                 </li>
               </ol>
           </li>
@@ -213,12 +209,12 @@
               <ol>
                 <li><h4><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-g/your-rights-when-a-government-assisted-housing-pro/">Your Rights When a Government-assisted Housing Provider Runs a Criminal Background Check</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-g/your-rights-when-a-government-assisted-housing-pro/">Your Rights When a Government-assisted Housing Provider Runs a Criminal Background Check—The Rules they must follow</a></h4>
+                <li><h4><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-g/your-rights-when-a-government-assisted-housing-pro/">Your Rights When a Government-assisted Housing Provider Runs a Criminal Background Check—The Rules They Must Follow</a></h4>
                 </li>
               </ol>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/housing/errors-in-your-background-check-report-how-to-corr/">Errors in Your Background Check Report & How to Correct Them—An overview</a></h3>
+            <h3><a href="/roadmap-to-html/housing/errors-in-your-background-check-report-how-to-corr/">Errors in Your Background Check Report & How to Correct Them—An Overview</a></h3>
               <ol>
                 <li><h5><a href="/roadmap-to-html/housing/errors-in-your-background-check-report-how-to-corr/could-there-be-errors-in-the-background-check-tena/">Could there be errors in the background check/ tenant report that a housing provider runs on me?</a></h5>
                 </li>
@@ -234,7 +230,7 @@
               <ol>
                 <li><h5><a href="/roadmap-to-html/housing/joining-family-or-friends-in-government-assisted-h/i-have-a-criminal-record-and-want-to-join-a-househ/">I have a criminal record and want to join a household living in federal government-assisted housing. Can I?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/housing/joining-family-or-friends-in-government-assisted-h/i-want-to-join-a-household-living-in-government-as/">I want to join a household living in government-assisted housing. can I?</a></h5>
+                <li><h5><a href="/roadmap-to-html/housing/joining-family-or-friends-in-government-assisted-h/i-want-to-join-someone-government-assisted-housing/">I want to join someone government-assisted housing. Can I?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/housing/joining-family-or-friends-in-government-assisted-h/if-i-am-joining-a-household-will-the-pha-or-owner-/">If I am joining a household, will the PHA or owner of the government-assisted housing run a criminal background check on me?</a></h5>
                 </li>
@@ -242,7 +238,7 @@
                 </li>
                 <li><h4><a href="/roadmap-to-html/housing/joining-family-or-friends-in-government-assisted-h/guest-policies-in-government-assisted-housing/">Guest Policies in Government-Assisted Housing:</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/housing/joining-family-or-friends-in-government-assisted-h/live-in-aide-policies-in-government-assisted-housi/">Live-in Aide Policies in Government-Assisted Housing</a></h4>
+                <li><h4><a href="/roadmap-to-html/housing/joining-family-or-friends-in-government-assisted-h/policies-for-live-in-aides-in-government-assisted-/">Policies for Live-in Aides in Government-Assisted Housing</a></h4>
                 </li>
               </ol>
           </li>
@@ -280,25 +276,19 @@
               </ol>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/housing/evictions/">Evictions</a></h3>
+            <h3><a href="/roadmap-to-html/housing/evictions-just-the-basics/">Evictions: Just the basics</a></h3>
               <ol>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/i-am-facing-an-eviction-what-are-my-options/">I am facing an eviction. What are my options?</a></h5>
+                <li><h5><a href="/roadmap-to-html/housing/evictions-just-the-basics/i-am-facing-an-eviction-what-are-my-options/">I am facing an eviction. What are my options?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/what-must-a-3-day-notice-to-pay-rent-or-quit-say/">What must a “3-day notice to pay rent or quit” say?</a></h5>
+                <li><h5><a href="/roadmap-to-html/housing/evictions-just-the-basics/i-received-a-3-day-notice-to-do-something-from-my-/">I received a 3-day notice to do something from my landlord. Will I be evicted?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/what-are-my-options-if-i-get-a-3-day-notice-to-pay/">What are my options if I get a “3-day notice to pay rent or quit”?</a></h5>
+                <li><h4><a href="/roadmap-to-html/housing/evictions-just-the-basics/the-3-day-notice-to-pay-rent-or-quit/">The 3-Day Notice to “Pay Rent or Quit”</a></h4>
                 </li>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/what-could-happen-if-i-do-not-pay-my-rent-or-do-no/">What could happen if I do not pay my rent or do not move within the 3 days?</a></h5>
+                <li><h4><a href="/roadmap-to-html/housing/evictions-just-the-basics/the-3-day-notice-to-perform-covenant-s-or-quit/">The 3-Day Notice to Perform Covenant(s) or Quit</a></h4>
                 </li>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/what-could-happen-if-my-landlord-takes-me-to-court/">What could happen if my landlord takes me to court to evict me?</a></h5>
+                <li><h4><a href="/roadmap-to-html/housing/evictions-just-the-basics/the-3-day-notice-to-quit/">The 3-Day Notice to Quit</a></h4>
                 </li>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/what-could-happen-if-i-ignore-the-summons-and-comp/">What could happen if I ignore the summons and complaint and do nothing?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/what-could-happen-if-i-lose-in-court-or-after-a-ju/">What could happen if I lose in court or after a judgment against me?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/how-long-does-the-eviction-process-take/">How long does the eviction process take?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/housing/evictions/i-live-in-transitional-housing-and-the-housing-pro/">I live in transitional housing, and the housing provider (or parole) IS trying to evict me with very little notice & without going to court. Is this legal & what are my options?</a></h5>
+                <li><h4><a href="/roadmap-to-html/housing/evictions-just-the-basics/service-of-the-3-day-notice/">Service of the 3-Day Notice</a></h4>
                 </li>
               </ol>
           </li>
@@ -322,7 +312,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -347,11 +336,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

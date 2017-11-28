@@ -21,65 +21,49 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="family-children/introduction-to-the-three-courts-that-handle-famil/are-there-any-convictions-that-will-automatically-">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/family-children/introduction-to-the-three-courts-that-handle-famil">Introduction to the Three Courts that Handle Family & Children Matters</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
+    <li><a href="/roadmap-to-html/family-children/introduction-to-the-three-courts-that-handle-famil">Introduction to the Three Courts that Handle Family & Children Matters</a></li>
+    <li><a href="/roadmap-to-html/family-children/introduction-to-the-three-courts-that-handle-famil/are-there-any-convictions-that-will-automatically-">Are there any convictions that will automatically ban me from reconnecting with my child or grandchild in family court? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Are there any convictions that will automatically ban me from reconnecting with my child or grandchild in family court?</h1>
-        <p class="text">Yes. As stated on PG. 797 your criminal record can be one of many factors a family court judge will consider in deciding what is in the “best interest of the child.”</p>
-        <p class="text">For some conviction offenses, the law will <em>automatically ban you</em> from reconnecting with a child or grandchild. For other convictions and criminal history that <em>do not completely prevent you</em> from having custody or visitation with your child, a family court judge will look at this history as one factor of many in deciding what custody and/or visitation plan is in the “best interest of the child.” For example, if you have past convictions for child abuse, first-degree murder of the child’s other parent, or being a 290-sex offender registrant where the victim was a minor, a judge is unlikely to grant full custody or unsupervised visitation. See the chart below for detail (PG. 824).</p>
-        <table><tr><td colspan="2"><p class="tableheadingmedium"><a id="FC_VII_arethereanyautobanscustvis"></a>HOW DIFFERENT CONVICTIONS WILL AFFECT YOUR CUSTODY &amp; VISITATION RIGHTS</p></td></tr><tr><td><p class="tableheadingmedium">CONVICTION OFFENSE</p></td><td><p class="tableheadingmedium">HOW WILL THIS AFFECT MY CHANCES OF GETTING CUSTODY OR VISITATION?</p></td></tr><tr><td><div class="textnumberbold">Rape that led to Child’s Conception</div></td><td><p class="textbox">Judges will not allow someone who has been convicted of rape to have any custody or visitation with a child who was conceived from that rape.<sup><sup><a href="#footnote-2275" id="footnote-ref-2275">[2275]</a></sup></sup></p></td></tr><tr><td><div class="textnumberbold">Domestic Violence</div></td><td><p class="textbox">Judges are hesitant to give custody to someone who has engaged in domestic violence, and will consider any history of domestic abuse against your child, the other parent, or a partner.<sup><sup><a href="#footnote-2276" id="footnote-ref-2276">[2276]</a></sup></sup></p></td></tr><tr><td><div class="textnumberbold">Other Convictions</div></td><td><p class="text">Judges usually will not grant <em>custody</em> or <em>unsupervised visitation</em> in the following circumstances, <em>unless</em> the s/he finds that there is no risk of harm to your child:</p><ol class="text">If you have a conviction for certain child abuse offenses;<sup><sup><a href="#footnote-2277" id="footnote-ref-2277">[2277]</a></sup></sup></ol><ol class="text">If you have a conviction for first-degree murder of the child’s other parent; and/or</ol><ol class="text">If you are a 290-sex offender registrant for an offense where the victim was a minor (under 18), or if you live with someone else who is a 290-sex offender registrant for an offense where the victim was a minor (under 18).<sup><sup><a href="#footnote-2278" id="footnote-ref-2278">[2278]</a></sup></sup> </ol></td></tr></table>
-        <p class="text">For more information on how your criminal record will be a factor in a judge’s decision regarding your custody/visitation rights, see PG. 796.</p>
-        <li id="footnote-2275"><p> Cal. Fam. Code § 3030(b). The law is very strict in this instance and does not permit even supervised or conditional visitation. <a href="#footnote-ref-2275">↑</a></p></li>
-        <li id="footnote-2276"><p> Cal. Fam. Code §§ 3011(b), 3020(a), 3031, 3044. The judge will also consider any restraining or protective orders against you. Nonetheless, you may still be able to get custody by showing that you have completed all court-ordered treatment and/or behavioral programs (e.g., batterer’s treatment program, parenting classes, anger management, drug or alcohol treatment, or conditions of probation or parole); complied with all parole/probation/supervision requirements; complied with any restraining or protective orders against you; have not committed any further domestic violence; and that custody would be in your child’s best interest. Cal. Fam. Code § 3044(b). <a href="#footnote-ref-2276">↑</a></p></li>
-        <li id="footnote-2277"><p> This applies to child abuse convictions under Cal. Penal Code §§ 273a, 273d, or 647. <a href="#footnote-ref-2277">↑</a></p></li>
-        <li id="footnote-2278"><p> Cal. Fam. Code § 3030; <em>see also</em> Cal. Penal Code § 290. For child abuse convictions and registered sex offender registrants, the judge must find that there is “no significant risk to the child.” § 3030(a). For first-degree murder of the other parent, the judge must find that there is “no risk to the child’s health, safety and welfare.” § 3030(c). In both cases, the judge must state his/her reasons in writing or on the record. However, the judge may still permit supervised visitation in these cases.  <a href="#footnote-ref-2278">↑</a></p></li>
+        <p class="text">Yes. As stated on PG. 719 your criminal record can be one of many factors a family court judge will consider in deciding what is in the “best interest of the child.”</p>
+        <p class="text">For some conviction offenses, the law will <em>automatically ban you</em> from reconnecting with a child or grandchild. For other convictions and criminal history that <em>do not completely prevent you</em> from having custody or visitation with your child, a family court judge will look at this history as one factor of many in deciding what custody and/or visitation plan is in the “best interest of the child.” For example, if you have past convictions for child abuse, first-degree murder of the child’s other parent, or being a 290-sex offender registrant where the victim was a minor, a judge is unlikely to grant full custody or unsupervised visitation. See the chart below, and learn more about how a criminal record will be a factor in a judge’s decision regarding your custody/visitation rights, see PG. 718.</p>
+        <table><tr><td colspan="2"><p class="tableheadingmedium"><a id="FC_VII_arethereanyautobanscustvis"></a>HOW DIFFERENT CONVICTIONS WILL AFFECT YOUR CUSTODY &amp; VISITATION RIGHTS</p></td></tr><tr><td><p>CONVICTION OFFENSE</p></td><td><p>HOW WILL THIS AFFECT MY CHANCES OF GETTING CUSTODY OR VISITATION?</p></td></tr><tr><td><p>Rape that led to Child’s Conception</p></td><td><p class="text">Judges will not allow someone who has been convicted of rape to have any custody or visitation with a child who was conceived from that rape.<sup><sup><a href="#footnote-2373" id="footnote-ref-2373">[2372]</a></sup></sup></p></td></tr><tr><td><p>Domestic Violence</p></td><td><p class="text">Judges are hesitant to give custody to someone who has engaged in domestic violence, and will consider any history of domestic abuse against your child, the other parent, or a partner.<sup><sup><a href="#footnote-2374" id="footnote-ref-2374">[2373]</a></sup></sup></p></td></tr><tr><td><p>Other Convictions</p></td><td><p class="text">Judges usually will not grant <em>custody</em> or <em>unsupervised visitation</em> in the following circumstances, <em>unless</em> the s/he finds that there is no risk of harm to your child:</p><ol class="text">If you have a conviction for certain child abuse offenses;<sup><sup><a href="#footnote-2375" id="footnote-ref-2375">[2374]</a></sup></sup></ol><ol class="text">If you have a conviction for first-degree murder of the child’s other parent; and/or</ol><ol class="text">If you are a 290-sex offender registrant for an offense where the victim was a minor (under 18), or if you live with someone else who is a 290-sex offender registrant for an offense where the victim was a minor (under 18).<sup><sup><a href="#footnote-2376" id="footnote-ref-2376">[2375]</a></sup></sup> </ol></td></tr></table>
+        <li id="footnote-2373"><p> Cal. Fam. Code § 3030(b). The law is very strict in this instance and does not permit even supervised or conditional visitation. <a href="#footnote-ref-2373">↑</a></p></li>
+        <li id="footnote-2374"><p> Cal. Fam. Code §§ 3011(b), 3020(a), 3031, 3044. The judge will also consider any restraining or protective orders against you. Nonetheless, you may still be able to get custody by showing that you have completed all court-ordered treatment and/or behavioral programs (e.g., batterer’s treatment program, parenting classes, anger management, drug or alcohol treatment, or conditions of probation or parole); complied with all parole/probation/supervision requirements; complied with any restraining or protective orders against you; have not committed any further domestic violence; and that custody would be in your child’s best interest. Cal. Fam. Code § 3044(b). <a href="#footnote-ref-2374">↑</a></p></li>
+        <li id="footnote-2375"><p> This applies to child abuse convictions under Cal. Penal Code §§ 273a, 273d, or 647. <a href="#footnote-ref-2375">↑</a></p></li>
+        <li id="footnote-2376"><p> Cal. Fam. Code § 3030; see also Cal. Penal Code § 290. For child abuse convictions and registered sex offender registrants, the judge must find that there is “no significant risk to the child.” § 3030(a). For first-degree murder of the other parent, the judge must find that there is “no risk to the child’s health, safety and welfare.” § 3030(c). In both cases, the judge must state his/her reasons in writing or on the record. However, the judge may still permit supervised visitation in these cases.  <a href="#footnote-ref-2376">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -97,7 +81,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -122,11 +105,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

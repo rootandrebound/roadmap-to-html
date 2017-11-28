@@ -21,71 +21,55 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-3">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-3" data-page-path="education/federal-student-aid/cal-grants">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/education">Education</a></li>
-          <li><a href="/roadmap-to-html/education/federal-student-aid">Federal Student Aid</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/education">Education</a></li>
+    <li><a href="/roadmap-to-html/education/federal-student-aid">Federal Student Aid</a></li>
+    <li><a href="/roadmap-to-html/education/federal-student-aid/cal-grants">Cal Grants (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Cal Grants</h1>
         <p class="text">The Cal Grant program is the largest source of student financial aid in California. If you are a California graduating high school student, a recent graduate, or you just got your GED, and you meet academic, financial and eligibility requirements, then you may qualify for a Cal Grant for college or career/technical school.</p>
-        <h3><a id="_Toc448153851"></a>Am I eligible for a Cal Grant? </h3>
+        <h3><a id="_Toc352862123"></a>Am I eligible for a Cal Grant?<strong> </strong></h3>
         <p class="text">There are several grants offered within the Cal Grant program, and each has its own specific requirements, but there are some general requirements that they all share. For example, you must: </p>
         <ol class="text">Submit the FAFSA or California Dream Act Application at <a href="http://www.csac.ca.gov/dream_act.asp">http://www.csac.ca.gov/dream_act.asp</a> and your current GPA;</ol>
         <ol class="text">Be a U.S. citizen or eligible non-citizen or meet California Dream Act criteria;</ol>
         <ol class="text">Be a California resident or meet California Dream Act criteria;</ol>
         <ol class="text">Attend a qualifying California college and be enrolled at least half time;</ol>
         <ol class="text">Have financial need based on your income and college costs;</ol>
-        <ol class="text">Maintain a minimum GPA.<sup><a href="#footnote-2790" id="footnote-ref-2790">[2790]</a></sup> </ol>
-        <p class="textbox"><strong>NOTE:</strong><em> </em>If you don't have a GPA to submit, the California Student Aid Commission will use your GED, ACT or SAT test scores instead to determine if you qualify for a Cal Grant.<sup><a href="#footnote-2791" id="footnote-ref-2791">[2791]</a></sup> </p>
-        <p class="text">For more information on Cal Grants, visit the California Student Aid Commission’s special Cal Grants website at: <a href="http://www.calgrants.org/">http://www.calgrants.org/</a> or Appendix H, PG. 1016. You can also call the Commission at (888) 224-7268 or write to:</p>
-        <p class="address">California Student Aid Commission<br/>Attn: Cal Grants<br/>P.O. Box 419026<br/>Rancho Cordova, CA 95741-9026</p>
-        <li id="footnote-2790"><p> CalGrants: Who Qualifies, Cal. Student Aid Comm’n, <a href="http://www.calgrants.org/index.cfm?navId=12">http://www.calgrants.org/index.cfm?navId=12</a>.  <a href="#footnote-ref-2790">↑</a></p></li>
-        <li id="footnote-2791"><p> CalGrants: Who Qualifies, Cal. Student Aid Comm’n, <a href="http://www.calgrants.org/index.cfm?navId=12">http://www.calgrants.org/index.cfm?navId=12</a>. <a href="#footnote-ref-2791">↑</a></p></li>
+        <ol class="text">Maintain a minimum GPA.<sup><a href="#footnote-2907" id="footnote-ref-2907">[2906]</a></sup> </ol>
+        <p class="textbox"><strong>NOTE:</strong><em> </em>If you don't have a GPA to submit, the California Student Aid Commission will use your GED, ACT or SAT test scores instead to determine if you qualify for a Cal Grant.<sup><a href="#footnote-2908" id="footnote-ref-2908">[2907]</a></sup> </p>
+        <p class="text">For more information on Cal Grants, visit the California Student Aid Commission’s Cal Grants website at: <a href="http://www.calgrants.org/">www.calgrants.org</a>, or Appendix H, PG. 903. You can also call the Commission at (888) 224-7268 or write to: California Student Aid Commission, Attn: Cal Grants, P.O. Box 419026, Rancho Cordova, CA 95741-9026.</p>
+        <li id="footnote-2907"><p> CalGrants: Who Qualifies, Cal. Student Aid Comm’n, <a href="http://www.calgrants.org/index.cfm?navId=12">http://www.calgrants.org/index.cfm?navId=12</a>.  <a href="#footnote-ref-2907">↑</a></p></li>
+        <li id="footnote-2908"><p> CalGrants: Who Qualifies, Cal. Student Aid Comm’n, <a href="http://www.calgrants.org/index.cfm?navId=12">http://www.calgrants.org/index.cfm?navId=12</a>. <a href="#footnote-ref-2908">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -103,7 +87,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -128,11 +111,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

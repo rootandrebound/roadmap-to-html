@@ -21,72 +21,55 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="housing/access-to-your-criminal-records-as-you-apply-for-g/your-rights-when-a-government-assisted-housing-pro/what-are-my-legal-rights-if-a-public-housing-autho">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/housing">Housing</a></li>
-          <li><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-g">Access to Your Criminal Records As You Apply For Government-Assisted Housing:</a></li>
-          <li><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-g/your-rights-when-a-government-assisted-housing-pro">Your Rights When a Government-assisted Housing Provider Runs a Criminal Background Check—The Rules they must follow</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/housing">Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-g">Access to Your Criminal Records As You Apply For Government-Assisted Housing:</a></li>
+    <li><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-g/your-rights-when-a-government-assisted-housing-pro">Your Rights When a Government-assisted Housing Provider Runs a Criminal Background Check—The Rules They Must Follow</a></li>
+    <li><a href="/roadmap-to-html/housing/access-to-your-criminal-records-as-you-apply-for-g/your-rights-when-a-government-assisted-housing-pro/what-are-my-legal-rights-if-a-public-housing-autho">What are my legal rights if a Public Housing Authority (PHA) or owner of government-assisted housing illegally accesses or uses my criminal record information? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What are my legal rights if a Public Housing Authority (PHA) or owner of government-assisted housing illegally accesses or uses my criminal record information?</h1>
-        <p class="text"><em>THE GENERAL RULE: </em></p>
-        <p class="text">In general, if you believe you were denied housing because of illegal access to your records, or because of incorrect or illegal information, you should IMMEDIATELY ask for a review hearing! A review hearing is an informal procedure in which you can present corrections to your record, evidence of rehabilitation, and other mitigating information (see PG. 398) to challenge a denial to government-assisted housing. Go to PG. 389 of this Chapter to learn about the procedure for challenging denials and how to request an informal review hearing.</p>
-        <p><strong><em>SPECIAL RULE for Public Housing &amp; “Section 8” Housing Choice Voucher programs:</em></strong></p>
-        <p class="text">If you applied through a PHA for Public Housing or “Section 8” Housing Choice Vouchers, there is a special rule that says PHAs and owners of the government-assisted housing cannot take any “negligent or knowing action that is inconsistent with” the laws and regulations governing access to your criminal records.<sup><sup><a href="#footnote-1203" id="footnote-ref-1203">[1203]</a></sup></sup> A negligent action is one where the PHA or owner of the government-assisted housing knew or should have known that their access to your records violated the law. A knowing action is one where the PHA or owner of the government-assisted housing <em>actually knew</em> that its access to your records violated the law. </p>
-        <p class="text">A PHA or owner MAY BE LIABLE for negligence if they do any of the following:<sup><sup><a href="#footnote-1204" id="footnote-ref-1204">[1204]</a></sup></sup></p>
+        <p class="text"><strong><em>The General Rule:</em> </strong>In general, if you believe you were denied housing because of illegal access to your records, or because of incorrect or illegal information, you should IMMEDIATELY ask for a review hearing! A review hearing is an informal procedure in which you can present corrections to your record, evidence of rehabilitation, and other mitigating information (see PG. 366) to challenge a denial to government-assisted housing. Go to PG. 359 of this Chapter to learn about the procedure for challenging denials and how to request an informal review hearing.</p>
+        <p class="text"><strong><em>Special Rule for the Public Housing &amp; “Section 8” Housing Choice Voucher Programs:</em></strong> If you applied through a PHA for Public Housing or “Section 8” Housing Choice Vouchers, there is a special rule that says PHAs and owners of the government-assisted housing cannot take any “negligent or knowing action that is inconsistent with” the laws and regulations governing access to your criminal records.<sup><sup><a href="#footnote-1304" id="footnote-ref-1304">[1303]</a></sup></sup> A negligent action is one where the PHA or owner of the government-assisted housing knew or should have known that their access to your records violated the law. A knowing action is one where the PHA or owner of the government-assisted housing <em>actually knew</em> that its access to your records violated the law. </p>
+        <p class="text">A PHA or owner MAY BE LIABLE for negligence if they do any of the following:<sup><sup><a href="#footnote-1305" id="footnote-ref-1305">[1304]</a></sup></sup></p>
         <ol class="text">Improperly disclose a criminal record;</ol>
         <ol class="text">Improperly use a consent form (a.k.a. a “release” form); </ol>
         <ol class="text">Fail to <em>notify you</em> of the criminal history information collected; </ol>
         <ol class="text">Fail to <em>provide you</em> with a copy of the information collected (whether you are an applicant or a current tenant); <em>and/or</em></ol>
         <ol class="text">Fail to <em>allow you the right to dispute</em> the information. </ol>
-        <p class="text">In this situation, it’s best to talk to a lawyer! You could recover attorney’s fees and other litigation costs as part of the relief you get in court.<sup><sup><a href="#footnote-1205" id="footnote-ref-1205">[1205]</a></sup></sup> See the list of legal aid providers on PG. 1180 to contact an organization that may be able to provide you legal assistance. </p>
-        <li id="footnote-1203"><p> 42 U.S.C. § 1437d(q)(7). <a href="#footnote-ref-1203">↑</a></p></li>
-        <li id="footnote-1204"><p> The broad scope of the PHA’s or owner’s liability may provide leverage for an applicant harmed by the negligence. The threat of litigation costs and attorney’s fees may encourage settlement and the admission of the applicant. <a href="#footnote-ref-1204">↑</a></p></li>
-        <li id="footnote-1205"><p> 42 U.S.C. § 1437d(q)(7); <em>see also</em> Rivers v. Housing Auth. of Contra Costa Cnty., No. CO5-04291 PJH (N.D. Cal., complaint filed Oct. 21, 2005) (illegal release of juvenile record); There is no equivalent language regarding fees and costs regarding negligent actions with respect to registered sex offenders. <a href="#footnote-ref-1205">↑</a></p></li>
+        <p class="text">In this situation, it’s best to talk to a lawyer! You could recover attorney’s fees and other litigation costs as part of the relief you get in court.<sup><sup><a href="#footnote-1306" id="footnote-ref-1306">[1305]</a></sup></sup> See the list of legal aid providers on PG. 1075 to contact an organization that may be able to provide you legal assistance. </p>
+        <li id="footnote-1304"><p> 42 U.S.C. § 1437d(q)(7). <a href="#footnote-ref-1304">↑</a></p></li>
+        <li id="footnote-1305"><p> The broad scope of the PHA’s or owner’s liability may provide leverage for an applicant harmed by the negligence. The threat of litigation costs and attorney’s fees may encourage settlement and the admission of the applicant. <a href="#footnote-ref-1305">↑</a></p></li>
+        <li id="footnote-1306"><p> 42 U.S.C. § 1437d(q)(7); see also Rivers v. Housing Auth. of Contra Costa Cnty., No. CO5-04291 PJH (N.D. Cal., complaint filed Oct. 21, 2005) (illegal release of juvenile record); There is no equivalent language regarding fees and costs regarding negligent actions with respect to registered sex offenders. <a href="#footnote-ref-1306">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -99,12 +82,11 @@
           <li class="next">
             <a href="/roadmap-to-html/housing/errors-in-your-background-check-report-how-to-corr">
               <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">Errors in Your Background Check Report & How to Correct Them—An overview</span>
+              <span class="neighbor-title">Errors in Your Background Check Report & How to Correct Them—An Overview</span>
             </a>
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -129,11 +111,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

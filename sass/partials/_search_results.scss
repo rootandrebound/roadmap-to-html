@@ -1,0 +1,16 @@
+.search-results {
+	&__heading {
+		padding-bottom: 0;
+	}
+	&__list {
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 1.5em;
+	}
+}
+
+.search-result {
+	&__title {
+		font-weight: 500;
+	}
+}

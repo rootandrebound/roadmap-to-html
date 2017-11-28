@@ -21,60 +21,45 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="parole-probation/post-release-community-supervision-prcs/after-release-what-to-expect-in-your-first-days-ou/what-must-i-do-when-i-first-get-out-on-prcs">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs">Post-Release Community Supervision (PRCS)</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/after-release-what-to-expect-in-your-first-days-ou">After Release: What to Expect in Your First Days Out on PRCS</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs">Post-Release Community Supervision (PRCS)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/after-release-what-to-expect-in-your-first-days-ou">After Release: What to Expect in Your First Days Out on PRCS</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/after-release-what-to-expect-in-your-first-days-ou/what-must-i-do-when-i-first-get-out-on-prcs">What must I do when I first get out on PRCS? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What must I do when I first get out on PRCS?</h1>
-        <p class="text">You must report to your County Probation Department for PRCS supervision within 2 working days after your release from state prison, court, or county jail.<sup><a href="#footnote-650" id="footnote-ref-650">[650]</a></sup> Instructions for what to do when you first get out on PRCS vary from county to county. Please see Appendix Z on PG. 332 for some examples of the PRCS release process in a few California counties.</p>
-        <li id="footnote-650"><p> <em>See</em> L.A. Cnty. Prob. Dep’t, Just Released, <a href="http://probation.lacounty.gov/wps/portal/probation/!ut/p/b1/04_Sj9Q1MjA1tzS0NDcw04_Qj8pLLMtMTyzJzM9LzAHxo8zi3QwMDNz9nYKN_INdjA083dydnA39TQyNgo2ACiKRFRg4u1saeDqZuFt4mYUYOvuZE9Ifrh-FT0mwoTG6AixWgBUY4ACOBgSs8DLR9_PIz03Vz43KsfTMDEgHAB9RScE!/dl4/d5/L2dJQSEvUUt">http://probation.lacounty.gov/wps/portal/probation/!ut/p/b1/04_Sj9Q1MjA1tzS0NDcw04_Qj8pLLMtMTyzJzM9LzAHxo8zi3QwMDNz9nYKN_INdjA083dydnA39TQyNgo2ACiKRFRg4u1saeDqZuFt4mYUYOvuZE9Ifrh-FT0mwoTG6AixWgBUY4ACOBgSs8DLR9_PIz03Vz43KsfTMDEgHAB9RScE!/dl4/d5/L2dJQSEvUU</a>. <a href="#footnote-ref-650">↑</a></p></li>
+        <p class="text">You must report to your County Probation Department for PRCS supervision within 2 working days after your release from state prison, court, or county jail.<sup><a href="#footnote-753" id="footnote-ref-753">[752]</a></sup> Instructions for what to do when you first get out on PRCS vary from county to county. Please see Appendix Z on PG. 307 for some examples of the PRCS release process in a few California counties.</p>
+        <li id="footnote-753"><p> See L.A. Cnty. Prob. Dep’t, Just Released, <a href="http://probation.lacounty.gov/wps/portal/probation/!ut/p/b0/04_Sj9CPykssy0xPLMnMz0vMAfGjzOLdDAwM3P2dgo38g12MDTzd3J2cDf1NDI3MjPQLsh0VATnS4xE!/">http://probation.lacounty.gov/wps/portal/probation/!ut/p/b0/04_Sj9CPykssy0xPLMnMz0vMAfGjzOLdDAwM3P2dgo38g12MDTzd3J2cDf1NDI3MjPQLsh0VATnS4xE!/</a>. <a href="#footnote-ref-753">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -92,7 +77,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -117,11 +101,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

@@ -21,105 +21,89 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="parole-probation/what-are-the-main-types-of-supervision-in-californ">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/what-are-the-main-types-of-supervision-in-californ">What are the main types of supervision in California? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What are the main types of supervision in California?</h1>
         <p class="text">There are 4 main categories of supervision in California. They are:</p>
-        <p class="text"><span class="emphasisheavy">STATE PAROLE: </span>In California, parole is a condition of release for most people coming out of prison.<sup><a href="#footnote-308" id="footnote-ref-308">[308]</a></sup> It only applies in felony cases when a person is sentenced to state prison. It also only takes effect after release from prison.</p>
-        <p class="text">People sentenced to serve <em>determinate sentences</em>—such as an exact term of “seven years”—serve the specified amount of time in prison ordered by the judge. Once their sentence is over, they are released.</p>
-        <p class="text">People sentenced to serve indeterminate terms, such as “25 to life with the possibility of parole,” are released only after a Board of Parole Hearing (BPH) determines that they are ready to re-enter society.<sup><a href="#footnote-309" id="footnote-ref-309">[309]</a></sup> </p>
-        <p class="text">Most people released from California state prison are required to serve a period of parole after they are released. People on parole—called parolees—remain under the control of the California Department of Corrections and Rehabilitation’s (CDCR) Division of Adult Parole Operations (DAPO), are supervised by CDCR parole agents, and must meet certain requirements or “conditions” of parole.<sup><a href="#footnote-310" id="footnote-ref-310">[310]</a></sup></p>
-        <p class="text"><span class="emphasisheavy">COUNTY PROBATION &amp; NEW FORMS OF COUNTY-LEVEL SUPERVISION:</span> Probation is a type of supervision that a judge orders at trial as <em>part of the original sentence</em>, either as an alternative to incarceration OR in addition to incarceration.<sup><a href="#footnote-311" id="footnote-ref-311">[311]</a></sup> California probation reduces or eliminates the time that a person must spend in custody in jail or prison.<sup><a href="#footnote-312" id="footnote-ref-312">[312]</a></sup> People on probation must report to their county probation office (for formal probation, more information is on PG. 198) or to local superior court (for informal probation, more information is on PG. 193), and must meet certain requirements or “conditions” of probation. Depending on the circumstances, either the court or a probation officer monitors the person’s compliance with his/her probation terms. Informal Probation, Formal Probation, Mandatory Supervision, and Post-Release Community Supervision (PRCS) are all types of community supervision that fall under the responsibility of California’s county probation departments. Unlike state parole offices, which are all operated by CDCR and DAPO, county probation departments have a lot more independence and differences between them. Here is a quick overview of the different types of county probation:</p>
-        <p class="listparagraph">INFORMAL PROBATION: Informal Probation is a type of supervision for some misdemeanor convictions in which you are supervised by the court, and not by a probation officer—also called summary probation or court probation. If you get probation imposed for a conviction that is a California misdemeanor, it is known as misdemeanor probation—also called “informal” probation or “summary” probation.<sup><a href="#footnote-313" id="footnote-ref-313">[313]</a></sup></p>
-        <p class="listparagraph">FORMAL PROBATION: Formal Probation is a type of supervision for felony and some misdemeanor convictions in which you are supervised by a probation officer <sup><a href="#footnote-314" id="footnote-ref-314">[314]</a></sup></p>
-        <p class="listparagraph">POST-RELEASE COMMUNITY SUPERVISION (PRCS): People released from a state prison after incarceration for a non-violent, non-serious, non-sexual crimes are placed under supervision by local, county probation officers instead of being supervised under state parole.<sup><a href="#footnote-315" id="footnote-ref-315">[315]</a></sup> This form of supervision is called Post-Release Community Supervision (PRCS). PRCS can last for up to 3 years, but can end earlier if the person under supervision does not violate any conditions of his/her PRCS.<sup><a href="#footnote-316" id="footnote-ref-316">[316]</a></sup></p>
-        <p class="listparagraph">MANDATORY SUPERVISION: Mandatory Supervision: In California, through a process called “split sentencing, a judge can split the time of a sentence between a jail term and a period of supervision by a county probation officer. This type of supervision is known as Mandatory Supervision.</p>
-        <p class="text"><span class="emphasisheavy">FEDERAL PROBATION</span>: People convicted of certain federal offenses may be sentenced to Federal Probation or Supervised Release. The U.S. Probation and Pretrial Services System oversees federal probation.<sup><a href="#footnote-317" id="footnote-ref-317">[317]</a></sup></p>
-        <p class="listparagraph">FEDERAL PROBATION: After you are convicted of a federal crime, federal probation is used as an alternative sentence <em>to prison time</em>.<sup><sup><a href="#footnote-318" id="footnote-ref-318">[318]</a></sup></sup> That means that federal “probation” is still considered a sentence in and of itself. For the most part, if you are placed on federal probation, you must report to your assigned probation office <em>and</em> comply with all the rules (“conditions”) of your federal probation.<sup><sup><a href="#footnote-319" id="footnote-ref-319">[319]</a></sup></sup> </p>
-        <p class="listparagraph">SUPERVISED RELEASE: Supervised Release is overseen by federal district courts with the help of federal probation officers.<sup><sup><a href="#footnote-320" id="footnote-ref-320">[320]</a></sup></sup> The judge can sentence you to a term of Supervised Release <em>after your release from federal prison</em>.<sup><sup><a href="#footnote-321" id="footnote-ref-321">[321]</a></sup></sup> In other words, a term of Supervised Release does not replace any time you are sentenced to prison; rather, a judge orders Supervised Release in addition to any term in prison you may serve.<sup><sup><a href="#footnote-322" id="footnote-ref-322">[322]</a></sup></sup> In some cases, the judge that sentences you is actually <em>required by law</em> to impose a term of Supervised Release in addition to a prison term.<sup><a href="#footnote-323" id="footnote-ref-323">[323]</a></sup> It’s common for a federal sentence to include a period of time in prison, followed by a period of time in the community on Supervised Release.</p>
-        <p class="text"><span class="emphasisheavy">FEDERAL PAROLE:</span> Federal Parole was eliminated in 1984. However, a small group of people—(1) those sentenced in federal court before November 1, 1987; (2) those who violate criminal laws in Washington, D.C. (the nation’s capital); (3) those convicted of crimes within the U.S. military’s criminal justice system; and (4) people convicted in certain foreign transfer treaty cases—may still be on federal parole, but are still supervised by federal probation officers.<sup><a href="#footnote-324" id="footnote-ref-324">[324]</a></sup> </p>
-        <li id="footnote-308"><p> <em>See</em> 15 Cal. Code Regs. § 2355. <a href="#footnote-ref-308">↑</a></p></li>
-        <li id="footnote-309"><p> Lifer Parole Process, Cal. Dep’t of Corr. &amp; Rehab., <a href="http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html">http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html</a>. <a href="#footnote-ref-309">↑</a></p></li>
-        <li id="footnote-310"><p> Lifer Parole Process, Cal. Dep’t of Corr. &amp; Rehab., <a href="http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html">http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html</a>. <a href="#footnote-ref-310">↑</a></p></li>
-        <li id="footnote-311"><p> <em>See</em> Cal. Penal Code § 1203. <a href="#footnote-ref-311">↑</a></p></li>
-        <li id="footnote-312"><p> <em>See</em> Cal. Penal Code § 1203.  <a href="#footnote-ref-312">↑</a></p></li>
-        <li id="footnote-313"><p> Cal. Penal Code § 1203(d). <a href="#footnote-ref-313">↑</a></p></li>
-        <li id="footnote-314"><p> <em>See</em> Cal. Penal Code § 1203(b–d).  <a href="#footnote-ref-314">↑</a></p></li>
-        <li id="footnote-315"><p> Cal. Penal Code § 3450; 15 Cal. Code Regs. §§ 3079-79.1. <a href="#footnote-ref-315">↑</a></p></li>
-        <li id="footnote-316"><p> <em>See</em> Cal. Penal Code § 3451 (a) ("[A]ll persons . . . shall, upon release from prison and for a period not exceeding three years immediately following release, be subject to community supervision provided by a county agency.").  <a href="#footnote-ref-316">↑</a></p></li>
-        <li id="footnote-317"><p> 18 U.S.C. § 3153. <em>See also</em> Probation Pretrial Services, US Courts, <a href="http://www.uscourts.gov/FederalCourts/ProbationPretrialServices.aspx">http://www.U.S.C.ourts.gov/FederalCourts/ProbationPretrialServices.aspx</a>.  <a href="#footnote-ref-317">↑</a></p></li>
-        <li id="footnote-318"><p> A defendant may receive a sentence of probation unless he or she is convicted of a Class A or B felony; probation is prohibited by statute of conviction; or the defendant is sentenced at the same time to imprisonment. 18 U.S.C. § 3561(a). A court’s authority to impose probation is based solely on statute. <em>See</em> Affronti v. U.S., 350 U.S. 79, 83 (1955). The authorized length of probation is between one and five years for a felony; not more than five years for a misdemeanor; and not more than one year for an infraction. 18 U.S.C. § 3561(c). <a href="#footnote-ref-318">↑</a></p></li>
-        <li id="footnote-319"><p> 18 U.S.C. § 3563(b)(15). Ever since 1984 (the time when the “Sentencing Reform Act” went into effect), federal criminal courts have recognized federal probation as a sentence in itself. 18 U.S.C. § 3561; <a href="http://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2012/manual-pdf/Chapter_7.pdf%20p.%20477">http://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2012/manual-pdf/Chapter_7.pdf p. 477</a>. Although it is statutorily permissible to receive a sentence of unsupervised or “summary” probation in federal court, it is not the norm – even in misdemeanor cases.  <a href="#footnote-ref-319">↑</a></p></li>
-        <li id="footnote-320"><p> United States Sentencing Commission, Federal Offenders Sentenced to Supervised Release, July 2010 10, p. 1. <a href="http://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2012/2_Federal_Offenders_Sentenced_to_Supervised_Release.pdf">http://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2012/2_Federal_Offenders_Sentenced_to_Supervised_Release.pdf</a>. <a href="#footnote-ref-320">↑</a></p></li>
-        <li id="footnote-321"><p> 18 U.S.C. § 3583. <a href="#footnote-ref-321">↑</a></p></li>
-        <li id="footnote-322"><p> <a href="http://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2012/manual-pdf/Chapter_7.pdf">http://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2012/manual-pdf/Chapter_7.pdf</a> p. 477 <a href="#footnote-ref-322">↑</a></p></li>
-        <li id="footnote-323"><p> <em>See, e.g.</em>, 21 U.S.C. § 841(b)(1)(A) (mandating a lifetime term of supervised release for those convicted of certain drug offenses). <a href="#footnote-ref-323">↑</a></p></li>
-        <li id="footnote-324"><p> Parole in the Federal Probation System, US Courts, <a href="http://www.uscourts.gov/News/TheThirdBranch/11-05-01/Parole_in_the_Federal_Probation_System.aspx">http://www.U.S.C.ourts.gov/News/TheThirdBranch/11-05-01/Parole_in_the_Federal_Probation_System.aspx</a>.  <a href="#footnote-ref-324">↑</a></p></li>
+        <p class="text"><span class="emphasisheavy">STATE PAROLE: </span>In California, parole is a condition of release for many people coming out of prison.<sup><a href="#footnote-305" id="footnote-ref-305">[304]</a></sup> It only applies in felony cases when a person is sentenced to state prison. It also only takes effect after release from prison.</p>
+        <ol class="text"><strong>People sentenced to serve <em>determinate sentences</em></strong><em> </em>— such as an exact term of “seven years” — serve the specified amount of time in prison ordered by the judge. Once their sentence is over, they are released.</ol>
+        <ol class="text"><strong>People sentenced to serve indeterminate terms</strong>, such as “25 to life with the possibility of parole,” are released only after a Board of Parole Hearings (BPH) determines that they are ready to re-enter society.<sup><a href="#footnote-306" id="footnote-ref-306">[305]</a></sup> </ol>
+        <ol class="text"><strong>Most people released from California state prison are required to serve a period of parole after they are released.</strong> People on parole — called “parolees” — remain under the control of the California Department of Corrections and Rehabilitation’s (CDCR) Division of Adult Parole Operations (DAPO). People on parole are supervised by parole agents, and must follow certain requirements or “conditions” of parole.<sup><a href="#footnote-307" id="footnote-ref-307">[306]</a></sup></ol>
+        <p class="text"><span class="emphasisheavy">COUNTY PROBATION &amp; NEW FORMS OF COUNTY-LEVEL SUPERVISION:</span> Probation is a type of supervision that a judge orders at trial as <em>part of the original sentence</em>, either as an alternative to incarceration OR in addition to incarceration.<sup><a href="#footnote-308" id="footnote-ref-308">[307]</a></sup> California probation reduces or eliminates the time that a person must spend in custody in jail or prison.<sup><a href="#footnote-309" id="footnote-ref-309">[308]</a></sup> People on probation must report to their county probation office (for more about formal probation, go to PG. 194) or to local superior court (for more about informal probation, go to PG. 190), and must meet certain requirements or “conditions” of probation. Depending on the circumstances, either the court or a probation officer monitors the person’s compliance with his or her probation terms. Informal probation, formal probation, mandatory supervision, and post-release community supervision (PRCS) are all types of community supervision that fall under the responsibility of California’s county probation departments. Unlike state parole offices, which are all operated by CDCR and DAPO, county probation departments have a lot more independence and differences between them. Here is a quick overview of the different types of county probation:</p>
+        <ol class="text"><strong>INFORMAL PROBATION:</strong> Informal probation is a type of supervision for some misdemeanor convictions in which you are supervised by the court, not by a probation officer.It is also called “court,” “summary,” and “misdemeanor” probation.<strong><sup><a href="#footnote-310" id="footnote-ref-310">[309]</a></sup></strong></ol>
+        <ol class="text"><strong>FORMAL PROBATION:</strong> Formal probation is a type of supervision for felony and some misdemeanor convictions in which you are supervised by a probation officer <strong><sup><a href="#footnote-311" id="footnote-ref-311">[310]</a></sup></strong></ol>
+        <ol class="text"><strong>POST-RELEASE COMMUNITY SUPERVISION (PRCS):</strong> If you are released from state prison after incarceration for a non-violent, non-serious, non-sexual crime, you are placed under supervision by county probation officers, instead of being placed on state parole.<strong><sup><a href="#footnote-312" id="footnote-ref-312">[311]</a></sup></strong> This is called post-release community supervision (PRCS). PRCS can last up to 3 years, but it can end earlier if you do not violate any conditions of your PRCS.<strong><sup><a href="#footnote-313" id="footnote-ref-313">[312]</a></sup></strong></ol>
+        <ol class="text"><strong>MANDATORY SUPERVISION:</strong> In California, through a process called “split sentencing,” a judge can split the time of a sentence between a jail term and a period of supervision by a county probation officer. This type of supervision is called mandatory supervision.</ol>
+        <p class="text"><span class="emphasisheavy">FEDERAL PROBATION</span>: People convicted of certain federal offenses may be sentenced to federal probation or supervised release. The U.S. Probation and Pretrial Services System oversees federal probation.<sup><a href="#footnote-314" id="footnote-ref-314">[313]</a></sup></p>
+        <ol class="text"><strong>FEDERAL PROBATION:</strong> After you are convicted of a federal crime, federal probation is used as an alternative sentence <em>to prison time</em>.<sup><sup><a href="#footnote-315" id="footnote-ref-315">[314]</a></sup></sup> This means federal probation is a type of sentence in itself. If you are on federal probation, you must report to your assigned probation office <em>and</em> comply with the conditions of your federal probation.<sup><sup><a href="#footnote-316" id="footnote-ref-316">[315]</a></sup></sup> </ol>
+        <ol class="text"><strong>SUPERVISED RELEASE:</strong> Supervised release is overseen by federal district courts with the help of federal probation officers.<sup><sup><a href="#footnote-317" id="footnote-ref-317">[316]</a></sup></sup> The judge can sentence you to a term of supervised release <em>after your release from federal prison</em>.<sup><sup><a href="#footnote-318" id="footnote-ref-318">[317]</a></sup></sup> In other words, a term of supervised release does not <em>replace</em> any part of your prison term; rather, a judge orders supervised release <em>in addition to</em> any prison term you may serve.<sup><sup><a href="#footnote-319" id="footnote-ref-319">[318]</a></sup></sup> In some cases, the judge who sentences you is actually <em>required by law</em> to impose a term of supervised release in addition to a prison term.<strong><sup><a href="#footnote-320" id="footnote-ref-320">[319]</a></sup></strong> It’s common for a federal sentence to include a prison term, followed by a period of supervised release.</ol>
+        <p class="text"><span class="emphasisheavy">FEDERAL PAROLE:</span> Although federal parole was officially eliminated in 1984, certain categories of people may still be on federal parole. These categories include: (1) people who were sentenced in federal court before November 1, 1987; (2) people who violate criminal laws in Washington, DC (the nation’s capital); (3) people convicted of crimes within the U.S. military’s criminal justice system; and (4) people convicted in certain foreign transfer treaty cases. People who are on federal parole are supervised by federal probation officers.<sup><a href="#footnote-321" id="footnote-ref-321">[320]</a></sup> </p>
+        <li id="footnote-305"><p> See 15 Cal. Code Regs. § 2355. <a href="#footnote-ref-305">↑</a></p></li>
+        <li id="footnote-306"><p> Lifer Parole Process, Cal. Dep’t of Corr. &amp; Rehab., <a href="http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html">http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html</a>. <a href="#footnote-ref-306">↑</a></p></li>
+        <li id="footnote-307"><p> Lifer Parole Process, Cal. Dep’t of Corr. &amp; Rehab., <a href="http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html">http://www.cdcr.ca.gov/BOPH/lifer_parole_process.html</a>. <a href="#footnote-ref-307">↑</a></p></li>
+        <li id="footnote-308"><p> See Cal. Penal Code § 1203. <a href="#footnote-ref-308">↑</a></p></li>
+        <li id="footnote-309"><p> See Cal. Penal Code § 1203.  <a href="#footnote-ref-309">↑</a></p></li>
+        <li id="footnote-310"><p> Cal. Penal Code § 1203(d). <a href="#footnote-ref-310">↑</a></p></li>
+        <li id="footnote-311"><p> See Cal. Penal Code § 1203(b–d).  <a href="#footnote-ref-311">↑</a></p></li>
+        <li id="footnote-312"><p> Cal. Penal Code § 3450; 15 Cal. Code Regs. §§ 3079-79.1. <a href="#footnote-ref-312">↑</a></p></li>
+        <li id="footnote-313"><p> See Cal. Penal Code § 3451 (a) ("[A]ll persons . . . shall, upon release from prison and for a period not exceeding three years immediately following release, be subject to community supervision provided by a county agency.").  <a href="#footnote-ref-313">↑</a></p></li>
+        <li id="footnote-314"><p> 18 U.S.C. § 3153. See also Probation Pretrial Services, US Courts, <a href="http://www.uscourts.gov/FederalCourts/ProbationPretrialServices.aspx">http://www.U.S.C.ourts.gov/FederalCourts/ProbationPretrialServices.aspx</a>.  <a href="#footnote-ref-314">↑</a></p></li>
+        <li id="footnote-315"><p> A defendant may receive a sentence of probation unless he or she is convicted of a Class A or B felony; probation is prohibited by statute of conviction; or the defendant is sentenced at the same time to imprisonment. 18 U.S.C. § 3561(a). A court’s authority to impose probation is based solely on statute. See Affronti v. U.S., 350 U.S. 79, 83 (1955). The authorized length of probation is between one and five years for a felony; not more than five years for a misdemeanor; and not more than one year for an infraction. 18 U.S.C. § 3561(c). <a href="#footnote-ref-315">↑</a></p></li>
+        <li id="footnote-316"><p> 18 U.S.C. § 3563(b)(15). Ever since 1984 (the time when the “Sentencing Reform Act” went into effect), federal criminal courts have recognized federal probation as a sentence in itself. 18 U.S.C. § 3561; <a href="http://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2012/manual-pdf/Chapter_7.pdf%20p.%20477">http://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2012/manual-pdf/Chapter_7.pdf p. 477</a>. Although it is statutorily permissible to receive a sentence of unsupervised or “summary” probation in federal court, it is not the norm – even in misdemeanor cases.  <a href="#footnote-ref-316">↑</a></p></li>
+        <li id="footnote-317"><p> United States Sentencing Commission, Federal Offenders Sentenced to Supervised Release, July 2010 10, p. 1. <a href="http://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2012/2_Federal_Offenders_Sentenced_to_Supervised_Release.pdf">http://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2012/2_Federal_Offenders_Sentenced_to_Supervised_Release.pdf</a>. <a href="#footnote-ref-317">↑</a></p></li>
+        <li id="footnote-318"><p> 18 U.S.C. § 3583. <a href="#footnote-ref-318">↑</a></p></li>
+        <li id="footnote-319"><p> <a href="http://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2012/manual-pdf/Chapter_7.pdf">http://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2012/manual-pdf/Chapter_7.pdf</a> p. 477 <a href="#footnote-ref-319">↑</a></p></li>
+        <li id="footnote-320"><p> See, e.g., 21 U.S.C. § 841(b)(1)(A) (mandating a lifetime term of supervised release for those convicted of certain drug offenses). <a href="#footnote-ref-320">↑</a></p></li>
+        <li id="footnote-321"><p> Parole in the Federal Probation System, US Courts, <a href="http://www.uscourts.gov/News/TheThirdBranch/11-05-01/Parole_in_the_Federal_Probation_System.aspx">http://www.U.S.C.ourts.gov/News/TheThirdBranch/11-05-01/Parole_in_the_Federal_Probation_System.aspx</a>.  <a href="#footnote-ref-321">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
           <li class="previous">
             <a href="/roadmap-to-html/parole-probation/why-is-it-important-to-know-what-type-of-supervisi">
               <span class="neighbor-label">Previous</span>
-              <span class="neighbor-title">Why is it important to know what type of supervision I am on, and the rules of that supervision department?</span>
+              <span class="neighbor-title">Why is it important to know what type of supervision I am on, and the rules I must follow?</span>
             </a>
           </li>
           <li class="next">
-            <a href="/roadmap-to-html/parole-probation/what-is-the-difference-between-the-state-federal-s">
+            <a href="/roadmap-to-html/parole-probation/what-is-the-difference-between-the-state-and-feder">
               <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">What is the difference between the state & federal systems?</span>
+              <span class="neighbor-title">What is the difference between the state and federal systems?</span>
             </a>
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -144,11 +128,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

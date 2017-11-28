@@ -21,73 +21,58 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="court-ordered-debt/traffic-fines-and-tickets/i-think-i-had-an-old-traffic-ticket-but-i-cant-rem">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/court-ordered-debt">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/traffic-fines-and-tickets">Traffic fines and tickets</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt">Court-Ordered Debt</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt/traffic-fines-and-tickets">Traffic fines and tickets</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt/traffic-fines-and-tickets/i-think-i-had-an-old-traffic-ticket-but-i-cant-rem">I think I had an old traffic ticket, but I can’t remember or can’t find it. What are my options? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>I think I had an old traffic ticket, but I can’t remember or can’t find it. What are my options?</h1>
         <p class="text">Old traffic tickets can be difficult to track down! This is because cities, counties, the state, and even some colleges have the power to issue traffic tickets—and each agency may handle overdue tickets differently. This can make it hard to know <em>whether</em> you owe unpaid traffic fines, <em>how much </em>you owe, <em>whom</em> you owe fines to, and <em>what to do </em>next. The first step is to find out where your ticket is.</p>
-        <h4>For parking tickets: </h4>
+        <div class="questionheading"><em>For parking tickets: </em></div>
         <ol class="text"><em>If you CAN remember where you got the ticket</em>, you can contact the city where you got the ticket and ask how to resolve a parking ticket. If the city has a separate department or agency that handles traffic tickets, you will need to speak with someone from that office directly.</ol>
-        <ol class="text"><em>If you CAN’T remember where you got the ticket</em>, you can contact the DMV and ask whether there are any <em>holds</em> on your car registration. (A <em>hold</em> means that you are not allowed to renew your registration because you didn’t pay a parking ticket.)<sup><a href="#footnote-2104" id="footnote-ref-2104">[2104]</a></sup> The DMV will be able to tell you which county, city, or parking agency put the hold on your registration—this is where you owe one or more outstanding parking tickets.<sup><a href="#footnote-2105" id="footnote-ref-2105">[2105]</a></sup></ol>
-        <ol class="text">You will also find out about any unpaid parking tickets when it’s time to renew your car registration (which you have to do every year). The DMV will send you an annual notice to renew your registration which will list any unpaid parking fines you owe and where you got each ticket.<sup><a href="#footnote-2106" id="footnote-ref-2106">[2106]</a></sup> You will not be allowed to renew your registration until you pay all these fines and fees. <sup><a href="#footnote-2107" id="footnote-ref-2107">[2107]</a></sup></ol>
-        <h4>For infraction and misdemeanor tickets: </h4>
-        <ol class="text">The easiest way to track down all of your old misdemeanor and infraction tickets is through the DMV. You can go to any DMV office and ask for a list of your<em> warrants</em>, which should be available for free.<sup><a href="#footnote-2108" id="footnote-ref-2108">[2108]</a></sup> The list of warrants will show all outstanding traffic tickets where you failed to appear in court (FTAs) and/or failed to pay (FTPs), and will also show where you got the ticket.<sup><a href="#footnote-2109" id="footnote-ref-2109">[2109]</a></sup></ol>
-        <ol class="text">You can also ask the DMV whether there are any <em>holds</em> on your driver license due to outstanding traffic tickets.<sup><a href="#footnote-2110" id="footnote-ref-2110">[2110]</a></sup> (A <em>hold</em> means that your license has been suspended and/or you cannot renew it because you didn’t pay a traffic ticket or you failed to appear in court.) The DMV will be able to tell you which court put the hold on your license—this is where you owe outstanding traffic tickets.<sup><a href="#footnote-2111" id="footnote-ref-2111">[2111]</a></sup></ol>
-        <li id="footnote-2104"><p> Cal. Veh. Code § 4760(a)(1) (although the DMV does not issue tickets itself, it may put a hold on your Vehicle Registration if you have outstanding unpaid parking tickets). A Vehicle Registration hold prevents you from renewing your license until you resolve the underlying ticket and get the hold removed). <a href="#footnote-ref-2104">↑</a></p></li>
-        <li id="footnote-2105"><p> Cal. Veh. Code § 4761. <a href="#footnote-ref-2105">↑</a></p></li>
-        <li id="footnote-2106"><p> Cal. Veh. Code § 4761. <a href="#footnote-ref-2106">↑</a></p></li>
-        <li id="footnote-2107"><p> Cal. Veh. Code §§ 4760, 4766. <a href="#footnote-ref-2107">↑</a></p></li>
-        <li id="footnote-2108"><p> Communication with Eleanor Miller, reentry attorney, Pepperdine Legal Aid Clinic, week of March 2-6, 2015. <a href="#footnote-ref-2108">↑</a></p></li>
-        <li id="footnote-2109"><p> Communication with Eleanor Miller, reentry attorney, Pepperdine Legal Aid Clinic, week of March 2-6, 2015. <a href="#footnote-ref-2109">↑</a></p></li>
-        <li id="footnote-2110"><p> Cal. Veh. Code §§ 40508 (a), (b), (c), 40509.5. Although the DMV does not issue tickets itself, other courts and agencies can ask the DMV to put a hold on your Driver License if you failed to pay your traffic tickets or to appear in court when you were supposed to.  <a href="#footnote-ref-2110">↑</a></p></li>
-        <li id="footnote-2111"><p> Cal. Veh. Code §§ 40002, 40002.1. <a href="#footnote-ref-2111">↑</a></p></li>
+        <ol class="text"><em>If you CAN’T remember where you got the ticket</em>, you can contact the DMV and ask whether there are any <em>holds</em> on your car registration. (A <em>hold</em> means that you are not allowed to renew your registration because you didn’t pay a parking ticket.)<sup><a href="#footnote-2215" id="footnote-ref-2215">[2214]</a></sup> The DMV will be able to tell you which county, city, or parking agency put the hold on your registration—this is where you owe one or more outstanding parking tickets.<sup><a href="#footnote-2216" id="footnote-ref-2216">[2215]</a></sup></ol>
+        <ol class="text">You will also find out about any unpaid parking tickets when it’s time to renew your car registration (which you have to do every year). The DMV will send you an annual notice to renew your registration which will list any unpaid parking fines you owe and where you got each ticket.<sup><a href="#footnote-2217" id="footnote-ref-2217">[2216]</a></sup> You will not be allowed to renew your registration until you pay all these fines and fees. <sup><a href="#footnote-2218" id="footnote-ref-2218">[2217]</a></sup></ol>
+        <div class="questionheading"><em>For infraction and misdemeanor tickets: </em></div>
+        <ol class="text">The easiest way to track down all of your old misdemeanor and infraction tickets is through the DMV. You can go to any DMV office and ask for a list of your<em> warrants</em>, which should be available for free.<sup><a href="#footnote-2219" id="footnote-ref-2219">[2218]</a></sup> The list of warrants will show all outstanding traffic tickets where you failed to appear in court (FTAs) and/or failed to pay (FTPs), and will also show where you got the ticket.<sup><a href="#footnote-2220" id="footnote-ref-2220">[2219]</a></sup></ol>
+        <ol class="text">You can also ask the DMV whether there are any <em>holds</em> on your driver license due to outstanding traffic tickets.<sup><a href="#footnote-2221" id="footnote-ref-2221">[2220]</a></sup> (A <em>hold</em> means that your license has been suspended and/or you cannot renew it because you didn’t pay a traffic ticket or you failed to appear in court.) The DMV will be able to tell you which court put the hold on your license—this is where you owe outstanding traffic tickets.<sup><a href="#footnote-2222" id="footnote-ref-2222">[2221]</a></sup></ol>
+        <li id="footnote-2215"><p> Cal. Veh. Code § 4760(a)(1) (although the DMV does not issue tickets itself, it may put a hold on your Vehicle Registration if you have outstanding unpaid parking tickets). A Vehicle Registration hold prevents you from renewing your license until you resolve the underlying ticket and get the hold removed). <a href="#footnote-ref-2215">↑</a></p></li>
+        <li id="footnote-2216"><p> Cal. Veh. Code § 4761. <a href="#footnote-ref-2216">↑</a></p></li>
+        <li id="footnote-2217"><p> Cal. Veh. Code § 4761. <a href="#footnote-ref-2217">↑</a></p></li>
+        <li id="footnote-2218"><p> Cal. Veh. Code §§ 4760, 4766. <a href="#footnote-ref-2218">↑</a></p></li>
+        <li id="footnote-2219"><p> Communication with Eleanor Miller, reentry attorney, Pepperdine Legal Aid Clinic, week of March 2-6, 2015. <a href="#footnote-ref-2219">↑</a></p></li>
+        <li id="footnote-2220"><p> Communication with Eleanor Miller, reentry attorney, Pepperdine Legal Aid Clinic, week of March 2-6, 2015. <a href="#footnote-ref-2220">↑</a></p></li>
+        <li id="footnote-2221"><p> Cal. Veh. Code §§ 40508 (a), (b), (c), 40509.5. Although the DMV does not issue tickets itself, other courts and agencies can ask the DMV to put a hold on your Driver License if you failed to pay your traffic tickets or to appear in court when you were supposed to.  <a href="#footnote-ref-2221">↑</a></p></li>
+        <li id="footnote-2222"><p> Cal. Veh. Code §§ 40002, 40002.1. <a href="#footnote-ref-2222">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -105,7 +90,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -130,11 +114,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

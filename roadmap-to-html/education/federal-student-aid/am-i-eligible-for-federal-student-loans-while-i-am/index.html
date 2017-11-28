@@ -21,69 +21,54 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="education/federal-student-aid/am-i-eligible-for-federal-student-loans-while-i-am">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/education">Education</a></li>
-          <li><a href="/roadmap-to-html/education/federal-student-aid">Federal Student Aid</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/education">Education</a></li>
+    <li><a href="/roadmap-to-html/education/federal-student-aid">Federal Student Aid</a></li>
+    <li><a href="/roadmap-to-html/education/federal-student-aid/am-i-eligible-for-federal-student-loans-while-i-am">Am I eligible for federal student loans while I am incarcerated? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Am I eligible for federal student loans while I am incarcerated?</h1>
-        <p class="text">It depends where you are incarcerated. Anyone who is considered “incarcerated” in a federal or state facility cannot receive federal student loans.<sup><a href="#footnote-2781" id="footnote-ref-2781">[2781]</a></sup> </p>
+        <p class="text">It depends where you are incarcerated. Anyone who is considered “incarcerated” in a federal or state facility cannot receive federal student loans.<sup><a href="#footnote-2895" id="footnote-ref-2895">[2894]</a></sup> </p>
         <p class="text">Unfortunately, here, <strong>you are considered “incarcerated”</strong> if you are serving a sentence in a penitentiary, prison, jail, reformatory, work farm, or similar correctional institution, whether it is operated by the government or a private contractor. You are also considered to be incarcerated if you have been committed to a juvenile detention facility.</p>
         <p class="text"><strong>You are NOT considered incarcerated</strong> if you are in a halfway house, on home detention, sentenced to serve only on weekends, or if you are confined while your case is still pending (such as while you are awaiting trial). </p>
         <p class="widetableintroitalcaps">The following chart summarizes whether or not you can receive federal student grants and/or federal student loans while you are incarcerated.</p>
-        <table><tr><td><p class="tableheadingmedium">IF YOU ARE IN A FEDERAL OR STATE INSTITUTION:</p></td><td><ul class="textbox">Generally speaking, you CANNOT get a Federal Pell Grant or federal student loans while incarcerated. But it depends on <em>where</em> you are confined.<sup><sup><a href="#footnote-2782" id="footnote-ref-2782">[2782]</a></sup></sup><strong><em>THIS IS A NEW LEGAL UPDATE!</em> </strong>Beginning in September 2015, under a new federal program by the U.S. Department of Education (U.S. DOE) called the “<em>Second Chance Pell Pilot Program,”</em> you MAY be able to receive federal Pell Grants to cover many of the costs of college (tuition, fees, books, and supplies) while incarcerated.<sup><sup><a href="#footnote-2783" id="footnote-ref-2783">[2783]</a></sup></sup> Before this announcement, currently incarcerated people in state and federal facilities were NOT able to receive Federal Pell Grants.You can get a Federal Supplemental Educational Opportunity Grant (FSEOG) and Federal Work-Study (FWS), but it is unlikely unless your institution is one of the state or federal facilities that is approved for the “Second Chance Pell Pilot Program.” This is because priority for FSEOGs must be given to those students who also will receive a Federal Pell Grant (for which most incarcerated people still will not be eligible), and because the logistical difficulties of performing an FWS job while incarcerated would likely be too great for you to be awarded FWS funds.</ul></td></tr><tr><td><p class="tableheadingmedium">IF YOU ARE IN AN INSTITUTION <em>OTHER THAN</em> A FEDERAL OR STATE ONE:</p></td><td><ul class="textbox">You CANNOT get federal student loans.You can get a Federal Pell Grant.You can get FSEOG and FWS, but you probably won’t because schools are limited in the amount of FSEOG funds available, and because the logistical difficulties of performing an FWS job while incarcerated would likely be too great for you to be awarded FWS funds.</ul></td></tr></table>
+        <table><tr><td><p>IF YOU ARE IN A FEDERAL OR STATE INSTITUTION:</p></td><td><ol class="text">Generally speaking, you CANNOT get a Federal Pell Grant or federal student loans while incarcerated, unless your institution participates in the “Second Chane Pell Pilot Program” (see below). But it depends on <em>where</em> you are confined.<sup><sup><a href="#footnote-2896" id="footnote-ref-2896">[2895]</a></sup></sup></ol><ol class="text">As of September 2015, under a new federal program by the U.S. Department of Education (U.S. DOE) called the “<em>Second Chance Pell Pilot Program,”</em> you MAY be able to receive federal Pell Grants to cover many of the costs of college (tuition, fees, books, and supplies) while incarcerated.<sup><sup><a href="#footnote-2897" id="footnote-ref-2897">[2896]</a></sup></sup> Before this announcement, currently incarcerated people in state and federal facilities were NOT able to receive Federal Pell Grants.</ol><ol class="text">You can get a Federal Supplemental Educational Opportunity Grant (FSEOG) and Federal Work-Study (FWS), but it is unlikely unless your institution is one of the state or federal facilities that is approved for the “Second Chance Pell Pilot Program.” This is because priority for FSEOGs must be given to those students who also will receive a Federal Pell Grant (for which most incarcerated people still will not be eligible), and because the logistical difficulties of performing an FWS job while incarcerated would likely be too great for you to be awarded FWS funds.</ol></td></tr><tr><td><p>IF YOU ARE IN AN INSTITUTION <em>OTHER THAN</em> A FEDERAL OR STATE ONE:</p></td><td><ol class="text">You CANNOT get federal student loans.</ol><ol class="text">You can get a Federal Pell Grant.</ol><ol class="text">You can get FSEOG and FWS, but you probably won’t because schools are limited in the amount of FSEOG funds available, and because the logistical difficulties of performing an FWS job while incarcerated would likely be too great for you to be awarded FWS funds.</ol></td></tr></table>
         <p class="text">Once you’re released, most eligibility limitations will be removed. In fact, you may apply for aid before you’re released so your aid is processed in time for you to start school. However, if your incarceration was for a drug-related offense or if you are subject to an involuntary civil commitment for a sexual offense, your eligibility may be limited.</p>
-        <p class="textbox"><strong>REMEMBER:</strong> Even though you are not eligible to receive federal student loans while you are incarcerated, you can still apply for them so that your application can be processed and they will be available in time for you to start school once you are released.<sup><sup><a href="#footnote-2784" id="footnote-ref-2784">[2784]</a></sup></sup> (For information on applying for federal student aid, see PG. 984. The application process is the same whether you are incarcerated or not.)</p>
-        <p class="importantbox">IMPORTANT: If you’re incarcerated, you should not fill out the FAFSA unless you know you are going to be released in time to attend school <em>that year</em>. FAFSA information is only good for one year. (Everyone who applies for federal student aid must complete a new FAFSA every year.) </p>
-        <li id="footnote-2781"><p> U.S. Dep’t of Educ. Fed. Student Aid Office, Federal Student Aid Eligibility for Students Confined in Adult Correctional and Juvenile Justice Facilities (Dec. 2014), <a href="https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf">https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf</a>.  <a href="#footnote-ref-2781">↑</a></p></li>
-        <li id="footnote-2782"><p> U.S. Dep’t of Educ. Fed. Student Aid Office, Federal Student Aid Eligibility for Students Confined in Adult Correctional and Juvenile Justice Facilities (Dec. 2014), <a href="https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf">https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf</a>.  <a href="#footnote-ref-2782">↑</a></p></li>
-        <li id="footnote-2783"><p> The Pell Grants can only be used to pay for tuition, fees, books and supplies required by education program. Incarcerated individuals will not be eligible to receive other types of Federal student aid under this pilot program. <em>See</em> U.S. Department of Education, “U.S. Department of Education Launches Second Chance Pell Pilot Program for Incarcerated Individuals,” (Jul. 31. 2015), http://www.ed.gov/news/press-releases/us-department-education-launches-second-chance-pell-pilot-program-incarcerated-individuals. <a href="#footnote-ref-2783">↑</a></p></li>
-        <li id="footnote-2784"><p> U.S. Dep’t of Educ. Fed. Student Aid Office, Federal Student Aid Eligibility for Students Confined in Adult Correctional and Juvenile Justice Facilities (Dec. 2014), <a href="https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf">https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf</a>.  <a href="#footnote-ref-2784">↑</a></p></li>
+        <p class="textbox"><strong>REMEMBER:</strong> Even though you are not eligible to receive federal student loans while you are incarcerated, you can still apply for them so that your application can be processed and they will be available in time for you to start school once you are released.<sup><sup><a href="#footnote-2898" id="footnote-ref-2898">[2897]</a></sup></sup> (For information on applying for federal student aid, see PG. 875. The application process is the same whether you are incarcerated or not.)</p>
+        <p class="importantbox">IMPORTANT: If you’re incarcerated, you should not fill out the FAFSA unless you know you are going to be released in time to attend school <em>that year</em>. FAFSA information is only good for one year. Everyone who applies for federal student aid must complete a new FAFSA every year. This means that if you were receiving federal financial aid before you were incarcerated, you will likely need to reapply, unless you will be released before that school year ends.  </p>
+        <li id="footnote-2895"><p> <a href="#footnote-ref-2895">↑</a></p></li>
+        <li id="footnote-2896"><p> U.S. Dep’t of Educ. Fed. Student Aid Office, Federal Student Aid Eligibility for Students Confined in Adult Correctional and Juvenile Justice Facilities (Dec. 2014), <a href="https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf">https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf</a>.  <a href="#footnote-ref-2896">↑</a></p></li>
+        <li id="footnote-2897"><p> The Pell Grants can only be used to pay for tuition, fees, books and supplies required by education program. Incarcerated individuals will not be eligible to receive other types of Federal student aid under this pilot program. See U.S. Department of Education, “U.S. Department of Education Launches Second Chance Pell Pilot Program for Incarcerated Individuals,” (Jul. 31. 2015), http://www.ed.gov/news/press-releases/us-department-education-launches-second-chance-pell-pilot-program-incarcerated-individuals. <a href="#footnote-ref-2897">↑</a></p></li>
+        <li id="footnote-2898"><p> U.S. Dep’t of Educ. Fed. Student Aid Office, Federal Student Aid Eligibility for Students Confined in Adult Correctional and Juvenile Justice Facilities (Dec. 2014), <a href="https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf">https://studentaid.ed.gov/sites/default/files/aid-info-for-incarcerated-individuals.pdf</a>.  <a href="#footnote-ref-2898">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -101,7 +86,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -126,11 +110,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

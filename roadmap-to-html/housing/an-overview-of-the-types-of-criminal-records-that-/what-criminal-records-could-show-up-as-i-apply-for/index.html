@@ -21,67 +21,52 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="housing/an-overview-of-the-types-of-criminal-records-that-/what-criminal-records-could-show-up-as-i-apply-for">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/housing">Housing</a></li>
-          <li><a href="/roadmap-to-html/housing/an-overview-of-the-types-of-criminal-records-that-">An Overview of the Types of Criminal Records that Could Show Up as you Apply For Housing</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/housing">Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/an-overview-of-the-types-of-criminal-records-that-">An Overview of the Types of Criminal Records that Could Show Up as you Apply For Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/an-overview-of-the-types-of-criminal-records-that-/what-criminal-records-could-show-up-as-i-apply-for">What criminal records could show up as I apply for any type of housing? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What criminal records could show up as I apply for any type of housing?</h1>
         <p class="text">Here are three major categories of records that might tell a private landlord, Public Housing Authority (PHA), or owner of government-assisted housing something about your criminal history:</p>
         <h4 class="sidebox">LEARN ABOUT WHEN YOUR Criminal RECORDS CAN BE ACCESSED</h4>
-        <p class="sidebox">We go into the rules about when these records can be accessed, and what can be considered, beginning on PG. 407.</p>
-        <ol><li><strong>CRIMINAL HISTORY RECORDS:</strong></li></ol>
-        <p class="text">These include: government-produced criminal records; publicly available court records of cases involving you; police and law enforcement records including arrest records; reports produced by private background check and tenant-screening companies (see #2: “BACKGROUND CHECKS/TENANT REPORTS” below); Internet research; the newspaper; and/or information received directly from you—through an application form or by asking you. Learn more about where your criminal records come from in the UNDERSTANDING &amp; CLEANING UP YOUR CRIMINAL RECORD CHAPTER, beginning on PG. 1029.</p>
-        <ol><li><strong>BACKGROUND CHECKS/ “TENANT REPORTS”: </strong></li></ol>
-        <p class="text">A private landlord, PHA, or government-assisted owner will MOST LIKELY get a copy of your background check from a private company—and when it’s for a housing provider, the background check report is often called a “tenant report.” Tenant reports show <em>credit information, employment history, certain criminal history information, entries in sex offender registries or other public databases, driving records, interviews with people who know you, and more</em>. These reports are created and provided by private background check companies and/or credit bureaus. (See PG. 407 to better understand the rules about getting background checks, and what information can be considered for housing.)</p>
-        <ol><li><strong>DRUG OR ALCOHOL TREATMENT RECORDS: </strong></li></ol>
-        <p class="text">These are documents that show your enrollment in, participation in, and completion of any drug or alcohol treatment programs. In some cases, a PHA or owner of government-assisted housing, <em>may</em> be able to get records about your past drug or alcohol treatment, BUT A REGULAR PRIVATE LANDLORD CANNOT GET THESE RECORDS.<sup><a href="#footnote-1161" id="footnote-ref-1161">[1161]</a></sup> </p>
-        <li id="footnote-1161"><p> For more reading on this topic, <em>see</em> Sharon M Dietrich, When “Your Permanent Record” is a Permanent Barrier: Helping Legal Aid Clients Reduce the Stigma of Criminal Records, 41 Clearinghouse Rev. 139, 141 (July-Aug. 2007), discussing what applicants can do to improve or challenge the criminal record. <a href="#footnote-ref-1161">↑</a></p></li>
+        <p class="sidebox">We go into the rules about when these records can be accessed, and what can be considered, beginning on PG. 372.</p>
+        <p class="text"><strong>1) CRIMINAL HISTORY RECORDS:</strong></p>
+        <p class="text">These include: government-produced criminal records; publicly available court records of cases involving you; police and law enforcement records including arrest records; reports produced by private background check and tenant-screening companies (see #2: “BACKGROUND CHECKS/TENANT REPORTS” below); Internet research; the newspaper; and/or information received directly from you—through an application form or by asking you. Learn more about where your criminal records come from in the UNDERSTANDING &amp; CLEANING UP YOUR CRIMINAL RECORD CHAPTER, beginning on PG. 915.</p>
+        <p class="text"><strong>2) BACKGROUND CHECKS/“TENANT REPORTS”:</strong></p>
+        <p class="text">A private landlord, PHA, or government-assisted owner will MOST LIKELY get a copy of your background check from a private company—and when it’s for a housing provider, the background check report is often called a “tenant report.” Tenant reports show <em>credit information, employment history, certain criminal history information, entries in sex offender registries or other public databases, driving records, interviews with people who know you, and more</em>. These reports are created and provided by private background check companies and/or credit bureaus. (See PG. 372 to better understand the rules about getting background checks, and what information can be considered for housing.)</p>
+        <p class="text"><strong>3) DRUG OR ALCOHOL TREATMENT RECORDS:</strong></p>
+        <p class="text">These are documents that show your enrollment in, participation in, and completion of any drug or alcohol treatment programs. In some cases, a PHA or owner of government-assisted housing, <em>may</em> be able to get records about your past drug or alcohol treatment, BUT A REGULAR PRIVATE LANDLORD CANNOT GET THESE RECORDS.<sup><a href="#footnote-1262" id="footnote-ref-1262">[1261]</a></sup> </p>
+        <li id="footnote-1262"><p> For more reading on this topic, see Sharon M Dietrich, When “Your Permanent Record” is a Permanent Barrier: Helping Legal Aid Clients Reduce the Stigma of Criminal Records, 41 Clearinghouse Rev. 139, 141 (July-Aug. 2007), discussing what applicants can do to improve or challenge the criminal record. <a href="#footnote-ref-1262">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -94,12 +79,11 @@
           <li class="next">
             <a href="/roadmap-to-html/housing/an-overview-of-the-types-of-criminal-records-that-/does-this-chapter-cover-what-can-and-cannot-show-u">
               <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">Does this Chapter cover what can and Cannot show up in my credit report?</span>
+              <span class="neighbor-title">Does this Chapter cover what can and cannot show up in my credit report?</span>
             </a>
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -124,11 +108,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

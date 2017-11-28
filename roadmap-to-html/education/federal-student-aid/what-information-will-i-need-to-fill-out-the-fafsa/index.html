@@ -21,65 +21,52 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="education/federal-student-aid/what-information-will-i-need-to-fill-out-the-fafsa">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/education">Education</a></li>
-          <li><a href="/roadmap-to-html/education/federal-student-aid">Federal Student Aid</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/education">Education</a></li>
+    <li><a href="/roadmap-to-html/education/federal-student-aid">Federal Student Aid</a></li>
+    <li><a href="/roadmap-to-html/education/federal-student-aid/what-information-will-i-need-to-fill-out-the-fafsa">What information will I need to fill out the FAFSA? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What information will I need to fill out the FAFSA?</h1>
-        <p class="text">The FAFSA asks you for basic personal identifying information such as your name, date of birth, and address, as well as for information about your financial situation. Some of the information and documents you may need are:<sup><a href="#footnote-2787" id="footnote-ref-2787">[2787]</a></sup></p>
+        <p class="text">The FAFSA asks you for personal information such as your name, date of birth, and address, as well as for information about your financial situation. Some of the information and documents you may need are:<sup><a href="#footnote-2901" id="footnote-ref-2901">[2900]</a></sup></p>
         <ol class="text">Your social security number;</ol>
         <ol class="text">Your driver license number (if you have one);</ol>
-        <ol class="text">Your Alien Registration number if you are not a U.S. citizen (For a full list of eligible noncitizens, visit <a href="https://fafsa.ed.gov/help/fotw15a.htm">https://fafsa.ed.gov/help/fotw15a.htm</a>, or see Appendix G, PG. 1015);</ol>
+        <ol class="text">Your Alien Registration number if you are not a U.S. citizen (For a full list of eligible noncitizens, visit <a href="https://fafsa.ed.gov/help/fotw15a.htm">https://fafsa.ed.gov/help/fotw15a.htm</a>, or see Appendix G, PG. 902);</ol>
         <ol class="text">Federal tax information or tax returns including IRS W-2 information;</ol>
         <ol class="text">Records of any untaxed income, such as child support received, interest income, and veterans non-education benefits that you received in the last year;</ol>
+        <h4 class="sidebox">WHAT IS THE DIFFERENCE BETWEEN FOREBEARANCE AND DEFERMENT?</h4>
+        <p class="sidebox">A forebearance is a request to stop payments completely for a year. All people whose loan payments are equal to or greater than 20 percent of their monthly income qualify for a forebearance. This means incarcerated individuals would likely qualify automatically.Deferment is similar to forebearance in that it stops payments for a year. Unlike forebearance, the loan continues to accrue interest during that period, which makes it more expensive in the longrun. Either option is better than defaulting.</p>
         <ol class="text">Information on cash; savings and checking account balances; investments, including stocks and bonds and real estate (but not the home you live in); and business and farm assets.</ol>
-        <li id="footnote-2787"><p> Filling Out the FAFSA, U.S. Dep’t of Educ. Federal Student Aid, <a href="https://studentaid.ed.gov/fafsa/filling-out#documents">https://studentaid.ed.gov/fafsa/filling-out - documents</a>. <a href="#footnote-ref-2787">↑</a></p></li>
+        <li id="footnote-2901"><p> Filling Out the FAFSA, U.S. Dep’t of Educ. Federal Student Aid, <a href="https://studentaid.ed.gov/fafsa/filling-out">https://studentaid.ed.gov/fafsa/filling-out - documents</a>. <a href="#footnote-ref-2901">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -97,7 +84,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -122,11 +108,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

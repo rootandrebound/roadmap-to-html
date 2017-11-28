@@ -3,11 +3,26 @@
 {%- block title %}Roadmap to Reentry - Root &amp; Rebound{% endblock title -%}
 
 
-{% block main %}
-<article>
-  <h1>Roadmap to Reentry</h1>
-  <h2>Root &amp; Rebound</h2>
-  <h3>Popular Pages</h3>
-  <ul class="top-pages"></ul>
-</article>
-{% endblock main %}
+
+{%- block header_content %}
+<p>A California legal guide for incarcerated people and their advocates.</p>
+{%- endblock header_content %}
+
+{%- block main_content %}
+  <article>  
+  <h2>Chapters</h2>
+    <ol class="chapter-list">
+    {%- for chapter in chapters %}
+      <li>
+        <h3>
+          <a href="{{ prefix }}/{{ chapter.get_path() }}/">{{ chapter.title }}</a>
+        </h3>
+      </li>
+    {%- endfor %}
+    </ol>
+  </article>
+  <section class="popular-pages">
+    <h3 class="popular-pages__heading">Popular Pages</h3>
+    <ol class="popular-pages__list"></ol>
+  </section>
+{%- endblock main_content %}

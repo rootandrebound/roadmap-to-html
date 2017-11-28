@@ -21,78 +21,59 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="the-building-blocks-of-reentry/if-you-were-born-in-the-u-s-different-situations/1-if-you-were-born-in-california/i-want-to-get-my-birth-certificate-from-the-califo">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/if-you-were-born-in-the-u-s-different-situations">If You Were Born in the U.S.—Different Situations:</a></li>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/if-you-were-born-in-the-u-s-different-situations/1-if-you-were-born-in-california">(1) If you were born in California:</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry">The Building Blocks Of Reentry</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/if-you-were-born-in-the-u-s-different-situations">If You Were Born in the U.S.—Different Situations:</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/if-you-were-born-in-the-u-s-different-situations/1-if-you-were-born-in-california">(1) If you were born in California:</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/if-you-were-born-in-the-u-s-different-situations/1-if-you-were-born-in-california/i-want-to-get-my-birth-certificate-from-the-califo">I want to get my birth certificate from the California Department of Public Health (CDPH). What is the process? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>I want to get my birth certificate from the California Department of Public Health (CDPH). What is the process?</h1>
         <p><strong>The CDPH <em>only accepts requests by mail</em>. The process is as follows:</strong></p>
         <h4 class="step">Obtain and fill out an “Application for Certified Copy of Birth Record” (Form VS 111).</h4>
-        <p class="text">You can request this form by mail from the CDPH by writing to: California Department of Public Health, Vital Records—MS 5103, P.O. Box 997410, Sacramento, CA 95899-7410.</p>
-        <p class="text">This form is also available to download from the CDPH website at: <a href="http://www.cdph.ca.gov">http://www.cdph.ca.gov</a>.<sup><a href="#footnote-21" id="footnote-ref-21">[21]</a></sup> A sample application is provided in Appendix A, PG. 87, but check the website for the most up-to-date form. To fill out the form, you will generally need to know your birth name, your birth date, the city where you were born, and your parents’ names, including your mother’s maiden name. If you do not know all of this information, fill in as much as you can.</p>
+        <p class="text">You can request this form by mail from the CDPH by writing to: California Department of Public Health, Vital Records — MS 5103, P.O. Box 997410, Sacramento, CA 95899-7410.</p>
+        <p class="text">This form is also available to download from the CDPH website at: <a href="http://www.cdph.ca.gov">http://www.cdph.ca.gov</a>.<sup><a href="#footnote-23" id="footnote-ref-23">[22]</a></sup> A sample application is provided in Appendix A, PG. 78, but check the website for the most up-to-date form. To fill out the form, you will generally need to know your birth name, your birth date, the city where you were born, and your parents’ names, including your mother’s maiden name. If you do not know all of this information, fill in as much as you can.</p>
         <h4 class="step">Sign your application &amp; get your Sworn Statement notarized.</h4>
-        <p class="text">The Sworn Statement is on <em>page 3</em> of the application form (Form VS 111), and is required to verify the information on your application.<sup><a href="#footnote-22" id="footnote-ref-22">[22]</a></sup> By signing the Sworn Statement, you are declaring “under penalty of perjury” that you are entitled by law to receive an <em>authorized copy</em> of the birth certificate. </p>
-        <p class="text">You must then get the statement <em>notarized</em>. See the box on PG. 32 for an explanation of how to get a document notarized. </p>
+        <p class="text">The Sworn Statement is on <em>page 3</em> of the application form (Form VS 111), and is required to verify the information on your application.<sup><a href="#footnote-24" id="footnote-ref-24">[23]</a></sup> By signing the Sworn Statement, you are declaring “under penalty of perjury” that you are entitled by law to receive an <em>authorized copy</em> of the birth certificate. </p>
+        <p class="text">You must then get the statement <em>notarized</em>. See the box on PG. 31 for an explanation of how to get a document notarized. </p>
         <h4 class="step">Prepare the fee payment. </h4>
-        <p class="text">This must be a <em>check</em> or <em>money order</em> made payable to “CDPH Vital Records.”<sup><a href="#footnote-23" id="footnote-ref-23">[23]</a></sup> Do not send cash. At the time of writing this manual, the CDPH fee is $25, but it could change. <em>The current fee amount will be on the CDPH application form</em>.</p>
+        <p class="text">This must be a <em>check</em> or <em>money order</em> made payable to “CDPH Vital Records.”<sup><a href="#footnote-25" id="footnote-ref-25">[24]</a></sup> Do not send cash. At the time of writing this manual, the CDPH fee is $25, but it could change. <em>The current fee amount will be on the CDPH application form</em>.</p>
         <h4 class="step">Mail your request. </h4>
-        <p class="text">Your final packet should include: (1) your application form, including the <em>notarized</em> Sworn Statement, and (2) your fee payment (check or money order). At the time of writing this manual, you should address the packet to:<sup><a href="#footnote-24" id="footnote-ref-24">[24]</a></sup></p>
-        <p class="text">California Department of Public Health</p>
-        <p class="text">Vital Records—MS 5103</p>
-        <p class="text">P.O. Box 997410</p>
-        <p class="text">Sacramento, CA 95899-7410</p>
+        <p class="text">Your final packet should include: (1) your application form, including the <em>notarized</em> Sworn Statement, and (2) your fee payment (check or money order).<sup><a href="#footnote-26" id="footnote-ref-26">[25]</a></sup> At the time of writing this Guide, application packets should be mailed to: <strong>California Department of Public Health, Vital Records — MS 5103, P.O. Box 997410, Sacramento, CA 95899-7410.</strong></p>
         <h4 class="subheading3">County <a id="County_Recorders_Office"></a>Recorder’s Office: </h4>
-        <li id="footnote-21"><p> The direct online link to the application Form VS 111 is <a href="http://www.cdph.ca.gov/pubsforms/forms/CtrldForms/VS111.pdf">http://www.cdph.ca.gov/pubsforms/forms/CtrldForms/VS111.pdf</a> <a href="#footnote-ref-21">↑</a></p></li>
-        <li id="footnote-22"><p>Sworn Statement, Cal. Dep’t of Public Health, <a href="http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/SwornStatement.aspx">http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/SwornStatement.aspx</a>. <a href="#footnote-ref-22">↑</a></p></li>
-        <li id="footnote-23"><p> Fees, Cal. Dep’t of Public Health, <a href="http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/Fees.aspx">http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/Fees.aspx</a>. <a href="#footnote-ref-23">↑</a></p></li>
-        <li id="footnote-24"><p> Fees, Cal. Dep’t of Public Health, <a href="http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/Fees.aspx">http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/Fees.aspx</a>. <a href="#footnote-ref-24">↑</a></p></li>
+        <li id="footnote-23"><p> The direct online link to the application Form VS 111 is <a href="http://www.cdph.ca.gov/pubsforms/forms/CtrldForms/VS111.pdf">http://www.cdph.ca.gov/pubsforms/forms/CtrldForms/VS111.pdf</a> <a href="#footnote-ref-23">↑</a></p></li>
+        <li id="footnote-24"><p>Sworn Statement, Cal. Dep’t of Public Health, <a href="http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/SwornStatement.aspx">http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/SwornStatement.aspx</a>. <a href="#footnote-ref-24">↑</a></p></li>
+        <li id="footnote-25"><p> Fees, Cal. Dep’t of Public Health, <a href="http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/Fees.aspx">http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/Fees.aspx</a>. <a href="#footnote-ref-25">↑</a></p></li>
+        <li id="footnote-26"><p> Fees, Cal. Dep’t of Public Health, <a href="http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/Fees.aspx">http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/Fees.aspx</a>. <a href="#footnote-ref-26">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -110,7 +91,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -135,11 +115,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

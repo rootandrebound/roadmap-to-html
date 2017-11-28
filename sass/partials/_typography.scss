@@ -1,0 +1,29 @@
+
+html { font-family: $base-font; }
+
+body {
+  color: $black-light;
+}
+
+a, a:visited { color: inherit; }
+a:focus {
+	outline: $focus-outline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  color: $black-medium;
+}
+
+h1 { font-weight: 900; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: .8em 0;
+  margin: 0;
+}
+
+mark {
+  background: none;
+  font-weight: bold;
+}
+

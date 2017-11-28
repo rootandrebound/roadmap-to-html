@@ -21,59 +21,44 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-2">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-2" data-page-path="employment/become-an-independent-contractor">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/employment">Employment</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/employment">Employment</a></li>
+    <li><a href="/roadmap-to-html/employment/become-an-independent-contractor">Become an independent contractor (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Become an independent contractor</h1>
         <p class="text">Being an independent contractor is a form of self-employment somewhere between being an employee and running your own business. Employers usually hire independent contractors to do specific tasks or short-term jobs—like painting a house, installing plumbing, or doing landscaping work. The job usually ends automatically once the task is finished, although the employer can always hire the independent contractor again for another task. </p>
         <p class="text">The BIG difference between independent contractors and employees is that, under the law, independent contractors are considered to be self-employed. This means that independent contractors have more control over the work they choose to do. They also have legal responsibilities—like filing self-employment taxes and reporting certain business information to the government—and fewer legal rights in the workplace. On the other hand, employees have more legal rights and protections in the workplace, but the employer gets to control the work they do.</p>
-        <p class="importantbox">KNOW YOUR RIGHTS: <em>Am I an independent contractor or employees? </em>In some cases, an employer may call you an independent contractor, even though you are ACTUALLY an employee. The difference between an employee and an independent contractor is important, because you have more rights (and the employer has more responsibilities) if you are an employee; and you have fewer rights (and the employer has fewer responsibilities) if you are an independent contractor.Sometimes an employer will get this wrong by accident, but other times an employer may misclassify you on purpose in order to avoid fulfilling their duties under law. According to the law, whether you are an employee or an independent contractor depends on the specific details of your work situation—NOT on what the employer calls you. For this reason, it’s important that you know the difference so that you don’t get taken advantage of! For more information on the difference between independent contractors and employees, and your rights and responsibilities in each situation, see the Appendix S, PG. 709.</p>
+        <p class="importantbox">KNOW YOUR RIGHTS: <em>Am I an independent contractor or employee?</em>In some cases, an employer may call you an independent contractor, even though you are ACTUALLY an employee. The difference between an employee and an independent contractor is important, because you have more rights (and the employer has more responsibilities) if you are an employee; and you have fewer rights (and the employer has fewer responsibilities) if you are an independent contractor.Sometimes an employer will get this wrong by accident, but other times an employer may misclassify you on purpose in order to avoid fulfilling their legal duties. According to the law, whether you are an employee or an independent contractor depends on the specific details of your work situation—NOT on what the employer calls you. For this reason, it’s important that you know the difference so that you don’t get taken advantage of! For more information on the difference between independent contractors and employees, and your rights and responsibilities in each situation, see the Appendix S, PG. 643.</p>
         <h4 class="textbox">KNOW YOUR RIGHTSWhat can I do if I think an employer has wrongly classified me as an independent contractor OR violated my rights as an employee?</h4>
         <p class="textbox">The California Division of Labor Standards Enforcement (DLSE) is the state agency responsible for enforcing your rights in the workplace. If you think an employer has violated your rights as an employee, wrongly classified you as an independent contractor, and/or for more information, you can contact your local DLSE office and speak with Deputy Labor Commissioner. To find a local DLSE office near you, go to <a href="http://www.dir.ca.gov/dlse/DistrictOffices.htm">http://www.dir.ca.gov/dlse/DistrictOffices.htm</a> or call 1-844-LABOR-DIR (1-844-522-6734) for assistance.For more information about your rights in the workplace, contact The Legal Aid Society—Employment Law Center’s Workers Rights Clinic at 415-864-8208 (San Francisco Bay Area) or 866-864-8208 (toll free in CA). Or contact a local legal aid attorney in your area.For additional information on employees and independent contractors, here are some helpful resources:</p>
         <ul class="textbox">Independent Contractor or Employee? How You Should Be Classified (The Legal Aid Society—Employment Law Center)—<a href="http://www.law.berkeley.edu/files/FAQ-IndepContractorsvsEmployees.pdf">http://www.law.berkeley.edu/files/FAQ-IndepContractorsvsEmployees.pdf</a>FAQs—Independent Contractor (Cal. Division of Labor Standards Enforcement)—<a href="http://www.dir.ca.gov/dlse/faq_independentcontractor.htm">http://www.dir.ca.gov/dlse/faq_independentcontractor.htm</a>Employment Determination Guide (Cal. Employment Development Department) <a href="http://www.edd.ca.gov/pdf_pub_ctr/de38.pdf">http://www.edd.ca.gov/pdf_pub_ctr/de38.pdf</a></ul>
@@ -96,7 +81,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -121,11 +105,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>
