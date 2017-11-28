@@ -11,6 +11,8 @@ $brand-yellow: #e2c221;
 $dark-gray: #4d4d4d;
 $light-gray: #ccc;
 $lighter-gray: #ddd;
+$blue-highlight: #2921e2;
+$flashBackgroundPrimaryColor: $black-light;
 
 
 /* LAYOUT */
@@ -18,3 +20,8 @@ $mobile-breakpoint: 500px;
 $tablet-breakpoint: 900px;
 $horizontal-padding: 2rem;
 $horizontal-padding--mobile: 1rem;
+
+
+/* KEYBOARD NAVIGATION */
+$focus-color: $blue-highlight;
+$focus-outline: 3px solid $focus-color;

@@ -28,6 +28,12 @@ function searchResultTemplate(searchResult){
          '</li>'
 }
 
+function searchQueryMetadataTemplate(searchData){
+  return '<p class="search-metadata">' + 
+            searchData.resultsCount + ' results found ' +
+            'for <mark>“' + searchData.searchTerm + '”</mark>' +
+         '</p>'
+}
 
 function initializeSearch() {
   var client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_PUBLIC_KEY);
@@ -47,6 +53,14 @@ function initializeSearch() {
           console.error(err);
           return;
         }
+        var resultsCount = content.hits.length;
+        var metadataElement = $('.search-results__metadata');
+        var metadataHTML = searchQueryMetadataTemplate({
+          resultsCount: resultsCount,
+          searchTerm: search_term
+        });
+        metadataElement.append($(metadataHTML));
+
         var resultsElement = $('.search-results__list');
         for (var h in content.hits) {
           var result = content.hits[h];

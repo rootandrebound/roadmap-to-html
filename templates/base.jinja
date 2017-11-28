@@ -28,18 +28,26 @@
   <body class="content-level-{{ page.level }}" data-page-path="{{ page.get_path() }}">
 
     <main role="main">
+    {% include "beta_disclaimer.jinja" %}
     {%- block main %}
       <!-- Header includes search, sites title and mobile menu -->
-      {% include "banner.jinja" %}
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a class="subtitle" href="{{ prefix }}/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+      {%- block header %}
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+        
+        {%- block header_content %}
+        {%- endblock header_content %}
+
         <div class="main-header__search">
           {% include "search_form.jinja" %}
         </div>
+      {%- endblock header %}
       </header>
 
+
+
+      {%- block main_content %}
       {% include "breadcrumbs.jinja" %}
 
       <article>
@@ -98,6 +106,7 @@
         </ol>
       </nav>
       {%- endif %}
+    {%- endblock main_content %}
     {%- endblock main %}
       {% include "footer.jinja" %}
 

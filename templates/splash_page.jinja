@@ -3,15 +3,12 @@
 {%- block title %}Roadmap to Reentry - Root &amp; Rebound{% endblock title -%}
 
 
-{% block main %}
-  <header role="banner" class="main-header">
-    <h3>Root &amp; Rebound</h3>
-    <h1>Roadmap to Reentry</h1>
-    <p>A California legal guide for incarcerated people and their advocates.</p>
-    <div class="main-header__search">
-      {% include "search_form.jinja" %}
-    </div>
-  </header>
+
+{%- block header_content %}
+<p>A California legal guide for incarcerated people and their advocates.</p>
+{%- endblock header_content %}
+
+{%- block main_content %}
   <article>  
   <h2>Chapters</h2>
     <ol class="chapter-list">
@@ -28,4 +25,4 @@
     <h3 class="popular-pages__heading">Popular Pages</h3>
     <ol class="popular-pages__list"></ol>
   </section>
-{% endblock main %}
+{%- endblock main_content %}

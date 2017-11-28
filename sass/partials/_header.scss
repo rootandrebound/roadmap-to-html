@@ -1,28 +1,9 @@
 .main-header {
-  &__links {
-    width:50%;
-    float:left;
-    margin-top: 13px;
-      a {
-        display: block;
-        margin-bottom: 10px
-      }
-  }
-  @media only screen and (max-width: 900px) {
-    &__links {
-      width:100%;
-      float:right;
-      margin-top: 0px;
-      text-decoration: none;
-      a {
-        display: block;
-        margin-bottom: 10px;
-        width: 70%;
-        float: right;
-        padding-left: 10px;
-        font-size: 18px;
-        text-decoration: none;
-      }
+  .site-title {
+    padding-top: 0;
+    &__organization {
+      padding-bottom: 0;
+      font-weight: 500;
     }
   }
 }

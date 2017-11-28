@@ -1,0 +1,22 @@
+.flash {
+ width: 100%;
+ text-align: center;
+ background-color: $flashBackgroundPrimaryColor;
+ padding: 1em $horizontal-padding--mobile;
+
+    p {
+      padding: 0px;
+    }
+
+   &__text {
+     display: inline-block;
+     color: #FFFFFF;
+   }
+
+   &__link {
+      @media only screen and (max-width: $mobile-breakpoint) {
+        display: block;
+      }
+   }
+
+}
