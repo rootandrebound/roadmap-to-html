@@ -21,55 +21,40 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-3">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-3" data-page-path="family-children/child-support-debt/consequences-for-failing-to-pay-child-support">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/family-children/child-support-debt">Child Support Debt</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
+    <li><a href="/roadmap-to-html/family-children/child-support-debt">Child Support Debt</a></li>
+    <li><a href="/roadmap-to-html/family-children/child-support-debt/consequences-for-failing-to-pay-child-support">Consequences for Failing to Pay Child Support (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Consequences for Failing to Pay Child Support</h1>
       </article>
@@ -80,15 +65,15 @@
         
           <article>
           <h2><a href="/roadmap-to-html/family-children/child-support-debt/consequences-for-failing-to-pay-child-support/can-i-go-to-jail-for-not-paying-child-support/">Can I go to jail for not paying child support?</a></h2>
-            <p class="text">Not paying child support can have very serious consequences. If a family court judge finds that you have the ability to pay support but are willfully not paying it, it can find you “in contempt of court.” Being “in contempt of court” means you are not following an order from a judge and it could be punished with jail time. This enforcement tool is generally used only when all others have failed since it has such serious consequences.<sup><sup><a href="#footnote-2453" id="footnote-ref-2453">[2453]</a></sup></sup> If you are being charged with contempt of court and could face criminal charges, you have the right to a lawyer. If you cannot afford a lawyer, ask the court to appoint one for you.<sup><sup><a href="#footnote-2454" id="footnote-ref-2454">[2454]</a></sup></sup></p>
-            <p class="text">If you are able to show that you are not able to pay before the court, you will probably not be held in contempt (which can lead to jail time). However, this still may cause other problems. Although you may not go to jail for being in debt, your credit may affected if you do not pay the child support you have been ordered to pay.<sup><sup><a href="#footnote-2455" id="footnote-ref-2455">[2455]</a></sup></sup> If your credit is affected because you have not paid child support, you may have difficulty in doing things that result in a credit check like renting an apartment or purchasing a car.</p>
+            <p class="text">Not paying child support can have very serious consequences. If a family court judge finds that you have the ability to pay support but are willfully not paying it, it can find you “in contempt of court.” Being “in contempt of court” means you are not following an order from a judge and it could be punished with jail time. This enforcement tool is generally used only when all others have failed since it has such serious consequences.<sup><sup><a href="#footnote-2564" id="footnote-ref-2564">[2563]</a></sup></sup> If you are being charged with contempt of court and could face criminal charges, you have the right to a lawyer. If you cannot afford a lawyer, ask the court to appoint one for you.<sup><sup><a href="#footnote-2565" id="footnote-ref-2565">[2564]</a></sup></sup></p>
+            <p class="text">If you are able to show that you are not able to pay before the court, you will probably not be held in contempt (which can lead to jail time). However, this still may cause other problems. Although you may not go to jail for being in debt, your credit may affected if you do not pay the child support you have been ordered to pay.<sup><sup><a href="#footnote-2566" id="footnote-ref-2566">[2565]</a></sup></sup> If your credit is affected because you have not paid child support, you may have difficulty in doing things that result in a credit check like renting an apartment or purchasing a car.</p>
             <h4 class="textbox">FREE RESOURCES</h4>
             <p class="textbox">For more information on child support payments and child support debt, check out the following resources:</p>
             <ul class="textbox">Paying a Child Support Order is a helpful website that explains what your child support order means, how wage assignments work, and what to do about overdue child support, by the Judicial Council of California—<a href="http://www.courts.ca.gov/1197.htm">http://www.courts.ca.gov/1197.htm</a>The Basics of Child Support for Incarcerated Parents, by the Judicial Council of California –<a href="http://www.courts.ca.gov/documents/incarceratedguide.pdf">http://www.courts.ca.gov/documents/incarceratedguide.pdf</a>Child Support Information for the Parent in Jail or Prison, by the Department of Child Support Services – <a href="http://www.childsup.ca.gov/portals/0/resources/docs/pub248_english.pdf">www.childsup.ca.gov/portals/0/resources/docs/pub248_english.pdf</a>Other resources from the Department of Child Support Services:Information for the Noncustodial Parent – <a href="http://www.childsup.ca.gov/portals/0/resources/docs/pub247_english.pdf">www.childsup.ca.gov/portals/0/resources/docs/pub247_english.pdf</a>Changing Your Child Support Amount – <a href="http://www.childsup.ca.gov/portals/0/resources/docs/pub252_english.pdf">www.childsup.ca.gov/portals/0/resources/docs/pub252_english.pdf</a>Child Support Handbook—<a href="http://www.childsup.ca.gov/portals/0/resources/docs/pub160_english.pdf">http://www.childsup.ca.gov/portals/0/resources/docs/pub160_english.pdf</a>Court forms for child support are available on the California Courts’ website at <a href="http://www.courts.ca.gov/1199.htm">http://www.courts.ca.gov/1199.htm</a> </ul>
             <p class="text">Whether you are still incarcerated or back in the community, you know how important your children and your family are for rebuilding your life, your relationships, and your sense of self. </p>
-            <li id="footnote-2453"><p> Judicial Council of Cal., “Paying a Child Support Order,” <a href="http://www.courts.ca.gov/1197.htm">http://www.courts.ca.gov/1197.htm</a>. <a href="#footnote-ref-2453">↑</a></p></li>
-            <li id="footnote-2454"><p> <a href="http://www.courts.ca.gov/1253.htm">http://www.courts.ca.gov/1253.htm</a> <a href="#footnote-ref-2454">↑</a></p></li>
-            <li id="footnote-2455"><p> Cal. Fam. Code 4700 – 4701.  <a href="#footnote-ref-2455">↑</a></p></li>
+            <li id="footnote-2564"><p> Judicial Council of Cal., “Paying a Child Support Order,” <a href="http://www.courts.ca.gov/1197.htm">http://www.courts.ca.gov/1197.htm</a>. <a href="#footnote-ref-2564">↑</a></p></li>
+            <li id="footnote-2565"><p> <a href="http://www.courts.ca.gov/1253.htm">http://www.courts.ca.gov/1253.htm</a> <a href="#footnote-ref-2565">↑</a></p></li>
+            <li id="footnote-2566"><p> Cal. Fam. Code 4700 – 4701.  <a href="#footnote-ref-2566">↑</a></p></li>
           </article>
         
       <nav class="neighbors">
@@ -107,7 +92,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -132,11 +116,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

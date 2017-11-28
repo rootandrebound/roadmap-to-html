@@ -21,69 +21,51 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="public-benefits/calworks/how-do-i-apply-for-calfresh">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/public-benefits">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/calworks">CalWORKs</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/public-benefits">Public Benefits</a></li>
+    <li><a href="/roadmap-to-html/public-benefits/calworks">CalWORKs</a></li>
+    <li><a href="/roadmap-to-html/public-benefits/calworks/how-do-i-apply-for-calfresh">How do I apply for CalFresh? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>How do I apply for CalFresh?</h1>
-        <a id="_Toc290728748"></a>
-        <p class="text">The process may vary by county. Generally, it involves filling out a form, providing documents, and having an interview. For details about how to apply in your county, contact the CalFresh office in your area. For a directory of county CalFresh offices, see Appendix A, on PG. 556.<sup><a href="#footnote-1378" id="footnote-ref-1378">[1378]</a></sup> For information on how to apply for CalFresh benefits in your county, please call 1-877-847-3663. You can also apply online at <a href="http://benefitscal.org">http://benefitscal.org</a>.</p>
-        <h4 class="sidebox">Helpful Hint:What is an “Authorized Representative (AR)”?</h4>
-        <p class="sidebox">You can select and authorize any adult person as an Authorized Representative (AR) to apply and have the interview on your behalf. To find out how, contact the CalFresh office or Social Services Agency in the county where you’ll be living.</p>
-        <h3><a id="_Toc290125873"></a><a id="_Toc448153283"></a>Can I apply for CalFresh while incarcerated? </h3>
-        <p class="text">Yes! You can’t receive CalFresh benefits until you’re out, but, under some circumstances, you can apply while in prison or jail.<sup><sup><a href="#footnote-1379" id="footnote-ref-1379">[1379]</a></sup></sup> Although you may apply for CalFresh while incarcerated, you should not do so unless you are less than 30 days from your release date. (If you apply for CalFresh more than 30 days before your release date, the county social services agency will probably deny your application because they will find that you are not eligible for the program yet – but you can re-apply again once you’re within 30 days of release or after you get out.<sup><sup><a href="#footnote-1380" id="footnote-ref-1380">[1380]</a></sup></sup>) If you apply for CalFresh benefits while incarcerated, you will generally need to provide proof of your release date and a local address within the county.<sup><sup><a href="#footnote-1381" id="footnote-ref-1381">[1381]</a></sup></sup> You must also complete and sign the application and designate an <em>Authorized Representative</em> (see Helpful Hint Box for more information.)<sup><sup><a href="#footnote-1382" id="footnote-ref-1382">[1382]</a></sup></sup> If you are approved for CalFresh benefits, you will not begin receiving these benefits until after you get out.<sup><sup><a href="#footnote-1383" id="footnote-ref-1383">[1383]</a></sup></sup></p>
-        <li id="footnote-1378"><p> County Welfare Department List, Cal. Dep’t of Soc. Servs., <a href="http://www.calfresh.ca.gov/PG839.htm">http://www.calfresh.ca.gov/PG839.htm</a>. <a href="#footnote-ref-1378">↑</a></p></li>
-        <li id="footnote-1379"><p> Food Stamps (now called Supplemental Nutrition Assistance Program), Judge David L. Bazelon Center for Mental Health Law, <a href="http://www.bazelon.org">http://www.bazelon.org</a>. <a href="#footnote-ref-1379">↑</a></p></li>
-        <li id="footnote-1380"><p> When the county social services department receives your application, it must make a decision about your eligibility within 30 days of receiving your application. 7 C.F.R. § 273.2. If your release date is more than 30 days away, the social services department will not be able to verify your eligibility in time, so it will deny your application. Telephone call with Danielle Llewellyn, CalFresh Specialist, Alameda County Social Services Agency, Apr. 20, 2015.  <a href="#footnote-ref-1380">↑</a></p></li>
-        <li id="footnote-1381"><p> Telephone call with Danielle Llewellyn, CalFresh Specialist, Alameda County Social Services Agency, Apr. 20, 2015. <a href="#footnote-ref-1381">↑</a></p></li>
-        <li id="footnote-1382"><p> Application for CalFRESH, Cash Aid, and/or Medi-Cal/Health Programs, State of Cal. Health &amp; Human Servs., Cal. Dep’t of Soc. Servs., <a href="http://www.cdss.ca.gov/cdssweb/entres/forms/English/SAWS2PLUS.pdf">http://www.cdss.ca.gov/cdssweb/entres/forms/English/SAWS2PLUS.pdf</a>. <a href="#footnote-ref-1382">↑</a></p></li>
-        <li id="footnote-1383"><p> <em>See</em> Eligibility and Issuance Requirements, Cal. Dep’t of Soc. Servs., <a href="http://www.cdss.ca.gov/foodstamps/PG841.htm">http://www.cdss.ca.gov/foodstamps/PG841.htm</a>. As always, contact your county CalFresh office or an advocate should you have any questions regarding CalFresh benefits. Many thanks to Liz Gomez, CalFresh Outreach Manager at the Alameda County Community Food Bank, for her advice and feedback regarding the CalFresh application process. <a href="#footnote-ref-1383">↑</a></p></li>
+        <p class="text"><a id="_Toc290728748"></a>The process may vary by county. Generally, it involves filling out a form, providing documents, and having an interview. For details about how to apply in your county, contact the CalFresh office in your area. For a directory of county CalFresh offices, see Appendix A, on PG. 499.<sup><a href="#footnote-1483" id="footnote-ref-1483">[1482]</a></sup> For information on how to apply for CalFresh benefits in your county, please call 1-877-847-3663. You can also apply online at <a href="http://benefitscal.org">http://benefitscal.org</a>.</p>
+        <h3><a id="_Toc290125873"></a><a id="_Toc352861539"></a>Can I apply for CalFresh while incarcerated? </h3>
+        <p class="text">Yes! You can’t receive CalFresh benefits until you’re out, but, under some circumstances, you can apply while in prison or jail.<sup><sup><a href="#footnote-1484" id="footnote-ref-1484">[1483]</a></sup></sup> Although you may apply for CalFresh while incarcerated, you should not do so unless you are less than 30 days from your release date. (If you apply for CalFresh more than 30 days before your release date, the county social services agency will probably deny your application because they will find that you are not eligible for the program yet – but you can re-apply again once you’re within 30 days of release or after you get out.<sup><sup><a href="#footnote-1485" id="footnote-ref-1485">[1484]</a></sup></sup>) If you apply for CalFresh benefits while incarcerated, you will generally need to provide proof of your release date and a local address within the county.<sup><sup><a href="#footnote-1486" id="footnote-ref-1486">[1485]</a></sup></sup> You must also complete and sign the application and designate an <em>Authorized Representative</em> (see Helpful Hint Box for more information.)<sup><sup><a href="#footnote-1487" id="footnote-ref-1487">[1486]</a></sup></sup> If you are approved for CalFresh benefits, you will not begin receiving these benefits until after you get out.<sup><sup><a href="#footnote-1488" id="footnote-ref-1488">[1487]</a></sup></sup></p>
+        <li id="footnote-1483"><p> County Welfare Department List, Cal. Dep’t of Soc. Servs., <a href="http://www.calfresh.ca.gov/PG839.htm">http://www.calfresh.ca.gov/PG839.htm</a>. <a href="#footnote-ref-1483">↑</a></p></li>
+        <li id="footnote-1484"><p> Food Stamps (now called Supplemental Nutrition Assistance Program), Judge David L. Bazelon Center for Mental Health Law, <a href="http://www.bazelon.org">http://www.bazelon.org</a>. <a href="#footnote-ref-1484">↑</a></p></li>
+        <li id="footnote-1485"><p> When the county social services department receives your application, it must make a decision about your eligibility within 30 days of receiving your application. 7 C.F.R. § 273.2. If your release date is more than 30 days away, the social services department will not be able to verify your eligibility in time, so it will deny your application. Telephone call with Danielle Llewellyn, CalFresh Specialist, Alameda County Social Services Agency, Apr. 20, 2015.  <a href="#footnote-ref-1485">↑</a></p></li>
+        <li id="footnote-1486"><p> Telephone call with Danielle Llewellyn, CalFresh Specialist, Alameda County Social Services Agency, Apr. 20, 2015. <a href="#footnote-ref-1486">↑</a></p></li>
+        <li id="footnote-1487"><p> Application for CalFRESH, Cash Aid, and/or Medi-Cal/Health Programs, State of Cal. Health &amp; Human Servs., Cal. Dep’t of Soc. Servs., <a href="http://www.cdss.ca.gov/cdssweb/entres/forms/English/SAWS2PLUS.pdf">http://www.cdss.ca.gov/cdssweb/entres/forms/English/SAWS2PLUS.pdf</a>. <a href="#footnote-ref-1487">↑</a></p></li>
+        <li id="footnote-1488"><p> See Eligibility and Issuance Requirements, Cal. Dep’t of Soc. Servs., <a href="http://www.cdss.ca.gov/foodstamps/PG841.htm">http://www.cdss.ca.gov/foodstamps/PG841.htm</a>. As always, contact your county CalFresh office or an advocate should you have any questions regarding CalFresh benefits. Many thanks to Liz Gomez, CalFresh Outreach Manager at the Alameda County Community Food Bank, for her advice and feedback regarding the CalFresh application process. <a href="#footnote-ref-1488">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -101,7 +83,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -126,11 +107,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

@@ -21,75 +21,56 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="the-building-blocks-of-reentry/driver-license-suspensions-revocations/i-dont-know-my-supervision-status-how-do-i-find-ou">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations">Driver License Suspensions & Revocations</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry">The Building Blocks Of Reentry</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations">Driver License Suspensions & Revocations</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations/i-dont-know-my-supervision-status-how-do-i-find-ou">I don’t know my supervision status. How do I find out? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>I don’t know my supervision status. How do I find out?</h1>
-        <p class="text">It is very common to not know what kind of supervision you are on! If you are unaware or unsure of what your supervision status is, you should talk to your supervising officer or your public defender to find out what category you fall into. Tell them you are trying to determine if you are eligible to vote. You can even show them this chart to help figure out what classification you are in! </p>
-        <p class="text"><strong>It’s also possible that you are on multiple forms of supervision.</strong> If you are on more than one type of supervision and either one prevents you from voting, then you <em>cannot</em> vote. In other words, if you look at the chart—both of your supervision status categories must say “yes;” if one says “no,” you cannot vote.</p>
-        <h3><a id="_Toc448152741"></a>What if I voted in an election that I was not legally allowed to vote in? </h3>
-        <p class="text">It depends. If you ACCIDENTALLY voted in an election that you were not allowed to vote in, you will probably not be in trouble with the law. Voter fraud requires “specific intent.”<sup><sup><a href="#footnote-247" id="footnote-ref-247">[247]</a></sup></sup> This means that you had to have meant to vote in an election, knowing that you were not allowed to vote and with the purpose of voting even though you knew you were not supposed to vote.</p>
-        <p class="text">If you PURPOSEFULLY voted in an election, knowing you were not supposed to vote, you could be found guilty of voter fraud.<sup><sup><a href="#footnote-248" id="footnote-ref-248">[248]</a></sup></sup> While majority of the voter fraud crimes are prosecuted when committed on the large scale to impact elections, the punishment can be up to five years in prison and a $10,000 fine.<sup><sup><a href="#footnote-249" id="footnote-ref-249">[249]</a></sup></sup></p>
-        <a id="Voting_HowToRegister"></a>
-        <a id="_Toc448152742"></a>
-        <h2 class="subheading">Registering to Vote in CA: </h2>
-        <h4 class="sidebox">PRISON IDs:CAN I USE MY PRISON ID AS IDENTIFICATION WHEN I GO TO VOTE?</h4>
-        <p class="sidebox">Although a prison ID isn’t explicitly listed as acceptable ID, the law does allow a “document issued by a government agency” to prove who you are. (Cal. Code Regs. tit. 2, § 20107(d)(2)(E).) Because your prison ID was issued by the California Department of Corrections &amp; Rehabilitation (CDCR), which is a government agency, it <em>should be </em>an acceptable form of ID. Keep in mind though that the people who work at the polling stations are volunteers and not experts in California law, so you may need to speak with a few different people if you are having difficulties. Remember: you won’t need your prison ID card at all if you were able to provide a SSN, Driver License number, or State ID number when you registered.</p>
-        <h3><a id="_Toc448152743"></a>I want to vote in the next election. When is the last day I can register to vote in California? </h3>
-        <p class="text">The deadline to register is 15 days <em>before</em> the next local, state, or federal election. You must submit the voter registration application form before Midnight on the deadline.</p>
+        <p class="text">If you are unaware or unsure of your supervision status, talk to your supervising officer or your public defender/defense attorney and ask what type it is. Tell them you are trying to determine if you can vote. Feel free to bring this chart with you.</p>
+        <h3><a id="_Toc352860950"></a>What could happen if I voted in an election that I was not legally allowed to vote in? </h3>
+        <p class="text">It depends. If you ACCIDENTALLY voted in an election when you weren’t legally allowed to, you will probably not be in trouble with the law. Voter fraud requires “specific intent.”<sup><sup><a href="#footnote-249" id="footnote-ref-249">[248]</a></sup></sup> This means that when you voted, you knew that you were illegally voting, and voted with the purpose of breaking the law. If you PURPOSEFULLY voted in an election when you had no legal right to do so, you could be found guilty of voter fraud.<sup><sup><a href="#footnote-250" id="footnote-ref-250">[249]</a></sup></sup> The punishment can be up to five years in prison and a $10,000 fine. That said, voter fraud is usually only prosecuted when large numbers of people have committed the crime in a way that affects an election’s outcome.<sup><sup><a href="#footnote-251" id="footnote-ref-251">[250]</a></sup></sup></p>
+        <h2 class="subheading"><a id="Voting_HowToRegister"></a><a id="_Toc352860951"></a>Registering to Vote in California: </h2>
+        <h3><a id="_Toc352860952"></a>I want to vote in the next election. When is the last day I can register to vote in California? </h3>
+        <h4 class="sidebox">CAN I USE MY PRISON ID TO VOTE?</h4>
+        <p class="sidebox">Although a prison ID isn’t explicitly listed as acceptable ID, the law does allow a “document issued by a government agency” to prove who you are. (Cal. Code Regs. tit. 2, § 20107(d)(2)(E).) Your prison ID was issued by a government agency (either CDCR or the Bureau of Prisons), so it <em>should </em>be accepted as ID. However, since volunteers who work at polling stations on election day are not legal experts, you might have difficulties getting your prison ID accepted and may need to speak with a few different people. Remember: you won’t need your prison ID card at all if you provided a SSN, driver license number, or state ID number when you registered.</p>
+        <p class="text">The deadline to register is 15 days <em>before</em> the next local, state, or federal election. You must submit the voter registration application form before midnight on the deadline.</p>
         <ol class="text">If you register using the online form, the timestamp must be before midnight on the deadline date (by 11:59 p.m.).</ol>
-        <ol class="text">If you register using a paper form, it must be postmarked or hand-delivered to your county elections office at least 15 days before the election. (See PG. 76 to learn how to find your county elections office).<sup><a href="#footnote-250" id="footnote-ref-250">[250]</a></sup></ol>
-        <li id="footnote-247"><p> <em>81 Ops. Cal. Atty. Gen. 321 (1998). </em> <a href="#footnote-ref-247">↑</a></p></li>
-        <li id="footnote-248"><p> Cal. Elec. Code § 18560. <a href="#footnote-ref-248">↑</a></p></li>
-        <li id="footnote-249"><p> <em>22 U.S.C. § 1973gg-10. </em> <a href="#footnote-ref-249">↑</a></p></li>
-        <li id="footnote-250"><p> Election and Voter Information, Cal. Sec’y of State, <a href="http://www.sos.ca.gov/elections/elections_faq.htm">http://www.sos.ca.gov/elections/elections_faq.htm</a>. <a href="#footnote-ref-250">↑</a></p></li>
+        <ol class="text">If you register using a paper form, it must be postmarked or hand-delivered to your county elections office at least 15 days before the election. (See PG. 70 to learn how to find your county elections office).<sup><a href="#footnote-252" id="footnote-ref-252">[251]</a></sup></ol>
+        <li id="footnote-249"><p> <em><em>81 Ops. Cal. Atty. Gen. 321 (1998). </em></em> <a href="#footnote-ref-249">↑</a></p></li>
+        <li id="footnote-250"><p> Cal. Elec. Code § 18560. <a href="#footnote-ref-250">↑</a></p></li>
+        <li id="footnote-251"><p> <em><em>22 U.S.C. § 1973gg-10. </em></em> <a href="#footnote-ref-251">↑</a></p></li>
+        <li id="footnote-252"><p> Election and Voter Information, Cal. Sec’y of State, <a href="http://www.sos.ca.gov/elections/elections_faq.htm">http://www.sos.ca.gov/elections/elections_faq.htm</a>. <a href="#footnote-ref-252">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -107,7 +88,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -132,11 +112,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

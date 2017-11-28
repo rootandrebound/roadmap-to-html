@@ -21,83 +21,64 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="court-ordered-debt/court-administrative-fees/what-happens-to-my-court-ordered-debt-while-im-inc">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/court-ordered-debt">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/court-administrative-fees">Court administrative fees</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt">Court-Ordered Debt</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt/court-administrative-fees">Court administrative fees</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt/court-administrative-fees/what-happens-to-my-court-ordered-debt-while-im-inc">What happens to my court-ordered debt while I’m incarcerated? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What happens to my court-ordered debt while I’m incarcerated?</h1>
         <p class="text">Your debts CAN increase while you’re inside—but WHETHER they do and by HOW MUCH will depend on different things, such as: how old the debt is, whether it has been sent to collections, the amount of victim restitution you owe, and whether you’ve been making restitution payments. </p>
         <p class="text">Some reasons your debt may increase while you’re incarcerated are:</p>
-        <h4 class="sidebox">What is “DELINQUENT DEBT”?</h4>
-        <p class="sidebox">If you have missed one or more payments, your debt is “overdue” or “delinquent.” Usually, you will get a letter notifying you that your debt has become delinquent, and you will have a limited time to make a payment or reestablish an installment plan before extra punishments and fines are imposed.</p>
-        <h4 class="sidebox">What are “COLLECTION AGENCIES”?</h4>
-        <p class="sidebox">When courts (or anyone else) can’t get a person to pay their debt on time, they often will hire a “collection agency” to try to get back the money owed. Collection agencies track down the person who owes (the “debtor”), and tries to get them to pay. If they are successful in collecting the debt, the collection agency receives a percentage of the payment. </p>
-        <ol class="text">You can be charged interest and administrative fees on your restitution debts.<sup><a href="#footnote-2036" id="footnote-ref-2036">[2036]</a></sup> </ol>
-        <ol class="text">NOTE: If you are paying restitution through your facility while incarcerated, you may be charged administrative fees for any payments you make.<strong> </strong><sup><a href="#footnote-2037" id="footnote-ref-2037">[2037]</a></sup> If CDCR or a county agency is automatically taking restitution payments directly from your prison or jail account, you may not even realize you’re being charged extra. (See PG. 744 for more information about paying restitution while you’re incarcerated.)</ol>
+        <ol class="text">You can be charged interest and administrative fees on your restitution debts.<sup><a href="#footnote-2147" id="footnote-ref-2147">[2146]</a></sup> </ol>
+        <ol class="text">NOTE: If you are paying restitution through your facility while incarcerated, you may be charged administrative fees for any payments you make.<strong> </strong><sup><a href="#footnote-2148" id="footnote-ref-2148">[2147]</a></sup> If CDCR or a county agency is automatically taking restitution payments directly from your prison or jail account, you may not even realize you’re being charged extra. (See PG. 671 for more information about paying restitution while you’re incarcerated.)</ol>
         <ol class="text">If your debt is <em>delinquent</em>, you may be charged a $300 penalty (called a “civil assessment”) for late payments or non-payment. </ol>
-        <ol class="text">NOTE: If you were unable to pay the debt <em>because</em> you were incarcerated, you may be able to ask the court to forgive (“vacate”) the penalty.<sup><a href="#footnote-2038" id="footnote-ref-2038">[2038]</a></sup> (See PG. 746 for information on vacating civil assessment charges.)</ol>
-        <ol class="text">If your debt has been sent to “collections” (see explanation in side box) you may be charged an extra administrative fee to cover the costs of transferring your debt to the collection agency.<sup><a href="#footnote-2039" id="footnote-ref-2039">[2039]</a></sup></ol>
-        <ol class="text">You may be charged for failures to appear in court.<sup><a href="#footnote-2040" id="footnote-ref-2040">[2040]</a></sup></ol>
-        <ol class="text">You may be charged a fee if your driver license was suspended due to unpaid court debts.<sup><a href="#footnote-2041" id="footnote-ref-2041">[2041]</a></sup></ol>
-        <h3><a id="_Toc448153512"></a>Will my debts be sent to “collections”? </h3>
+        <ol class="text">NOTE: If you were unable to pay the debt <em>because</em> you were incarcerated, you may be able to ask the court to forgive (“vacate”) the penalty.<sup><a href="#footnote-2149" id="footnote-ref-2149">[2148]</a></sup> (See PG. 673 for information on vacating civil assessment charges.)</ol>
+        <ol class="text">If your debt has been sent to “collections” (see explanation in side box) you may be charged an extra administrative fee to cover the costs of transferring your debt to the collection agency.<sup><a href="#footnote-2150" id="footnote-ref-2150">[2149]</a></sup></ol>
+        <ol class="text">You may be charged for failures to appear in court.<sup><a href="#footnote-2151" id="footnote-ref-2151">[2150]</a></sup></ol>
+        <ol class="text">You may be charged a fee if your driver license was suspended due to unpaid court debts.<sup><a href="#footnote-2152" id="footnote-ref-2152">[2151]</a></sup></ol>
+        <h3><a id="_Toc352861775"></a>Will my debts be sent to “collections”? </h3>
         <p class="text">Maybe. The more <em>delinquent</em> your debt is, the more likely that it will be, or already has been, sent to collections. </p>
-        <p class="text">Each court, county, and agency handles unpaid debts differently. The court may start by trying to collect the debt itself. Once the debt becomes overdue, courts often send unpaid debts to the county collection agency.<sup><a href="#footnote-2042" id="footnote-ref-2042">[2042]</a></sup> If the debt remains unpaid, the court or county collection agency may then send your debt to a private collection agency or to the California Franchise Tax Board (FTB), which acts as a collections agency for the state and for CDCR.<sup><a href="#footnote-2043" id="footnote-ref-2043">[2043]</a></sup> </p>
-        <p class="text">For more information on tracking down your debt, see PG. 742. </p>
-        <p class="text">For more information on what to do if your court-ordered debt HAS BEEN sent to collections, see PG. 741.</p>
-        <li id="footnote-2036"><p> Cal. Penal Code §§ 1202.4(f)(3)(G) (10% interest on victim restitution debt),1203.1(l) (15% administrative fee on victim restitution), 1202.4(l)) (10% administrative fee on restitution fine). <a href="#footnote-ref-2036">↑</a></p></li>
-        <li id="footnote-2037"><p> Cal. Penal Code § 2085.5 (e), (f), (i) (as amended by 2014 Cal. Legis. 513 (S.B. 419)). <a href="#footnote-ref-2037">↑</a></p></li>
-        <li id="footnote-2038"><p> Cal. Penal Code § 1214.1(a) (court will impose a penalty for failure to appear or failure to pay unless good cause is shown; incarceration is considered good cause).  <a href="#footnote-ref-2038">↑</a></p></li>
-        <li id="footnote-2039"><p> Cal. Rev. &amp; Tax Code § 19280(a)(2)(A).  <a href="#footnote-ref-2039">↑</a></p></li>
-        <li id="footnote-2040"><p> Cal. Veh. Code § 40508.5 (authorizing $15 assessment for failure to appear and/or other violation). <a href="#footnote-ref-2040">↑</a></p></li>
-        <li id="footnote-2041"><p> Cal. Veh. Code § 40508.6 (authorizing $10 assessment for suspension of driver license due to unpaid debt). <a href="#footnote-ref-2041">↑</a></p></li>
-        <li id="footnote-2042"><p> Telephone interview with Bonnie Sloan, Division Manager, Court Collections, Yuba County Superior Court (Feb. 23, 2015); Telephone interview with Genevieve Harrington, Supervisor, Central Collections, Butte County Superior Court (Feb. 23, 2015); Telephone interview with David (no last name given), Collector, Fresno County Revenue Collections Unit, (Feb. 23, 2015). <em>See also</em> Cal. Penal Code § 1463.007 (authorizing collection of delinquent court-ordered debt by county). <a href="#footnote-ref-2042">↑</a></p></li>
-        <li id="footnote-2043"><p> Cal. Rev. &amp; Tax Code § 19280 (court can refer unpaid debts to the FTB starting 90 days after the date when the debt was due).  <a href="#footnote-ref-2043">↑</a></p></li>
+        <p class="text">Each court, county, and agency handles unpaid debts differently. The court may start by trying to collect the debt itself. Once the debt becomes overdue, courts often send unpaid debts to the county collection agency.<sup><a href="#footnote-2153" id="footnote-ref-2153">[2152]</a></sup> If the debt remains unpaid, the court or county collection agency may then send your debt to a private collection agency or to the California Franchise Tax Board (FTB), which acts as a collections agency for the state and for CDCR.<sup><a href="#footnote-2154" id="footnote-ref-2154">[2153]</a></sup> </p>
+        <ol class="text">For more information on tracking down your debt, see PG. 669. </ol>
+        <ol class="text">For more information on what to do if your court-ordered debt HAS BEEN sent to collections, see PG. 669.</ol>
+        <li id="footnote-2147"><p> Cal. Penal Code §§ 1202.4(f)(3)(G) (10% interest on victim restitution debt),1203.1(l) (15% administrative fee on victim restitution), 1202.4(l)) (10% administrative fee on restitution fine). <a href="#footnote-ref-2147">↑</a></p></li>
+        <li id="footnote-2148"><p> Cal. Penal Code § 2085.5 (e), (f), (i) (as amended by 2014 Cal. Legis. 513 (S.B. 419)). <a href="#footnote-ref-2148">↑</a></p></li>
+        <li id="footnote-2149"><p> Cal. Penal Code § 1214.1(a) (court will impose a penalty for failure to appear or failure to pay unless good cause is shown; incarceration is considered good cause).  <a href="#footnote-ref-2149">↑</a></p></li>
+        <li id="footnote-2150"><p> Cal. Rev. &amp; Tax Code § 19280(a)(2)(A).  <a href="#footnote-ref-2150">↑</a></p></li>
+        <li id="footnote-2151"><p> Cal. Veh. Code § 40508.5 (authorizing $15 assessment for failure to appear and/or other violation). <a href="#footnote-ref-2151">↑</a></p></li>
+        <li id="footnote-2152"><p> Cal. Veh. Code § 40508.6 (authorizing $10 assessment for suspension of driver license due to unpaid debt). <a href="#footnote-ref-2152">↑</a></p></li>
+        <li id="footnote-2153"><p> Telephone interview with Bonnie Sloan, Division Manager, Court Collections, Yuba County Superior Court (Feb. 23, 2015); Telephone interview with Genevieve Harrington, Supervisor, Central Collections, Butte County Superior Court (Feb. 23, 2015); Telephone interview with David (no last name given), Collector, Fresno County Revenue Collections Unit, (Feb. 23, 2015). See also Cal. Penal Code § 1463.007 (authorizing collection of delinquent court-ordered debt by county). <a href="#footnote-ref-2153">↑</a></p></li>
+        <li id="footnote-2154"><p> Cal. Rev. &amp; Tax Code § 19280 (court can refer unpaid debts to the FTB starting 90 days after the date when the debt was due).  <a href="#footnote-ref-2154">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -115,7 +96,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -140,11 +120,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

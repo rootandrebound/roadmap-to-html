@@ -21,62 +21,47 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="employment/background-check-companies-access-to-your-criminal/what-can-a-background-check-company-not-report-abo">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/employment">Employment</a></li>
-          <li><a href="/roadmap-to-html/employment/background-check-companies-access-to-your-criminal">Background check companies’ access to your criminal records</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/employment">Employment</a></li>
+    <li><a href="/roadmap-to-html/employment/background-check-companies-access-to-your-criminal">Background check companies’ access to your criminal records</a></li>
+    <li><a href="/roadmap-to-html/employment/background-check-companies-access-to-your-criminal/what-can-a-background-check-company-not-report-abo">What can a background check company not report about me to an employer? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What can a background check company not report about me to an employer?</h1>
         <p class="text">Although some background check companies brag that they can “find out anything about anyone,” both federal and California laws impose restrictions on what information they are allowed to put in your background check, especially when it relates to your criminal history. </p>
-        <p class="text">For example, Background check companies are NOT allowed to include information about criminal convictions that are more than seven years old,<sup><sup><a href="#footnote-1829" id="footnote-ref-1829">[1829]</a></sup></sup> convictions that were pardoned, dismissed or sealed, arrest records, or referrals to diversion programs.</p>
-        <p class="importantbox">KNOW YOUR RIGHTS: Background check companies MUST verify certain information to make sure it is accurate! If a Background check company includes information that is a matter of public record in your background check (such as information about your convictions), it must have verified the information within the previous 30 days before issuing its report. Additionally, a Background check company cannot include negative information about you that it got from talking to a person who knows you (for example, a former employer or a neighbor) UNLESS it has tried to confirm that information from another source, or has determined that that person is the best (or only) source of the information.<sup><a href="#footnote-1830" id="footnote-ref-1830">[1830]</a></sup></p>
-        <li id="footnote-1829"><p> Cal. Civ. Code § 1786.18.  <a href="#footnote-ref-1829">↑</a></p></li>
-        <li id="footnote-1830"><p> Cal. Civ. Code § 1786.18. <a href="#footnote-ref-1830">↑</a></p></li>
+        <p class="text">For example, Background check companies are NOT allowed to include information about criminal convictions that are more than seven years old,<sup><sup><a href="#footnote-1930" id="footnote-ref-1930">[1929]</a></sup></sup> convictions that were pardoned, dismissed or sealed, arrest records, or referrals to diversion programs.</p>
+        <p class="importantbox">KNOW YOUR RIGHTS: Background check companies MUST verify certain information to make sure it is accurate! If a Background check company includes information that is a matter of public record in your background check (such as information about your convictions), it must have verified the information within the previous 30 days before issuing its report. Additionally, a Background check company cannot include negative information about you that it got from talking to a person who knows you (for example, a former employer or a neighbor) UNLESS it has tried to confirm that information from another source, or has determined that that person is the best (or only) source of the information.<strong><sup><a href="#footnote-1931" id="footnote-ref-1931">[1930]</a></sup></strong></p>
+        <li id="footnote-1930"><p> Cal. Civ. Code § 1786.18.  <a href="#footnote-ref-1930">↑</a></p></li>
+        <li id="footnote-1931"><p> Cal. Civ. Code § 1786.18. <a href="#footnote-ref-1931">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -94,7 +79,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -119,11 +103,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

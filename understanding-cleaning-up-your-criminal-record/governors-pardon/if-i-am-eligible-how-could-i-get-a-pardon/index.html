@@ -21,74 +21,58 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="understanding-cleaning-up-your-criminal-record/governors-pardon/if-i-am-eligible-how-could-i-get-a-pardon">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/governors-pardon">Governor’s Pardon</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record">Understanding & Cleaning Up Your Criminal Record</a></li>
+    <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/governors-pardon">Governor’s Pardon</a></li>
+    <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/governors-pardon/if-i-am-eligible-how-could-i-get-a-pardon">If I am eligible, how could I get a pardon? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>If I am eligible, how could I get a pardon?</h1>
-        <p class="text">There are 3 different ways to get a pardon: </p>
-        <ol class="text"><strong>Certificate of Rehabilitation</strong>—By getting a Certificate of Rehabilitation <em>first</em>, a request for your pardon is automatically sent to the Governor. This is the best way to get a pardon, if your conviction is eligible for a COR. (For more information about getting a Certificate of Rehabilitation, see PG. 1078.)</ol>
-        <p class="text">Remember, once you receive your COR, it <em>automatically</em> becomes your application for a pardon also. The COR also serves as the judge’s official recommendation that the Governor should grant your pardon. </p>
-        <ol class="text"><strong>Traditional Pardon</strong>—A traditional pardon is when you submit your request for a pardon directly to the Governor (also called a direct pardon). This is the best way to get a pardon if you are NOT eligible for a Certificate of Rehabilitation. You must also apply for a traditional pardon directly from the Governor if any of the following apply to you:</ol>
+        <p class="text">There are 3 different ways to get a pardon:</p>
+        <ol class="text"><strong>Certificate of Rehabilitation (COR)</strong>—If you apply for and receive a COR <em>first</em>, a request for your pardon is automatically sent to the Governor. The COR serves as the judge’s official recommendation that the Governor should grant your pardon. If your conviction is eligible for a COR, this is the best way to get a pardon. Learn more about getting a COR on PG. 964.</ol>
+        <ol class="text"><strong>Direct Pardon (without COR)</strong>—You can send a request for a pardon directly to the Governor (also called a traditional pardon). This is the best way to get a pardon if you are NOT eligible for a COR; it is also necessary if any of the following apply to you:</ol>
         <ol class="text">Your conviction is from California but you do NOT currently live in California;</ol>
         <ol class="text">You were released from prison or onto parole before May 13, 1943; OR</ol>
-        <ol class="text">You are serving a life sentence without the possibility of parole, and you have more than 1 felony conviction.<sup><a href="#footnote-2994" id="footnote-ref-2994">[2994]</a></sup> </ol>
-        <ol class="text"><strong>Board of Parole Hearings Recommendation</strong>—If the Board of Parole Hearings (BPH) recommends you for a pardon while you’re still in prison, based on your good conduct, unusual sentence, or another good reasons (for example, you committed your offense because you were a victim of domestic violence).<sup><sup><a href="#footnote-2995" id="footnote-ref-2995">[2995]</a></sup></sup> </ol>
-        <li id="footnote-2994"><p> 15 Cal. Code Regs. § 2816. <a href="#footnote-ref-2994">↑</a></p></li>
-        <li id="footnote-2995"><p> Cal. Penal Code § 4801; 15 Cal. Code Regs. § 2830. <a href="#footnote-ref-2995">↑</a></p></li>
+        <ol class="text">You are serving a life sentence without the possibility of parole, and you have more than 1 felony conviction.<sup><a href="#footnote-3150" id="footnote-ref-3150">[3149]</a></sup> </ol>
+        <ol class="text"><strong>Board of Parole Hearings Recommendation</strong>—The Board of Parole Hearings (BPH) can recommend you for a pardon while you are still in prison, based on your good conduct, unusual sentence, or other strong reasons (for example, you committed your offense because you were a victim of domestic violence).<sup><sup><a href="#footnote-3151" id="footnote-ref-3151">[3150]</a></sup></sup> </ol>
+        <li id="footnote-3150"><p> 15 Cal. Code Regs. § 2816. <a href="#footnote-ref-3150">↑</a></p></li>
+        <li id="footnote-3151"><p> Cal. Penal Code § 4801; 15 Cal. Code Regs. § 2830. <a href="#footnote-ref-3151">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
           <li class="previous">
             <a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/governors-pardon/how-cant-a-governors-pardon-help-me">
               <span class="neighbor-label">Previous</span>
-              <span class="neighbor-title">How CAN’T a Governor’s pardon help me?</span>
+              <span class="neighbor-title">How can’t a Governor’s pardon help me?</span>
             </a>
           </li>
           <li class="next">
@@ -99,7 +83,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -124,11 +107,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

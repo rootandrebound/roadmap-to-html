@@ -21,65 +21,49 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-2">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-2" data-page-path="family-children/key-terms-in-the-family-children-chapter">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
+    <li><a href="/roadmap-to-html/family-children/key-terms-in-the-family-children-chapter">Key Terms in the Family & Children Chapter (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Key Terms in the Family & Children Chapter</h1>
         <p class="text">If you are a parent or caregiver with a criminal record, and you have legal issues related to your family situation, it can help to know some basic legal concepts like: <em>What is a guardian? What are custody and visitation?</em> Here, we explain the definitions of some of the key terms that will appear again and again in this Chapter, so you can refer back.</p>
         <p class="text"><span class="emphasisheavy">Adoption: </span>Adoption means giving complete parental rights and responsibilities to someone who is not the child’s biological (“by blood”) parent. Once the adoption is final, the adoptive parents are considered to be the child’s new legal parents, and the child’s birth parents no longer have any rights to the child. Adoption is permanent, meaning it generally can’t be changed afterward. An adoptive parent can be a stepparent or domestic partner of one of the child’s birth parents, a relative who has been caring for the child, or someone not related to the child by blood.</p>
         <p class="text"><a id="FamilyChildren_Arrears"></a><span class="emphasisheavy">Arrears:</span> Arrears are unpaid, overdue child support payments (child support debt). In other words, arrears are money you owe from past child support payments that you did not make. Arrears are different from <em>current</em> child support payments that you have to make now, which cover the cost of caring for your child today. Often, there are different rules for arrears (child support debt) and current child support payments (child support you owe now), so it’s important to know the difference. In addition, the state will charge you interest (10%) on your arrears, so the debt amount you owe will continue to increase—even if you’re actively paying your <em>current</em> child support payments.</p>
         <p class="text"><span class="emphasisheavy">“Best Interest of the Child”:</span> This is the legal standard in any legal case involving a child’s care (like child custody and visitation cases) that the judge will use. The judge will ask what is in the “best interest of the child,” looking at factors like: the parent or caregiver’s criminal records and Child Protective Services (CPD) record, the child’s health and safety, and whether the child will be raised in a stable and loving environment.</p>
-        <a id="FC_Terms_CasePlan"></a>
-        <p class="text"><span class="emphasisheavy">Case Plan:</span> A case plan is created by Child Protective Services (CPS) when it gets involved in a case regarding your child. The case plan sets out the steps you must take to get your child back. For example, a case plan could require you to attend parenting or counseling classes, participate in substance abuse treatment, and/or visit with your child. If CPS has removed your child from your home, your CPS social worker or the juvenile dependency court judge should give you a copy of your case plan, and as part of the case plan, the county must offer you certain programs and services that you need to complete your case plan for a limited amount of time upon reentry (see the term for “Family Reunification Services” for more information below). </p>
+        <p class="text"><a id="FC_Terms_CasePlan"></a><span class="emphasisheavy">Case Plan:</span> A case plan is created by Child Protective Services (CPS) when it gets involved in a case regarding your child. The case plan sets out the steps you must take to get your child back. For example, a case plan could require you to attend parenting or counseling classes, participate in substance abuse treatment, and/or visit with your child. If CPS has removed your child from your home, your CPS social worker or the juvenile dependency court judge should give you a copy of your case plan, and as part of the case plan, the county must offer you certain programs and services that you need to complete your case plan for a limited amount of time upon reentry (see the term for “Family Reunification Services” for more information below). </p>
+        <p class="text"><span class="emphasisheavy">Caregiver:</span> A caregiver is a person responsible for a child’s care and supervision from day to day. The caregiver may or may not be the child’s biological parent OR the child’s legal guardian. In some cases, a caregiver who is a close blood relative of the child will have more legal rights in a given situation than a non-relative (meaning unrelated) caregiver.</p>
         <h4 class="sidebox">WHO MIGHT BE A CAREIVER?</h4>
         <p class="sidebox">The person caring for your child may be the child’s <em>other parent</em>, or may be a relative, family friend, foster parent, or someone else who has a relationship with your child. These are just some <em>examples</em> of people who might be caregivers – so your child’s situation may be different!</p>
-        <p class="text"><span class="emphasisheavy">Caregiver:</span> A caregiver is a person responsible for a child’s care and supervision from day to day. The caregiver may or may not be the child’s biological parent OR the child’s legal guardian. In some cases, a caregiver who is a close blood relative of the child will have more legal rights in a given situation than a non-relative (meaning unrelated) caregiver.</p>
         <p class="text"><span class="emphasisheavy">Child Support Payment:</span> A judge may order the parent who does <em>not</em> have custody (see definition below) of the child to pay child support to the parent who does have custody of the child. This “child support payment” is to help cover the cost of caring for the child.</p>
         <p class="text"><span class="emphasisheavy">Child Protective Services (CPS):</span> CPS is the part of the California Department of Social Services (CDSS) that responds to reports of child abuse or neglect. Every county in California has a CPS office.</p>
         <p class="text"><a id="FamilyChildren_CourtOrder_definition"></a><span class="emphasisheavy">Court Order:</span> A “court order” is a decision by a judge in court, usually in writing. A court order requires someone to do OR not do something. A court order might say whether you currently have custody and/or visitation with your child; who else has custody and/or visitation with your child; and which court is involved in your family’s case. Court orders also require you to do things like attend a parenting class or prevent you from contacting someone. It is important to know about any court orders in your child’s case, because a court order may restrict how and when you can contact your child OR your child’s caregiver—and will help you understand what steps to take next.</p>
@@ -89,11 +73,11 @@
         <ol class="text"><span class="emphasisheavy">Legal Custody:</span> The legal right to make important decisions about your child’s health, education, and well-being.</ol>
         <p class="text"><span class="emphasisheavy">Declaration of Paternity:</span> A “Declaration of Paternity” is a legal document that says who is the “natural father” (the biological father) of a child. It must be signed by <em>both</em> of the child’s biological parents (father and mother).</p>
         <p class="text"><span class="emphasisheavy">Dependency Court: </span>The court family cases are started in if a child’s parent(s) are suspected of abuse or neglect and Child Protective Services (CPS) has become involved in the child’s case.</p>
-        <p class="text"><span class="emphasisheavy">Family Law Facilitator (sometimes called the Self-Help Facilitator):</span> Every family court should have a “Family Law Facilitator,” which is someone who can help you with court forms, answer questions, provide general information about family law issues, and walk you through some of the steps of your case if you do not have a lawyer. However, the Family Law Facilitator <em>cannot</em> give any legal advice or answer questions about a specific case. To find your local Family Law Facilitator, see Appendix A, PG. 881, or go to <a href="http://www.courts.ca.gov/selfhelp-facilitators.htm">http://www.courts.ca.gov/selfhelp-facilitators.htm</a>.</p>
-        <p class="text"><span class="emphasisheavy">Family Reunification Services:</span> These are services that Child Protective Services (CPS) must provide you with, with certain exceptions, if it is involved in a legal case regarding you and your child.<sup><a href="#footnote-2199" id="footnote-ref-2199">[2199]</a></sup> Family reunification services are meant to help you complete your “case plan” (see definition above) and any other dependency court requirements to encourage reunification with your child.</p>
+        <p class="text"><span class="emphasisheavy">Family Law Facilitator (sometimes called the Self-Help Facilitator):</span> Every family court should have a “Family Law Facilitator,” which is someone who can help you with court forms, answer questions, provide general information about family law issues, and walk you through some of the steps of your case if you do not have a lawyer. However, the Family Law Facilitator <em>cannot</em> give any legal advice or answer questions about a specific case. To find your local Family Law Facilitator, see Appendix A, PG. 788, or go to <a href="http://www.courts.ca.gov/selfhelp-facilitators.htm">http://www.courts.ca.gov/selfhelp-facilitators.htm</a>.</p>
+        <p class="text"><span class="emphasisheavy">Family Reunification Services:</span> These are services that Child Protective Services (CPS) must provide you with, with certain exceptions, if it is involved in a legal case regarding you and your child.<sup><a href="#footnote-2297" id="footnote-ref-2297">[2296]</a></sup> Family reunification services are meant to help you complete your “case plan” (see definition above) and any other dependency court requirements to encourage reunification with your child.</p>
         <p class="text"><span class="emphasisheavy">Foster Care:</span> Sometimes when a child is removed from his or her parents’ home, the judge will send the child to live in a “foster care” placement. “Foster care” describes the placement of a child living with one or two “foster parents”—people who the State has licensed, trained and approved to care for children in their home. However, foster parents have fewer rights than legal guardians or biological parents, so the judge and Child Protective Services (CPS) will continue to be legally responsible for making decisions about the child.</p>
-        <p class="text"><span class="emphasisheavy">Guardian (or “Legal Guardian”):</span> A guardian is an adult (not the child’s parent), such as a relative or family friend, who has legal and physical custody (see definitions under “custody” above) of the child. A guardianship does <em>not</em> terminate the parental rights of the child’s legal or biological parents; it only puts their parental rights on hold while the guardian has physical and legal custody.<sup><sup><a href="#footnote-2200" id="footnote-ref-2200">[2200]</a></sup></sup> Learn more about guardians on PG. 827.</p>
-        <p class="text"><a id="FamilyChildren_LienDefinition"></a><span class="emphasisheavy">Lien:</span> A lien is the right to take (and sell) property belonging to another person until that person pays off a debt s/he owes. For more information about liens, read the COURT-ORDERED DEBT CHAPTER, beginning on PG. 717.</p>
+        <p class="text"><span class="emphasisheavy">Guardian (or “Legal Guardian”):</span> A guardian is an adult (not the child’s parent), such as a relative or family friend, who has legal and physical custody (see definitions under “custody” above) of the child. A guardianship does <em>not</em> terminate the parental rights of the child’s legal or biological parents; it only puts their parental rights on hold while the guardian has physical and legal custody.<sup><sup><a href="#footnote-2298" id="footnote-ref-2298">[2297]</a></sup></sup> Learn more about guardians on PG. 741.</p>
+        <p class="text"><a id="FamilyChildren_LienDefinition"></a><span class="emphasisheavy">Lien:</span> A lien is the right to take (and sell) property belonging to another person until that person pays off a debt s/he owes. For more information about liens, read the COURT-ORDERED DEBT CHAPTER, beginning on PG. 650.</p>
         <p class="text"><span class="emphasisheavy">Local Child Support Agency (LCSA): </span>LCSAs are county-run offices that collect and enforce child support payments by making sure that custodial parents and guardians receive the payments from non-custodial parents.</p>
         <p class="text"><span class="emphasisheavy">Non-Custodial Parent:</span> The non-custodial parent is the parent who does <em>not</em> have physical custody of his or her child. <em>For comparison, see also definition for “custodial parent” above.</em></p>
         <p class="text"><span class="emphasisheavy">Notice:</span> In any case involving you and your rights as a parent, you are legally required to receive “notice” of the case, which means you must be informed of the case. This “notice” could be a letter mailed to you, an announcement made by the judge in court, paperwork handed to you in person in court, at your home, or while you are incarcerated. Depending on your role in the case, you may have the right to get the “notice” papers handed to you IN PERSON—even while incarcerated. Often, a local law enforcement officer or Sheriff takes on the role of giving people “notice” papers inside prison or jail. </p>
@@ -107,12 +91,12 @@
         <p class="text"><span class="emphasisheavy">Residence exclusion order</span>: This type of order requires the restrained person to move out from where the protected person lives, and to take only their own clothing or personal belongings until there is a court hearing. </p>
         <p class="text"><span class="emphasisheavy">Reunification</span>: Reunification can mean 2 things: In the real world (i.e., outside of court), reunification can mean reuniting with your child and (re)developing a relationship with him/her. In court, reunification means getting back your legal right to care for your child, after s/he has been removed by CPS.</p>
         <p class="text"><span class="emphasisheavy">Removal</span>: When CPS or a judge takes a child away from his/her parent’s custody. </p>
-        <p class="text"><span class="emphasisheavy">Visitation</span>: Visitation is the legal right to spend time with your child.<sup><sup><a href="#footnote-2201" id="footnote-ref-2201">[2201]</a></sup></sup> When a judge makes a custody order, he/she must give visitation rights to the parent who does not have custody of the child, unless granting visitation is not in the child’s best interest.<sup><sup><a href="#footnote-2202" id="footnote-ref-2202">[2202]</a></sup></sup></p>
+        <p class="text"><span class="emphasisheavy">Visitation</span>: Visitation is the legal right to spend time with your child.<sup><sup><a href="#footnote-2299" id="footnote-ref-2299">[2298]</a></sup></sup> When a judge makes a custody order, he/she must give visitation rights to the parent who does not have custody of the child, unless granting visitation is not in the child’s best interest.<sup><sup><a href="#footnote-2300" id="footnote-ref-2300">[2299]</a></sup></sup></p>
         <p class="text">Now that you’ve learned some of the basics, keep reading to learn more about the child custody, child visitation, the court system, guardianship, other legal issues related to families and partnerships, and child support.</p>
-        <li id="footnote-2199"><p> For exception to family reunification services, <em>see</em> Cal. R. Ct. 5.695(h)(6).  <a href="#footnote-ref-2199">↑</a></p></li>
-        <li id="footnote-2200"><p> By contrast, adoption does terminate the parental rights of the child’s legal or biological parents, and also creates a permanent parent/child relationship between the child and his/her adoptive parent. <em>See</em> Cal. Fam. Code § 7505(a) (cessation of parental authority upon appointment of guardian); Cal. Prob. Code § 2351(a) (custody rights of guardian); Cal. Welf. &amp; Inst. Code § 366.26 (distinguishing between termination of parental rights and guardianship proceedings; contrast adoption, which terminates parental rights, with guardianship, which does not); In re Guardianship of Ann S., 45 Cal. 4th 1110, 1124 (2009) (probate guardianship suspends parental rights). <a href="#footnote-ref-2200">↑</a></p></li>
-        <li id="footnote-2201"><p> <em>See, e.g.</em>, In re Marriage of Gayden, 229 Cal. App. 3d 1510, 1517 (1991) (noting that visitation is a limited form of custody during the time visitation rights are being exercised).  <a href="#footnote-ref-2201">↑</a></p></li>
-        <li id="footnote-2202"><p> Cal. Fam. Code § 3100(a). <a href="#footnote-ref-2202">↑</a></p></li>
+        <li id="footnote-2297"><p> For exception to family reunification services, see Cal. R. Ct. 5.695(h)(6).  <a href="#footnote-ref-2297">↑</a></p></li>
+        <li id="footnote-2298"><p> By contrast, adoption does terminate the parental rights of the child’s legal or biological parents, and also creates a permanent parent/child relationship between the child and his/her adoptive parent. See Cal. Fam. Code § 7505(a) (cessation of parental authority upon appointment of guardian); Cal. Prob. Code § 2351(a) (custody rights of guardian); Cal. Welf. &amp; Inst. Code § 366.26 (distinguishing between termination of parental rights and guardianship proceedings; contrast adoption, which terminates parental rights, with guardianship, which does not); In re Guardianship of Ann S., 45 Cal. 4th 1110, 1124 (2009) (probate guardianship suspends parental rights). <a href="#footnote-ref-2298">↑</a></p></li>
+        <li id="footnote-2299"><p> See, e.g., In re Marriage of Gayden, 229 Cal. App. 3d 1510, 1517 (1991) (noting that visitation is a limited form of custody during the time visitation rights are being exercised).  <a href="#footnote-ref-2299">↑</a></p></li>
+        <li id="footnote-2300"><p> Cal. Fam. Code § 3100(a). <a href="#footnote-ref-2300">↑</a></p></li>
       </article>
         <ol class="table-of-contents">
         </ol>
@@ -132,7 +116,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -157,11 +140,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

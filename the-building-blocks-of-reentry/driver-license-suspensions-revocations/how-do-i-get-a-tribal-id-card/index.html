@@ -21,63 +21,48 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="the-building-blocks-of-reentry/driver-license-suspensions-revocations/how-do-i-get-a-tribal-id-card">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations">Driver License Suspensions & Revocations</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry">The Building Blocks Of Reentry</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations">Driver License Suspensions & Revocations</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations/how-do-i-get-a-tribal-id-card">How do I get a tribal ID card? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>How do I get a tribal ID card?</h1>
-        <p class="text">The process may be slightly different for each tribe, and it depends on whether you are already enrolled with the tribe. PLEASE NOTE: Requests for Tribal ID Cards no longer go through the Bureau of Indian Affairs (BIA), whose California office is based in Sacramento, CA; these requests now go directly to the tribe to which you will be returning. </p>
-        <p class="text"><strong><em>If neither you or your parents enrolled with your tribe, the basic steps for getting a tribal ID card are as follows:</em></strong></p>
-        <h4 class="step">First, you need the name of the tribe to which you are returning.The best next step is to call or write your tribe’s enrollment department, and ask if they have enrollment <em>forms</em> and <em>instructions</em>; if so, ask them to send these to you.Send the tribe to which you will be returning <em>as many details as possible</em> about your family history and tribal ancestry (and if applicable, use the forms they sent you).</h4>
-        <p class="text">You will need to give the tribe as many details about your ancestry as possible—not just your parents’ information, but also information about your grandparents, great-grandparents, great-great grandparents, great-great-great grandparents, and so on. Include information about your family tree and history as far back as you can.</p>
+        <p class="text">The process may be slightly different for each tribe, and it depends on whether you are already enrolled with the tribe. PLEASE NOTE: Requests for tribal ID cards no longer go through the Bureau of Indian Affairs (BIA), whose California office is based in Sacramento, CA; these requests now go directly to the tribe to which you will be returning. </p>
+        <p class="text"><strong><em>If neither you nor your parents enrolled with your tribe, the basic steps for getting a tribal ID card are as follows:</em></strong></p>
+        <h4 class="step">First, you need the name of the tribe to which you are returning.The best next step is to call or write your tribe’s enrollment department, and ask if they have enrollment <em>forms</em> and <em>instructions</em>; if so, ask them to send these to you.Send the tribe <em>as many details as possible</em> about your family history and tribal ancestry (and if applicable, use the forms they sent you).</h4>
+        <p class="text">You will need to give the tribe as many details about your ancestry as possible — not just your parents’ information, but also information about your grandparents, great-grandparents, great-great grandparents, great-great-great grandparents, and so on. Include information about your family tree and history as far back as you can.</p>
         <p class="text"><strong><em>If you or your parents ARE enrolled with your tribe, the basic steps for getting a tribal ID card are as follows:</em></strong></p>
-        <h4 class="step">Contact the tribe’s enrollment department directly, and they will likely be able to assist you in a getting a copy of your Tribal ID Card.Follow any instructions given to you by the tribe.</h4>
+        <h4 class="step">Contact the tribe’s enrollment department directly, and they will likely be able to assist you in a getting a copy of your tribal ID card.Follow any instructions given to you by the tribe.</h4>
         <p class="text"><em>Note:</em> The process for obtaining a tribal ID card is much easier if you or one of your parents is enrolled in the tribe.</p>
       </article>
       <nav class="neighbors">
@@ -96,7 +81,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -121,11 +105,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

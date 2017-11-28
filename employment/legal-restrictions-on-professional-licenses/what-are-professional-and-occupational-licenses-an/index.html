@@ -21,61 +21,46 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="employment/legal-restrictions-on-professional-licenses/what-are-professional-and-occupational-licenses-an">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/employment">Employment</a></li>
-          <li><a href="/roadmap-to-html/employment/legal-restrictions-on-professional-licenses">Legal restrictions on professional licenses</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/employment">Employment</a></li>
+    <li><a href="/roadmap-to-html/employment/legal-restrictions-on-professional-licenses">Legal restrictions on professional licenses</a></li>
+    <li><a href="/roadmap-to-html/employment/legal-restrictions-on-professional-licenses/what-are-professional-and-occupational-licenses-an">What are professional and occupational licenses and what do they require? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What are professional and occupational licenses and what do they require?</h1>
-        <p class="text">In California, people who work in certain jobs are required to get a <strong><em>license</em></strong> from the state to do so. There are over 200 professions in California that require a professional or occupational license—ranging from barbers and cosmetologists, to security guards, contractors, teachers, nurses, doctors and lawyers. Professional and occupational licenses are granted and regulated by different <strong><em>licensing boards, agencies, and bureaus</em></strong> (over 40 in total, each for a different industry), all under the control of the California Department of Consumer Affairs (DCA).<sup><a href="#footnote-1896" id="footnote-ref-1896">[1896]</a></sup></p>
-        <p class="text">Applying for a professional or occupational license generally requires submitting fingerprints, paying application fees, and proving that you meet certain educational and/or work experience requirements, which are set by the particular licensing board to which you’re applying.<sup><a href="#footnote-1897" id="footnote-ref-1897">[1897]</a></sup> </p>
-        <li id="footnote-1896"><p> The Reason Foundation, Occupational Licensing in California, <a href="http://reason.org/news/show/1013473.html">http://reason.org/news/show/1013473.html</a>. <a href="#footnote-ref-1896">↑</a></p></li>
-        <li id="footnote-1897"><p> Cal. Bus. &amp; Prof. Code §§ 475-499. <em>See also</em> The Reason Foundation, Occupational Licensing in California, <a href="http://reason.org/news/show/1013473.html">http://reason.org/news/show/1013473.html</a>.  <a href="#footnote-ref-1897">↑</a></p></li>
+        <p class="text">In California, people who work in certain jobs are required to get a <strong><em>license</em></strong> from the state to do so. There are over 200 professions in California that require a professional or occupational license—ranging from barbers and cosmetologists, to security guards, contractors, teachers, nurses, doctors and lawyers. Professional and occupational licenses are granted and regulated by different <strong><em>licensing boards, agencies, and bureaus</em></strong> (over 40 in total, each for a different industry), all under the control of the California Department of Consumer Affairs (DCA).<sup><a href="#footnote-1999" id="footnote-ref-1999">[1998]</a></sup></p>
+        <p class="text">Applying for a professional or occupational license generally requires submitting fingerprints, paying application fees, and proving that you meet certain educational and/or work experience requirements, which are set by the particular licensing board to which you’re applying.<sup><a href="#footnote-2000" id="footnote-ref-2000">[1999]</a></sup> </p>
+        <li id="footnote-1999"><p> The Reason Foundation, Occupational Licensing in California, <a href="http://reason.org/news/show/1013473.html">http://reason.org/news/show/1013473.html</a>. <a href="#footnote-ref-1999">↑</a></p></li>
+        <li id="footnote-2000"><p> Cal. Bus. &amp; Prof. Code §§ 475-499. See also The Reason Foundation, Occupational Licensing in California, <a href="http://reason.org/news/show/1013473.html">http://reason.org/news/show/1013473.html</a>.  <a href="#footnote-ref-2000">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -93,7 +78,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -118,11 +102,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

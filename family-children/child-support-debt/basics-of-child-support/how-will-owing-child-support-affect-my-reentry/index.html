@@ -21,85 +21,70 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="family-children/child-support-debt/basics-of-child-support/how-will-owing-child-support-affect-my-reentry">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/family-children/child-support-debt">Child Support Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/child-support-debt/basics-of-child-support">Basics of Child Support</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
+    <li><a href="/roadmap-to-html/family-children/child-support-debt">Child Support Debt</a></li>
+    <li><a href="/roadmap-to-html/family-children/child-support-debt/basics-of-child-support">Basics of Child Support</a></li>
+    <li><a href="/roadmap-to-html/family-children/child-support-debt/basics-of-child-support/how-will-owing-child-support-affect-my-reentry">How will owing child support affect my reentry? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>How will owing child support affect my reentry?</h1>
         <p class="text">Owing child support can affect every area of your reentry from getting employment to occupational licenses to public benefits and even housing. If you do not make child support payments, you can face such serious consequences as the following:</p>
-        <ol class="text">If you are employed, your employer will automatically deduct (take away) a portion of your wages to pay your current and/or overdue child support obligations (called a <em>wage assignment</em> or <em>wage garnishment</em>);<sup><a href="#footnote-2408" id="footnote-ref-2408">[2408]</a></sup></ol>
-        <ol class="text">Your child support payments can be automatically deducted (taken away) from other income and benefits you earn, including state or federal income tax refunds, workers’ compensation benefits, unemployment and state disability benefits, retirement benefits, and lottery winnings;<sup><a href="#footnote-2409" id="footnote-ref-2409">[2409]</a></sup></ol>
-        <ol class="text">Liens can be placed on your property and bank accounts to pay overdue child support (see PG. 794 for more information about liens;<sup><a href="#footnote-2410" id="footnote-ref-2410">[2410]</a></sup></ol>
-        <ol class="text">Your driver’s license, occupational license, and commercial or recreational licenses may be suspended, revoked, or denied;<sup><a href="#footnote-2411" id="footnote-ref-2411">[2411]</a></sup></ol>
-        <ol class="text">Your passport may be revoked or denied;<sup><a href="#footnote-2412" id="footnote-ref-2412">[2412]</a></sup></ol>
-        <ol class="text">Unpaid child support will be reported to credit bureaus, which can hurt your credit rating and make it harder to get a loan, rent an apartment, or find a job;<sup><a href="#footnote-2413" id="footnote-ref-2413">[2413]</a> </sup>AND/OR</ol>
-        <ol class="text">The amount of interest that you owe will continue to increase.<sup><a href="#footnote-2414" id="footnote-ref-2414">[2414]</a></sup></ol>
-        <ol class="text"><em>If you are unemployed and do not pay your child support obligations</em>, the judge may order you to get a job (or at least to try). For example, the judge may order you to apply for a certain number of jobs every week until you get hired, and may require you to bring in proof of every job application you do.<sup><a href="#footnote-2415" id="footnote-ref-2415">[2415]</a></sup></ol>
-        <ol class="text">Finally, if the judge finds that you are <em>able</em> to make child support payments and are <em>willfully</em> failing to pay, the judge can find you “in contempt of court” and have you arrested or put in jail.<sup><a href="#footnote-2416" id="footnote-ref-2416">[2416]</a></sup> However, the judge usually only does this as a last resort, if all other enforcement efforts have failed.</ol>
-        <h3><a id="_Toc312427162"></a><a id="_Toc314389785"></a><a id="_Toc317247584"></a><a id="_Toc448153683"></a>How do I find out whether I owe child support and how much I owe? </h3>
-        <p class="text">If you were ordered to pay child support, you should have received papers from the LCSA or the other parent.<sup><sup><a href="#footnote-2417" id="footnote-ref-2417">[2417]</a></sup></sup> If you can’t remember whether you received papers (or you don’t have them anymore), you should contact the LCSA to find out how much you owe.<sup><sup><a href="#footnote-2418" id="footnote-ref-2418">[2418]</a></sup></sup> To find the LCSA in your county, call 1-866-901-3212 or visit <a href="http://www.childsup.ca.gov/home/lcsaoffices.aspx">http://www.childsup.ca.gov/home/lcsaoffices.aspx</a>. You can also contact the family court clerk to get a copy of your child support order and other court papers. </p>
-        <p class="text">If you disagree with the amount of overdue child support you (or the other parent) owe, you can ask the LCSA for a review of your account, and/or you can ask the judge to determine how much money you owe (called a Judicial Determination of Arrears).<sup><sup><a href="#footnote-2419" id="footnote-ref-2419">[2419]</a></sup></sup> If the overdue child support payments are from the period of time you were incarcerated, there is a special form to ask the judge how much you owe (Form FL-676: Request For Judicial Determination of Support Arrearages or Adjustment of Arrearages Due to Incarceration or Involuntary Institutionalization.)<sup><sup><a href="#footnote-2420" id="footnote-ref-2420">[2420]</a></sup></sup> </p>
+        <ol class="text">If you are employed, your employer will automatically deduct (take away) a portion of your wages to pay your current and/or overdue child support obligations (called a <em>wage assignment</em> or <em>wage garnishment</em>);<sup><a href="#footnote-2519" id="footnote-ref-2519">[2518]</a></sup></ol>
+        <ol class="text">Your child support payments can be automatically deducted (taken away) from other income and benefits you earn, including state or federal income tax refunds, workers’ compensation benefits, unemployment and state disability benefits, retirement benefits, and lottery winnings;<sup><a href="#footnote-2520" id="footnote-ref-2520">[2519]</a></sup></ol>
+        <ol class="text">Liens can be placed on your property and bank accounts to pay overdue child support (see PG. 717 for more information about liens;<sup><a href="#footnote-2521" id="footnote-ref-2521">[2520]</a></sup></ol>
+        <ol class="text">Your driver’s license, occupational license, and commercial or recreational licenses may be suspended, revoked, or denied;<sup><a href="#footnote-2522" id="footnote-ref-2522">[2521]</a></sup></ol>
+        <ol class="text">Your passport may be revoked or denied;<sup><a href="#footnote-2523" id="footnote-ref-2523">[2522]</a></sup></ol>
+        <ol class="text">Unpaid child support will be reported to credit bureaus, which can hurt your credit rating and make it harder to get a loan, rent an apartment, or find a job;<sup><a href="#footnote-2524" id="footnote-ref-2524">[2523]</a> </sup>AND/OR</ol>
+        <ol class="text">The amount of interest that you owe will continue to increase.<sup><a href="#footnote-2525" id="footnote-ref-2525">[2524]</a></sup></ol>
+        <ol class="text"><em>If you are unemployed and do not pay your child support obligations</em>, the judge may order you to get a job (or at least to try). For example, the judge may order you to apply for a certain number of jobs every week until you get hired, and may require you to bring in proof of every job application you do.<sup><a href="#footnote-2526" id="footnote-ref-2526">[2525]</a></sup></ol>
+        <ol class="text">Finally, if the judge finds that you are <em>able</em> to make child support payments and are <em>willfully</em> failing to pay, the judge can find you “in contempt of court” and have you arrested or put in jail.<sup><a href="#footnote-2527" id="footnote-ref-2527">[2526]</a></sup> However, the judge usually only does this as a last resort, if all other enforcement efforts have failed.</ol>
+        <h3><a id="_Toc312427162"></a><a id="_Toc314389785"></a><a id="_Toc317247584"></a><a id="_Toc352861953"></a>How do I find out whether I owe child support and how much I owe? </h3>
+        <p class="text">If you were ordered to pay child support, you should have received papers from the LCSA or the other parent.<sup><sup><a href="#footnote-2528" id="footnote-ref-2528">[2527]</a></sup></sup> If you can’t remember whether you received papers (or you don’t have them anymore), you should contact the LCSA to find out how much you owe.<sup><sup><a href="#footnote-2529" id="footnote-ref-2529">[2528]</a></sup></sup> To find the LCSA in your county, call 1-866-901-3212 or visit <a href="http://www.childsup.ca.gov/home/lcsaoffices.aspx">http://www.childsup.ca.gov/home/lcsaoffices.aspx</a>. You can also contact the family court clerk to get a copy of your child support order and other court papers. </p>
+        <p class="text">If you disagree with the amount of overdue child support you (or the other parent) owe, you can ask the LCSA for a review of your account, and/or you can ask the judge to determine how much money you owe (called a Judicial Determination of Arrears).<sup><sup><a href="#footnote-2530" id="footnote-ref-2530">[2529]</a></sup></sup> If the overdue child support payments are from the period of time you were incarcerated, there is a special form to ask the judge how much you owe (Form FL-676: Request For Judicial Determination of Support Arrearages or Adjustment of Arrearages Due to Incarceration or Involuntary Institutionalization.)<sup><sup><a href="#footnote-2531" id="footnote-ref-2531">[2530]</a></sup></sup> </p>
         <p class="importantbox">IMPORTANT: If you <em>never received any papers or child support order</em>, but the LCSA now says that you owe child support, you may be able to have the judge <em>cancel</em> the child support order. But you must act <em>as soon as you find out</em> that there is an order for you to pay child support. If you do not act immediately, the judge may refuse to cancel the order.</p>
-        <li id="footnote-2408"><p> Cal. Fam. Code § 5230 <a href="#footnote-ref-2408">↑</a></p></li>
-        <li id="footnote-2409"><p> Cal. Rev. &amp; T. Code § 19271(d)(2) (state income tax refund); 42 U.S.C. § 664 and 26 U.S.C. § 6402(c) (federal income tax refund); Cal. Fam. Code §§ 17510 (workers’ compensation), 17518 (unemployment benefits), 17528 (retirement) <a href="#footnote-ref-2409">↑</a></p></li>
-        <li id="footnote-2410"><p> Cal. Fam. Code § 17523 <a href="#footnote-ref-2410">↑</a></p></li>
-        <li id="footnote-2411"><p> Cal. Fam. Code § 17520 <a href="#footnote-ref-2411">↑</a></p></li>
-        <li id="footnote-2412"><p> 42 U.S.C. § 652(k) <a href="#footnote-ref-2412">↑</a></p></li>
-        <li id="footnote-2413"><p> Department of Child Supportive Services, Information for the noncustodial Parent, <a href="http://www.childsup.ca.gov/portals/0/resources/docs/pub247_english.pdf">http://www.childsup.ca.gov/portals/0/resources/docs/pub247_english.pdf</a> <a href="#footnote-ref-2413">↑</a></p></li>
-        <li id="footnote-2414"><p> Cal. Rev. &amp; T. Code § 19271(c); Cal. C.C.P. § 685.010. <a href="#footnote-ref-2414">↑</a></p></li>
-        <li id="footnote-2415"><p> Telephone call with Eleanor Miller, reentry attorney, Pepperdine Legal Aid Clinic, Jan. 6, 2015. <a href="#footnote-ref-2415">↑</a></p></li>
-        <li id="footnote-2416"><p> California Courts, Falling Behind in Child Support Payments, <a href="http://www.courts.ca.gov/selfhelp-support.htm">http://www.courts.ca.gov/selfhelp-support.htm</a> <a href="#footnote-ref-2416">↑</a></p></li>
-        <li id="footnote-2417"><p> Judicial Council of Cal., Child Support FAQs ( Nov. 12, 2014), <a href="http://www.courts.ca.gov/1200.htm">http://www.courts.ca.gov/1200.htm</a>. <a href="#footnote-ref-2417">↑</a></p></li>
-        <li id="footnote-2418"><p> Cal. Fam. Code § 17526(a) requires the LCSA to provide you with information about how much child support you owe. You can also ask the judge to determine exactly how much child support and interest you owe. § 17526(c). <a href="#footnote-ref-2418">↑</a></p></li>
-        <li id="footnote-2419"><p> Cal. Fam. Code § 17526.  <a href="#footnote-ref-2419">↑</a></p></li>
-        <li id="footnote-2420"><p> Form FL-676 is also available online at <a href="http://www.courts.ca.gov/documents/fl676.pdf">http://www.courts.ca.gov/documents/fl676.pdf</a>. For more information, read the accompanying information sheet, FL-676-INFO, <a href="http://www.courts.ca.gov/documents/fl676info.pdf">http://www.courts.ca.gov/documents/fl676info.pdf</a>. <a href="#footnote-ref-2420">↑</a></p></li>
+        <li id="footnote-2519"><p> Cal. Fam. Code § 5230 <a href="#footnote-ref-2519">↑</a></p></li>
+        <li id="footnote-2520"><p> Cal. Rev. &amp; T. Code § 19271(d)(2) (state income tax refund); 42 U.S.C. § 664 and 26 U.S.C. § 6402(c) (federal income tax refund); Cal. Fam. Code §§ 17510 (workers’ compensation), 17518 (unemployment benefits), 17528 (retirement) <a href="#footnote-ref-2520">↑</a></p></li>
+        <li id="footnote-2521"><p> Cal. Fam. Code § 17523 <a href="#footnote-ref-2521">↑</a></p></li>
+        <li id="footnote-2522"><p> Cal. Fam. Code § 17520 <a href="#footnote-ref-2522">↑</a></p></li>
+        <li id="footnote-2523"><p> 42 U.S.C. § 652(k) <a href="#footnote-ref-2523">↑</a></p></li>
+        <li id="footnote-2524"><p> Department of Child Supportive Services, Information for the noncustodial Parent, <a href="http://www.childsup.ca.gov/portals/0/resources/docs/pub247_english.pdf">http://www.childsup.ca.gov/portals/0/resources/docs/pub247_english.pdf</a> <a href="#footnote-ref-2524">↑</a></p></li>
+        <li id="footnote-2525"><p> Cal. Rev. &amp; T. Code § 19271(c); Cal. C.C.P. § 685.010. <a href="#footnote-ref-2525">↑</a></p></li>
+        <li id="footnote-2526"><p> Telephone call with Eleanor Miller, reentry attorney, Pepperdine Legal Aid Clinic, Jan. 6, 2015. <a href="#footnote-ref-2526">↑</a></p></li>
+        <li id="footnote-2527"><p> California Courts, Falling Behind in Child Support Payments, <a href="http://www.courts.ca.gov/selfhelp-support.htm">http://www.courts.ca.gov/selfhelp-support.htm</a> <a href="#footnote-ref-2527">↑</a></p></li>
+        <li id="footnote-2528"><p> Judicial Council of Cal., Child Support FAQs ( Nov. 12, 2014), <a href="http://www.courts.ca.gov/1200.htm">http://www.courts.ca.gov/1200.htm</a>. <a href="#footnote-ref-2528">↑</a></p></li>
+        <li id="footnote-2529"><p> Cal. Fam. Code § 17526(a) requires the LCSA to provide you with information about how much child support you owe. You can also ask the judge to determine exactly how much child support and interest you owe. § 17526(c). <a href="#footnote-ref-2529">↑</a></p></li>
+        <li id="footnote-2530"><p> Cal. Fam. Code § 17526.  <a href="#footnote-ref-2530">↑</a></p></li>
+        <li id="footnote-2531"><p> Form FL-676 is also available online at <a href="http://www.courts.ca.gov/documents/fl676.pdf">http://www.courts.ca.gov/documents/fl676.pdf</a>. For more information, read the accompanying information sheet, FL-676-INFO, <a href="http://www.courts.ca.gov/documents/fl676info.pdf">http://www.courts.ca.gov/documents/fl676info.pdf</a>. <a href="#footnote-ref-2531">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -117,7 +102,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -142,11 +126,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

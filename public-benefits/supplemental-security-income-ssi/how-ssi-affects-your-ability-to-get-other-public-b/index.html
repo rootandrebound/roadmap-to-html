@@ -21,64 +21,49 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="public-benefits/supplemental-security-income-ssi/how-ssi-affects-your-ability-to-get-other-public-b">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/public-benefits">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/supplemental-security-income-ssi">Supplemental Security Income (SSI)</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/public-benefits">Public Benefits</a></li>
+    <li><a href="/roadmap-to-html/public-benefits/supplemental-security-income-ssi">Supplemental Security Income (SSI)</a></li>
+    <li><a href="/roadmap-to-html/public-benefits/supplemental-security-income-ssi/how-ssi-affects-your-ability-to-get-other-public-b">How SSI affects your ability to get other public benefits: (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>How SSI affects your ability to get other public benefits:</h1>
-        <ol class="text">If you get SSI, you can’t also get CalFresh, since SSI is supposed to cover food expenses.<sup><a href="#footnote-1611" id="footnote-ref-1611">[1611]</a></sup> However, other people in your household may be eligible and your income will not count in determining their eligibility. </ol>
-        <ol class="text">If you get SSI, you’ll be automatically enrolled in Medi-Cal (see PG. 511) and may qualify for extra help with paying for Medicare (see PG. 516). </ol>
-        <ol class="text">SSI recipients who do not have access to a kitchen or have a kitchen but no stove or refrigerator are eligible for additional food benefits through SSI. You are not considered as having access to a kitchen unless you have a working refrigerator or icebox and a stove with at least two working burners.<sup><a href="#footnote-1612" id="footnote-ref-1612">[1612]</a></sup> </ol>
-        <ol class="text">Depending on your work history, you may be eligible to get retirement benefits (see PG. 525) and/or SSDI (see PG. 530) in addition to SSI.<sup><a href="#footnote-1613" id="footnote-ref-1613">[1613]</a></sup></ol>
-        <li id="footnote-1611"><p> 7 C.F.R. § 273.20(a); CDSS, MPP § 63-402.226; Benefits Available to Paroling &amp; Discharging Inmates, Prison Law Office (2011), <a href="http://www.prisonlaw.com/pdfs/BenefitsLetter,Aug2011.pdf">http://www.prisonlaw.com/pdfs/BenefitsLetter,Aug2011.pdf</a>. <a href="#footnote-ref-1611">↑</a></p></li>
-        <li id="footnote-1612"><p> Description of Supplements, Soc. Sec. Admin., <a href="https://secure.ssa.gov/poms.nsf/lnx/0501415044#b">https://secure.ssa.gov/poms.nsf/lnx/0501415044#b</a> <a href="#footnote-ref-1612">↑</a></p></li>
-        <li id="footnote-1613"><p> Supplemental Security Income (SSI) Benefits, Soc. Sec. Admin., <a href="http://www.socialsecurity.gov/pubs/EN-05-11000.pdf">http://www.socialsecurity.gov/pubs/EN-05-11000.pdf</a> <a href="#footnote-ref-1613">↑</a></p></li>
+        <ol class="text">If you get SSI, you can’t also get CalFresh, since SSI is supposed to cover food expenses.<sup><a href="#footnote-1715" id="footnote-ref-1715">[1714]</a></sup> However, other people in your household may be eligible and your income will not count in determining their eligibility. </ol>
+        <ol class="text">If you get SSI, you’ll be automatically enrolled in Medi-Cal (see PG. 461) and may qualify for extra help with paying for Medicare (see PG. 466). </ol>
+        <ol class="text">SSI recipients who do not have access to a kitchen or have a kitchen but no stove or refrigerator are eligible for additional food benefits through SSI. You are not considered as having access to a kitchen unless you have a working refrigerator or icebox and a stove with at least two working burners.<sup><a href="#footnote-1716" id="footnote-ref-1716">[1715]</a></sup> </ol>
+        <ol class="text">Depending on your work history, you may be eligible to get retirement benefits (see PG. 473) and/or SSDI (see PG. 477) in addition to SSI.<sup><a href="#footnote-1717" id="footnote-ref-1717">[1716]</a></sup></ol>
+        <li id="footnote-1715"><p> 7 C.F.R. § 273.20(a); CDSS, MPP § 63-402.226; Benefits Available to Paroling &amp; Discharging Inmates, Prison Law Office (2011), <a href="http://www.prisonlaw.com/pdfs/BenefitsLetter,Aug2011.pdf">http://www.prisonlaw.com/pdfs/BenefitsLetter,Aug2011.pdf</a>. <a href="#footnote-ref-1715">↑</a></p></li>
+        <li id="footnote-1716"><p> Description of Supplements, Soc. Sec. Admin., <a href="https://secure.ssa.gov/poms.nsf/lnx/0501415044">https://secure.ssa.gov/poms.nsf/lnx/0501415044#b</a> <a href="#footnote-ref-1716">↑</a></p></li>
+        <li id="footnote-1717"><p> Supplemental Security Income (SSI) Benefits, Soc. Sec. Admin., <a href="http://www.socialsecurity.gov/pubs/EN-05-11000.pdf">http://www.socialsecurity.gov/pubs/EN-05-11000.pdf</a> <a href="#footnote-ref-1717">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -96,7 +81,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -121,11 +105,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

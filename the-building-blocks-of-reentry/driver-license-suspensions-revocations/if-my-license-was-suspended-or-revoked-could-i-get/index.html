@@ -21,96 +21,83 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="the-building-blocks-of-reentry/driver-license-suspensions-revocations/if-my-license-was-suspended-or-revoked-could-i-get">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations">Driver License Suspensions & Revocations</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry">The Building Blocks Of Reentry</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations">Driver License Suspensions & Revocations</a></li>
+    <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations/if-my-license-was-suspended-or-revoked-could-i-get">If my license was suspended or revoked, could I get my driving privileges back? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>If my license was suspended or revoked, could I get my driving privileges back?</h1>
-        <p class="text">Maybe. Unless your license was <em>permanently </em>revoked, you should be able to regain your driving privileges if (1) the required time period of your suspension or revocation has passed, AND (2) you’ve fulfilled any conditions of your suspension or revocation.<sup><a href="#footnote-158" id="footnote-ref-158">[158]</a></sup> Depending on the reason why your license was suspended, the length of suspension will vary, and the steps you will need to take to get your license back will also vary.<sup><a href="#footnote-159" id="footnote-ref-159">[159]</a></sup> If your Driver License was suspended or revoked and you want to regain your driving privileges, here are some steps you can take:<sup><a href="#footnote-160" id="footnote-ref-160">[160]</a></sup></p>
-        <h4 class="step">Know the details of your situation.<sup><a href="#footnote-161" id="footnote-ref-161">[161]</a></sup> </h4>
-        <p class="text">The requirements to reinstate your license will depend on exactly why it was suspended or revoked. Call the DMV at 1-800-777-0133, ask them to look up your case, and find out what you need to do. When you call, be prepared with your old Driver License number and any information the DMV has sent to you.<sup><a href="#footnote-162" id="footnote-ref-162">[162]</a></sup></p>
-        <ol class="text">Unless your Driver License was permanently revoked, you’ll probably find out that you need to fulfill specific conditions (see <strong>STEP 2 </strong>below) and submit “proof of completion” of those conditions to the DMV to reinstate your license.<sup><a href="#footnote-163" id="footnote-ref-163">[163]</a></sup></ol>
-        <ol class="text">If you have a Failure to Appear (FTA), Failure to Pay (FTP), or other failure to comply on your DMV record (which may be the reason your Driver License was suspended and/or make it difficult to renew your license), and the charge is <em>more than 5 years old</em>, you may be able to get the charge erased from your DMV record and reinstate your license by calling the DMV Mandatory Actions Line (Telephone: 916-657-6525).<sup><a href="#footnote-164" id="footnote-ref-164">[164]</a></sup> </ol>
-        <ol class="text">You may also qualify for California’s new <em>Traffic Amnesty Program</em>, which could help you reduce the debt on old California traffic court debt and certain types of traffic tickets and also may help you get a suspended CA Driver License back. Read more about the program on PG. 750 in the COURT-ORDERED DEBT CHAPTER.</ol>
+        <p class="text">Maybe. Unless your license was <em>permanently </em>revoked, you should be able to regain your driving privileges if (1) the required time period of your suspension or revocation has passed, AND (2) you’ve fulfilled any conditions of your suspension or revocation.<sup><a href="#footnote-160" id="footnote-ref-160">[159]</a></sup> Depending on the reason why your license was suspended, the length of suspension will vary, and the steps you must take to get your license back will also vary.<sup><a href="#footnote-161" id="footnote-ref-161">[160]</a></sup> If your Driver License was suspended or revoked and you want to regain your driving privileges, here are some steps you can take:<sup><a href="#footnote-162" id="footnote-ref-162">[161]</a></sup></p>
+        <h4 class="step">Know the details of your situation.<strong><sup><a href="#footnote-163" id="footnote-ref-163">[162]</a></sup></strong> </h4>
+        <p class="text">The requirements to reinstate your license will depend on exactly why it was suspended or revoked. Call the DMV at 1-800-777-0133, ask them to look up your case, and find out what you need to do. When you call, be prepared with your old Driver License number and any information the DMV has sent to you.<sup><a href="#footnote-164" id="footnote-ref-164">[163]</a></sup></p>
+        <ol class="text">Unless your Driver License was permanently revoked, you’ll probably find out that you need to fulfill specific conditions (see <strong>STEP 2 </strong>below) and submit to the DMV “proof of completion” of those conditions to reinstate your license.<sup><a href="#footnote-165" id="footnote-ref-165">[164]</a></sup></ol>
+        <ol class="text">If you have a Failure to Appear (FTA), Failure to Pay (FTP), or other failure to comply on your DMV record (which may be the reason your Driver License was suspended and/or make it difficult to renew your license), and the charge is <em>more than 5 years old</em>, you may be able to get the charge erased from your DMV record and reinstate your license by calling the DMV Mandatory Actions Line at 916-657-6525.<sup><a href="#footnote-166" id="footnote-ref-166">[165]</a></sup> </ol>
         <h4 class="step">Make sure that you fulfill the conditions of your suspension or revocation. </h4>
-        <ol class="text">You may be required to complete traffic school, DUI treatment, or jail time, and to provide documents proving that you did so. You may also be required to pay fees and fines, including court-related fees and additional penalties imposed by the DMV. See the chart on PG. 58 for examples of requirements and steps to get your license back.</ol>
+        <ol class="text">You may be required to complete traffic school, DUI treatment, or jail time, and to provide documents proving that you did so. You may also be required to pay fees and fines, including court-related fees and additional penalties imposed by the DMV. See the chart on PG. 52 for examples of requirements and steps to get your license back.</ol>
         <ol class="text">Keep all documents proving that you’ve fulfilled these conditions, such as certificates and pay stubs, and be prepared to submit them as required. </ol>
-        <ol class="text">You will also need to submit proof of “financial responsibility.” Most of the time, this means proof of car insurance.<sup><a href="#footnote-165" id="footnote-ref-165">[165]</a></sup> </ol>
+        <ol class="text">You will also need to submit proof of “financial responsibility.” Most of the time, this means proof of car insurance.<sup><a href="#footnote-167" id="footnote-ref-167">[166]</a></sup> </ol>
         <h4 class="step">Prepare all required documents and payments.</h4>
         <p class="text">Make copies of all your important documents, and keep careful records of all payments.</p>
         <h4 class="step">Submit all required documents and payments to the DMV. </h4>
         <p class="text">Confirm that you’re eligible to reinstate your license, and get proof from the DMV. </p>
-        <p class="text">Once you’ve completed these 4 steps, you may be able to reinstate your Driver License (if it was <em>suspended</em>) or apply for a renewal Driver License (if it was <em>revoked</em>). In some cases, after you’ve completed some or most of the requirements, you may be able to get a <em>restricted license</em> if your suspension or revocation period hasn’t ended yet.<sup><a href="#footnote-166" id="footnote-ref-166">[166]</a></sup></p>
-        <p class="text"><strong>NOTE:</strong> If your license was suspended due to court-ordered debt, and these debts have been referred to the California Franchise Tax Board (FTB) for collection, there is a special payment process to speed up the return of your Driver License. For instructions, go online to <a href="https://www.ftb.ca.gov/online/Court_Ordered_Debt/payment.shtml">https://www.ftb.ca.gov/online/Court_Ordered_Debt/payment.shtml</a>, and see Appendix F, PG. 108 of this chapter.</p>
-        <h4 class="textbox">* Helpful Hint <a id="Unpaid_child_support"></a>What are my options if my Driver License was suspended because of unpaid child support?</h4>
-        <p class="textbox">If your Driver License was suspended due to unpaid child support and you cannot pay the amount required, you can ask a judge to reinstate your license temporarily. To do so, you can file a Notice of Motion for Judicial Review of License Denial (Form FL-670) with the court that issued your child support order.<sup><sup><a href="#footnote-167" id="footnote-ref-167">[167]</a></sup></sup> This form asks the judge of that court to consider giving you back your Driver License so that you can continue to go to work and earn money to pay the child support. The judge will make the final decision, not the local child support agency (LCSA).<sup><sup><a href="#footnote-168" id="footnote-ref-168">[168]</a></sup></sup> For more information about child support, see PG. 860 of the FAMILY &amp; CHILDREN CHAPTER.</p>
-        <p class="widetableintroitalcaps">This chart explains different requirements to regain driving privileges after the suspension of your Driver License.<sup><a href="#footnote-169" id="footnote-ref-169">[169]</a></sup></p>
-        <table><tr><td colspan="2"><p class="tableheadingmedium">EXAMPLES OF CA REQUIREMENTS TO REGAIN DRIVER LICENSEAFTER SUSPENSION</p></td></tr><tr><td><p class="tableheadingmedium">REASON FOR SUSPENSION</p></td><td><p class="tableheadingmedium">STEPS TO GET YOUR LICENSE BACK</p></td></tr><tr><td><p>Negligent operator</p></td><td><ul><li>Pay a reissue fee to DMV.</li><li>Pay fines to the court.</li><li>File Proof of Financial Responsibility (California Insurance Proof Certificate: SR 22). This is a certificate proving that you have valid car insurance.</li><li>Complete Negligent Operator probation, while staying free of traffic violations and avoidable accidents.</li></ul></td></tr><tr><td><p>Driving under the influence of alcohol and/or drugs (DUI)</p></td><td><ul><li>Complete a mandatory (required) suspension period. (This means no matter how quickly you meet all the other requirements below, you must wait a certain period before you can get your Driver License back.)</li><li>Pay a reissue fee to DMV.</li><li>File Proof of Financial Responsibility (California Insurance Proof Certificate: Form SR 22). This is a certificate proving that you have valid car insurance.</li><li>Complete a DUI Treatment Program—file Notice of Completion Certificate (Form DL 101).</li><li>Pay fines to the court. </li><li>In some cases: Complete a term of imprisonment.</li></ul><p>NOTE: If you meet some or all of these requirements before your mandatory suspension period ends, you might be able to get a <em>restricted license</em>.</p></td></tr><tr><td><p>Having a physical/mental condition or disorder</p></td><td><p>Show that the condition no longer prevents you from driving safely by providing medical information and/or a satisfactory Driver Medical Evaluation (Form DS 326).</p></td></tr><tr><td><p>Being involved in a car accident and not having proof of car insurance (“financial responsibility”)</p></td><td><ul><li>Complete a mandatory (required) 1-year suspension period.</li><li>Pay a reissue fee to DMV.</li><li>File proof of financial responsibility (California Insurance Proof Certificate: Form SR 22) proving that you have valid car insurance.</li></ul></td></tr><tr><td><p>Failing to pay a traffic citation (FTP), or failing to appear in court on a traffic citation (FTA)</p></td><td><ul><li>Contact the court where your traffic violation was filed and see if you can participate in CA’s new Traffic Amnesty Program to reduce your debt and/or get your license back. Read more about the program on PG. 750 of the COURT-ORDERED DEBT CHAPTER.</li><li>Pay your citations (tickets) or appear in court. The court will give you a paper saying you fulfilled this requirement.</li><li>Pay a reissue fee to DMV.</li></ul></td></tr></table>
-        <li id="footnote-158"><p> Cal. Veh. Code § 13100 et seq. <a href="#footnote-ref-158">↑</a></p></li>
-        <li id="footnote-159"><p> Cal. Veh. Code § 13100 et seq. <a href="#footnote-ref-159">↑</a></p></li>
-        <li id="footnote-160"><p> For more information, <em>see</em> Reinstate Your CA Suspended Driver’s License, DMV.org, <a href="http://www.dmv.org/ca-california/suspended-license.php#Reinstate-Your-CA-Suspended-Drivers-License">http://www.dmv.org/ca-california/suspended-license.php#Reinstate-Your-CA-Suspended-Drivers-License</a>. <a href="#footnote-ref-160">↑</a></p></li>
-        <li id="footnote-161"><p> There is a proposed law in California, SB 405, that would restore Driver Licenses suspended due to a Failure to Appear in court or Failure to Pay a fine, if the suspension happened between January 1, 2013, and December 31, 2015 (inclusive), and the person agrees to a payment plan to pay off their fines and penalties. Access to Justice Act, S.B. 405, 2015 Cal. Leg., as amended July 7, 2015. (Updated July 2015). <a href="#footnote-ref-161">↑</a></p></li>
-        <li id="footnote-162"><p> What is a suspended driver license?, DMV, <a href="http://www.dmv.ca.gov/dl/dl_info.htm#sdl">http://www.dmv.ca.gov/dl/dl_info.htm#sdl</a>. <a href="#footnote-ref-162">↑</a></p></li>
-        <li id="footnote-163"><p> Cal. Veh. Code § 13352. <a href="#footnote-ref-163">↑</a></p></li>
-        <li id="footnote-164"><p> Cal. Veh. Code § 12808(c). Exception: If the Failure to Appear was for a DUI (under Vehicle Code Sections 23152 or 23153) or vehicular manslaughter (under Penal Code Sections 191.5 or 192.5(a)), the charge may be purged after 10 years. <a href="#footnote-ref-164">↑</a></p></li>
-        <li id="footnote-165"><p> Cal. Veh. Code § 34630. <a href="#footnote-ref-165">↑</a></p></li>
-        <li id="footnote-166"><p> <em>See</em> Cal. Veh. Code § 13352.5. <a href="#footnote-ref-166">↑</a></p></li>
-        <li id="footnote-167"><p> The forms to request your license back in a child support case are <em>available at</em> <a href="http://www.courts.ca.gov/1199.htm#id11393">http://www.courts.ca.gov/1199.htm#id11393</a>. <a href="#footnote-ref-167">↑</a></p></li>
-        <li id="footnote-168"><p> Cal. Welf. &amp; Inst. Code § 11350.6; <em>see also</em> Child Support FAQs, Judicial Counsel of California, <a href="http://www.courts.ca.gov/1200.htm">http://www.courts.ca.gov/1200.htm</a>. <a href="#footnote-ref-168">↑</a></p></li>
-        <li id="footnote-169"><p> What is a suspended driver license?, Cal. DMV, <a href="http://www.dmv.ca.gov/dl/dl_info.htm#sdl">http://www.dmv.ca.gov/dl/dl_info.htm#sdl</a>. <a href="#footnote-ref-169">↑</a></p></li>
+        <p class="text">Once you’ve completed these 4 steps, you may be able to reinstate your driver license (if it was <em>suspended</em>) or apply for a renewal driver license (if it was <em>revoked</em>). In some cases, if you’ve completed some or most of the requirements, you may be able to get a <em>restricted license</em> if your suspension or revocation period hasn’t ended yet.<sup><a href="#footnote-168" id="footnote-ref-168">[167]</a></sup></p>
+        <p class="text"><strong>NOTE:</strong> If your license was suspended due to court-ordered debt, and these debts have been referred to the California Franchise Tax Board (FTB) for collection, there is a special payment process to speed up the return of your driver license. For instructions, go online to <a href="https://www.ftb.ca.gov/online/Court_Ordered_Debt/payment.shtml">https://www.ftb.ca.gov/online/Court_Ordered_Debt/payment.shtml</a>, and see Appendix G, PG. 102.</p>
+        <h4 class="textbox">* Helpful Hint <a id="Unpaid_child_support"></a>What are my options if my driver license was suspended because of unpaid child support?</h4>
+        <p class="textbox">If your driver license was suspended due to unpaid child support and you cannot pay the amount required, you can ask a judge to reinstate your license temporarily. To do so, you can file a Notice of Motion for Judicial Review of License Denial (Form FL-670) with the court that issued your child support order.<sup><sup><a href="#footnote-169" id="footnote-ref-169">[168]</a></sup></sup> This form asks the judge of that court to consider giving you back your driver license so that you can continue to go to work and earn money to pay the child support. The judge, not the local child support agency (LCSA), will make the final decision.<sup><sup><a href="#footnote-170" id="footnote-ref-170">[169]</a></sup></sup> For more information about child support, see PG. 770 of the FAMILY &amp; CHILDREN CHAPTER.</p>
+        <p class="widetableintroitalcaps">This chart explains different requirements to regain driving privileges after a Driver License suspension<strong><sup><a href="#footnote-171" id="footnote-ref-171">[170]</a></sup></strong></p>
+        <table><tr><td colspan="2"><p class="tableheadingmedium">EXAMPLES OF CALIFORNIA REQUIREMENTS TO REGAIN DRIVER LICENSE AFTER SUSPENSION</p></td></tr><tr><td><p>REASON FOR SUSPENSION</p></td><td><p>STEPS TO GET YOUR LICENSE BACK</p></td></tr><tr><td><p><strong>Negligent operator</strong></p></td><td><ul><li>Pay a reissue fee to DMV.</li><li>Pay fines to the court.</li><li>File Proof of Financial Responsibility (California Insurance Proof Certificate: SR 22). This is a certificate proving that you have valid car insurance.</li><li>Complete Negligent Operator probation, while staying free of traffic violations and avoidable accidents.</li></ul></td></tr><tr><td><p><strong>Driving under the influence of alcohol and/or drugs (DUI)</strong></p></td><td><ul><li>Complete a mandatory (required) suspension period. (This means no matter how quickly you meet all the other requirements below, you must wait a certain period before you can get your driver license back.)</li><li>Pay a reissue fee to DMV.</li><li>File Proof of Financial Responsibility (California Insurance Proof Certificate: Form SR 22). This is a certificate proving that you have valid car insurance.</li><li>Complete a DUI Treatment Program — file Notice of Completion Certificate (Form DL 101).</li><li>Pay fines to the court. </li><li>In some cases: Complete a term of imprisonment.</li></ul><p>NOTE: If you meet some or all of these requirements before your mandatory suspension period ends, you might be able to get a <em>restricted license</em>.</p></td></tr><tr><td><p><strong>Having a physical/mental condition or disorder</strong></p></td><td><p>Show that the condition no longer prevents you from driving safely by providing medical information and/or a satisfactory Driver Medical Evaluation (Form DS 326).</p></td></tr><tr><td><p><strong>Being involved in a car accident and not having proof of car insurance (“financial responsibility”)</strong></p></td><td><ul><li>Complete a mandatory (required) 1-year suspension period.</li><li>Pay a reissue fee to DMV.</li><li>File proof of financial responsibility (California Insurance Proof Certificate: Form SR 22) proving that you have valid car insurance.</li></ul></td></tr><tr><td><p><strong>Failing to pay a traffic citation (FTP), or failing to appear in court on a traffic citation (FTA)</strong></p></td><td><ul><li>Contact the court where your traffic violation was filed to ask about any programs that help clear up old traffic court debt.</li><li>If the FTP or FTA is more than 5 years old, you may be able to get the charge erased from your DMV record and reinstate your license by calling the DMV Mandatory Actions Line at 916-657-6525.<sup><sup><a href="#footnote-172" id="footnote-ref-172">[171]</a></sup></sup> </li><li>Pay your citations (tickets) or appear in court. The court will give you a paper saying you fulfilled this requirement.</li><li>Pay a reissue fee to DMV.</li></ul></td></tr><tr><td><p><strong>Failing to pay child support</strong></p></td><td><ol class="text">Call your local child support agency to discuss a possible license release. You can find contact information for your local child support agency at <a href="http://www.childsup.ca.gov/county_locations.asp">http://www.childsup.ca.gov/county_locations.asp </a>or by calling: (866) 901-3212. <sup><a href="#footnote-173" id="footnote-ref-173">[172]</a></sup></ol><ol class="text">Pay a reissue fee to the DMV.<sup><a href="#footnote-174" id="footnote-ref-174">[173]</a></sup></ol><ol class="text">If you feel your license was suspended in error, you can file a Notice of Motion for Judicial Review of License Denial (Form FL-670) with the court. Go to Appendix J, PG.  110 for a sample of the form. </ol></td></tr></table>
+        <li id="footnote-160"><p> Cal. Veh. Code § 13100 et seq. <a href="#footnote-ref-160">↑</a></p></li>
+        <li id="footnote-161"><p> Cal. Veh. Code § 13100 et seq. <a href="#footnote-ref-161">↑</a></p></li>
+        <li id="footnote-162"><p> For more information, see Reinstate Your CA Suspended Driver’s License, DMV.org, <a href="http://www.dmv.org/ca-california/suspended-license.php">http://www.dmv.org/ca-california/suspended-license.php#Reinstate-Your-CA-Suspended-Drivers-License</a>. <a href="#footnote-ref-162">↑</a></p></li>
+        <li id="footnote-163"><p> There is a proposed law in California, SB 405, that would restore Driver Licenses suspended due to a Failure to Appear in court or Failure to Pay a fine, if the suspension happened between January 1, 2013, and December 31, 2015 (inclusive), and the person agrees to a payment plan to pay off their fines and penalties. Access to Justice Act, S.B. 405, 2015 Cal. Leg., as amended July 7, 2015. (Updated July 2015). <a href="#footnote-ref-163">↑</a></p></li>
+        <li id="footnote-164"><p> What is a suspended driver license?, DMV, <a href="http://www.dmv.ca.gov/dl/dl_info.htm">http://www.dmv.ca.gov/dl/dl_info.htm#sdl</a>. <a href="#footnote-ref-164">↑</a></p></li>
+        <li id="footnote-165"><p> Cal. Veh. Code § 13352. <a href="#footnote-ref-165">↑</a></p></li>
+        <li id="footnote-166"><p> Cal. Veh. Code § 12808(c). Exception: If the Failure to Appear was for a DUI (under Vehicle Code Sections 23152 or 23153) or vehicular manslaughter (under Penal Code Sections 191.5 or 192.5(a)), the charge may be purged after 10 years. <a href="#footnote-ref-166">↑</a></p></li>
+        <li id="footnote-167"><p> Cal. Veh. Code § 34630. <a href="#footnote-ref-167">↑</a></p></li>
+        <li id="footnote-168"><p> See Cal. Veh. Code § 13352.5. <a href="#footnote-ref-168">↑</a></p></li>
+        <li id="footnote-169"><p> The forms to request your license back in a child support case are available at <a href="http://www.courts.ca.gov/1199.htm">http://www.courts.ca.gov/1199.htm#id11393</a>. <a href="#footnote-ref-169">↑</a></p></li>
+        <li id="footnote-170"><p> Cal. Welf. &amp; Inst. Code § 11350.6; see also Child Support FAQs, Judicial Counsel of California, <a href="http://www.courts.ca.gov/1200.htm">http://www.courts.ca.gov/1200.htm</a>. <a href="#footnote-ref-170">↑</a></p></li>
+        <li id="footnote-171"><p> What is a suspended driver license?, Cal. DMV, <a href="http://www.dmv.ca.gov/dl/dl_info.htm">http://www.dmv.ca.gov/dl/dl_info.htm#sdl</a>. <a href="#footnote-ref-171">↑</a></p></li>
+        <li id="footnote-172"><p> Cal. Veh. Code § 12808(c). Exception: If the Failure to Appear was for a DUI (under Vehicle Code Sections 23152 or 23153) or vehicular manslaughter (under Penal Code Sections 191.5 or 192.5(a)), the charge may be purged after 10 years. <a href="#footnote-ref-172">↑</a></p></li>
+        <li id="footnote-173"><p> Driver License Release Opportunity, Cal. Dept. of Child Support Services, <a href="http://www.childsup.ca.gov/home/childsupportawarenessmonth2012/driverlicensereleaseopportunity.aspx">http://www.childsup.ca.gov/home/childsupportawarenessmonth2012/driverlicensereleaseopportunity.aspx</a> <a href="#footnote-ref-173">↑</a></p></li>
+        <li id="footnote-174"><p> Reissue fees, Cal. DMV, <a href="https://www.dmv.ca.gov/portal/dmv/detail/online/refund/refundreissuefee">https://www.dmv.ca.gov/portal/dmv/detail/online/refund/refundreissuefee</a> <a href="#footnote-ref-174">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
           <li class="previous">
             <a href="/roadmap-to-html/the-building-blocks-of-reentry/driver-license-suspensions-revocations/my-driver-license-has-been-suspended-or-revoked-wh">
               <span class="neighbor-label">Previous</span>
-              <span class="neighbor-title">My Driver License has been suspended or revoked. What does this mean? How can I get it back?</span>
+              <span class="neighbor-title">My Driver License has been suspended or revoked. What does this mean?</span>
             </a>
           </li>
           <li class="next">
@@ -121,7 +108,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -146,11 +132,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

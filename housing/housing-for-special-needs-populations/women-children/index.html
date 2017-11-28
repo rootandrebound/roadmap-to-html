@@ -21,80 +21,61 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-3">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-3" data-page-path="housing/housing-for-special-needs-populations/women-children">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/housing">Housing</a></li>
-          <li><a href="/roadmap-to-html/housing/housing-for-special-needs-populations">Housing for Special Needs & Populations</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/housing">Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/housing-for-special-needs-populations">Housing for Special Needs & Populations</a></li>
+    <li><a href="/roadmap-to-html/housing/housing-for-special-needs-populations/women-children">Women & Children (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Women & Children</h1>
+        <h4 class="sidebox">DID YOU KNOW? </h4>
+        <p class="sidebox">70-80% of women incarcerated in California prisons are mothers, and the majority were the primary caretakers of their children before going to prison. <em>See</em> Barbara Bloom, <em>The Impact of California’s Parole Policies on Women, Testimony Before the Little Hoover Commission</em> (April 22, 2004).</p>
         <p class="text">There are some special housing programs available only for women and their children. These programs may have other requirements (for example, that you are currently on supervision, participating in a substance abuse recovery program, etc.), and they may require a referral from CDCR or another agency.</p>
-        <p class="text">Since there aren’t many of these programs and they have limited in space, you should contact the program and/or talk to your correctional counselor as soon as possible about contacting the housing program, finding out if you meet the eligibility requirements to participate, and how to get added to the waitlist if there is one.</p>
+        <p class="text">Since there are very few of these programs and they have limited in space, you should contact the program and/or talk to your correctional counselor as soon as possible about contacting the housing program, finding out if you meet the eligibility requirements to participate, and how to get added to the waitlist if there is one.</p>
         <p class="text">Below are a few programs in different areas of California for reentering women and children. Please Note: This is not a complete list.</p>
         <ol class="text">Centerforce MOMS Program at Santa Rita Jail (in Alameda County, CA):</ol>
-        <p class="address"><a href="http://www.centerforce.org/programs/moms-maximizing-opportunities-for-mothers-to-succeed/">http://www.centerforce.org/programs/moms-maximizing-opportunities-for-mothers-to-succeed/</a>PO Box 415San Quentin, CA 94964(415) 456-9980</p>
-        <p class="text">The MOMS program is located inside Alameda County’s Santa Rita County Jail. It includes an 8-week, in-custody parenting program AND a post-release case management for up to one year, including services, alumni groups, and some limited transitional housing. </p>
-        <p class="text">The program supports mothers in Santa Rita Jail during and after their incarceration. Mothers incarcerated in Santa Rita Jail who have not been convicted of violent offenses or sex offense may participate in the MOMS program. </p>
-        <ol class="text">CAMEO House (San Francisco, CA): </ol>
-        <p class="address"><a href="http://www.cjcj.org/Direct-services/Cameo-House.html">http://www.cjcj.org/Direct-services/Cameo-House.html</a>424 Guerro St.San Francisco, CA 94110(415) 703-0600</p>
-        <p class="text">CAMEO House provides transitional housing in San Francisco for formerly incarcerated mothers with children.<em> </em></p>
-        <p class="text">In addition to housing, the program provides supportive services to address a range of issues, including substance abuse, unemployment, mental health as well as help with family reunification. CJCJ’s staff helps residents obtain stable housing and gainful employment within six months of their placement, although residents may remain for up to two years. </p>
-        <p class="text">The transitional housing unit includes access to communal living areas, fully equipped kitchens, bathroom facilities, and an enclosed yard area. CJCJ staffs the residence 24 hours a day, 7 days a week. CJCJ provides help to women with substance abuse issues, women with histories of domestic violence, women who have been clean for at least 6 months, women with children up to age 6, women who are pregnant at least 6 months, women who have been previously incarcerated in jail or prison, women who are homeless with some criminal justice involvement, women on parole, women on probation, women referred by Child Protective Services and women referred by the court.</p>
+        <p class="text">Website: <a href="http://www.centerforce.org/programs/moms-maximizing-opportunities-for-mothers-to-succeed/">http://www.centerforce.org/programs/moms-maximizing-opportunities-for-mothers-to-succeed/</a><br/>Address: PO Box 415, San Quentin, CA 94964<br/>Phone: (415) 456-9980</p>
+        <p class="text">The MOMS program is located inside Alameda County’s Santa Rita County Jail. It includes an 8-week, in-custody parenting program AND a post-release case management for up to one year, including services, alumni groups, and some limited transitional housing. The program supports mothers in Santa Rita Jail during and after their incarceration. Mothers incarcerated in Santa Rita Jail who have not been convicted of violent offenses or sex offense may participate in the MOMS program. </p>
+        <ol class="text">CAMEO House (San Francisco, CA):</ol>
+        <p class="text">Website: <a href="http://www.cjcj.org/Direct-services/Cameo-House.html">http://www.cjcj.org/Direct-services/Cameo-House.html</a><br/>Address: 424 Guerro St., San Francisco, CA 94110<br/>Phone:(415) 703-0600</p>
+        <p class="text">CAMEO House provides transitional housing in San Francisco for formerly incarcerated mothers with children.<em> </em>In addition to housing, the program provides supportive services to address a range of issues, including substance abuse, unemployment, mental health as well as help with family reunification. CJCJ’s staff helps residents obtain stable housing and gainful employment within six months of their placement, although residents may remain for up to two years. The transitional housing unit includes access to communal living areas, fully equipped kitchens, bathroom facilities, and an enclosed yard area. CJCJ staffs the residence 24 hours a day, 7 days a week. CJCJ provides help to women with substance abuse issues, women with histories of domestic violence, women who have been clean for at least 6 months, women with children up to age 6, women who are pregnant at least 6 months, women who have been previously incarcerated in jail or prison, women who are homeless with some criminal justice involvement, women on parole, women on probation, women referred by Child Protective Services and women referred by the court.</p>
         <ol class="text">Providence Place (San Diego, CA):</ol>
-        <p class="address"><a href="http://www.mhsinc.org/files/file/Program%20Brochures/Providence%20Place%20Brochure_2012_web.pdf">http://www.mhsinc.org/files/file/Program%20Brochures/<br/>Providence%20Place%20Brochure_2012_web.pdf</a>4890 67th St.,San Diego, CA 92115(619) 667-5287</p>
-        <p class="text">Providence Place is a residential substance abuse treatment program that serves women on parole or community supervision and their dependent children. </p>
-        <p class="text">In addition to housing, Providence Place provides substance abuse treatment; comprehensive case management and family reunification services; a parenting center focused on child development, parenting skills and family therapy; specialized support groups to address grief and loss, self esteem, trauma, and other needs; and employment development services. The program is available to women on active parole/post release community supervision and their minor children (typically up to the age of 12). All participants receive referrals, authorization and funding through CDCR.</p>
-        <ol class="text">Free At Last (East Palo Alto, CA): </ol>
-        <p class="address"><a href="http://www.freeatlast.org/services.html">http://www.freeatlast.org/services.html</a>1796 Bay RoadEast Palo Alto, CA 94303(650) 462-6999</p>
-        <p class="answer">Free At Last offers several housing options for women with children, including:</p>
+        <p class="text">Website: <a href="https://nicic.gov/wodp/program/80-providence-place">https://nicic.gov/wodp/program/80-providence-place</a><br/>Address: 4890 67th St., San Diego, CA 92115<br/>Phone: (619) 667-5287</p>
+        <p class="text">Providence Place is a residential substance abuse treatment program that serves women on parole or community supervision and their dependent children. In addition to housing, Providence Place provides substance abuse treatment; comprehensive case management and family reunification services; a parenting center focused on child development, parenting skills and family therapy; specialized support groups to address grief and loss, self esteem, trauma, and other needs; and employment development services. The program is available to women on active parole/post release community supervision and their minor children (typically up to the age of 12). All participants receive referrals, authorization and funding through CDCR.</p>
+        <ol class="text">Free At Last (East Palo Alto, CA):</ol>
+        <p class="text">Website: <a href="http://www.freeatlast.org/services.html">http://www.freeatlast.org/services.html</a> <br/>Address: 1796 Bay Road, East Palo Alto, CA 94303<br/>Phone: (650) 462-6999</p>
+        <p class="text">Free At Last offers several housing options for women with children, including:</p>
         <ol class="text">The <em>Residential Treatment Program for Women and Women with Children</em> provides 7–9 months of residential treatment for women and women with children. To graduate, clients must complete treatment goals, secure housing and have a job or be enrolled in job training.</ol>
         <ol class="text">The <em>Transitional Clean and Sober Living</em> program provides shared supportive housing for men, women, and women with children.</ol>
-        <h4 class="sidebox">HELPFUL HINT: starting in a shelter before moving into other housing</h4>
-        <p class="sidebox">Starting off in an emergency shelter may help you to find transitional or permanent housing and/or access other services afterward. Although many transitional housing programs and social service providers will run background checks and have record-related restrictions, if you are living at a domestic violence shelter, the staff may be able to write a letter or provide a referral to a transitional housing program, which can help explain your situation and get around their restrictions.</p>
       </article>
       <nav class="neighbors">
         <ol>
@@ -112,7 +93,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -137,11 +117,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

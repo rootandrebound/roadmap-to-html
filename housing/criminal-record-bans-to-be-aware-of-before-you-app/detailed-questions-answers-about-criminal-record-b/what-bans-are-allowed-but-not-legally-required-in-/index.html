@@ -21,61 +21,46 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="housing/criminal-record-bans-to-be-aware-of-before-you-app/detailed-questions-answers-about-criminal-record-b/what-bans-are-allowed-but-not-legally-required-in-">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/housing">Housing</a></li>
-          <li><a href="/roadmap-to-html/housing/criminal-record-bans-to-be-aware-of-before-you-app">Criminal Record Bans To Be Aware Of Before You Apply to Housing</a></li>
-          <li><a href="/roadmap-to-html/housing/criminal-record-bans-to-be-aware-of-before-you-app/detailed-questions-answers-about-criminal-record-b">Detailed Questions & Answers About Criminal Record Bans in Government-Assisted Housing</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/housing">Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/criminal-record-bans-to-be-aware-of-before-you-app">Criminal Record Bans To Be Aware Of Before You Apply to Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/criminal-record-bans-to-be-aware-of-before-you-app/detailed-questions-answers-about-criminal-record-b">Detailed Questions & Answers About Criminal Record Bans in Government-Assisted Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/criminal-record-bans-to-be-aware-of-before-you-app/detailed-questions-answers-about-criminal-record-b/what-bans-are-allowed-but-not-legally-required-in-">What bans are allowed, but not legally required in government-assisted housing—the “catch-all” category of bans that apply to *all people with criminal records*? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What bans are allowed, but not legally required in government-assisted housing—the “catch-all” category of bans that apply to *all people with criminal records*?</h1>
-        <p class="text">For the many of you who do not fall into one of the required (“mandatory”) bans discussed above, it’s more likely you could get denied government-assisted housing because the Public Housing Authority (PHA) or the owner of the government-assisted housing has decided based on your criminal record that you <em>currently</em> “pose a risk to the health, safety, or right to peaceful enjoyment of the property by other residents, the owner, or the PHA staff or agents/contractors.”<span class="followedhyperlink"><sup><sup><a href="#footnote-1127" id="footnote-ref-1127">[1127]</a></sup></sup></span></p>
-        <p class="text">This is a “catch-all” category and allows the PHA or owner of government-assisted property to deny applicants with criminal histories more generally. They are allowed to consider a lot of information, including past convictions (even convictions you had expunged); arrests (even those that never led to a conviction); and in some cases your drug treatment records. See PG. 409 for detailed information about what criminal records a Public Housing Authority (PHA) or owner of government-assisted property can access about you.</p>
-        <li id="footnote-1127"><p> 24 C.F.R. § 982.553 <a href="#footnote-ref-1127">↑</a></p></li>
+        <p class="text">For the many of you who do not fall into one of the required (“mandatory”) bans discussed above, it’s more likely you could get denied government-assisted housing because the Public Housing Authority (PHA) or the owner of the government-assisted housing has decided based on your criminal record that you <em>currently</em> “pose a risk to the health, safety, or right to peaceful enjoyment of the property by other residents, the owner, or the PHA staff or agents/contractors.”<span class="followedhyperlink"><sup><sup><a href="#footnote-1228" id="footnote-ref-1228">[1227]</a></sup></sup></span></p>
+        <p class="text">This is a “catch-all” category and allows the PHA or owner of government-assisted property to deny applicants with criminal histories more generally. They are allowed to consider a lot of information, including past convictions (even convictions you had expunged); arrests (even those that never led to a conviction); and in some cases your drug treatment records. See PG. 374 for detailed information about what criminal records a Public Housing Authority (PHA) or owner of government-assisted property can access about you.</p>
+        <li id="footnote-1228"><p> 24 C.F.R. § 982.553 <a href="#footnote-ref-1228">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -93,7 +78,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -118,11 +102,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

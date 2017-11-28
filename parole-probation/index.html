@@ -21,74 +21,62 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-0">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-0" data-page-path="parole-probation">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
+      <nav class="breadcrumbs">
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation">Parole & Probation (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Parole & Probation</h1>
-        <p><strong><img src="36.png"/></strong></p>
-        <p class="description">Being under some type of supervision is usually required for you to be released from prison or jail into community. In the PAROLE &amp; PROBATION CHAPTER, you will learn that in California, there are many types of supervision—state parole, county probation, Mandatory Supervision, PRCS, federal probation &amp; federal parole. This chapter will help you understand what it means to be under supervision, what special rules you have to follow, and all of the rights you have as a person in reentry.</p>
-        <p class="text"><em>DISCLAIMER</em> – YOUR RESPONSIBILITY WHEN USING THIS GUIDE: When putting together the <em>Roadmap to Reentry: A California Legal Guide</em>, we did our best to give you useful and accurate information because we know that people who are currently or formerly incarcerated often have difficulty getting legal information, and we cannot provide specific advice to every person who requests it. The laws change frequently and are subject to differing interpretations. We do not always have the resources to make changes to this informational material every time the law changes. If you use information from the <em>Roadmap to Reentry</em> legal guide, it is <em>your responsibility</em> to make sure that the law has not changed and applies to your particular situation. If you are incarcerated, most of the materials you need should be available in your institution’s law library. The <em>Roadmap to Reentry</em> guide is not intending to give legal advice, but rather legal information. No attorney-client relationship is created by using any information in this guide. You should always consult your own attorney if you need legal advice specific to your situation.</p>
-        <p class="text"><strong> </strong></p>
+        <p><strong><img src="40.png"/></strong></p>
+        <p class="description">Being under some type of correctional community supervision is usually required to be released from prison or jail, and can sometimes be offered by a criminal court judge in place of incarceration. In the PAROLE &amp; PROBATION CHAPTER, you will learn that there are <em>many</em> types of supervision in California — state parole, county probation, mandatory supervision, PRCS, federal probation, federal supervised release, and federal parole. This chapter will help you understand what it means to be on community supervision, what rules you have to follow, and all the rights you have as a person in reentry.</p>
+        <p class="text"><em>DISCLAIMER</em> – YOUR RESPONSIBILITY WHEN USING THIS GUIDE: When putting together the <em>Roadmap to Reentry: A California Legal Guide</em>, we did our best to give you useful and accurate information. However, the laws change frequently and are subject to differing interpretations. We do not always have the resources to make changes to this informational material every time the law changes. If you use information from the <em>Roadmap to Reentry</em> legal guide, it is <em>your responsibility</em> to make sure that the law has not changed and applies to your particular situation. If you are incarcerated, most of the materials you need should be available in your institution’s law library. The <em>Roadmap to Reentry</em> guide is not intending to give legal advice, but rather legal information. No attorney-client relationship is created by using any information in this guide. You should always consult your own attorney if you need legal advice specific to your situation.</p>
         <h4 class="textbox">WHAT WILL I LEARN IN THe PAROLE &amp; PROBATION CHAPTER?</h4>
-        <ul class="learn-bullets">The different types of supervision in California, and the basics about each type For each type of supervision, you will learn: What to do when you first get out – a step-by-step guide General and Special Rules: What general rules (conditions) you have to follow, What special rules (extra conditions) might be added on, and How to appeal (challenge) the special conditions Length of supervision: How the length of supervision is calculated, and how to get off early, if possibleTransferring Supervision to a Different Location: What the procedures are for transferring your supervision to a different county or stateDisability Rights: How to navigate parole and probation if you have a disability and need help or accommodationsViolations &amp; Revocations: What your rights are if you’re accused of violating the conditions of your supervision, and how the “revocation” (violations) process works</ul>
-        <h2><a id="_Toc448152773"></a>Introduction</h2>
+        <ul class="learn-bullets">The different types of supervision in California, and the basics about each type.<em>For each type of supervision, you will learn: </em>What to do when you first get out — a step-by-step guide General and special rules: What general rules (conditions) you have to follow, what special rules (extra conditions) might be added on, and how to appeal (challenge) the special conditions Length of supervision: How the length of supervision is calculated, and how to get off early, if possibleTransferring supervision to a different location: What the procedures are for transferring your supervision to a different county or stateDisability rights: How to navigate parole and probation if you have a disability and need help or accommodationsViolations and revocations: What your rights are if you’re accused of violating the conditions of your supervision, and how the revocation process works</ul>
+        <h2><a id="_Toc352860981"></a>Introduction</h2>
       </article>
         <ol class="table-of-contents">
           <li>
             <h5><a href="/roadmap-to-html/parole-probation/what-is-community-supervision/">What is community supervision?</a></h5>
           </li>
           <li>
-            <h5><a href="/roadmap-to-html/parole-probation/why-is-it-important-to-know-what-type-of-supervisi/">Why is it important to know what type of supervision I am on, and the rules of that supervision department?</a></h5>
+            <h5><a href="/roadmap-to-html/parole-probation/why-is-it-important-to-know-what-type-of-supervisi/">Why is it important to know what type of supervision I am on, and the rules I must follow?</a></h5>
           </li>
           <li>
             <h5><a href="/roadmap-to-html/parole-probation/what-are-the-main-types-of-supervision-in-californ/">What are the main types of supervision in California?</a></h5>
           </li>
           <li>
-            <h5><a href="/roadmap-to-html/parole-probation/what-is-the-difference-between-the-state-federal-s/">What is the difference between the state & federal systems?</a></h5>
+            <h5><a href="/roadmap-to-html/parole-probation/what-is-the-difference-between-the-state-and-feder/">What is the difference between the state and federal systems?</a></h5>
           </li>
           <li>
-            <h5><a href="/roadmap-to-html/parole-probation/im-not-sure-what-type-of-supervision-i-am-on-or-go/">I’m not sure what type of supervision I am on or going to be on. How do I find out?</a></h5>
+            <h5><a href="/roadmap-to-html/parole-probation/im-not-sure-what-type-of-supervision-i-am-on-how-d/">I’m not sure what type of supervision I am on. How do I find out?</a></h5>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/key-terms-in-the-parole-probation-chapter/">Key Terms in the Parole & Probation Chapter</a></h3>
@@ -98,29 +86,38 @@
               <ol>
                 <li><h5><a href="/roadmap-to-html/parole-probation/basics-of-state-parole/what-is-california-state-parole/">What is California state parole?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/basics-of-state-parole/i-am-currently-incarcerated-in-california-state-pr/">I am currently incarcerated in California state prison, and preparing for release. Will I be required to serve a parole term after I get released from prison?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/basics-of-state-parole/i-am-incarcerated-in-a-california-state-prison-and/">I am incarcerated in a California state prison and preparing for release. Will I be required to serve a parole term after my release?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/basics-of-state-parole/when-is-the-post-release-community-supervision-prc/">When is the Post-Release Community Supervision (PRCS) vs. Parole assessment done?</a></h5>
                 </li>
               </ol>
           </li>
           <li>
+            <h3><a href="/roadmap-to-html/parole-probation/before-release-common-questions-on-preparing-for-b/">Before Release: Common Questions on Preparing for Board of Parole Hearings, SB 260 and SB 261, and Proposition 57</a></h3>
+              <ol>
+                <li><h4><a href="/roadmap-to-html/parole-probation/before-release-common-questions-on-preparing-for-b/preparing-for-parole-consideration-hearings-before/">Preparing for Parole Consideration Hearings before the Board of Parole Hearings (BPH)</a></h4>
+                </li>
+                <li><h4><a href="/roadmap-to-html/parole-probation/before-release-common-questions-on-preparing-for-b/sb-260-and-sb-261/">SB 260 and SB 261</a></h4>
+                </li>
+                <li><h4><a href="/roadmap-to-html/parole-probation/before-release-common-questions-on-preparing-for-b/proposition-57-prop-57/">Proposition 57 (“Prop. 57”)</a></h4>
+                </li>
+              </ol>
+          </li>
+          <li>
             <h3><a href="/roadmap-to-html/parole-probation/after-release-what-to-expect-in-your-first-days-ou/">After Release: What to Expect in Your First Days Out on State Parole</a></h3>
               <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/after-release-what-to-expect-in-your-first-days-ou/what-are-some-my-responsibilities-when-i-first-get/">What are some my responsibilities when I first get out of state prison under state parole supervision?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/after-release-what-to-expect-in-your-first-days-ou/what-are-some-of-my-responsibilities-when-i-first-/">What are some of my responsibilities when I first get out of state prison under state parole supervision?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/after-release-what-to-expect-in-your-first-days-ou/is-there-any-form-of-financial-assistance-from-par/">Is there any form of financial assistance from parole when I first get out?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/after-release-what-to-expect-in-your-first-days-ou/do-i-get-any-financial-assistance-from-parole-when/">Do I get any financial assistance from parole when I first get out?</a></h5>
                 </li>
               </ol>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/length-of-state-parole/">Length of State Parole</a></h3>
               <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/length-of-state-parole/where-will-i-see-the-length-of-my-parole-and-who-c/">Where will I see the length of my parole? And who calculates it?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/length-of-state-parole/how-do-i-know-the-length-of-my-parole/">How do I know the length of my parole?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/length-of-state-parole/what-can-i-do-if-i-think-that-the-length-of-my-par/">What can I do if I think that the length of my parole is miscalculated?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/length-of-state-parole/i-filed-a-form-602-administrative-appeal-about-my-/">I filed a form 602 administrative appeal about my parole length, and was denied at all three levels of review, or it is way past when a formal response was due to me but I never got one. Now that I have “exhausted” (completed) the administrative appeals process, how do I file a state petition for a writ of habeas corpus?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/length-of-state-parole/what-can-i-do-if-i-think-my-parole-term-has-been-m/">What can I do if I think my parole term has been miscalculated?</a></h5>
                 </li>
               </ol>
           </li>
@@ -129,9 +126,9 @@
               <ol>
                 <li><h5><a href="/roadmap-to-html/parole-probation/getting-off-state-parole/can-i-get-off-state-parole-early/">Can I get off state parole early?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/getting-off-state-parole/what-are-my-rights-at-the-presumptive-discharge-pd/">What are my rights at the presumptive discharge (PDD) review process?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/getting-off-state-parole/what-are-my-rights-during-the-presumptive-discharg/">What are my rights during the presumptive discharge Date (PDD) review process?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/getting-off-state-parole/do-i-have-a-right-to-appear-at-the-pdd-review-befo/">Do I have a right to appear at the PDD review before the Board of Parole Hearings (BPH)?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/getting-off-state-parole/do-i-have-a-right-to-appear-at-the-discharge-revie/">Do I have a right to appear at the discharge review hearing before the Board of Parole Hearings (BPH)?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/getting-off-state-parole/on-what-basis-can-the-bph-decide-to-keep-me-on-par/">On what basis can the BPH decide to keep me on parole past my PDD instead of letting me off early?</a></h5>
                 </li>
@@ -144,84 +141,79 @@
               <ol>
                 <li><h4><a href="/roadmap-to-html/parole-probation/conditions-of-state-parole/general-conditions-for-every-person-on-state-parol/">General Conditions for Every Person on State Parole</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/conditions-of-state-parole/general-conditions-of-state-parole-little-protecti/">General Conditions of State Parole: Little Protection Against Invasion of Privacy, Searches & Seizures</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/conditions-of-state-parole/all-people-on-parole-little-protection-against-sea/">All people on Parole: Little Protection Against Searches & Seizures</a></h4>
                 </li>
-              </ol>
-          </li>
-          <li>
-            <h3><a href="/roadmap-to-html/parole-probation/additional-laws-that-apply-to-all-people-on-state-/">Additional Laws That Apply to All People on State Parole</a></h3>
-              <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/additional-laws-that-apply-to-all-people-on-state-/what-are-other-laws-restrictions-that-apply-to-me-/">What are other laws & restrictions that apply to me and all people on state parole?</a></h5>
+                <li><h4><a href="/roadmap-to-html/parole-probation/conditions-of-state-parole/additional-laws-that-apply-to-all-people-on-state-/">Additional Laws That Apply to All People on State Parole</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/additional-laws-that-apply-to-all-people-on-state-/special-extra-conditions-of-state-parole-condition/">Special (Extra) Conditions of State Parole: Conditions that only apply to certain individuals on parole</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/conditions-of-state-parole/special-conditions-of-state-parole-conditions-that/">Special Conditions of State Parole: Conditions that apply ONLY to certain People on parole</a></h4>
                 </li>
-              </ol>
-          </li>
-          <li>
-            <h3><a href="/roadmap-to-html/parole-probation/special-conditions-for-sex-offenders/">Special Conditions for Sex Offenders</a></h3>
-              <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/special-conditions-for-sex-offenders/if-i-must-register-as-a-sex-offender-what-are-the-/">If I must register as a sex offender, what are the additional mandatory conditions of my parole?</a></h5>
+                <li><h4><a href="/roadmap-to-html/parole-probation/conditions-of-state-parole/special-conditions-of-state-parole-and-other-laws-/">Special Conditions of State Parole and Other Laws that Apply to Sex Offenders (“290 Registrants”)</a></h4>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/special-conditions-for-sex-offenders/are-there-any-exceptions-to-these-mandatory-specia/">Are there any exceptions to these mandatory special parole conditions for registered sex offenders?</a></h5>
+                <li><h4><a href="/roadmap-to-html/parole-probation/conditions-of-state-parole/residency-movement-employment-restrictions/">Residency, Movement & Employment Restrictions</a></h4>
                 </li>
-              </ol>
-          </li>
-          <li>
-            <h3><a href="/roadmap-to-html/parole-probation/special-conditions-for-mentally-disordered-offende/">Special Conditions for Mentally Disordered Offenders (MDOs)</a></h3>
-              <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/special-conditions-for-mentally-disordered-offende/who-determines-whether-a-person-on-parole-is-class/">Who determines whether a person on parole is classified as an MDO, and what is the process for making this decision?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/special-conditions-for-mentally-disordered-offende/can-i-challenge-an-mdo-determination-if-so-what-is/">Can I challenge an MDO determination? If so, what is the process?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/special-conditions-for-mentally-disordered-offende/if-i-am-found-to-be-an-mdo-and-i-want-to-be-seen-a/">If I am found to be an MDO, and I want to be seen as an outpatient, is that possible?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/special-conditions-for-mentally-disordered-offende/if-i-am-found-to-be-an-mdo-when-and-how-often-is-m/">If I am found to be an MDO, when and how often is my MDO status reviewed?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/special-conditions-for-mentally-disordered-offende/can-the-department-of-state-hospitals-dsh-hold-me-/">Can the Department of STate Hospitals (DSH) hold me beyond my Maximum Discharge Date (MDD)?</a></h5>
+                <li><h4><a href="/roadmap-to-html/parole-probation/conditions-of-state-parole/special-conditions-of-parole-for-mentally-disorder/">Special Conditions of Parole for Mentally Disordered Offenders (MDO)</a></h4>
                 </li>
               </ol>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/">How to Challenge State Parole Conditions</a></h3>
               <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/how-could-i-challenge-a-condition-of-parole-that-i/">How could I challenge a condition of parole that I believe is unlawful and invalid?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/how-can-i-challenge-a-parole-condition-that-i-beli/">How can I challenge a parole condition that I believe is unlawful?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/how-could-i-challenge-a-parole-condition-that-is-a/">How could I challenge a parole condition that is a problem for me because of a disability that I have?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/what-is-the-legal-test-for-finding-special-conditi/">What is the legal test for finding special conditions of parole unlawful?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/when-and-how-do-i-file-an-appeal-of-an-involuntary/">When and how do I file an appeal of an involuntary psychiatric transfer?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/when-and-how-do-i-file-an-emergency-appeal/">When and how do I file an emergency appeal?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/what-timelines-must-cdcr-parole-follow-in-respondi/">What timelines must CDCR/Parole follow in responding to my 602 appeal?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/what-can-i-do-is-cdcr-parole-is-violating-the-lega/">What can I do is CDCR/Parole is violating the legal time limits for responding to my 602 administrative appeal?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/can-my-administrative-appeal-be-rejected/">Can my administrative appeal be rejected?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/can-my-appeal-be-cancelled/">Can my appeal be cancelled?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/what-does-it-mean-to-abuse-the-602-administrative-/">What does it mean to “abuse” the 602 administrative appeal process?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/i-filed-a-602-administrative-appeal-and-completed-/">I filed a 602 administrative appeal and completed all levels of the process, or never heard back. Can I now take my appeal to court?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/how-to-challenge-state-parole-conditions/how-can-i-challenge-a-parole-condition-that-i-cann/">How can I challenge a parole condition that I cannot follow because of a disability I have?</a></h5>
                 </li>
               </ol>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/transfer-locations-on-state-parole/">Transfer Locations on State Parole</a></h3>
               <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-state-parole/i-am-on-state-parole-or-any-other-type-of-supervis/">I am on state parole—or any other type of supervision—and I want to transfer to another state. How can I do that?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-state-parole/i-want-to-transfer-my-parole-to-another-county-in-/">I want to transfer my parole to another county in California. How can I do that?</a></h5>
                 </li>
               </ol>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/">Your Rights as a Parolee with a Disability</a></h3>
               <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/i-have-a-disability-what-rights-do-i-have-on-state/">I have a disability. What rights do I have on state parole to get accommodations for my disability?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/i-have-a-disability-do-i-have-the-right-to-get-acc/">I have a disability. do I have the right to get accommodations for my disability while I am on parole?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/how-will-my-parole-officer-know-about-my-disabilit/">How will my parole officer know about my disability & any accommodations that I need?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/how-will-my-parole-agent-know-about-my-disability-/">How will my parole agent know about my disability and my related special needs?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/what-kinds-of-accommodations-must-parole-make-for-/">What kinds of accommodations must Parole make for me if I have a disability?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/in-general-what-accommodations-must-parole-make-fo/">In general, what accommodations must Parole make for people with disabilities?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/if-parole-is-not-accommodating-my-disability-and-i/">If parole is not accommodating my disability and I feel I am not getting fair treatment or equal access to parole services or programs, what can I do?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/parole-is-not-accommodating-my-disability-and-i-am/">Parole is not accommodating my disability, and I am not getting fair treatment or equal access to Parole services or programs. What can I do?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/what-rights-do-i-have-during-a-parole-revocation-h/">What rights do I have during a parole revocation hearing to accommodate my disability?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/your-rights-as-a-parolee-with-a-disability/during-a-parole-revocation-hearing-do-i-have-right/">During a parole revocation hearing, do I have rights to accommodations for my disability?</a></h5>
                 </li>
               </ol>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/">State Parole Violations & Revocations</a></h3>
               <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-were-the-major-changes-to-the-way-that-parole/">What were the major changes to the way that parole revocation hearings work under realignment (as of july 1, 2013)?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/how-did-realignment-change-the-way-parole-revocati/">How did Realignment Change the way parole revocation hearings work (as of July 1, 2013)?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/if-i-am-suspected-of-a-parole-violation-who-has-th/">If I am suspected of a parole violation, who has the authority to arrest me? Do they need a warrant to arrest me?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/if-i-am-suspected-of-a-parole-violation-who-has-au/">If I am suspected of a parole violation, who has authority to arrest me? Do they need a warrant?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-law-governs-sets-out-the-rules-for-the-hearin/">What law governs (sets out the rules for) the hearing?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/where-can-i-find-the-legal-rules-that-apply-to-par/">Where can I find the legal rules that apply to parole revocation hearings?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/who-represents-the-interest-of-parole-the-state-of/">Who represents the interest of parole/the state of California in the hearing?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/who-represents-the-cdcrs-parole-department-in-the-/">Who represents the CDCR’s parole department in the hearing?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/who-represents-me-if-i-cannot-afford-an-attorney/">Who represents me if I cannot afford an attorney?</a></h5>
                 </li>
@@ -229,9 +221,11 @@
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-rights-do-i-have-during-a-parole-revocation-h/">What rights do I have during a parole revocation hearing?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-happens-if-a-material-very-important-state-wi/">What happens if a “material” (very important) state witness doesn’t show up to the parole revocation hearing, even though he/she was required to attend?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/when-can-witnesses-be-excused-from-appearing-at-my/">When can witnesses be excused from appearing at my parole revocation hearing?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/can-the-district-attorney-introduce-evidence-at-my/">Can the district attorney introduce evidence at my parole hearing that was found in an unlawful search & seizure?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-happens-if-an-important-state-witness-doesnt-/">What happens if an important state witness doesn’t show up to my parole revocation hearing?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/at-my-parole-revocation-hearing-can-the-district-a/">At my parole revocation hearing, Can the district attorney bring evidence that was found in an unlawful search or seizure?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/if-the-judge-revokes-my-parole-and-orders-me-back-/">If the judge revokes my parole and orders me back into custody, where will I serve and for how long?</a></h5>
                 </li>
@@ -241,28 +235,28 @@
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-is-the-process-for-appealing-a-decison-made-b/">What is the process for appealing a decison made by CDCR?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/how-did-californias-realignment-law-change-califor/">How did California’s “Realignment law” change California’s probation System?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/how-did-californias-realignment-law-change-califor/">How did California’s “Realignment” law change California’s county-run probation System?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-types-of-supervision-now-fall-under-the-contr/">What types of supervision now fall under the control of county probation after realignment?</a></h5>
                 </li>
               </ol>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/informal-probation-also-known-as-summary-probation/">Informal Probation (also known as Summary Probation or court probation)</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/informal-probation-a-k-a-summary-probation-or-cour/">Informal Probation (a.k.a. Summary Probation or Court Probation)</a></h3>
               <ol>
-                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-also-known-as-summary-probation/basics-of-informal-probation/">Basics of Informal Probation</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-a-k-a-summary-probation-or-cour/basics-of-informal-probation/">Basics of Informal Probation</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-also-known-as-summary-probation/after-release-what-to-expect-in-your-first-days-ou/">After Release: What to Expect in your first days out on Informal Probation</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-a-k-a-summary-probation-or-cour/after-release-what-to-expect-in-your-first-days-ou/">After Release: What to Expect in Your First Days Out on Informal Probation</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-also-known-as-summary-probation/length-of-informal-probation/">Length of Informal Probation</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-a-k-a-summary-probation-or-cour/length-of-informal-probation/">Length of Informal Probation</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-also-known-as-summary-probation/getting-off-informal-probation/">Getting Off Informal Probation</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-a-k-a-summary-probation-or-cour/getting-off-informal-probation/">Getting Off Informal Probation</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-also-known-as-summary-probation/conditions-of-informal-probation/">Conditions of Informal Probation</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-a-k-a-summary-probation-or-cour/conditions-of-informal-probation/">Conditions of Informal Probation</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-also-known-as-summary-probation/transferring-locations-on-informal-probation/">Transferring Locations on Informal Probation</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-a-k-a-summary-probation-or-cour/transferring-locations-on-informal-probation/">Transferring Locations on Informal Probation</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-also-known-as-summary-probation/violations-revocations-on-informal-probation/">Violations & Revocations on Informal Probation</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/informal-probation-a-k-a-summary-probation-or-cour/violations-revocations-on-informal-probation/">Violations & Revocations on Informal Probation</a></h4>
                 </li>
               </ol>
           </li>
@@ -275,7 +269,9 @@
                 </li>
                 <li><h4><a href="/roadmap-to-html/parole-probation/formal-probation/length-of-formal-probation/">Length of Formal Probation</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/formal-probation/transferring-locations-on-formal-probation/">Transferring locations on Formal Probation</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/formal-probation/conditions-of-formal-probation/">Conditions of Formal Probation</a></h4>
+                </li>
+                <li><h4><a href="/roadmap-to-html/parole-probation/formal-probation/transferring-locations-on-formal-probation/">Transferring Locations on Formal Probation</a></h4>
                 </li>
                 <li><h4><a href="/roadmap-to-html/parole-probation/formal-probation/violations-revocations-of-formal-probation/">Violations & Revocations of Formal Probation</a></h4>
                 </li>
@@ -291,8 +287,6 @@
                 <li><h4><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/length-of-prcs/">Length of PRCS</a></h4>
                 </li>
                 <li><h4><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/conditions-of-prcs/">Conditions of PRCS</a></h4>
-                </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/transferring-locations-on-prcs/">Transferring Locations on PRCS</a></h4>
                 </li>
                 <li><h4><a href="/roadmap-to-html/parole-probation/post-release-community-supervision-prcs/violations-revocations-of-prcs/">Violations & Revocations of PRCS</a></h4>
                 </li>
@@ -318,15 +312,15 @@
               </ol>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/violations-revocations-under-county-probation-supe/">Violations & revocations under county probation supervision of Formal probation, Informal probation, & mandatory supervision</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/violations-revocations-of-formal-probation-informa/">Violations & revocations of Formal probation, Informal probation, & mandatory supervision</a></h3>
               <ol>
-                <li><h4><a href="/roadmap-to-html/parole-probation/violations-revocations-under-county-probation-supe/pre-hearing/">Pre-hearing</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/violations-revocations-of-formal-probation-informa/pre-hearing/">Pre-hearing</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/violations-revocations-under-county-probation-supe/the-hearing/">The Hearing</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/violations-revocations-of-formal-probation-informa/the-hearing/">The Hearing</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/violations-revocations-under-county-probation-supe/sentencing/">Sentencing</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/violations-revocations-of-formal-probation-informa/sentencing/">Sentencing</a></h4>
                 </li>
-                <li><h4><a href="/roadmap-to-html/parole-probation/violations-revocations-under-county-probation-supe/challenging-a-revocation-decision/">Challenging a Revocation decision</a></h4>
+                <li><h4><a href="/roadmap-to-html/parole-probation/violations-revocations-of-formal-probation-informa/challenging-a-revocation-decision/">Challenging a Revocation decision</a></h4>
                 </li>
               </ol>
           </li>
@@ -368,7 +362,7 @@
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/conditions-of-federal-probation/what-are-the-mandatory-conditions-on-federal-proba/">What are the mandatory conditions on federal probation?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/conditions-of-federal-probation/what-are-additional-mandatory-conditions-that-only/">What are additional mandatory conditions that only certain people on Federal Probation have to follow?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/conditions-of-federal-probation/what-are-additional-mandatory-conditions-that-only/">What are additional mandatory conditions that only certain people on federal probation have to follow?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/conditions-of-federal-probation/what-discretionary-conditions-will-i-have-to-follo/">What discretionary conditions will I have to follow on federal probation?</a></h5>
                 </li>
@@ -383,19 +377,27 @@
               </ol>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation/">Transfer Locations on Federal Probation</a></h3>
-              <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation/i-am-on-federal-probation-and-want-to-move-transfe/">I am on federal probation and want to move/transfer to a new state. How can I do that?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation/i-am-on-federal-probation-and-im-trying-to-move-in/">I am on federal probation, and I’m trying to move in with someone who lives in government-assisted housing (like public housing, section 8, or a voucher program), can I still move in?</a></h5>
-                </li>
-              </ol>
-          </li>
-          <li>
             <h3><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/">Violations & Revocations—For BOTH Federal Probation and Supervised Release</a></h3>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/disabilities-federal-probation/">Disabilities & Federal Probation</a></h3>
+          </li>
+          <li>
+            <h3><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation-federal-su/">Transfer Locations on Federal Probation, Federal Supervised Release, or Federal Parole</a></h3>
+              <ol>
+                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation-federal-su/how-can-i-move-if-i-am-on-federal-supervision-like/">How can I move if I am on federal supervision (like federal probation, federal supervised release, or federal parole)?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation-federal-su/what-factors-could-help-my-request-to-move-transfe/">What factors could help my request to move/transfer be approved?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation-federal-su/what-factors-could-hurt-my-request-to-move-transfe/">What factors could hurt my request to move/transfer from being approved?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation-federal-su/i-am-on-federal-probation-federal-supervised-relea/">I am on federal probation, Federal supervised release, or Federal Parole. Is it possible to move while a transfer investigation is still pending?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation-federal-su/can-i-challenge-a-denial-of-my-transfer-request/">Can I challenge a denial of my transfer request?</a></h5>
+                </li>
+                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-federal-probation-federal-su/i-am-on-federal-supervision-can-i-move-in-with-som/">I am on federal supervision. Can I move in with someone who lives in government-assisted housing (like public housing, Section 8, or a voucher program)?</a></h5>
+                </li>
+              </ol>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/basics-of-supervised-release/">Basics of Supervised Release</a></h3>
@@ -425,7 +427,7 @@
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/conditions-of-supervised-release/how-often-do-i-have-to-see-my-probation-officer-if/">How often do I have to see my probation officer if I am on supervised release?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/conditions-of-supervised-release/what-are-the-mandatory-conditions-that-apply-to-me/">What are the mandatory conditions that apply to me and everyone else on superVISed release?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/conditions-of-supervised-release/what-are-the-mandatory-conditions-that-apply-to-me/">What are the mandatory conditions that apply to me and everyone else on supervised release?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/conditions-of-supervised-release/what-are-additional-mandatory-conditions-that-only/">What are additional mandatory conditions that only certain people on Supervised Release have to follow?</a></h5>
                 </li>
@@ -441,41 +443,27 @@
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/transfer-locations-on-supervised-release/">Transfer Locations on Supervised Release</a></h3>
-              <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-supervised-release/i-am-on-supervised-release-and-want-to-move-transf/">I am on supervised release and want to move/transfer to a new state. How can I do that?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-supervised-release/what-are-some-positive-factors-that-could-help-my-/">What are some positive factors that could help my request to move/ transfer be approved?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-supervised-release/what-are-some-negative-factors-that-could-hurt-the/">What are some negative factors that could hurt the chances of my request to move/ transfer from being approved?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-supervised-release/i-am-on-federal-probation-or-supervised-release-is/">I am on federal probation or supervised release. Is it possible to move while a transfer investigation is still pending?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-supervised-release/can-i-challenge-a-denial-of-my-transfer-request/">Can I challenge a denial of my transfer request?</a></h5>
-                </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transfer-locations-on-supervised-release/i-am-on-supervised-release-and-im-trying-to-move-i/">I am on supervised release, and I’m trying to move in with someone I know. If my family member or the person who I want to move in with lives in government-assisted housing (like public housing, section 8, or a voucher program), can I still move in?</a></h5>
-                </li>
-              </ol>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/">Violations & Revocations—For Both Federal Probation and Supervised Release</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/">Violations and Revocations — For Both Federal Probation and Supervised Release</a></h3>
               <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/what-is-a-violation-of-my-federal-probation-or-sup/">What is a violation of my federal probation or supervised release?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/what-is-a-violation-of-my-federal-probation-or-sup/">What is a violation of my federal probation or supervised release?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/can-my-u-s-probation-officer-send-me-back-to-priso/">Can my U.S. probation officer send me back to prison?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/can-my-u-s-probation-officer-send-me-back-to-priso/">Can my U.S. probation officer send me back to prison?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/what-could-the-court-do-if-it-finds-that-i-violate/">What could the court do if it finds that I violated my federal probation or supervised release?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/what-could-the-court-do-if-it-finds-that-i-violate/">What could the court do if it finds that I violated my federal probation or supervised release?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/when-is-revocation-of-federal-probation-or-supervi/">When is revocation of federal probation or supervised release mandatory?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/when-is-revocation-of-federal-probation-or-supervi/">When is revocation of federal probation or supervised release mandatory?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/what-will-happen-if-my-violation-was-also-a-new-cr/">What will happen if my violation was also a new criminal offense?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/what-will-happen-if-my-violation-was-also-a-new-cr/">What will happen if my violation was also a new criminal offense?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/what-are-possible-sanctions-for-an-alleged-violati/">What are possible sanctions for an alleged violation of federal probation or supervised release?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/what-are-possible-sanctions-for-an-alleged-violati/">What are possible sanctions for an alleged violation of federal probation or supervised release?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/what-laws-guide-the-court-in-sentencing-me-for-my-/">What laws guide the court in sentencing me for my revocation of federal probation or supervised release?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/what-laws-guide-the-court-in-sentencing-me-for-my-/">What laws guide the court in sentencing me for my revocation of federal probation or supervised release?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/can-i-appeal-the-courts-revocation-decision-action/">Can I appeal the court’s revocation decision/action? What court has jurisdiction?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/can-i-appeal-the-courts-revocation-decision-action/">Can I appeal the court’s revocation decision/action? What court has jurisdiction?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocations-for-both-federal-probation-/what-will-the-judge-look-for-when-reviewing-my-app/">What will the judge look for when reviewing my appeal?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-and-revocations-for-both-federal-probat/what-will-the-judge-look-for-when-reviewing-my-app/">What will the judge look for when reviewing my appeal?</a></h5>
                 </li>
               </ol>
           </li>
@@ -537,10 +525,6 @@
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/transferring-federal-parole/">Transferring Federal Parole</a></h3>
-              <ol>
-                <li><h5><a href="/roadmap-to-html/parole-probation/transferring-federal-parole/im-on-federal-parole-and-i-want-to-transfer-to-a-n/">I’m on federal parole and I want to transfer to a new district. How can I do that?</a></h5>
-                </li>
-              </ol>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/">Violations & Revocation of Federal Parole</a></h3>
@@ -551,7 +535,7 @@
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/after-a-warrant-or-summons-is-issued-what-happens/">After a warrant or summons is issued, what happens?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/may-a-parolee-have-an-attorney-at-a-preliminary-in/">May a parolee have an attorney at a preliminary interview and revocation hearing?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/may-a-federal-parolee-have-an-attorney-at-a-prelim/">May a federal parolee have an attorney at a preliminary interview and revocation hearing?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/will-i-be-in-prison-pending-hearing/">Will I be in prison pending hearing?</a></h5>
                 </li>
@@ -559,7 +543,7 @@
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/what-is-the-timeline-of-the-hearing/">What is the timeline of the hearing?</a></h5>
                 </li>
-                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/if-my-hearing-is-held-in-a-federal-institution-rat/">If my hearing is held in a federal institution rather than locally, am I entitled to an attorney and may i present witnesses on my behalf?</a></h5>
+                <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/if-my-hearing-is-held-in-a-federal-institution-rat/">If my hearing is held in a federal institution rather than locally, am I entitled to an attorney and may I present witnesses on my behalf?</a></h5>
                 </li>
                 <li><h5><a href="/roadmap-to-html/parole-probation/violations-revocation-of-federal-parole/what-is-the-hearing-procedure/">What is the hearing procedure?</a></h5>
                 </li>
@@ -604,7 +588,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -629,11 +612,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

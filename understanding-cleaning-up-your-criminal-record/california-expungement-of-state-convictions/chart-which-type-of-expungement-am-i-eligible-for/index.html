@@ -21,60 +21,45 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="understanding-cleaning-up-your-criminal-record/california-expungement-of-state-convictions/chart-which-type-of-expungement-am-i-eligible-for">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/california-expungement-of-state-convictions">California “Expungement” of State Convictions</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record">Understanding & Cleaning Up Your Criminal Record</a></li>
+    <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/california-expungement-of-state-convictions">California “Expungement” of State Convictions</a></li>
+    <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/california-expungement-of-state-convictions/chart-which-type-of-expungement-am-i-eligible-for">CHART: Which type of expungement am I eligible for? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>CHART: Which type of expungement am I eligible for?</h1>
-        <p class="widetableintroitalcaps">Remember, you are NOT eligible for expungement if you spent time in STATE PRISON for your conviction, or if your conviction is for any of the offenses that are NEVER eligible for expungement (see PG. 1059). </p>
-        <table><tr><td><p class="textbox"><span class="emphasisheavy">Requirement</span></p></td><td><p class="textbox"><span class="emphasisheavy">MANDATORY (Situation 1—Probation)</span></p></td><td><p class="textbox"><span class="emphasisheavy">MANDATORY (Situation 2—NO probation)</span></p></td><td><p class="textbox"><span class="emphasisheavy">DISCRETIONARY</span></p></td><td><p class="textbox"><span class="emphasisheavy">DISCRETIONARY (Realignment Felony)</span></p></td></tr><tr><td colspan="5"><p class="textbox"><span class="emphasisheavy">Here is a list of requirements that you must meet for each type of expungement:</span></p></td></tr><tr><td><p class="textbox"><span class="emphasisheavy">What type of conviction did you have?</span></p></td><td><p class="textbox">Misdemeanor or felony “wobbler”(But NOT for an offense that is never eligible)</p></td><td><p class="textbox">Infraction or misdemeanor</p></td><td><p class="textbox">Infraction, misdemeanor, or felony “wobbler”—including violations of Vehicle Code § 12810(a)-(e) (serious traffic violations)(But NOT for other offenses that are never eligible)</p></td><td><p class="textbox">Realignment felony (county jail felony)</p></td></tr><tr><td><p class="textbox"><span class="emphasisheavy">Did your sentence include probation?</span></p></td><td><p class="textbox">YES</p></td><td><p class="textbox">NO</p></td><td><p class="textbox">YES</p></td><td><p class="textbox">(does not matter)</p></td></tr><tr><td><p class="textbox"><span class="emphasisheavy">Did you successfully complete ALL probation and/or sentencing requirements (including fine payments)?</span><sup><a href="#footnote-2892" id="footnote-ref-2892">[2892]</a></sup></p></td><td><p class="textbox">If you were discharged at end of your probation term (not early)—YES If you were discharged early from probation—NO </p></td><td><p class="textbox">YES</p></td><td><p class="textbox">NO (and you did NOT receive early discharge)</p></td><td><p class="textbox">YES</p></td></tr><tr><td><p class="textbox"><span class="emphasisheavy">NOT currently serving another sentence, on probation/parole, or charged with another offense</span></p></td><td><p class="textbox">YES</p></td><td><p class="textbox">YES</p></td><td><p class="textbox">YES</p></td><td><p class="textbox">YES</p></td></tr><tr><td><p class="textbox"><span class="emphasisheavy">How much time has passed since your conviction?</span></p></td><td><p class="textbox">(no waiting period)</p></td><td><p class="textbox">1 year</p></td><td><p class="textbox">(no waiting period)</p></td><td><p class="textbox">* 1 year if split sentence* 2 years if straight sentence</p></td></tr></table>
-        <li id="footnote-2892"><p> <em>See</em> PG1053. In light of the decision in People v. Seymour, Case No. H040560 (Santa Clara County, Super. Ct. No. CC955665), it is unclear whether you can be denied mandatory expungement because of unpaid fines and reimbursements. However, you cannot be denied mandatory expungement because you still owe victim restitution. <a href="#footnote-ref-2892">↑</a></p></li>
+        <p class="widetableintroitalcaps">Remember, you are NOT eligible for expungement if you spent time in STATE PRISON for your conviction, or if your conviction is for any of the offenses that are NEVER eligible for expungement (see PG. 943). </p>
+        <table><tr><td><p class="tableheadingmedium">Requirement</p></td><td><p class="tableheadingmedium">MANDATORY (Situation 1—Probation)</p></td><td><p class="tableheadingmedium">MANDATORY (Situation 2—NO probation)</p></td><td><p class="tableheadingmedium">DISCRETIONARY</p></td><td><p class="tableheadingmedium">DISCRETIONARY (Realignment Felony)</p></td></tr><tr><td colspan="5"><p class="tableheadingmedium"><span class="emphasisheavy"><strong><em>Here is a list of requirements that you must meet for each type of expungement:</em></strong></span></p></td></tr><tr><td><p>What type of conviction did you have?</p></td><td><p class="text">Misdemeanor or felony “wobbler”</p><p class="text">(But NOT for an offense that is never eligible)</p></td><td><p class="text">Infraction or misdemeanor</p></td><td><p class="text">Infraction, misdemeanor, or felony “wobbler”—including violations of Vehicle Code § 12810(a)-(e) (serious traffic violations)</p><p class="text">(But NOT for other offenses that are never eligible.)</p></td><td><p class="text">Realignment felony (county jail felony)</p></td></tr><tr><td><p>Did your sentence include probation?</p></td><td><p class="text">YES</p></td><td><p class="text">NO</p></td><td><p class="text">YES</p></td><td><p class="text">(does not matter)</p></td></tr><tr><td><p>Did you successfully complete ALL probation and/or sentencing requirements (including fine payments)?<strong><sup><sup><a href="#footnote-3011" id="footnote-ref-3011">[3010]</a></sup></sup></strong></p></td><td><p class="text">If you were discharged at end of your probation term (not early)—YES </p><p class="text">If you were discharged early from probation—NO </p></td><td><p class="text">YES</p></td><td><p class="text">NO (and you did NOT receive early discharge)</p></td><td><p class="text">YES</p></td></tr><tr><td><p>NOT currently serving another sentence, on probation/parole, or charged with another offense</p></td><td><p class="text">YES</p></td><td><p class="text">YES</p></td><td><p class="text">YES</p></td><td><p class="text">YES</p></td></tr><tr><td><p>How much time has passed since your conviction?</p></td><td><p class="text">(no waiting period)</p></td><td><p class="text">1 year</p></td><td><p class="text">(no waiting period)</p></td><td><p class="text">* 1 year if split sentence</p><p class="text">* 2 years if straight sentence</p></td></tr></table>
+        <li id="footnote-3011"><p> See PG1053. In light of the decision in People v. Seymour, Case No. H040560 (Santa Clara County, Super. Ct. No. CC955665), it is unclear whether you can be denied mandatory expungement because of unpaid fines and reimbursements. However, you cannot be denied mandatory expungement because you still owe victim restitution. <a href="#footnote-ref-3011">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -92,7 +77,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -117,11 +101,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

@@ -21,113 +21,97 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="court-ordered-debt/traffic-fines-and-tickets/how-do-i-know-which-type-of-ticket-i-have">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/court-ordered-debt">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/traffic-fines-and-tickets">Traffic fines and tickets</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt">Court-Ordered Debt</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt/traffic-fines-and-tickets">Traffic fines and tickets</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt/traffic-fines-and-tickets/how-do-i-know-which-type-of-ticket-i-have">How do I know which type of ticket I have? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>How do I know which type of ticket I have?</h1>
-        <p><em>If you park or leave your car somewhere and there is a ticket on the windshield when you get back</em>, this is probably a <em>parking ticket (although some agencies will issue “fix-it” tickets for parked cars with visible mechanical issues or expired registration tags)</em>. Parking tickets are the least serious type of ticket and do NOT involve the courts.</p>
-        <p><em>If you get pulled over and get a ticket while driving</em>, it is an <em>infraction</em> or a <em>misdemeanor</em> <em>ticket</em>. Usually you get these tickets from a law enforcement officer who pulls you over on the road for a violation you committed while driving.</p>
+        <h4 class="sidebox">What are “Fix-it” Tickets (Correctable Violations)?</h4>
+        <p class="sidebox">A correctible violation (“fix-it”) ticket is a ticket for a problem with your car that you must fix (for example, a broken tail light, expired registration. After you fix the problem, and show the court proof, your ticket will be dismissed. </p>
+        <p class="text">If you park or leave your car somewhere and there is a ticket on the windshield when you get back, this is probably a parking ticket (although some agencies will issue “fix-it” tickets for parked cars with visible mechanical issues or expired registration tags). Parking tickets are the least serious type of ticket and do NOT involve the courts.</p>
+        <p class="text"><em>If you get pulled over and get a ticket while driving</em>, it is an <em>infraction</em> or a <em>misdemeanor</em> <em>ticket</em>. Usually you get these tickets from a law enforcement officer who pulls you over on the road for a violation you committed while driving.</p>
         <ol class="text">An <em>infraction ticket</em> will instruct you to either <em>pay a fine</em>, or <em>appear in court</em> on a particular date and time if you want to challenge the ticket or can’t pay the fine. </ol>
         <ol class="text">For a <em>misdemeanor ticket</em>, you MUST <em>appear in court</em> on the date and time shown or a warrant will be issued for your arrest. (That’s why the ticket is also called a “Notice to Appear”). </ol>
         <p class="text"><span class="emphasisitalic">NOTE:</span> For some <em>misdemeanor violations</em> (for example, a DUI), the police may <em>arrest</em> you on the spot and take you into custody. You may need to <em>pay bail</em> and/or sign a <em>promise to appear in court</em> before the police let you go. Afterward, you MUST <em>appear in court</em> on the date and time assigned to you in the promise to appear.</p>
-        <p><em>Tickets related to your car equipment, registration, insurance, or Driver License</em> are usually <em>infraction tickets</em>. Sometimes you can get the ticket dismissed if you correct the problem that you were cited for (also called a “fix-it” ticket or “correctable violation”). </p>
+        <p class="text"><em>Tickets related to your car equipment, registration, insurance, or driver license</em> are usually <strong><em>infraction tickets</em></strong>. Sometimes you can get the ticket dismissed if you correct the problem that you were cited for (also called a “fix-it” ticket or “correctable violation”). </p>
         <p class="importantbox">IMPORTANT: When you sign any ticket, you are making a promise to do something—pay the fine, appear in court, and/or correct the problem as required by the ticket. </p>
-        <h3><a id="_Toc448153520"></a>What could happen if I get a new ticket? </h3>
+        <h3><a id="_Toc352861784"></a>What could happen if I get a new ticket? </h3>
         <p class="text">It depends on the type of ticket you get.</p>
-        <p class="text"><span class="emphasisitalic">Parking tickets:</span><em> </em>If you get a parking ticket, you just have to pay a fine. The ticket will have information about how much the fine is, what agency you owe it to (usually to the local city government or parking authority), and how to pay (by mail, in person, by phone, or online). If you disagree with the ticket, you can contact the parking agency and ask how to challenge it.<sup><a href="#footnote-2085" id="footnote-ref-2085">[2085]</a></sup> I<em>f you don’t pay the parking ticket on time</em>, the fines will increase. <em>Eventually</em>, if you haven’t paid the fine, you will not be able to renew your car registration. Parking tickets will NOT affect your ability to get a state ID or driver license because parking tickets attach to a <em>vehicle</em>, NOT a person.<sup><a href="#footnote-2086" id="footnote-ref-2086">[2086]</a></sup> </p>
-        <p class="text"><span class="emphasisitalic">Infraction tickets:</span><em> </em>If you get an infraction ticket, read the ticket carefully to see what to do. You may just need to <em>pay a fine</em> or you may have to fix whatever problem the ticket was issued for and then bring proof to the issuing agency. However, you may be required to <em>appear in court</em> on a particular date and time. You must act BEFORE the deadline on your ticket. <em>Remember, by signing the ticket, you have promised to pay the fine, correct the problem, or appear in court</em>.</p>
-        <p class="text">You may have to:</p>
-        <ol class="text"><em>Pay the fine</em>, which means you plead guilty to the violation and the court will close the case. The infraction will appear as a conviction on your Department of Motor Vehicles (DMV) record, but it will not be considered a criminal conviction.<sup><a href="#footnote-2087" id="footnote-ref-2087">[2087]</a></sup> It may add “points” to your driving record, which may have other consequences.<sup><a href="#footnote-2088" id="footnote-ref-2088">[2088]</a></sup></ol>
-        <ol class="text">NOTE: You may be eligible to go to “traffic school,” to keep the conviction points off your record.<sup><a href="#footnote-2089" id="footnote-ref-2089">[2089]</a></sup> (For more information about traffic school, see PG. 749.)</ol>
-        <ol class="text"><em>Go to court</em> on the day and time listed on the ticket. You can plead not guilty and ask for a trial to dispute the ticket, or plead guilty to the infraction and pay the fine.<sup><a href="#footnote-2090" id="footnote-ref-2090">[2090]</a></sup> </ol>
-        <ol class="text"><em>If you want to contest the ticket</em> (plead not guilty) but were NOT required to appear in court, you can request a <em>trial by written declaration</em>. This means that instead of going to court to fight your case, you and the police officer give the judge statements and evidence in writing.<sup><a href="#footnote-2091" id="footnote-ref-2091">[2091]</a></sup></ol>
+        <p class="text"><span class="emphasisitalic">Parking tickets:</span><em> </em>If you get a parking ticket, you just have to pay a fine. The ticket will have information about how much the fine is, what agency you owe it to (usually to the local city government or parking authority), and how to pay (by mail, in person, by phone, or online). If you disagree with the ticket, you can contact the parking agency and ask how to challenge it.<sup><a href="#footnote-2196" id="footnote-ref-2196">[2195]</a></sup> I<em>f you don’t pay the parking ticket on time</em>, the fines will increase. <em>Eventually</em>, if you haven’t paid the fine, you will not be able to renew your car registration. Parking tickets will NOT affect your ability to get a state ID or driver license because parking tickets attach to a <em>vehicle</em>, NOT a person.<sup><a href="#footnote-2197" id="footnote-ref-2197">[2196]</a></sup> </p>
+        <p class="text"><span class="emphasisitalic">Infraction tickets:</span><em> </em>If you get an infraction ticket, read the ticket carefully to see what to do. You may just need to <em>pay a fine</em> or you may have to fix whatever problem the ticket was issued for and then bring proof to the issuing agency. However, you may be required to <em>appear in court</em> on a particular date and time. You must act BEFORE the deadline on your ticket. <em>Remember, by signing the ticket, you have promised to pay the fine, correct the problem, or appear in court</em>. <strong>You may have to:</strong></p>
+        <ol class="text"><em>Pay the fine</em>, which means you plead guilty to the violation and the court will close the case. The infraction will appear as a conviction on your Department of Motor Vehicles (DMV) record, but it will not be considered a criminal conviction.<sup><a href="#footnote-2198" id="footnote-ref-2198">[2197]</a></sup> It may add “points” to your driving record, which may have other consequences.<sup><a href="#footnote-2199" id="footnote-ref-2199">[2198]</a></sup></ol>
+        <ol class="text">NOTE: You may be eligible to go to “traffic school,” to keep the conviction points off your record.<sup><a href="#footnote-2200" id="footnote-ref-2200">[2199]</a></sup> (For more information about traffic school, see PG. 675.)</ol>
+        <ol class="text"><em>Go to court</em> on the day and time listed on the ticket. You can plead not guilty and ask for a trial to dispute the ticket, or plead guilty to the infraction and pay the fine.<sup><a href="#footnote-2201" id="footnote-ref-2201">[2200]</a></sup> </ol>
+        <ol class="text"><em>If you want to contest the ticket</em> (plead not guilty) but were NOT required to appear in court, you can request a <em>trial by written declaration</em>. This means that instead of going to court to fight your case, you and the police officer give the judge statements and evidence in writing.<sup><a href="#footnote-2202" id="footnote-ref-2202">[2201]</a></sup></ol>
         <ol class="text"><em>If you got a “fix-it” ticket</em>,<strong> </strong>you can have your case dismissed by fixing the problem, showing proof that you have made the correction, and paying a fee. To get a proof of correction, you must get an “authorized person” to sign the “Certificate of Correction” line on your ticket. An “authorized person” is:</ol>
         <ol class="text">A DMV or court clerk—for driver license and car registration violations;</ol>
         <ol class="text">A police officer—for equipment violations;</ol>
-        <ol class="text">A court clerk—for proof of car insurance.<sup><a href="#footnote-2092" id="footnote-ref-2092">[2092]</a></sup> </ol>
-        <p class="text"><strong>If you are on probation, parole, or community supervision:</strong> In most cases, an infraction ticket won’t be considered a violation of your probation or parole because infractions are not criminal offenses. However, in some cases, an infraction ticket <em>could</em> be a violation of your supervision, depending on your underlying conviction, the specific conditions of your supervision, and the nature of the infraction. For example, if you are on probation for a DUI offense and have conditions related to alcohol and driving, a ticket for having an open container in your vehicle might be considered a violation of your supervision. If you have any questions or concerns about your terms of supervision, you should talk to your probation or parole officer (or better yet, a lawyer). (You can also find more information in the PAROLE &amp; PROBATION CHAPTER, beginning on PG. 130.)</p>
-        <p class="text"><span class="emphasisitalic">Misdemeanor tickets:</span><em> </em>For a misdemeanor ticket, you <em>must</em> go to court on the date shown on your ticket. If you want to dispute (deny) the charges, you can plead not guilty and ask for a trial. You are entitled to have a lawyer represent you throughout the process. If you cannot afford a lawyer, the court will appoint a public defender to represent you. You may have to pay a fine (bail) in advance, but you will get the money back if you are found not guilty.<sup><a href="#footnote-2093" id="footnote-ref-2093">[2093]</a></sup> In some cases (for serious misdemeanors, like DUIs, or for repeat offenses), you may also face jail time and/or have your license suspended or revoked. </p>
-        <p class="importantbox">WARNING:<em> If you are on probation, parole, or community supervision</em>, a misdemeanor ticket could be a violation of your probation or parole conditions. You should contact a lawyer immediately, if you can. (For more information on how a new criminal offense may affect your community supervision, see the PAROLE &amp; PROBATION CHAPTER, beginning on PG. 130.)</p>
-        <h3><a id="_Toc448153521"></a>What could happen if I don’t pay my traffic fines or if I don’t appear for my court date? </h3>
-        <p class="text">There are serious consequences if you don’t pay your traffic fines, or if you don’t show up for your court date:<sup><a href="#footnote-2094" id="footnote-ref-2094">[2094]</a></sup></p>
-        <h4>FAILURE TO PAY YOUR FINES:</h4>
-        <ol class="text">The amount you owe in traffic fines can increase by A LOT. You may be charged interest and additional fees as penalties for paying late or not paying at all.<sup><a href="#footnote-2095" id="footnote-ref-2095">[2095]</a></sup> </ol>
-        <ol class="text">If you agreed to make installment payments to the court for your traffic fines, and you do not make the required payments, the court can order you to pay a $300 civil assessment fine.<sup><a href="#footnote-2096" id="footnote-ref-2096">[2096]</a></sup></ol>
-        <ol class="text">Your debt could be referred to a collection agency, which can affect your credit score and, in turn, your ability to get a loan, rent an apartment, or qualify for some jobs. (See PG. 730 for more information on “collections”).</ol>
-        <ol class="text"><em>For infraction and misdemeanor tickets</em>—Your driver license can be suspended if you don’t pay your fines on time.<sup><a href="#footnote-2097" id="footnote-ref-2097">[2097]</a></sup> This means that you CANNOT legally drive a car, and you can be charged with other offenses if you drive while your license is suspended.<sup><a href="#footnote-2098" id="footnote-ref-2098">[2098]</a></sup> You will not get your license back until you pay off all fines and fees you owe—plus <em>additional</em> fees for having your license suspended and reissued.<sup><a href="#footnote-2099" id="footnote-ref-2099">[2099]</a></sup></ol>
-        <ol class="text"><em>For parking tickets</em>—You will not be allowed to renew your car registration if you owe unpaid parking fines for that car (and you may be charged an extra fee for having your registration suspended).<sup><a href="#footnote-2100" id="footnote-ref-2100">[2100]</a></sup> Your car MUST be registered with the DMV in order for you or anyone else to drive it, but the DMV will NOT let you renew your registration until you pay off all fines and fees you owe. This means your car CANNOT legally be driven or sold during this time (and you can be charged with other offenses if you drive your car when it’s not registered).<sup><a href="#footnote-2101" id="footnote-ref-2101">[2101]</a></sup> But remember, parking tickets attach to specific CARS—NOT people—so you CAN still drive other cars during this time.</ol>
-        <ol class="text"><em>If you have a correctable violation (“fix-it” ticket)</em> and do not make the corrections required by the ticket OR do not provide proof of correction, you can be charged with a misdemeanor.<sup><a href="#footnote-2102" id="footnote-ref-2102">[2102]</a></sup></ol>
+        <ol class="text">A court clerk—for proof of car insurance.<sup><a href="#footnote-2203" id="footnote-ref-2203">[2202]</a></sup> </ol>
+        <p class="text"><strong>If you are on probation, parole, or community supervision:</strong> In most cases, an infraction ticket won’t be considered a violation of your probation or parole because infractions are not criminal offenses. However, in some cases, an infraction ticket <em>could</em> be a violation of your supervision, depending on your underlying conviction, the specific conditions of your supervision, and the nature of the infraction. For example, if you are on probation for a DUI offense and have conditions related to alcohol and driving, a ticket for having an open container in your vehicle might be considered a violation of your supervision. If you have any questions or concerns about your terms of supervision, you should talk to your probation or parole officer (or better yet, a lawyer). (You can also find more information in the PAROLE &amp; PROBATION CHAPTER, beginning on PG. 125.)</p>
+        <p class="text"><span class="emphasisitalic">Misdemeanor tickets:</span><em> </em>For a misdemeanor ticket, you <em>must</em> go to court on the date shown on your ticket. If you want to dispute (deny) the charges, you can plead not guilty and ask for a trial. You are entitled to have a lawyer represent you throughout the process. If you cannot afford a lawyer, the court will appoint a public defender to represent you. You may have to pay a fine (bail) in advance, but you will get the money back if you are found not guilty.<sup><a href="#footnote-2204" id="footnote-ref-2204">[2203]</a></sup> In some cases (for serious misdemeanors, like DUIs, or for repeat offenses), you may also face jail time and/or have your license suspended or revoked. </p>
+        <p class="importantbox">WARNING:<em> If you are on probation, parole, or community supervision</em>, a misdemeanor ticket could be a violation of your probation or parole conditions. You should contact a lawyer immediately, if you can. (For more information on how a new criminal offense may affect your community supervision, see the PAROLE &amp; PROBATION CHAPTER, beginning on PG. 125.)</p>
+        <h3><a id="_Toc352861785"></a>What could happen if I don’t pay my traffic fines or if I don’t appear for my court date? </h3>
+        <p class="text">There are serious consequences if you don’t pay your traffic fines, or if you don’t show up for your court date:<sup><a href="#footnote-2205" id="footnote-ref-2205">[2204]</a></sup></p>
+        <div class="questionheading"><em>FAILURE TO PAY YOUR FINES:</em></div>
+        <ol class="text">The amount you owe in traffic fines can increase by A LOT. You may be charged interest and additional fees as penalties for paying late or not paying at all.<sup><a href="#footnote-2206" id="footnote-ref-2206">[2205]</a></sup> </ol>
+        <ol class="text">If you agreed to make installment payments to the court for your traffic fines, and you do not make the required payments, the court can order you to pay a $300 civil assessment fine.<sup><a href="#footnote-2207" id="footnote-ref-2207">[2206]</a></sup></ol>
+        <ol class="text">Your debt could be referred to a collection agency, which can affect your credit score and, in turn, your ability to get a loan, rent an apartment, or qualify for some jobs. (See PG. 659 for more information on “collections”).</ol>
+        <ol class="text"><em>For infraction and misdemeanor tickets</em>—Your driver license can be suspended if you don’t pay your fines on time.<sup><a href="#footnote-2208" id="footnote-ref-2208">[2207]</a></sup> This means that you CANNOT legally drive a car, and you can be charged with other offenses if you drive while your license is suspended.<sup><a href="#footnote-2209" id="footnote-ref-2209">[2208]</a></sup> You will not get your license back until you pay off all fines and fees you owe—plus <em>additional</em> fees for having your license suspended and reissued.<sup><a href="#footnote-2210" id="footnote-ref-2210">[2209]</a></sup></ol>
+        <ol class="text"><em>For parking tickets</em>—You will not be allowed to renew your car registration if you owe unpaid parking fines for that car (and you may be charged an extra fee for having your registration suspended).<sup><a href="#footnote-2211" id="footnote-ref-2211">[2210]</a></sup> Your car MUST be registered with the DMV in order for you or anyone else to drive it, but the DMV will NOT let you renew your registration until you pay off all fines and fees you owe. This means your car CANNOT legally be driven or sold during this time (and you can be charged with other offenses if you drive your car when it’s not registered).<sup><a href="#footnote-2212" id="footnote-ref-2212">[2211]</a></sup> But remember, parking tickets attach to specific CARS—NOT people—so you CAN still drive other cars during this time.</ol>
+        <ol class="text"><em>If you have a correctable violation (“fix-it” ticket)</em> and do not make the corrections required by the ticket OR do not provide proof of correction, you can be charged with a misdemeanor.<sup><a href="#footnote-2213" id="footnote-ref-2213">[2212]</a></sup></ol>
         <ol class="text">A Judge may order you to appear in court to explain why you have not paid your ticket.</ol>
-        <h4>FAILURE TO APPEAR IN COURT:</h4>
-        <p class="text">If a judge has ordered you to appear in court because of your unpaid ticket, you must appear. If you do not, the court can charge you with a misdemeanor for “failure to appear” or “contempt of court,” and issue a warrant for your arrest.<sup><a href="#footnote-2103" id="footnote-ref-2103">[2103]</a></sup></p>
-        <h4 class="textbox">there’s a NEW LAW that helps with taffic court debt!</h4>
-        <p>Under a recent change in California law, you may qualify for the new <strong>Traffic Amnesty Program</strong>—a one-time opportunity to reduce the overall fines owed on eligible traffic tickets and/or get your Driver License reinstated. Read the questions and answers on PG. 750 to learn more!</p>
-        <li id="footnote-2085"><p> <em>See</em> Cal. Veh. Code § 40215. <a href="#footnote-ref-2085">↑</a></p></li>
-        <li id="footnote-2086"><p> Cal. Veh. Code § 4760. <a href="#footnote-ref-2086">↑</a></p></li>
-        <li id="footnote-2087"><p> Cal. Penal Code § 19.6. <a href="#footnote-ref-2087">↑</a></p></li>
-        <li id="footnote-2088"><p> Cal. Veh. Code §§ 1808(b), 12810 (most minor traffic offenses will remain on your record for 3 years from the violation date and count as 1 point on your driving record. More serious convictions will remain on your record for longer periods (7 or 10 years) and add more points to your record); <em>see also</em> Dep’t of Motor Vehicles, Vehicle Code Violations used in Negligent Operator Counts, <a href="https://www.dmv.ca.gov/portal/dmv/detail/dl/vioptct">https://www.dmv.ca.gov/portal/dmv/detail/dl/vioptct</a>.  <a href="#footnote-ref-2088">↑</a></p></li>
-        <li id="footnote-2089"><p> Cal. Veh. Code §§ 1803.5, 41501, 1808.7, 1808.10, 41501; 13 Cal. Code Regs. § 345.00 et seq.; Cal. Rules of Court § 4.104 (2014); <em>see also</em> Judicial Council of Cal., Traffic School, <a href="http://www.courts.ca.gov/9410.htm">http://www.courts.ca.gov/9410.htm</a>.  <a href="#footnote-ref-2089">↑</a></p></li>
-        <li id="footnote-2090"><p> Cal. Veh. Code § 40901; <em>see also</em> Judicial Council of Cal., Cal. Courts, Traffic Trial, <a href="http://www.courts.ca.gov/8450.htm">http://www.courts.ca.gov/8450.htm</a>.  <a href="#footnote-ref-2090">↑</a></p></li>
-        <li id="footnote-2091"><p> Cal. Veh. Code § 40902-03; <em>see also</em> Judicial Council of Cal., Cal. Courts, Traffic Trial, <a href="http://www.courts.ca.gov/8450.htm#tab9275">http://www.courts.ca.gov/8450.htm#tab9275</a>.  <a href="#footnote-ref-2091">↑</a></p></li>
-        <li id="footnote-2092"><p> Cal. Veh. Code §§ 40150-53, 40610-18, 40303.5, 40522; <em>see also</em> Judicial Council of Cal., Correctable Violations “Fix-It” Tickets, <a href="http://www.courts.ca.gov/9529.htm">http://www.courts.ca.gov/9529.htm</a>.  <a href="#footnote-ref-2092">↑</a></p></li>
-        <li id="footnote-2093"><p> Judicial Council of Cal., Traffic Trial, <a href="http://www.courts.ca.gov/8450.htm">http://www.courts.ca.gov/8450.htm</a>.  <a href="#footnote-ref-2093">↑</a></p></li>
-        <li id="footnote-2094"><p> Cal. Veh. Code §§ 40509 (failure to pay fines or appear in court), 12807-08.1 (denial of drivers’ license for failure to pay fines or appear in court), 40616-18 (failure to correct violation or provide proof of correction), 40604 (issuance of warrant). <em>See also</em> A New Way of Life Reentry Project et al, Not Just a Ferguson Problem: How Traffic Courts Drive Inequality in California (2015), http://www.lccr.com/wp-content/uploads/Not-Just-a-Ferguson-Problem-How-Traffic-Courts-Drive-Inequality-in-California-4.20.15.pdf. <a href="#footnote-ref-2094">↑</a></p></li>
-        <li id="footnote-2095"><p> <em>See, e.g.</em>, Cal. Veh. Code § 40310 (50% penalty for all traffic fines overdue by 20 days or more). <a href="#footnote-ref-2095">↑</a></p></li>
-        <li id="footnote-2096"><p> Cal. Veh. Code §§ 40510.5, 40508; Cal. Penal Code § 1214.1. <a href="#footnote-ref-2096">↑</a></p></li>
-        <li id="footnote-2097"><p> If your Driver License was suspended due to a Failure to Appear, Failure to Pay, or other failure to comply that is more than 5 years old, you may be able to purge (erase) the charge from your DMV record and reinstate your license by calling the DMV Mandatory Actions Line (916-657-6525). Exception: If the Failure to Appear was for a DUI (under Vehicle Code Sections 23152 or 23153) or vehicular manslaughter (under Penal Code Sections 191.5 or 192.5(a)), the charge may be purged after 10 years. Cal. Veh. Code § 12808(c). <a href="#footnote-ref-2097">↑</a></p></li>
-        <li id="footnote-2098"><p> Cal. Veh. Code §§ 12500, 13553.  <a href="#footnote-ref-2098">↑</a></p></li>
-        <li id="footnote-2099"><p> Cal. Veh. Code § 40508.6(b) (Reissue fee); <em>see also</em> Cal. Dep’t of Motor Vehicles, Reissue Fees, <a href="https://www.dmv.ca.gov/portal/dmv/detail/online/refund/refundreissuefee">https://www.dmv.ca.gov/portal/dmv/detail/online/refund/refundreissuefee</a>.  <a href="#footnote-ref-2099">↑</a></p></li>
-        <li id="footnote-2100"><p> Cal. Veh. Code § 40508.6(b). <a href="#footnote-ref-2100">↑</a></p></li>
-        <li id="footnote-2101"><p> Cal. Veh. Code § 40001.  <a href="#footnote-ref-2101">↑</a></p></li>
-        <li id="footnote-2102"><p> Cal. Veh. Code § 40616 et seq. <a href="#footnote-ref-2102">↑</a></p></li>
-        <li id="footnote-2103"><p> Cal. Veh. Code §§ 40508-8.5; Cal. Penal Code §§ 853.7-53.8. <a href="#footnote-ref-2103">↑</a></p></li>
+        <div class="questionheading"><em>FAILURE TO APPEAR IN COURT:</em></div>
+        <p class="text">If a judge has ordered you to appear in court because of your unpaid ticket, you must appear. If you do not, the court can charge you with a misdemeanor for “failure to appear” or “contempt of court,” and issue a warrant for your arrest.<sup><a href="#footnote-2214" id="footnote-ref-2214">[2213]</a></sup></p>
+        <li id="footnote-2196"><p> See Cal. Veh. Code § 40215. <a href="#footnote-ref-2196">↑</a></p></li>
+        <li id="footnote-2197"><p> Cal. Veh. Code § 4760. <a href="#footnote-ref-2197">↑</a></p></li>
+        <li id="footnote-2198"><p> Cal. Penal Code § 19.6. <a href="#footnote-ref-2198">↑</a></p></li>
+        <li id="footnote-2199"><p> Cal. Veh. Code §§ 1808(b), 12810 (most minor traffic offenses will remain on your record for 3 years from the violation date and count as 1 point on your driving record. More serious convictions will remain on your record for longer periods (7 or 10 years) and add more points to your record); see also Dep’t of Motor Vehicles, Vehicle Code Violations used in Negligent Operator Counts, <a href="https://www.dmv.ca.gov/portal/dmv/detail/dl/vioptct">https://www.dmv.ca.gov/portal/dmv/detail/dl/vioptct</a>.  <a href="#footnote-ref-2199">↑</a></p></li>
+        <li id="footnote-2200"><p> Cal. Veh. Code §§ 1803.5, 41501, 1808.7, 1808.10, 41501; 13 Cal. Code Regs. § 345.00 et seq.; Cal. Rules of Court § 4.104 (2014); see also Judicial Council of Cal., Traffic School, <a href="http://www.courts.ca.gov/9410.htm">http://www.courts.ca.gov/9410.htm</a>.  <a href="#footnote-ref-2200">↑</a></p></li>
+        <li id="footnote-2201"><p> Cal. Veh. Code § 40901; see also Judicial Council of Cal., Cal. Courts, Traffic Trial, <a href="http://www.courts.ca.gov/8450.htm">http://www.courts.ca.gov/8450.htm</a>.  <a href="#footnote-ref-2201">↑</a></p></li>
+        <li id="footnote-2202"><p> Cal. Veh. Code § 40902-03; see also Judicial Council of Cal., Cal. Courts, Traffic Trial, <a href="http://www.courts.ca.gov/8450.htm">http://www.courts.ca.gov/8450.htm#tab9275</a>.  <a href="#footnote-ref-2202">↑</a></p></li>
+        <li id="footnote-2203"><p> Cal. Veh. Code §§ 40150-53, 40610-18, 40303.5, 40522; see also Judicial Council of Cal., Correctable Violations “Fix-It” Tickets, <a href="http://www.courts.ca.gov/9529.htm">http://www.courts.ca.gov/9529.htm</a>.  <a href="#footnote-ref-2203">↑</a></p></li>
+        <li id="footnote-2204"><p> Judicial Council of Cal., Traffic Trial, <a href="http://www.courts.ca.gov/8450.htm">http://www.courts.ca.gov/8450.htm</a>.  <a href="#footnote-ref-2204">↑</a></p></li>
+        <li id="footnote-2205"><p> Cal. Veh. Code §§ 40509 (failure to pay fines or appear in court), 12807-08.1 (denial of drivers’ license for failure to pay fines or appear in court), 40616-18 (failure to correct violation or provide proof of correction), 40604 (issuance of warrant). See also A New Way of Life Reentry Project et al, Not Just a Ferguson Problem: How Traffic Courts Drive Inequality in California (2015), <a href="http://www.lccr.com/wp-content/uploads/Not-Just-a-Ferguson-Problem-How-Traffic-Courts-Drive-Inequality-in-California-4.20.15.pdf">http://www.lccr.com/wp-content/uploads/Not-Just-a-Ferguson-Problem-How-Traffic-Courts-Drive-Inequality-in-California-4.20.15.pdf</a>. <a href="#footnote-ref-2205">↑</a></p></li>
+        <li id="footnote-2206"><p> See, e.g., Cal. Veh. Code § 40310 (50% penalty for all traffic fines overdue by 20 days or more). <a href="#footnote-ref-2206">↑</a></p></li>
+        <li id="footnote-2207"><p> Cal. Veh. Code §§ 40510.5, 40508; Cal. Penal Code § 1214.1. <a href="#footnote-ref-2207">↑</a></p></li>
+        <li id="footnote-2208"><p> If your Driver License was suspended due to a Failure to Appear, Failure to Pay, or other failure to comply that is more than 5 years old, you may be able to purge (erase) the charge from your DMV record and reinstate your license by calling the DMV Mandatory Actions Line (916-657-6525). Exception: If the Failure to Appear was for a DUI (under Vehicle Code Sections 23152 or 23153) or vehicular manslaughter (under Penal Code Sections 191.5 or 192.5(a)), the charge may be purged after 10 years. Cal. Veh. Code § 12808(c). <a href="#footnote-ref-2208">↑</a></p></li>
+        <li id="footnote-2209"><p> Cal. Veh. Code §§ 12500, 13553.  <a href="#footnote-ref-2209">↑</a></p></li>
+        <li id="footnote-2210"><p> Cal. Veh. Code § 40508.6(b) (Reissue fee); see also Cal. Dep’t of Motor Vehicles, Reissue Fees, <a href="https://www.dmv.ca.gov/portal/dmv/detail/online/refund/refundreissuefee">https://www.dmv.ca.gov/portal/dmv/detail/online/refund/refundreissuefee</a>.  <a href="#footnote-ref-2210">↑</a></p></li>
+        <li id="footnote-2211"><p> Cal. Veh. Code § 40508.6(b). <a href="#footnote-ref-2211">↑</a></p></li>
+        <li id="footnote-2212"><p> Cal. Veh. Code § 40001.  <a href="#footnote-ref-2212">↑</a></p></li>
+        <li id="footnote-2213"><p> Cal. Veh. Code § 40616 et seq. <a href="#footnote-ref-2213">↑</a></p></li>
+        <li id="footnote-2214"><p> Cal. Veh. Code §§ 40508-8.5; Cal. Penal Code §§ 853.7-53.8. <a href="#footnote-ref-2214">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -145,7 +129,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -170,11 +153,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

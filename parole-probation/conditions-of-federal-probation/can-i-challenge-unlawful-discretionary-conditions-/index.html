@@ -21,65 +21,49 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="parole-probation/conditions-of-federal-probation/can-i-challenge-unlawful-discretionary-conditions-">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/conditions-of-federal-probation">Conditions of Federal Probation</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/conditions-of-federal-probation">Conditions of Federal Probation</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/conditions-of-federal-probation/can-i-challenge-unlawful-discretionary-conditions-">Can I challenge unlawful discretionary conditions that were added on to my federal probation? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Can I challenge unlawful discretionary conditions that were added on to my federal probation?</h1>
-        <p>YES. If you think that a discretionary condition is illegal, then you can appeal the condition. </p>
-        <p>F<a id="legalstandard"></a>or a federal probation condition to be LAWFUL:</p>
-        <p class="listparagraph">It must be “reasonably related” to the nature and circumstances of the offense, your personal history and characteristics, any concerns of public safety, and the need to provide you educational or job training, medical care, or correctional treatment; AND</p>
-        <p class="listparagraph">Cannot deprive you of liberty (meaning, your ability to live your life freely without excessive restrictions) any more than “reasonably necessary” to deter future crimes, protect the public, and provide you with training and treatment.<sup><a href="#footnote-794" id="footnote-ref-794">[794]</a></sup></p>
-        <p>Courts have emphasized that BOTH of these requirements must be met to impose a DISCRETIONARY CONDITION on you.<sup><a href="#footnote-795" id="footnote-ref-795">[795]</a></sup> If you object to a special condition, it is the government’s responsibility (NOT yours) to show that the condition is legally justified.<sup><a href="#footnote-796" id="footnote-ref-796">[796]</a></sup> We suggest that you speak with an attorney if you think a condition of your probation is illegal. </p>
-        <li id="footnote-794"><p> 18 U.S.C. § 3583(d). <a href="#footnote-ref-794">↑</a></p></li>
-        <li id="footnote-795"><p> <em>See, e.g.</em>, U.S. v. Bender, 566 F.3d 78 (8th Cir. 2009); U.S. v. Perazza-Mercado, 553 F.3d 65 (1st Cir. 2009); U.S. v. Pruden, 398 F.3d 241, 249 (3d Cir. 2005). <a href="#footnote-ref-795">↑</a></p></li>
-        <li id="footnote-796"><p> U.S. v. Weber, 451 F.3d 553 (9th Cir. 2006) (“We have long held that a term of supervised release is part of a defendant’s sentence . . . and, like imprisonment, restricts a defendant’s liberty and fundamental rights . . .. As a result, when the government seeks to restrict a defendant’s liberty through a term of supervised release, it shoulders the burden of proving that a particular condition of supervised release involves no greater deprivation of liberty than is reasonably necessary to serve the goals of supervised release.”). <a href="#footnote-ref-796">↑</a></p></li>
+        <p class="text">YES. If you think that a discretionary condition is illegal, then you can appeal the condition. F<a id="legalstandard"></a>or a federal probation condition to be <strong><em>lawful</em></strong>:</p>
+        <ol class="text">It must be “reasonably related” to the nature and circumstances of the offense, your personal history and characteristics, any concerns of public safety, and the need to provide you educational or job training, medical care, or correctional treatment; AND</ol>
+        <ol class="text">Cannot deprive you of liberty (meaning, your ability to live your life freely without excessive restrictions) any more than “reasonably necessary” to deter future crimes, protect the public, and provide you with training and treatment.<sup><a href="#footnote-909" id="footnote-ref-909">[908]</a></sup></ol>
+        <p class="text">Courts have emphasized that BOTH of these requirements must be met to impose a DISCRETIONARY CONDITION on you.<sup><a href="#footnote-910" id="footnote-ref-910">[909]</a></sup> If you object to a special condition, it is the government’s responsibility (NOT yours) to show that the condition is legally justified.<sup><a href="#footnote-911" id="footnote-ref-911">[910]</a></sup> We suggest that you speak with an attorney if you think a condition of your probation is illegal. </p>
+        <li id="footnote-909"><p> 18 U.S.C. § 3583(d). <a href="#footnote-ref-909">↑</a></p></li>
+        <li id="footnote-910"><p> See, e.g., U.S. v. Bender, 566 F.3d 78 (8th Cir. 2009); U.S. v. Perazza-Mercado, 553 F.3d 65 (1st Cir. 2009); U.S. v. Pruden, 398 F.3d 241, 249 (3d Cir. 2005). <a href="#footnote-ref-910">↑</a></p></li>
+        <li id="footnote-911"><p> U.S. v. Weber, 451 F.3d 553 (9th Cir. 2006) (“We have long held that a term of supervised release is part of a defendant’s sentence . . . and, like imprisonment, restricts a defendant’s liberty and fundamental rights . . .. As a result, when the government seeks to restrict a defendant’s liberty through a term of supervised release, it shoulders the burden of proving that a particular condition of supervised release involves no greater deprivation of liberty than is reasonably necessary to serve the goals of supervised release.”). <a href="#footnote-ref-911">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -97,7 +81,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -122,11 +105,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

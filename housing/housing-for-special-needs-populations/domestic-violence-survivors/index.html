@@ -21,98 +21,83 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-3">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-3" data-page-path="housing/housing-for-special-needs-populations/domestic-violence-survivors">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/housing">Housing</a></li>
-          <li><a href="/roadmap-to-html/housing/housing-for-special-needs-populations">Housing for Special Needs & Populations</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/housing">Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/housing-for-special-needs-populations">Housing for Special Needs & Populations</a></li>
+    <li><a href="/roadmap-to-html/housing/housing-for-special-needs-populations/domestic-violence-survivors">Domestic Violence Survivors (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>Domestic Violence Survivors</h1>
-        <p class="text">If your conviction was related to the domestic violence that you experienced, this is <em>mitigating evidence</em> that helps to explain your criminal record. IF YOU FEEL SAFE DOING SO, you may want to explain the violent situation you were in at the time of your criminal conduct to a housing provider who is considering your criminal record, so that you are not penalized in your application.<span class="followedhyperlink"><sup><sup><a href="#footnote-1075" id="footnote-ref-1075">[1075]</a></sup></sup></span></p>
+        <p class="text">If your conviction was related to the domestic violence that you experienced, this is <em>mitigating evidence</em> that helps to explain your criminal record. IF YOU FEEL SAFE DOING SO, you may want to explain the violent situation you were in at the time of your criminal conduct to a housing provider who is considering your criminal record, so that you are not penalized in your application.<span class="followedhyperlink"><sup><sup><a href="#footnote-1169" id="footnote-ref-1169">[1168]</a></sup></sup></span></p>
+        <h4 class="sidebox">starting in a shelter</h4>
+        <p class="sidebox">Starting off in an emergency shelter may help you to find transitional or permanent housing and/or access other services afterward. While some run background checks and have record-related restrictions, if you are living at a domestic violence shelter, the staff may be able to write a letter or provide a referral to a transitional housing program, which can help explain your situation and get around their restrictions.</p>
         <p class="text"><strong>Below are a few resources that may help you to find housing:</strong></p>
-        <h4 class="subheading3">DOMESTIC VIOLENCE SHELTERS &amp; TRANSITIONAL HOUSING:</h4>
-        <p class="text">There are more than 100 shelter-based domestic violence programs throughout California. Many of these programs operate both:</p>
+        <h4 class="subheading3">DOMESTIC VIOLENCE SHELTERS &amp; TRANSITIONAL HOUSING</h4>
+        <p class="text">There are more than 100 shelter-based domestic violence programs throughout California. Many of these programs offer both:</p>
         <ol class="text">Emergency shelters (typical stay = 30–60 days), AND</ol>
         <ol class="text">Transitional housing programs (typical stay = 6–18 months)</ol>
-        <p class="text">In addition to providing shelter to survivors, both these programs often provide services such as 24-hour hotlines, legal assistance with restraining orders and child-custody disputes, advocates who can go to court appearances to support you, counseling for you and your children, and referrals to other social services.</p>
-        <p class="text">Most emergency and homeless shelters for survivors do not conduct criminal background checks (although they are permitted to do so, as long as they follow all of the background check rules on PG. 407). In addition, most shelters are aware that survivors often face criminal charges and/or arrest warrants in connection with the violence that they’ve experienced. Many shelters have relationships with local law enforcement, and are able to accommodate survivors who are under supervision (like probation, parole, etc.).</p>
+        <p class="text">In addition to providing shelter to survivors, both types of programs often provide services such as 24-hour hotlines, legal assistance with restraining orders and child-custody disputes, advocates who can go to court appearances to support you, counseling for you and your children, and referrals to other social services.</p>
+        <p class="text">Most emergency and homeless shelters for survivors do not conduct criminal background checks (although they are permitted to do so, as long as they follow all of the background check rules on PG. 372). In addition, most shelters are aware that survivors often face criminal charges and/or arrest warrants in connection with the violence that they’ve experienced. Many shelters have relationships with local law enforcement, and can accommodate survivors who are under supervision (like probation, parole, etc.).</p>
         <h4 class="textbox">HELPFUL HINTS &amp; RESOURCES</h4>
-        <p class="textbox">You should keep in mind that each shelter is different, so the rules and opportunities may not be the same everywhere. There may also be some variation from county to county.<span class="followedhyperlink"><sup><sup><a href="#footnote-1076" id="footnote-ref-1076">[1076]</a></sup></sup></span> To find a domestic violence shelter or transitional housing program in your area, contact the <strong>National Domestic Violence Hotline</strong> at 1-800-799-SAFE (7233) or call 211. You will have to contact each shelter or program separately to find out if you met their specific criteria. A list of resources by county in CA for people experiencing DV is also available online at:California Dept. of Public Health: <a href="http://www.cdph.ca.gov/HealthInfo/injviosaf/Documents/_California.pdf">http://www.cdph.ca.gov/HealthInfo/injviosaf/Documents/_California.pdf</a> California Partnership to End Domestic Violence: <a href="http://www.cpedv.org/Resources%20A%20K">http://www.cpedv.org/Resources%20A%20K</a> </p>
-        <h4 class="subheading3">GOVERNMENT-ASSISTED HOUSING FOR DOMESTIC VIOLENCE SURVIVORS</h4>
+        <p class="textbox">You should keep in mind that each shelter is different, so the rules and opportunities may not be the same everywhere. There may also be some variation from county to county.<span class="followedhyperlink"><sup><sup><a href="#footnote-1170" id="footnote-ref-1170">[1169]</a></sup></sup></span>To find a domestic violence shelter or transitional housing program in your area, contact the <strong>National Domestic Violence Hotline</strong> at 1-800-799-SAFE (7233) or call 211. You will have to contact each shelter or program separately to find out if you met their specific criteria. A list of resources by county in CA for people experiencing DV is also available online at:</p>
+        <ul class="textbox">California Dept. of Public Health: <a href="http://www.cdph.ca.gov/HealthInfo/injviosaf/Documents/_California.pdf">http://www.cdph.ca.gov/HealthInfo/injviosaf/Documents/_California.pdf</a> California Partnership to End Domestic Violence: <a href="http://www.cpedv.org/Resources%20A%20K">http://www.cpedv.org/Resources%20A%20K</a> </ul>
         <h4 class="sidebox">Who does the government consider to be “homeless”?</h4>
-        <p class="sidebox">The federal government’s definition of “homeless” includes people who are escaping situations of domestic violence and do not have other housing or resources available. This means that if you are escaping domestic violence, you may be eligible for a government-assisted housing program that is for people who are “homeless,” including the programs listed here.</p>
-        <p class="text">Read an overview of government-assisted housing and why it could be right for you on PG. 375; read details about bans on people with certain convictions and criminal histories on PG. 382.</p>
-        <p class="text">First, the following federal government-assisted housing programs <em>do not</em> have any <em>mandatory</em> criminal record restrictions, and may be available to survivors of domestic violence.</p>
+        <p class="sidebox">The federal government’s definition of “homeless” includes people who are escaping situations of domestic violence and have no other housing or resources available. If you are escaping domestic violence, you may be eligible for a government-assisted housing program for “homeless” people.</p>
+        <h4 class="subheading3">GOVERNMENT-ASSISTED HOUSING FOR DOMESTIC VIOLENCE SURVIVORS</h4>
+        <p class="text">Read an overview of government-assisted housing and why it could be right for you on PG. 349; read details about bans on people with certain convictions and criminal histories on PG. 354. </p>
+        <p class="text">First, the following federal government-assisted housing programs <em>do not</em> have any <em>mandatory</em> criminal record restrictions, and may be available to survivors of domestic violence:</p>
         <ol class="text">Supportive Housing Program for the Homeless </ol>
         <ol class="text">Shelter Plus Care (for homeless people with disabilities)</ol>
         <ol class="text">Housing Opportunities for Persons with AIDS (HOPWA) </ol>
-        <ol class="text">Low-Income Housing Tax Credit (LIHTC)<span class="followedhyperlink"><sup><sup><a href="#footnote-1077" id="footnote-ref-1077">[1077]</a></sup></sup></span></ol>
-        <p class="text">Second, for other government-assisted housing programs that <em>do</em> have restrictions based on criminal records, domestic violence survivors are entitled to certain additional protections. The Violence Against Women Act (VAWA) states that Public Housing Authorities (PHAs) <em>cannot deny or end your housing</em> because of the domestic violence that you experienced or because of a criminal conviction that is directly related to the domestic violence you experienced.<span class="followedhyperlink"><sup><sup><a href="#footnote-1078" id="footnote-ref-1078">[1078]</a></sup></sup></span> This means if a PHA denies your housing application based on conduct or a past conviction related to the domestic violence you’ve experienced, you should immediately challenge the denial and ask the PHA for an informal review hearing. At that hearing, you can explain how the conduct or conviction is related to your experience of domestic violence.<span class="followedhyperlink"><sup><sup><a href="#footnote-1079" id="footnote-ref-1079">[1079]</a></sup></sup></span> Go to PG. 389 to learn about the procedure for challenging denials to government-assisted housing.</p>
-        <h4 class="subheading3">CalWORKS:</h4>
-        <p class="text">If you are eligible for CalWORKS and you are homeless, you can apply to the Homeless Assistance Program (HAP) through your local county social service agency.<span class="followedhyperlink"><sup><sup><a href="#footnote-1080" id="footnote-ref-1080">[1080]</a></sup></sup></span> </p>
-        <p class="text">Your family can receive temporary shelter in a hotel or motel for up to 16 consecutive days, financial help to move into permanent housing (such as last month’s rent, security and utility deposits, etc.), and 2 months of back-owed rent to prevent an eviction. Additional services such as counseling referrals are available for domestic violence survivors. For more information on CalWORKS eligibility, go to the PUBLIC BENEFITS CHAPTER, PG. 489.</p>
-        <h4 class="subheading3">CA’s VICTIM COMPENSATION PROGRAM RELOCATION ASSISTANCE:</h4>
-        <p class="text">The California Victim Compensation Program (VCP) can provide victims of violent crime—including domestic violence survivors—up to $2,000 per household for relocation expenses, such as first and last month’s rent, security and utility deposits, temporary housing, moving vans, and emergency food and clothing.<span class="followedhyperlink"><sup><sup><a href="#footnote-1081" id="footnote-ref-1081">[1081]</a></sup></sup></span> </p>
-        <p class="text">Please note that the expenses must be considered <em>necessary for your personal safety or emotional wellbeing</em>, as determined by a law enforcement officer or licensed mental health provider. You will also need to provide verification (a signed letter or other documentation) from a law enforcement agent or mental health provider. You may also have to agree to other restrictions, such as not telling the person who committed the violence about your new location, not allowing him/her on the property, and seeking a restraining order against him/her. </p>
-        <h4 class="sidebox">A NOTE ABOUT Requesting REASONABLE ACCOMMODATIONS if you have a disability:</h4>
-        <p class="sidebox">If you have a <em>mental, physical, or developmental disability</em>, and you must follow <em>parole, probation, or community supervision conditions </em>that restrict where you can live, you have the right to receive reasonable accommodations for your disability at your residence. To learn how to request an accommodation for your disability from your supervision, go to the PAROLE &amp; PROBATION CHAPTER of this guide, PG. 130. For help, you may also want to contact a legal aid provider for people with disabilities, listed on PG. 1180, or call Root &amp; Rebound (510-279-4662) for a referral or further assistance.</p>
-        <p class="text">VERY IMPORTANT: The VCP also has certain restrictions on people with criminal records. You may not be eligible if any of the following apply to you:<sup><sup><a href="#footnote-1082" id="footnote-ref-1082">[1082]</a></sup></sup></p>
+        <ol class="text">Low-Income Housing Tax Credit (LIHTC)<span class="followedhyperlink"><sup><sup><a href="#footnote-1171" id="footnote-ref-1171">[1170]</a></sup></sup></span></ol>
+        <p class="text">Second, for other government-assisted housing programs that <em>do</em> have restrictions based on criminal records, domestic violence survivors are entitled to certain additional protections. The Violence Against Women Act (VAWA) states that Public Housing Authorities (PHAs) <em>cannot deny or end your housing</em> because of the domestic violence that you experienced or because of a criminal conviction that is directly related to the domestic violence you experienced.<span class="followedhyperlink"><sup><sup><a href="#footnote-1172" id="footnote-ref-1172">[1171]</a></sup></sup></span> This means if a PHA denies your housing application based on conduct or a past conviction related to the domestic violence you’ve experienced, you should immediately challenge the denial and ask the PHA for an informal review hearing. At that hearing, you can explain how the conduct or conviction is related to your experience of domestic violence.<span class="followedhyperlink"><sup><sup><a href="#footnote-1173" id="footnote-ref-1173">[1172]</a></sup></sup></span> Go to PG. 359 to learn how to challenging denials to government-assisted housing.</p>
+        <h4 class="subheading3">CalWORKS</h4>
+        <p class="text">If you are eligible for CalWORKS and you are homeless, you can apply to the Homeless Assistance Program (HAP) through your local county social service agency.<span class="followedhyperlink"><sup><sup><a href="#footnote-1174" id="footnote-ref-1174">[1173]</a></sup></sup></span> Your family could receive temporary shelter in a hotel or motel for up to 16 consecutive days, financial help to move into permanent housing (such as last month’s rent, security and utility deposits, etc.), and 2 months of back-owed rent to prevent an eviction. Additional services such as counseling referrals are available for domestic violence survivors. For more information on CalWORKS eligibility, go to the PUBLIC BENEFITS CHAPTER, PG. 444.</p>
+        <h4 class="subheading3">CA’s VICTIM COMPENSATION PROGRAM RELOCATION ASSISTANCE</h4>
+        <p class="text">The California Victim Compensation Program (VCP) can provide victims of violent crime—including domestic violence survivors—up to $2,000 per household for relocation expenses, such as first and last month’s rent, security and utility deposits, temporary housing, moving vans, and emergency food and clothing.<span class="followedhyperlink"><sup><sup><a href="#footnote-1175" id="footnote-ref-1175">[1174]</a></sup></sup></span> </p>
+        <p class="text">Please note that the expenses must be determined <em>necessary for your personal safety or emotional wellbeing</em>, by a law enforcement officer or licensed mental health provider. You will need to provide verification (a signed letter or other documentation from a law enforcement agent or mental health provider). You may also have to agree to other restrictions, such as not telling the person who committed the violence near your new location, not allowing him/her on the property, and seeking a restraining order against him/her. </p>
+        <p class="text">VERY IMPORTANT: The VCP also has certain restrictions on people with criminal records. You may not be eligible if any of the following apply to you:<sup><sup><a href="#footnote-1176" id="footnote-ref-1176">[1175]</a></sup></sup></p>
         <ol class="text">You committed the crime;</ol>
         <ol class="text">You <em>knowingly and willingly</em> participated in or were involved in the events leading to the crime, though some exceptions may be considered.</ol>
         <ol class="text">You did not cooperate reasonably with law enforcement in apprehending and convicting the person who committed the crime, though some exceptions may be considered.</ol>
-        <ol class="text">ALSO: If you have been convicted of a <em>felony</em>, you cannot get compensation until you have been released from custody, discharged from probation or parole, and 3 years have passed since the crime occurred. However, <em>you may be able to get your</em> <em>felony reduced to a misdemeanor</em>, which could lessen these restrictions. For more information, see the UNDERSTANDING &amp; CLEANING UP YOUR CRIMINAL RECORD CHAPTER, beginning on PG. 1029.</ol>
-        <li id="footnote-1075"><p> Nat’l Housing Law Project, Housing Access for Domestic Violence Survivors with Criminal Records, Sept. 7, 2011, <a href="http://nhlp.org/files/DV%20and%20Criminal%20Records%20Materials.pdf">http://nhlp.org/files/DV%20and%20Criminal%20Records%20Materials.pdf</a>.  <a href="#footnote-ref-1075">↑</a></p></li>
-        <li id="footnote-1076"><p><span class="followedhyperlink"> </span>Helping Families Save Their Homes Act of 2009, Pub. L. No.: 111-22, tit. VII, § 1003. <a href="#footnote-ref-1076">↑</a></p></li>
-        <li id="footnote-1077"><p> Helping Families Save Their Homes Act of 2009, Pub. L. No. 111-22, tit. VII, § 1003. <a href="#footnote-ref-1077">↑</a></p></li>
-        <li id="footnote-1078"><p> Violence Against Women Act of 2013, 42 U.S.C. § 41411(b) (2013); 24 C.F.R §§ 982.553(e), 5.2005(c), 5.2001 et seq. Under VAWA, a public or subsidized housing provider can only evict you based on the domestic violence you’ve experienced if it proves that your tenancy creates an “actual and imminent threat” to other residents or staff. VAWA’s protections apply to public housing, Section 8 vouchers and project-based assistance, Section 202, and Section 811 housing. <a href="#footnote-ref-1078">↑</a></p></li>
-        <li id="footnote-1079"><p> NHLP, Housing Access for Domestic Violence Survivors with Criminal Records. <a href="#footnote-ref-1079">↑</a></p></li>
-        <li id="footnote-1080"><p> Homeless Assistance Program Fact Sheet, Cnty. of LA Dep’t of Pub. Soc. Servs., <a href="http://www.ladpss.org/dpss/hcm/pdfs/factsheets/HA_Fact_Sheet.pdf">http://www.ladpss.org/dpss/hcm/pdfs/factsheets/HA_Fact_Sheet.pdf</a>. <a href="#footnote-ref-1080">↑</a></p></li>
-        <li id="footnote-1081"><p> The California Victim Compensation Program, <a href="http://vcgcb.ca.gov/victims/">http://vcgcb.ca.gov/victims/</a> <a href="#footnote-ref-1081">↑</a></p></li>
-        <li id="footnote-1082"><p> The California Victim Compensation Program, FAQ—Eligibility, <a href="http://www.vcgcb.ca.gov/victims/faq/eligibility.aspx#Not">http://www.vcgcb.ca.gov/victims/faq/eligibility.aspx#Not</a>. The exceptions (for participation or involvement in the events leading to the crime, and cooperation with law enforcement) are especially important for survivors of domestic violence, since many survivors may have criminal records related to the violence they’ve experienced, or may be afraid to cooperate with law enforcement out of fear of further violence or to protect an abusive partner from conviction, incarceration, deportation, etc. <a href="#footnote-ref-1082">↑</a></p></li>
+        <ol class="text">ALSO: If you have been convicted of a <em>felony</em>, you cannot get compensation until you have been released from custody, discharged from probation or parole, and 3 years have passed since the crime occurred. However, <em>you may be able to get your</em> <em>felony reduced to a misdemeanor</em>, which could lessen these restrictions. For more information, see the UNDERSTANDING &amp; CLEANING UP YOUR CRIMINAL RECORD CHAPTER, beginning on PG. 915.</ol>
+        <li id="footnote-1169"><p> Nat’l Housing Law Project, Housing Access for Domestic Violence Survivors with Criminal Records, Sept. 7, 2011, <a href="http://nhlp.org/files/DV%20and%20Criminal%20Records%20Materials.pdf">http://nhlp.org/files/DV%20and%20Criminal%20Records%20Materials.pdf</a>.  <a href="#footnote-ref-1169">↑</a></p></li>
+        <li id="footnote-1170"><p><span class="followedhyperlink"> </span>Helping Families Save Their Homes Act of 2009, Pub. L. No.: 111-22, tit. VII, § 1003. <a href="#footnote-ref-1170">↑</a></p></li>
+        <li id="footnote-1171"><p> Helping Families Save Their Homes Act of 2009, Pub. L. No. 111-22, tit. VII, § 1003. <a href="#footnote-ref-1171">↑</a></p></li>
+        <li id="footnote-1172"><p> Violence Against Women Act of 2013, 42 U.S.C. § 41411(b) (2013); 24 C.F.R §§ 982.553(e), 5.2005(c), 5.2001 et seq. Under VAWA, a public or subsidized housing provider can only evict you based on the domestic violence you’ve experienced if it proves that your tenancy creates an “actual and imminent threat” to other residents or staff. VAWA’s protections apply to public housing, Section 8 vouchers and project-based assistance, Section 202, and Section 811 housing. <a href="#footnote-ref-1172">↑</a></p></li>
+        <li id="footnote-1173"><p> NHLP, Housing Access for Domestic Violence Survivors with Criminal Records. <a href="#footnote-ref-1173">↑</a></p></li>
+        <li id="footnote-1174"><p> Homeless Assistance Program Fact Sheet, Cnty. of LA Dep’t of Pub. Soc. Servs., <a href="http://www.ladpss.org/dpss/hcm/pdfs/factsheets/HA_Fact_Sheet.pdf">http://www.ladpss.org/dpss/hcm/pdfs/factsheets/HA_Fact_Sheet.pdf</a>. <a href="#footnote-ref-1174">↑</a></p></li>
+        <li id="footnote-1175"><p> The California Victim Compensation Program, <a href="http://vcgcb.ca.gov/victims/">http://vcgcb.ca.gov/victims/</a> <a href="#footnote-ref-1175">↑</a></p></li>
+        <li id="footnote-1176"><p> The California Victim Compensation Program, FAQ—Eligibility, <a href="http://www.vcgcb.ca.gov/victims/faq/eligibility.aspx">http://www.vcgcb.ca.gov/victims/faq/eligibility.aspx#Not</a>. The exceptions (for participation or involvement in the events leading to the crime, and cooperation with law enforcement) are especially important for survivors of domestic violence, since many survivors may have criminal records related to the violence they’ve experienced, or may be afraid to cooperate with law enforcement out of fear of further violence or to protect an abusive partner from conviction, incarceration, deportation, etc. <a href="#footnote-ref-1176">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -130,7 +115,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -155,11 +139,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

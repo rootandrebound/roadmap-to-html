@@ -21,62 +21,47 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="family-children/scenario-2-becoming-a-foster-care-parent-or-guardi/becoming-a-guardian-with-a-record-through-dependen/what-is-adoption">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/family-children/scenario-2-becoming-a-foster-care-parent-or-guardi">Scenario 2: Becoming a Foster Care Parent or Guardian of Someone Else’s Child through Juvenile Dependency Court</a></li>
-          <li><a href="/roadmap-to-html/family-children/scenario-2-becoming-a-foster-care-parent-or-guardi/becoming-a-guardian-with-a-record-through-dependen">Becoming a Guardian with a Record through Dependency Court</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/family-children">Family & Children</a></li>
+    <li><a href="/roadmap-to-html/family-children/scenario-2-becoming-a-foster-care-parent-or-guardi">Scenario 2: Becoming a Foster Care Parent or Guardian of Someone Else’s Child through Juvenile Dependency Court</a></li>
+    <li><a href="/roadmap-to-html/family-children/scenario-2-becoming-a-foster-care-parent-or-guardi/becoming-a-guardian-with-a-record-through-dependen">Becoming a Guardian with a Record through Dependency Court</a></li>
+    <li><a href="/roadmap-to-html/family-children/scenario-2-becoming-a-foster-care-parent-or-guardi/becoming-a-guardian-with-a-record-through-dependen/what-is-adoption">What is adoption? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What is adoption?</h1>
         <p class="text">Adoption is the <em>legal process</em> of forming a legally recognized parent-child relationship when you are <em>not</em> the child's biological or birth parent. Adoptive parents have ALL the same legal rights and responsibilities that a biological parent would have had. That adoptive parent-child relationship is permanent and is seen as exactly the same as that of a birth family under the law. An adoptive parent can be a stepparent or domestic partner of one of the birth parents, a relative of the child who has been caring for the child, or someone unrelated to the child by blood. For more information on adoption and how to adopt a child, visit the following website: <a href="http://www.childsworld.ca.gov/pg1302.htm">http://www.childsworld.ca.gov/pg1302.htm</a>.</p>
-        <h3><a id="_Toc312427133"></a><a id="_Toc314389749"></a><a id="_Toc317247555"></a><a id="_Toc448153654"></a><a id="_Toc312427132"></a><a id="_Toc314389748"></a>What is the background check process for potential adoptive parents? </h3>
-        <p class="text">Anyone who applies to adopt a child will have to provide a lot of documentation, including a state criminal record and fingerprints that will be run though the California Department of Justice’s (CA DOJ) state database and the FBI’s federal database.<sup><a href="#footnote-2368" id="footnote-ref-2368">[2368]</a></sup></p>
-        <li id="footnote-2368"><p> Cal. Fam. Code §§ 8712, 8730, 8811, 8908. <em>See also</em> Adoption Program Regulations 35087, at <a href="http://www.dss.cahwnet.gov/ord/entres/getinfo/pdf/adman3.pdf">http://www.dss.cahwnet.gov/ord/entres/getinfo/pdf/adman3.pdf</a>. <a href="#footnote-ref-2368">↑</a></p></li>
+        <h3><a id="_Toc312427133"></a><a id="_Toc314389749"></a><a id="_Toc317247555"></a><a id="_Toc352861918"></a><a id="_Toc312427132"></a><a id="_Toc314389748"></a>What is the background check process for potential adoptive parents? </h3>
+        <p class="text">Anyone who applies to adopt a child will have to provide a lot of documentation, including a state criminal record and fingerprints that will be run though the California Department of Justice’s (CA DOJ) state database and the FBI’s federal database.<sup><a href="#footnote-2467" id="footnote-ref-2467">[2466]</a></sup></p>
+        <li id="footnote-2467"><p> Cal. Fam. Code §§ 8712, 8730, 8811, 8908. See also Adoption Program Regulations 35087, at <a href="http://www.dss.cahwnet.gov/ord/entres/getinfo/pdf/adman3.pdf">http://www.dss.cahwnet.gov/ord/entres/getinfo/pdf/adman3.pdf</a>. <a href="#footnote-ref-2467">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -94,7 +79,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -119,11 +103,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

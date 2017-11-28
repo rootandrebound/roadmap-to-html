@@ -21,71 +21,56 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-2">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-2" data-page-path="parole-probation/state-parole-violations-revocations">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations">State Parole Violations & Revocations (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>State Parole Violations & Revocations</h1>
-        <p><em>Under AB 109, California’s “Realignment” law, there were major changes to the procedures required for California state parole revocations. These changes took effect on July 1, 2013.</em><sup><a href="#footnote-543" id="footnote-ref-543">[543]</a></sup><em> The new rules for revocation hearings laws are explained in this section. </em></p>
-        <li id="footnote-543"><p> <em>See</em> Cal. Dep’t of Corr. &amp; Reh., Fact Sheet: 2011 Public Safety Realignment, <a href="http://www.cdcr.ca.gov/realignment/docs/realignment-fact-sheet.pdf">http://www.cdcr.ca.gov/realignment/docs/realignment-fact-sheet.pdf</a>. <a href="#footnote-ref-543">↑</a></p></li>
+        <p class="text"><em>Under AB 109, California’s “Realignment” law, there were major changes to the procedures required for California state parole revocations. These changes took effect on July 1, 2013.<sup><a href="#footnote-648" id="footnote-ref-648">[647]</a></sup> The new rules for revocation hearings laws are explained in this section. </em></p>
+        <li id="footnote-648"><p> See Cal. Dep’t of Corr. &amp; Reh., Fact Sheet: 2011 Public Safety Realignment, <a href="http://www.cdcr.ca.gov/realignment/docs/realignment-fact-sheet.pdf">http://www.cdcr.ca.gov/realignment/docs/realignment-fact-sheet.pdf</a>. <a href="#footnote-ref-648">↑</a></p></li>
       </article>
         <ol class="table-of-contents">
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-were-the-major-changes-to-the-way-that-parole/">What were the major changes to the way that parole revocation hearings work under realignment (as of july 1, 2013)?</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/how-did-realignment-change-the-way-parole-revocati/">How did Realignment Change the way parole revocation hearings work (as of July 1, 2013)?</a></h3>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/if-i-am-suspected-of-a-parole-violation-who-has-th/">If I am suspected of a parole violation, who has the authority to arrest me? Do they need a warrant to arrest me?</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/if-i-am-suspected-of-a-parole-violation-who-has-au/">If I am suspected of a parole violation, who has authority to arrest me? Do they need a warrant?</a></h3>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-law-governs-sets-out-the-rules-for-the-hearin/">What law governs (sets out the rules for) the hearing?</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/where-can-i-find-the-legal-rules-that-apply-to-par/">Where can I find the legal rules that apply to parole revocation hearings?</a></h3>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/who-represents-the-interest-of-parole-the-state-of/">Who represents the interest of parole/the state of California in the hearing?</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/who-represents-the-cdcrs-parole-department-in-the-/">Who represents the CDCR’s parole department in the hearing?</a></h3>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/who-represents-me-if-i-cannot-afford-an-attorney/">Who represents me if I cannot afford an attorney?</a></h3>
@@ -97,10 +82,13 @@
             <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-rights-do-i-have-during-a-parole-revocation-h/">What rights do I have during a parole revocation hearing?</a></h3>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-happens-if-a-material-very-important-state-wi/">What happens if a “material” (very important) state witness doesn’t show up to the parole revocation hearing, even though he/she was required to attend?</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/when-can-witnesses-be-excused-from-appearing-at-my/">When can witnesses be excused from appearing at my parole revocation hearing?</a></h3>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/can-the-district-attorney-introduce-evidence-at-my/">Can the district attorney introduce evidence at my parole hearing that was found in an unlawful search & seizure?</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-happens-if-an-important-state-witness-doesnt-/">What happens if an important state witness doesn’t show up to my parole revocation hearing?</a></h3>
+          </li>
+          <li>
+            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/at-my-parole-revocation-hearing-can-the-district-a/">At my parole revocation hearing, Can the district attorney bring evidence that was found in an unlawful search or seizure?</a></h3>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/if-the-judge-revokes-my-parole-and-orders-me-back-/">If the judge revokes my parole and orders me back into custody, where will I serve and for how long?</a></h3>
@@ -115,7 +103,7 @@
             <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-is-the-process-for-appealing-a-decison-made-b/">What is the process for appealing a decison made by CDCR?</a></h3>
           </li>
           <li>
-            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/how-did-californias-realignment-law-change-califor/">How did California’s “Realignment law” change California’s probation System?</a></h3>
+            <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/how-did-californias-realignment-law-change-califor/">How did California’s “Realignment” law change California’s county-run probation System?</a></h3>
           </li>
           <li>
             <h3><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-types-of-supervision-now-fall-under-the-contr/">What types of supervision now fall under the control of county probation after realignment?</a></h3>
@@ -130,14 +118,13 @@
             </a>
           </li>
           <li class="next">
-            <a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-were-the-major-changes-to-the-way-that-parole">
+            <a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/how-did-realignment-change-the-way-parole-revocati">
               <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">What were the major changes to the way that parole revocation hearings work under realignment (as of july 1, 2013)?</span>
+              <span class="neighbor-title">How did Realignment Change the way parole revocation hearings work (as of July 1, 2013)?</span>
             </a>
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -162,11 +149,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

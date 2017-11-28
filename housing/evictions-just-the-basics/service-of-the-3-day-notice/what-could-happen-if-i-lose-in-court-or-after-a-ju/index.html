@@ -17,57 +17,45 @@
 
       </script>
       <!-- End Google Analytics -->
-      
+
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <form id="search-input">
-        <input type="text" placeholder="🔍 Search">
-      </form>
-
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="housing/evictions-just-the-basics/service-of-the-3-day-notice/what-could-happen-if-i-lose-in-court-or-after-a-ju">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
+      <!-- Header includes search, sites title and mobile menu -->
+      <header role="banner" class="main-header">
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
 
-      <header role="banner">
-
-        <a href="#" id="js-toggle-menu">Menu & Search</a>
-
-        <div class="main-header-contents">
-          <p class="subtitle">
-            <a href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-          </p>
+        <div class="main-header__search">
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/housing">Housing</a></li>
-          <li><a href="/roadmap-to-html/housing/evictions-just-the-basics">Evictions: Just the basics</a></li>
-          <li><a href="/roadmap-to-html/housing/evictions-just-the-basics/service-of-the-3-day-notice">Service of the 3-Day Notice</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/housing">Housing</a></li>
+    <li><a href="/roadmap-to-html/housing/evictions-just-the-basics">Evictions: Just the basics</a></li>
+    <li><a href="/roadmap-to-html/housing/evictions-just-the-basics/service-of-the-3-day-notice">Service of the 3-Day Notice</a></li>
+    <li><a href="/roadmap-to-html/housing/evictions-just-the-basics/service-of-the-3-day-notice/what-could-happen-if-i-lose-in-court-or-after-a-ju">What could happen if I lose in court or after a judgment against me? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What could happen if I lose in court or after a judgment against me?</h1>
         <p class="text">If the landlord wins or gets a default judgment against you, the landlord will get a form called a “Writ of Possession.” The landlord takes this writ to the Sheriff’s Department who will then bring you (or post on your door) a “Notice to Vacate.” The notice will give you at least 5 days before the officer will come back to evict you. The Notice to Vacate will tell you exactly by what date and time you must be out of the house or apartment. Even if you are not completely moved out, the sheriff can prevent you from re-entering the house to get your stuff after the time and date listed on the notice. If you cannot get all of your belongings out in time, at least remove your important papers, medications, valuables, and clothing. If you leave things behind, you can claim them within 15 days of the eviction, but you will have to pay the storage and removal costs. However, the landlord cannot require you to pay back rent, attorney’s fees or court costs in order to get your belongings back. </p>
@@ -88,7 +76,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -113,11 +100,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

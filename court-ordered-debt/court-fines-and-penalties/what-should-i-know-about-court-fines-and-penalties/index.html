@@ -21,62 +21,47 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="court-ordered-debt/court-fines-and-penalties/what-should-i-know-about-court-fines-and-penalties">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/court-ordered-debt">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/court-fines-and-penalties">Court fines and penalties</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt">Court-Ordered Debt</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt/court-fines-and-penalties">Court fines and penalties</a></li>
+    <li><a href="/roadmap-to-html/court-ordered-debt/court-fines-and-penalties/what-should-i-know-about-court-fines-and-penalties">What should I know about court fines and penalties? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What should I know about court fines and penalties?</h1>
-        <ol class="text">Some fines and penalties can be ordered as <em>conditions of your probation</em>.<sup><a href="#footnote-2028" id="footnote-ref-2028">[2028]</a></sup> (See PG. 729 for fines and penalties that are conditions of your probation.)</ol>
-        <ol class="text">Some fines and penalties are determined based on your <em>ability to pay</em>, which means the court must find that you can <em>afford to pay the fine</em> BEFORE imposing them.<sup><a href="#footnote-2029" id="footnote-ref-2029">[2029]</a></sup> Others are imposed regardless of your ability to pay.<sup><a href="#footnote-2030" id="footnote-ref-2030">[2030]</a></sup></ol>
-        <li id="footnote-2028"><p> Cal. Penal Code § 1203.1(a). <a href="#footnote-ref-2028">↑</a></p></li>
-        <li id="footnote-2029"><p> <em>See</em> Cal. Veh. Code § 23645 (DUI offenses); Cal. Penal Code § 1202.5 (theft offenses). <a href="#footnote-ref-2029">↑</a></p></li>
-        <li id="footnote-2030"><p> Cal. Penal Code § 1202.4(c) (court not required to consider inability to pay restitution fine unless fine is greater than the statutory minimum); <em>see also</em> People v. Long, 164 Cal. App. 3d 820 (1985) (providing that the trial court did not err in imposing a criminal restitution fine without considering defendant’s ability to pay). <a href="#footnote-ref-2030">↑</a></p></li>
+        <ol class="text">Some fines and penalties can be ordered as <em>conditions of your probation</em>.<sup><a href="#footnote-2139" id="footnote-ref-2139">[2138]</a></sup> (See PG. 658 for fines and penalties that are conditions of your probation.)</ol>
+        <ol class="text">Some fines and penalties are determined based on your <em>ability to pay</em>, which means the court must find that you can <em>afford to pay the fine</em> BEFORE imposing them.<sup><a href="#footnote-2140" id="footnote-ref-2140">[2139]</a></sup> Others are imposed regardless of your ability to pay.<sup><a href="#footnote-2141" id="footnote-ref-2141">[2140]</a></sup></ol>
+        <li id="footnote-2139"><p> Cal. Penal Code § 1203.1(a). <a href="#footnote-ref-2139">↑</a></p></li>
+        <li id="footnote-2140"><p> See Cal. Veh. Code § 23645 (DUI offenses); Cal. Penal Code § 1202.5 (theft offenses). <a href="#footnote-ref-2140">↑</a></p></li>
+        <li id="footnote-2141"><p> Cal. Penal Code § 1202.4(c) (court not required to consider inability to pay restitution fine unless fine is greater than the statutory minimum); see also People v. Long, 164 Cal. App. 3d 820 (1985) (providing that the trial court did not err in imposing a criminal restitution fine without considering defendant’s ability to pay). <a href="#footnote-ref-2141">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -94,7 +79,6 @@
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -119,11 +103,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>

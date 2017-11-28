@@ -21,82 +21,62 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700normal,700italic,900normal">
       <link rel="stylesheet" href="/roadmap-to-html/css/style.css">
       <script src="https://unpkg.com/jquery@3.1.1"></script>
-      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
   </head>
-  <body class="content-level-4">
-    <div id="site-navigation">
-      <nav>
-        
-        <h2>Chapters</h2>
-        <ul>
-          <li><a href="/roadmap-to-html/the-building-blocks-of-reentry/">The Building Blocks Of Reentry</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/housing/">Housing</a></li>
-          <li><a href="/roadmap-to-html/public-benefits/">Public Benefits</a></li>
-          <li><a href="/roadmap-to-html/employment/">Employment</a></li>
-          <li><a href="/roadmap-to-html/court-ordered-debt/">Court-Ordered Debt</a></li>
-          <li><a href="/roadmap-to-html/family-children/">Family & Children</a></li>
-          <li><a href="/roadmap-to-html/education/">Education</a></li>
-          <li><a href="/roadmap-to-html/understanding-cleaning-up-your-criminal-record/">Understanding & Cleaning Up Your Criminal Record</a></li>
-          <li><a href="/roadmap-to-html/legal-aid-providers-in-california/">Legal Aid Providers In California</a></li>
-          <li><a href="/roadmap-to-html/social-services-in-california/">Social Services In California</a></li>
-        </ul>
-      </nav>
-    </div>
+  <body class="content-level-4" data-page-path="parole-probation/state-parole-violations-revocations/what-rights-do-i-have-during-a-parole-revocation-h">
 
     <main role="main">
+    <aside role="note" class="flash">
+    <p class="flash__text">
+    	Welcome! This website is an experiment.
+    	<a class="flash__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
+    </p>
+</aside>
       <!-- Header includes search, sites title and mobile menu -->
-      <section role="note" class="banner">
-  <div class="banner__content">
-    <p class="banner__text">Welcome! This website is an experiment. </p>
-    <a class="banner__link" href="mailto:bgolder@codeforamerica.org?subject=Root%20and%20rebound%20beta%20feedback">Please leave us feedback!</a>
-  </div>
-</section>
       <header role="banner" class="main-header">
-        <div class="main-header__links">
-          <a href="#" id="js-toggle-menu">Menu</a>
-          <a class="subtitle" href="/roadmap-to-html/">Roadmap to Reentry: A California Legal Guide</a>
-        </div>
+        <h3 class="site-title__organization">Root &amp; Rebound</h3>
+        <h1 class="site-title">Roadmap to Reentry</h1>
+
         <div class="main-header__search">
-          <form id="search-input">
-            <input type="text" placeholder="🔍 Search">
-          </form>
+          <form class="search-form" id="search-form" action="/roadmap-to-html/search/" method="get">
+  <button class="search-form__button" type="submit">Search</button>
+  <span class="search-form__input-wrapper">
+    <input class="search-form__input" type="text" name="q">
+  </span>
+</form>
         </div>
       </header>
       <nav class="breadcrumbs">
-        <ol>
-          <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
-          <li><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations">State Parole Violations & Revocations</a></li>
-        </ol>
-      </nav>
+  <ol>
+    <li><a href="/roadmap-to-html/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="/roadmap-to-html/parole-probation">Parole & Probation</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations">State Parole Violations & Revocations</a></li>
+    <li><a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-rights-do-i-have-during-a-parole-revocation-h">What rights do I have during a parole revocation hearing? (Current Page)</a></li>
+  </ol>
+</nav>
+
       <article>
         <h1>What rights do I have during a parole revocation hearing?</h1>
-        <p>Parole cannot be suspended or revoked by the Superior Court Judge unless there is good cause (a good reason) to believe that a person has violated the conditions of his or her parole.<sup><a href="#footnote-566" id="footnote-ref-566">[566]</a></sup></p>
-        <p>As a parolee, your rights are as follows:</p>
-        <p class="listparagraph">Written notice of the alleged violation(s) (the rule or law that parole claims you have broken) and the possible consequences, with enough information to allow you to prepare a defense and obtain evidence that would help explain the situation, or justify it;<sup><a href="#footnote-567" id="footnote-ref-567">[567]</a></sup></p>
-        <p class="listparagraph">Disclosure of the evidence against you (just like at trial);<sup><a href="#footnote-568" id="footnote-ref-568">[568]</a></sup></p>
-        <p class="listparagraph">Timely hearing of the charges at a probable cause hearing and a formal revocation hearing (within 90 days if you were not granted bail);<sup><a href="#footnote-569" id="footnote-ref-569">[569]</a></sup></p>
-        <p class="listparagraph">The right to present witnesses and documentary evidence.<sup><a href="#footnote-570" id="footnote-ref-570">[570]</a></sup> </p>
-        <p class="listparagraph">The right to confront and cross-examine witnesses who speak out against your interest.<sup><a href="#footnote-571" id="footnote-ref-571">[571]</a></sup> You have a conditional right under the U.S. (federal) and California (state) constitutions to cross-examine people whose statements are used against you in a parole violation proceeding.<sup><a href="#footnote-572" id="footnote-ref-572">[572]</a></sup> BUT SEE NOTE BELOW!</p>
-        <p class="listparagraph">A neutral and detached (unbiased and fair) hearing body (meaning, the Superior Court Judge);<sup><a href="#footnote-573" id="footnote-ref-573">[573]</a></sup> and</p>
-        <p class="listparagraph">A written statement of the decision, the evidence relied on, and the reasons for revoking parole.<sup><a href="#footnote-574" id="footnote-ref-574">[574]</a></sup></p>
-        <p class="importantbox">IMPORTANT! You may waive (give up) your right to a parole revocation by admitting that you violated parole.<sup><a href="#footnote-575" id="footnote-ref-575">[575]</a></sup> It is important that you SAY SOMETHING if you believe your rights are violated during the process or in a hearing. If you are unsure if your rights have been violated or if you don’t understand your rights, ask your lawyer or public defender. If you do not have a lawyer or public defender, call your local public defender’s office. </p>
-        <p class="text">IMPORTANT NOTE ABOUT WITNESSES! Witnesses may not be required to testify in front of you at your parole revocation hearing if they are deemed <em>fearful</em> or <em>confidential</em>.<sup><a href="#footnote-576" id="footnote-ref-576">[576]</a></sup> Be sure to speak to your lawyer about all potential witnesses—those both for your and against you—prior to your hearing. </p>
-        <p class="text"><strong>“Fearful witnesses”</strong> are witnesses whose identity is known to you but who: (1) have indicated that they are at a risk of harm if they testify in your presence; or (2) have requested that their contact information be withheld from you. Testimony of a fearful witness can be taken outside the parolee’s presence, but your attorney must be present.</p>
-        <p class="text"><strong>“Confidential witnesses”</strong> are witnesses, whose identity is not known to you, and who would be at a risk of harm if their identity were disclosed.<sup><a href="#footnote-577" id="footnote-ref-577">[577]</a></sup> However, if confidential information is used as part of the evidence that you violated parole, you can ask the District Attorney (prosecutor) to show you this information. If the District Attorney refuses to show you this information, then he or she must prove that showing you this information would create a risk of harm to the informant. </p>
-        <li id="footnote-566"><p> Cal. Penal Code § 3063. Note: In Morrissey v. Brewer, the U.S. Supreme Court established the minimum due process requirements for parole revocation proceedings under the Fourteenth Amendment to the U.S. Constitution. Cases since Morrissey have reaffirmed those rights and described them with greater detail. <a href="#footnote-ref-566">↑</a></p></li>
-        <li id="footnote-567"><p> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972); Vanes v. U. S. Parole Comm’n, 741 F.2d 1197 (9th Cir. 1984) (due process violated by lack of notice of basis for parole violation charge); Rizzo v. Armstrong, 921 F.2d 855, 858 (9th Cir. 1990) (failure to give notice of consequences if parole revoked at hearing).  <a href="#footnote-ref-567">↑</a></p></li>
-        <li id="footnote-568"><p> Morrissey v. Brewer, 408 U.S. 471, 498, 92 S. Ct. 2593 (1972) (“As we said in another connection in Greene v. McElroy, 360 U.S. 474, 496–97 (“Certain principles have remained relatively immutable in our jurisprudence. One of these is that where governmental action seriously injures an individual, and the reasonableness of the action depends on fact findings, the evidence used to prove the Government's case must be disclosed to the individual so that he has an opportunity to show that it is untrue.”). <em>See also</em> People v. Moore, 34 Cal. 3d 215 (1983) (state has duty to preserve and disclose material physical evidence). <a href="#footnote-ref-568">↑</a></p></li>
-        <li id="footnote-569"><p> Morrissey v. Brewer, 408 U.S. 471, 485 (1972); People v. Woodall, 216 Cal. App. 4th 1221 (2013) (probation revocation procedures that fail to provide probable cause hearing do not violate due process rights if full hearing occurs relatively soon or if preliminary hearing on any new criminal charges is conducted). <em>See also</em> Cal. Penal Code § 1381.5; Gonzalez v. Superior Court, 166 Cal. App. 4th 922 (2008). <a href="#footnote-ref-569">↑</a></p></li>
-        <li id="footnote-570"><p> <em>See</em> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972). You can subpoena and present witnesses and documentary evidence to the same extent that the State can (In re Carroll, 80 Cal. App.3d 22, 34 (1978)). <a href="#footnote-ref-570">↑</a></p></li>
-        <li id="footnote-571"><p> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972); Valdivia v Schwarzenegger, 599 F.3d 984, 989 (9th Cir. 2010). <a href="#footnote-ref-571">↑</a></p></li>
-        <li id="footnote-572"><p> U.S. Const. amend. VI; Cal. Const. art. I, § 15. Thus, upon the your request, the people who gave the information that proves the parole violation charge should be made available for you to question them at the hearing, unless the judge determines that requiring the witness to appear would create a risk of harm. If the state has “good cause” (a good explanation or reason) for failing to present a witness and that good cause outweighs your right to confront the witness, the witness’s prior statements may be presented at the hearing, even if those statements were made outside of court. The more important the witness’s testimony is to the case, the stronger your right to confront and cross-examine that witness is. Courts may overturn a parole revocation if the hearing officer relies on unsworn hearsay (out of court statements) without determining the unavailability of the declarant or the reliability of the hearsay, or without considering the parolee’s interests prior to admitting the evidence. <em>See, e.g.</em>, In re Miller, 145 Cal. App. 4th 1228 (2006). <a href="#footnote-ref-572">↑</a></p></li>
-        <li id="footnote-573"><p> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972). <a href="#footnote-ref-573">↑</a></p></li>
-        <li id="footnote-574"><p> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972). <a href="#footnote-ref-574">↑</a></p></li>
-        <li id="footnote-575"><p> In re La Croix, 12 Cal. 3d 146, 153 (1974). <a href="#footnote-ref-575">↑</a></p></li>
-        <li id="footnote-576"><p> Morrissey v. Brewer, 408 U.S. 471, 487 (1972). <a href="#footnote-ref-576">↑</a></p></li>
-        <li id="footnote-577"><p> <em>See</em> U.S. v. Comito, 177 F.3d 1166 (9th Cir. 1999); In re Melendez, 37 Cal. App. 3d 967, 973 (1974); In re Prewitt, 8 Cal. 3d 470, 477-78 (1972); In re Love, 11 Cal. 3d 179 (1974) (due process violation in failure to disclose contents of “confidential” report where disclosure would not endanger any informant). <a href="#footnote-ref-577">↑</a></p></li>
+        <p class="text">The superior court judge cannot suspend or revoke your parole unless there is “good cause” (a good reason) to believe that you have violated your parole conditions.<sup><a href="#footnote-671" id="footnote-ref-671">[670]</a></sup></p>
+        <p class="text">As a parolee, you have the following rights:</p>
+        <ol class="text">The right to receive written notice of the alleged violation (the rule or law that Parole claims you have broken) and possible consequences, with enough information to allow you to prepare a defense and obtain evidence that can help explain or justify your actions.<strong><sup><a href="#footnote-672" id="footnote-ref-672">[671]</a></sup></strong></ol>
+        <ol class="text">The right to have Parole disclose any evidence against you (just like at trial).<strong><sup><a href="#footnote-673" id="footnote-ref-673">[672]</a></sup></strong></ol>
+        <ol class="text">The right to timely hearing of the charges — including a probable cause hearing and a formal revocation hearing (within 90 days if you were not granted bail).<strong><sup><a href="#footnote-674" id="footnote-ref-674">[673]</a></sup></strong></ol>
+        <ol class="text">The right to present witnesses and documentary evidence.<strong><sup><a href="#footnote-675" id="footnote-ref-675">[674]</a></sup></strong> </ol>
+        <ol class="text">The right to confront and cross-examine witnesses who speak against your interest<strong><sup><a href="#footnote-676" id="footnote-ref-676">[675]</a></sup></strong> You have a conditional right under the U.S. and California constitutions to cross-examine people whose statements are used against you in a parole violation proceeding.<strong><sup><a href="#footnote-677" id="footnote-ref-677">[676]</a></sup></strong> BUT SEE NOTE BELOW!</ol>
+        <ol class="text">The right to a “neutral and detached hearing body” (meaning a fair and unbiased judge).<strong><sup><a href="#footnote-678" id="footnote-ref-678">[677]</a></sup></strong> </ol>
+        <ol class="text">The right to receive a written statement of the decision, the evidence relied on, and the reasons for revoking parole.<strong><sup><a href="#footnote-679" id="footnote-ref-679">[678]</a></sup></strong></ol>
+        <p class="importantbox">IMPORTANT! You may waive (give up) your right to a revocation hearing by admitting that you violated parole.<strong><sup><a href="#footnote-680" id="footnote-ref-680">[679]</a></sup></strong> If you believe your rights are violated during the process or in a hearing, say something and tell your lawyer. If you are unsure if your rights have been violated, or if you don’t understand your rights, ask your lawyer or public defender. If you do not have a lawyer or public defender, call your local public defender’s office. </p>
+        <li id="footnote-671"><p> Cal. Penal Code § 3063. Note: In Morrissey v. Brewer, the U.S. Supreme Court established the minimum due process requirements for parole revocation proceedings under the Fourteenth Amendment to the U.S. Constitution. Cases since Morrissey have reaffirmed those rights and described them with greater detail. <a href="#footnote-ref-671">↑</a></p></li>
+        <li id="footnote-672"><p> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972); Vanes v. U. S. Parole Comm’n, 741 F.2d 1197 (9th Cir. 1984) (due process violated by lack of notice of basis for parole violation charge); Rizzo v. Armstrong, 921 F.2d 855, 858 (9th Cir. 1990) (failure to give notice of consequences if parole revoked at hearing).  <a href="#footnote-ref-672">↑</a></p></li>
+        <li id="footnote-673"><p> Morrissey v. Brewer, 408 U.S. 471, 498, 92 S. Ct. 2593 (1972) (“As we said in another connection in Greene v. McElroy, 360 U.S. 474, 496–97 (“Certain principles have remained relatively immutable in our jurisprudence. One of these is that where governmental action seriously injures an individual, and the reasonableness of the action depends on fact findings, the evidence used to prove the Government's case must be disclosed to the individual so that he has an opportunity to show that it is untrue.”). See also People v. Moore, 34 Cal. 3d 215 (1983) (state has duty to preserve and disclose material physical evidence). <a href="#footnote-ref-673">↑</a></p></li>
+        <li id="footnote-674"><p> Morrissey v. Brewer, 408 U.S. 471, 485 (1972); People v. Woodall, 216 Cal. App. 4th 1221 (2013) (probation revocation procedures that fail to provide probable cause hearing do not violate due process rights if full hearing occurs relatively soon or if preliminary hearing on any new criminal charges is conducted). See also Cal. Penal Code § 1381.5; Gonzalez v. Superior Court, 166 Cal. App. 4th 922 (2008). <a href="#footnote-ref-674">↑</a></p></li>
+        <li id="footnote-675"><p> See Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972). You can subpoena and present witnesses and documentary evidence to the same extent that the State can (In re Carroll, 80 Cal. App.3d 22, 34 (1978)). <a href="#footnote-ref-675">↑</a></p></li>
+        <li id="footnote-676"><p> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972); Valdivia v Schwarzenegger, 599 F.3d 984, 989 (9th Cir. 2010). <a href="#footnote-ref-676">↑</a></p></li>
+        <li id="footnote-677"><p> U.S. Const. amend. VI; Cal. Const. art. I, § 15. Thus, upon the your request, the people who gave the information that proves the parole violation charge should be made available for you to question them at the hearing, unless the judge determines that requiring the witness to appear would create a risk of harm. If the state has “good cause” (a good explanation or reason) for failing to present a witness and that good cause outweighs your right to confront the witness, the witness’s prior statements may be presented at the hearing, even if those statements were made outside of court. The more important the witness’s testimony is to the case, the stronger your right to confront and cross-examine that witness is. Courts may overturn a parole revocation if the hearing officer relies on unsworn hearsay (out of court statements) without determining the unavailability of the declarant or the reliability of the hearsay, or without considering the parolee’s interests prior to admitting the evidence. See, e.g., In re Miller, 145 Cal. App. 4th 1228 (2006). <a href="#footnote-ref-677">↑</a></p></li>
+        <li id="footnote-678"><p> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972). <a href="#footnote-ref-678">↑</a></p></li>
+        <li id="footnote-679"><p> Morrissey v. Brewer, 408 U.S. 471, 488-89 (1972). <a href="#footnote-ref-679">↑</a></p></li>
+        <li id="footnote-680"><p> In re La Croix, 12 Cal. 3d 146, 153 (1974). <a href="#footnote-ref-680">↑</a></p></li>
       </article>
       <nav class="neighbors">
         <ol>
@@ -107,14 +87,13 @@
             </a>
           </li>
           <li class="next">
-            <a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/what-happens-if-a-material-very-important-state-wi">
+            <a href="/roadmap-to-html/parole-probation/state-parole-violations-revocations/when-can-witnesses-be-excused-from-appearing-at-my">
               <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">What happens if a “material” (very important) state witness doesn’t show up to the parole revocation hearing, even though he/she was required to attend?</span>
+              <span class="neighbor-title">When can witnesses be excused from appearing at my parole revocation hearing?</span>
             </a>
           </li>
         </ol>
       </nav>
-
       
 <footer>
   <div class="footer-main-contents">
@@ -139,11 +118,6 @@
 
     </main>
     <script src="/roadmap-to-html/js/index.js"></script>
-    <!-- Loop 11 (for user testing campaigns) -->
-    <script type="text/javascript">
-      window.loop11_key = "0053bb34cf8d29d058e45e0f6b867920da057b2e";
-    </script>
-    <script src="//cdn.loop11.com/my/loop11.js" type="text/javascript" async="async"></script>
-    <!-- End Loop 11 -->
+
   </body>
 </html>
