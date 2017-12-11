@@ -29,6 +29,7 @@ global_context = dict(
             'About the Roadmap to Reentry', str('http://www.rootandrebound.org'
                                                 '/roadmap-to-reentry-guide')],
         hotline_number=['510-279-4662', '5102794662'],
+        email_contact=['roadmap@rootandrebound.org', 'roadmap@rootandrebound.org'],
     ),
     disclaimer="""This site, and any downloads or external sites to which it connects, are not intended to provide legal advice, but rather general legal information. No attorney-client relationship is created by using any information on this site, or any downloads or external links on the site. You should consult you own attorney if you need legal advice specific to your situation. Root & Rebound offers this site "as-is" and makes no representations or warranties of any kind concerning content, express, implied, statutory, or otherwise, including without limitation, warranties of accuracy, completeness, title, marketability, merchantability, fitness for a particular purpose, noninfringement, or the presence or absence of errors, whether or not discoverable. In particular, Root & Rebound does not make any representations of warranties that this site, or any information within it or any downloads or external links, is accurate, complete, or up-to-date, or that it will apply to your circumstances. If you or your company or agency uses information from this site, it is you responsibility to make sure that the law has not changed and applies to your particular situation."""
 )
