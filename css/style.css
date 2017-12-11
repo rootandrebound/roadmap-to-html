@@ -311,6 +311,9 @@ article, .table-of-contents {
     .flash__link {
       display: block; } }
 
+.main-header a {
+  text-decoration: none; }
+
 .main-header .site-title {
   padding-top: 0; }
   .main-header .site-title__organization {
