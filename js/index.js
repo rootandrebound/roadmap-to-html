@@ -1,9 +1,6 @@
 var ALGOLIA_APP_ID = "ER4XGAZU3H";
 var ALGOLIA_PUBLIC_KEY = "ad6b289aa74181fef926dc6133bfece7";
 var ALGOLIA_INDEX_NAME = "test_ROADMAP";
-var PREFIX = "roadmap-to-html"
-
-
 function getParameterByName(name, url) {
   // taken from https://stackoverflow.com/a/901144/399726
   if (!url) url = window.location.href;
@@ -20,7 +17,7 @@ function searchResultTemplate(searchResult){
   return '<li class="search-result">' + 
            '<h3 class="search-result__title">' +
             '<a href="' +
-               '/' + PREFIX + '/' + searchResult.path + '/"' +
+              '/' + searchResult.path + '/"' +
               'class="search-result__link">' +
                 searchResult._highlightResult.title.value +
             '</a>' +
