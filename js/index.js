@@ -74,8 +74,9 @@ function initializeSearch() {
 function handleTopPages(topPages){
   var veryTopPages = topPages.slice(1, 6);
   veryTopPages.forEach(function(page){
+    var cleanedPageURL = page.url.replace("/roadmap-to-html", "");
     $('.popular-pages__list').append(
-      '<li class="popular-page"><a href="'+page.url+'">'+page.title+'</a></li>'
+      '<li class="popular-page"><a href="'+cleanedPageURL+'">'+page.title+'</a></li>'
     );
   })
 }
