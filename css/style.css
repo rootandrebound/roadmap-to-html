@@ -11,6 +11,9 @@ html, body {
   margin: 0;
   padding: 0; }
 
+button, input {
+  border-radius: 0; }
+
 html {
   font-family: "Open Sans", sans-serif; }
 
