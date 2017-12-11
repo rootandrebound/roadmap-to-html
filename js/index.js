@@ -72,13 +72,15 @@ function initializeSearch() {
 
 
 function handleTopPages(topPages){
-  var veryTopPages = topPages.slice(1, 6);
+  var veryTopPages = topPages.slice(1, 8);
   veryTopPages.forEach(function(page){
     var cleanedPageURL = page.url.replace("/roadmap-to-html", "");
-    $('.popular-pages__list').append(
-      '<li class="popular-page"><a href="'+cleanedPageURL+'">'+page.title+'</a></li>'
-    );
-  })
+    if(cleanedPageURL != "/"){
+      $('.popular-pages__list').append(
+        '<li class="popular-page"><a href="'+cleanedPageURL+'">'+page.title+'</a></li>'
+      );
+    }
+  });
 }
 
 
