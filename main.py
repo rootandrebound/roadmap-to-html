@@ -363,7 +363,7 @@ def run():
             extract_redundant_title_heading(content_item)
         write_to_json(content_items)
         data.global_context.update(
-            prefix='/roadmap-to-html',
+            prefix='',
             chapters=[item for item in content_items if item.level == 0])
         for item in content_items:
             item.write()
