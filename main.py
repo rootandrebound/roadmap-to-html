@@ -67,7 +67,6 @@ def get_toc_content_text(item, soup):
     else:
         return item.text
 
-
 def is_valid_toc_content_item(prospective_item):
     """
     if this and next sibling are both toc items,

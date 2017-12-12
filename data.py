@@ -41,6 +41,25 @@ class Chapter:
         self.text = text
         self.soup_index = soup_index
 
+    def __repr__(self):
+        return "Chapter({})".format(self.text)
+
+
+ROMAN_NUMERALS = {
+    "I.", "II.", "III.", "IV.", "V.",
+    "VI.", "VII.", "VIII.", "IX.", "X.",
+    "XI.", "XII.", "XIII.", "XIV.", "XV.",
+    "XI.", "XII.", "XIII.", "XIV.", "XV.",
+    "XVI.", "XVII.", "XVIII.", "XIX.", "XX.",
+}
+
+
+
+def remove_leading_roman_numerals(toc_entry_text):
+    return " ".join([
+        chunk for chunk in toc_entry_text.split()
+        if chunk not in ROMAN_NUMERALS])
+
 
 class TOCEntry:
 
@@ -49,8 +68,11 @@ class TOCEntry:
         self.soup_index = soup_index
         self.element = element
         self.raw_text = element.text
-        self.text = element.text.split("\t")[0]
+        self.text = remove_leading_roman_numerals(element.text.split("\t")[0])
         self.content_link = None
+
+    def __repr__(self):
+        return "TOCEntry({}, {})".format(self.level, self.text)
 
 
 class TOCLinkItem:
@@ -63,6 +85,9 @@ class TOCLinkItem:
         self.text = text
         self.contents = contents
         self.linked_entry = None
+
+    def __repr__(self):
+        return "TOCLinkItem({})".format(self.text)
 
 
 class ContentItem:
