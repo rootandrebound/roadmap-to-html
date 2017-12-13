@@ -196,7 +196,7 @@ def merge_two(a, b):
     if (a.text in b.text) or (b.text in a.text):
         text = a.text
     else:
-        text = a.text + b.text
+        text = a.text + ' ' + b.text
     return data.Chapter(text=text, soup_index=a.soup_index)
 
 
@@ -223,7 +223,7 @@ def merge_adjacent_chapter_items(chapters):
 def clean_chapter_text(chapters):
     for chapter in chapters:
         text = chapter.text.split('(')[0]
-        text = text.split(':')[0]
+        # text = text.split(':')[0]
         chapter.text = text.strip()
 
 

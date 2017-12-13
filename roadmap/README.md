@@ -1,1 +1,0 @@
-Keep this folder in the git repository for `mammoth` output
