@@ -82,7 +82,7 @@ class TOCLinkItem:
         self.element = element
         self.soup_index = soup_index
         self.ms_word_index = ms_word_index
-        self.text = text
+        self.text = text.strip()
         self.contents = contents
         self.linked_entry = None
 
