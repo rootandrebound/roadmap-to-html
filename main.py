@@ -1,7 +1,8 @@
+import re
 import data
 import json
 from bs4 import BeautifulSoup
-from bs4.element import Tag
+from bs4.element import Tag, NavigableString
 
 STYLE_MAP_PATH = 'stylemap.txt'
 RAW_OUTPUT = 'roadmap-to-html/raw_index.html'
@@ -146,7 +147,8 @@ def build_content_items(toc_entries):
             title=entry.text,
             contents=entry.content_link.contents,
             soup_index=entry.content_link.soup_index,
-            level=entry.level
+            level=entry.level,
+            page_number=entry.page_number
         )
         ContentClass = data.level_definitions[entry.level]
         items.append(ContentClass(**init_kwargs))
@@ -223,7 +225,8 @@ def merge_adjacent_chapter_items(chapters):
 def clean_chapter_text(chapters):
     for chapter in chapters:
         text = chapter.text.split('(')[0]
-        # text = text.split(':')[0]
+        text = ':'.join(text.split(':'))
+        text = ' '.join(text.split())
         chapter.text = text.strip()
 
 
@@ -232,6 +235,40 @@ def should_be_excluded(chapter):
     is_empty = not bool(chapter_text)
     return is_empty or any(
         [title in chapter_text for title in CHAPTER_TITLES_TO_EXCLUDE])
+
+
+def looks_like_a_chapter_link_listing(text):
+    if not text:
+        return False
+    chunks = text.split(" ")
+    return all([
+        frag in chunks for frag in ("CHAPTER", '|', '–', 'PG.')
+        ])
+
+
+def find_chapter_page_number(chapter, chapter_elements):
+    chapter_text = chapter.title.upper().split(':')[0]
+    for element in chapter_elements:
+        if chapter_text in element.text:
+            return int(element.text.split()[-1])
+
+
+def obtain_chapter_page_numbers(chapters, soup):
+    master_toc = soup.find_all(
+        "strong", string='MASTER TABLE OF CONTENTS')[0].parent
+    next_element = master_toc.next_sibling
+    search_space = 30
+    chapter_elements = []
+    while search_space > 0:
+        if next_element.text and (
+                'CHAPTER' in next_element.text) or (
+                'APPENDIX' in next_element.text):
+            chapter_elements.append(next_element)
+        search_space -= 1
+        next_element = next_element.next_sibling
+    for chapter in chapters:
+        chapter.page_number = find_chapter_page_number(
+            chapter, chapter_elements)
 
 
 def parse_chapters(soup):
@@ -249,7 +286,7 @@ def parse_chapters(soup):
     return chapters
 
 
-def add_chapters_to_content_items(content_items, chapters):
+def add_chapters_to_content_items(content_items, chapters, soup):
     # turn chapters into content items
     chapter_content_items = [
         data.ChapterIndex(
@@ -259,6 +296,7 @@ def add_chapters_to_content_items(content_items, chapters):
         )
         for chapter in chapters
     ]
+    obtain_chapter_page_numbers(chapter_content_items, soup)
     content_items.extend(chapter_content_items)
     return sorted(content_items, key=lambda e: e.soup_index)
 
@@ -317,12 +355,41 @@ def add_footnotes_to_article(content_item, footnote_index):
                 footnote_index[footnote_id])
 
 
+def add_page_links_to_article(content_item):
+    pattern = re.compile(r'PG\.?\s+(\d+)')
+    page_link_path = data.global_context['prefix'] + '/page-index/'
+    link_template = '<a class="page_link" href="{path}#page_{page}">{base}</a>'
+    for i in range(len(content_item.contents)):
+        text = str(content_item.contents[i])
+        matches = list(pattern.finditer(text))
+        delta = 0
+        for match in matches:
+            span = match.span()
+            before = text[:match.start() + delta]
+            after = text[match.end() + delta:]
+            original_text = match.group(0)
+            page_number = match.group(1)
+            link_replacement = link_template.format(
+                path = page_link_path, page=page_number, base=original_text)
+            delta += len(link_replacement) - len(original_text)
+            text = before + link_replacement + after
+        content_item.contents[i] = BeautifulSoup(text, 'html.parser')
+
+
 def extract_redundant_title_heading(content_item):
     first_item = content_item.contents[0]
     is_heading = first_item.name in ('h1', 'h2', 'h3', 'h4')
     is_title = content_item.title.lower() in first_item.text.lower()
     if is_heading and is_title:
         content_item.contents.pop(0)
+
+
+def create_page_index(content_items):
+    page_index = data.PageIndex()
+    for item in content_items:
+        page_index.add_listing(item)
+    return page_index
+
 
 
 def run():
@@ -354,16 +421,19 @@ def run():
             key=lambda e: e.soup_index
         )
         content_items = build_content_items(usable_sorted_toc_entries)
-        content_items = add_chapters_to_content_items(content_items, chapters)
+        content_items = add_chapters_to_content_items(
+            content_items, chapters, soup)
         link_parents_and_neighbors(content_items)
+        page_index = create_page_index(content_items)
         update_contents(soup, content_items)
         for content_item in content_items:
             add_footnotes_to_article(content_item, footnote_index)
             extract_redundant_title_heading(content_item)
+            add_page_links_to_article(content_item)
         write_to_json(content_items)
         data.global_context.update(
-            prefix='',
-            chapters=[item for item in content_items if item.level == 0])
+            chapters=[item for item in content_items if item.level == 0],
+            page_index=page_index)
         for item in content_items:
             item.write()
             print(item.get_path())
@@ -373,6 +443,9 @@ def run():
         search_page = data.SearchPage(title='Search', level="search")
         search_page.write()
         print(search_page.get_path())
+        page_index_page = data.PageIndexPage(title='Page Index', level="pages")
+        page_index_page.write()
+        print(page_index_page.get_path())
 
 
 if __name__ == '__main__':

@@ -1,6 +1,8 @@
 import os
+from collections import OrderedDict
 from slugify import slugify
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from bs4 import BeautifulSoup
 
 TEMPLATE_FOLDER = 'templates'
 PAGE_BASE = 'base.jinja'
@@ -14,6 +16,7 @@ env = Environment(
 base_template = env.get_template(PAGE_BASE)
 
 global_context = dict(
+    prefix='',
     links=dict(
         donate=['Donate', 'http://www.rootandrebound.org/donate'],
         about_rnr=[
@@ -33,6 +36,38 @@ global_context = dict(
     ),
     disclaimer="""This site, and any downloads or external sites to which it connects, are not intended to provide legal advice, but rather general legal information. No attorney-client relationship is created by using any information on this site, or any downloads or external links on the site. You should consult you own attorney if you need legal advice specific to your situation. Root & Rebound offers this site "as-is" and makes no representations or warranties of any kind concerning content, express, implied, statutory, or otherwise, including without limitation, warranties of accuracy, completeness, title, marketability, merchantability, fitness for a particular purpose, noninfringement, or the presence or absence of errors, whether or not discoverable. In particular, Root & Rebound does not make any representations of warranties that this site, or any information within it or any downloads or external links, is accurate, complete, or up-to-date, or that it will apply to your circumstances. If you or your company or agency uses information from this site, it is you responsibility to make sure that the law has not changed and applies to your particular situation."""
 )
+
+class PageIndex:
+
+    def __init__(self):
+        self.page_cursor = None
+        self.page_lookup = OrderedDict()
+
+    def add_listing(self, item):
+        if self.page_cursor is None:
+            self.page_cursor = item.page_number
+            self.page_lookup[item.page_number] = [item]
+        elif item.page_number < self.page_cursor:
+            raise Exception(
+                'Received page {}, lower than current page of {}'.format(
+                    item.page_number, self.page_cursor))
+        elif item.page_number == self.page_cursor:
+            self.page_lookup[item.page_number].append(item)
+        elif item.page_number > self.page_cursor:
+            # get pages up to and including the new page
+            # add the item to each of those pages
+            additional_pages = range(
+                self.page_cursor + 1, item.page_number + 1)
+            for new_page in additional_pages:
+                self.page_lookup[new_page] = [item]
+            self.page_cursor = item.page_number
+
+    def get_items_for_page(self, page):
+        return self.page_lookup[page]
+
+    def __iter__(self):
+        for key, content_items in self.page_lookup.items():
+            yield key, content_items
 
 
 class Chapter:
@@ -61,6 +96,7 @@ def remove_leading_roman_numerals(toc_entry_text):
         if chunk not in ROMAN_NUMERALS])
 
 
+
 class TOCEntry:
 
     def __init__(self, level, soup_index, element):
@@ -68,11 +104,14 @@ class TOCEntry:
         self.soup_index = soup_index
         self.element = element
         self.raw_text = element.text
-        self.text = remove_leading_roman_numerals(element.text.split("\t")[0])
+        toc_entry_text, page_number = element.text.split("\t")
+        self.text = remove_leading_roman_numerals(toc_entry_text)
+        self.page_number = int(page_number.strip())
         self.content_link = None
 
     def __repr__(self):
-        return "TOCEntry({}, {})".format(self.level, self.text)
+        return "TOCEntry({}, {}, PG. {})".format(
+            self.level, self.text, self.page_number)
 
 
 class TOCLinkItem:
@@ -94,11 +133,12 @@ class ContentItem:
     template = "base.jinja"
 
     def __init__(
-            self, title, level, soup_index=None, parent=None, contents=None,
-            next_item=None, prev_item=None):
+            self, title, level, soup_index=None, page_number=None, parent=None,
+            contents=None, next_item=None, prev_item=None):
         self.level = level
         self.title = title
         self.soup_index = soup_index
+        self.page_number = page_number
         self.parent = parent
         self.next = next_item
         self.prev = prev_item
@@ -202,11 +242,20 @@ class SplashPage(ContentPage):
     def get_path(self):
         return ''
 
+
 class SearchPage(ContentPage):
     template = "search_page.jinja"
 
     def get_path(self):
         return 'search'
+
+
+class PageIndexPage(ContentPage):
+    template = "page_index.jinja"
+
+    def get_path(self):
+        return 'page-index'
+
 
 level_definitions = {
     0: ChapterIndex,

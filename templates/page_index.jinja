@@ -1,0 +1,26 @@
+{% extends "base.jinja" %}
+
+{%- block main_content %}
+  <section class="page-index__section">
+    <h3 class="page-index__heading">All pages</h3>
+    <p class="page-index__disclaimer">This website was made from a book. Each page had one or more articles.</p>
+    <ol class="page-index__list">
+      {%- for page_number, items in page_index %}
+      <li class="page-index__page-listing">
+        <h4 id="page_{{ page_number }}" class="page-listing__page_number">PG. {{ page_number }}</h4>
+        <ol class="page-listing__article-list">
+          {%- for item in items %}
+          <li class="page-listing__article">
+            <a href="{{ prefix }}/{{ item.get_path() }}">
+              <h5 class="page-listing__article-title">
+                {{ item.title }}
+              </h5>
+            </a>
+          </li>
+          {%- endfor %}
+        </ol>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+{%- endblock main_content %}
