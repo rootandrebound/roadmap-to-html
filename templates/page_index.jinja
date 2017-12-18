@@ -7,15 +7,15 @@
     <ol class="page-index__list">
       {%- for page_number, items in page_index %}
       <li class="page-index__page-listing">
-        <h4 id="page_{{ page_number }}" class="page-listing__page_number">PG. {{ page_number }}</h4>
+        <h4 id="page_{{ page_number }}" class="page-listing__page-number">PG. {{ page_number }}</h4>
         <ol class="page-listing__article-list">
           {%- for item in items %}
           <li class="page-listing__article">
-            <a href="{{ prefix }}/{{ item.get_path() }}">
-              <h5 class="page-listing__article-title">
-                {{ item.title }}
+              <h5 class="page-listing__article-title content-level-{{ item.level }}">
+                <a href="{{ prefix }}/{{ item.get_path() }}">
+                  {{ item.title }}
+                </a>
               </h5>
-            </a>
           </li>
           {%- endfor %}
         </ol>

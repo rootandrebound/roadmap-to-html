@@ -71,21 +71,24 @@
         {% endfor %}
       {%- else %}
         {#- we are on an index page #}
-        <ol class="table-of-contents">
-          {%- for child in page.children %}
-          <li>
-            <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
-            {%- if child.children %}
-              <ol>
-              {%- for grandchild in child.children %}
-                <li><h{{ 1 + (grandchild.level - page.level) }}><a href="{{ prefix }}/{{ grandchild.get_path() }}/">{{ grandchild.title }}</a></h{{ 1 + (grandchild.level - page.level) }}>
-                </li>
-              {%- endfor %}
-              </ol>
-            {%- endif %}
-          </li>
-          {%- endfor %}
-        </ol>
+        <div class="table-of-contents">
+          <ol class="table-of-contents__list">
+            {%- for child in page.children %}
+            <li class="table-of-contents__listing">
+              <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
+              {%- if child.children %}
+                <ol>
+                {%- for grandchild in child.children %}
+                  <li><h{{ 1 + (grandchild.level - page.level) }}><a href="{{ prefix }}/{{ grandchild.get_path() }}/">{{ grandchild.title }}</a></h{{ 1 + (grandchild.level - page.level) }}>
+                  </li>
+                {%- endfor %}
+                </ol>
+              {%- endif %}
+            </li>
+            {%- endfor %}
+          </ol>
+        </div>
+        
       {%- endif %}
 
       {%- if page.prev or page.next %}
@@ -112,7 +115,7 @@
       {%- endif %}
     {%- endblock main_content %}
     {%- endblock main %}
-      {% include "footer.jinja" %}
+    {% include "footer.jinja" %}
 
     </main>
     <script src="{{ prefix }}/js/index.js"></script>

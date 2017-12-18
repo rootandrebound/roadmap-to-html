@@ -1,0 +1,47 @@
+
+.page-index {
+  &__list {
+    padding: 0;
+  }
+
+  &__section {
+    ol {
+      list-style-type: none;
+    }
+
+    h5.content-level-1 { padding-left: 0.8rem * 1; }
+    h5.content-level-2 { padding-left: 0.8rem * 2; }
+    h5.content-level-3 { padding-left: 0.8rem * 3; }
+    h5.content-level-4 { padding-left: 0.8rem * 4; }
+    h5.content-level-5 { padding-left: 0.8rem * 5; }
+  }
+  &__page-listing {
+    border-top: 1px solid #ddd;
+  }
+}
+
+.page-listing {
+  &__page-number {
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+    width: 18%;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5rem 0;
+  }
+  &__article-list {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 80%;
+  }
+  &__article-title {
+    padding: 0;
+    margin: 0.25rem 0;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.25rem 0;
+  }
+}

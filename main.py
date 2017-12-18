@@ -443,7 +443,8 @@ def run():
         search_page = data.SearchPage(title='Search', level="search")
         search_page.write()
         print(search_page.get_path())
-        page_index_page = data.PageIndexPage(title='Page Index', level="pages")
+        page_index_page = data.PageIndexPage(
+            title='Page Index', level="page-index")
         page_index_page.write()
         print(page_index_page.get_path())
 

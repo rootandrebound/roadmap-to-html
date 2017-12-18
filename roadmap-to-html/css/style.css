@@ -14,6 +14,11 @@ html, body {
 button, input {
   border-radius: 0; }
 
+ol {
+  margin: 0;
+  padding: 0.8em 0 0.8em 2.5em;
+  list-style-type: none; }
+
 html {
   font-family: "Open Sans", sans-serif; }
 
@@ -57,16 +62,6 @@ footer {
   border-top: 8px solid #e2c221;
   font-weight: 100; }
 
-.table-of-contents {
-  list-style-type: none; }
-
-.table-of-contents ol {
-  list-style-type: none; }
-
-.table-of-contents * {
-  font-weight: normal;
-  font-size: 1.2rem; }
-
 /* CHAPTERS */
 .chapter-list {
   list-style-image: inherit;
@@ -87,14 +82,6 @@ footer {
   padding: .5em 0; }
 
 /* HEADINGS */
-ol {
-  margin: 0;
-  padding: 0.8em 0 0.8em 2.5em; }
-
-li > ol {
-  padding: 0 0 0 1em;
-  border-left: 0.5em solid #f4f4f4; }
-
 nav ol {
   padding: 1em 0; }
 
@@ -376,3 +363,50 @@ article, .table-of-contents {
 
 .search-result__title {
   font-weight: 500; }
+
+.page-index__list {
+  padding: 0; }
+
+.page-index__section ol {
+  list-style-type: none; }
+
+.page-index__section h5.content-level-1 {
+  padding-left: 0.8rem; }
+
+.page-index__section h5.content-level-2 {
+  padding-left: 1.6rem; }
+
+.page-index__section h5.content-level-3 {
+  padding-left: 2.4rem; }
+
+.page-index__section h5.content-level-4 {
+  padding-left: 3.2rem; }
+
+.page-index__section h5.content-level-5 {
+  padding-left: 4rem; }
+
+.page-index__page-listing {
+  border-top: 1px solid #ddd; }
+
+.page-listing__page-number {
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+  width: 18%;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.5rem 0; }
+
+.page-listing__article-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  width: 80%; }
+
+.page-listing__article-title {
+  padding: 0;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.25rem 0; }
