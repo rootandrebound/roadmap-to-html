@@ -16,7 +16,7 @@ button, input {
 
 ol {
   margin: 0;
-  padding: 0.8em 0 0.8em 2.5em;
+  padding: 0;
   list-style-type: none; }
 
 html {
@@ -167,6 +167,25 @@ header, footer, article, section, .table-of-contents {
 article, .table-of-contents {
   color: #000;
   background-color: #fff; }
+
+.table-of-contents ol, .table-of-contents li {
+  padding: 0;
+  margin: 0; }
+
+.table-of-contents h2, .table-of-contents h3, .table-of-contents h4, .table-of-contents h5 {
+  font-size: 1rem; }
+
+.table-of-contents h3 {
+  padding-left: 2rem;
+  font-weight: normal; }
+
+.table-of-contents h4 {
+  padding-left: 3rem;
+  font-weight: normal; }
+
+.table-of-contents h5 {
+  padding-left: 4rem;
+  font-weight: normal; }
 
 .search-form {
   width: 100%;
