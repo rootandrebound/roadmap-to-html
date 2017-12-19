@@ -46,6 +46,13 @@ mark {
   background: none;
   font-weight: bold; }
 
+.text {
+  line-height: 2rem; }
+  .text sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.7em; }
+
 header {
   background-color: #e2c221;
   padding: 1em 0;
@@ -167,6 +174,19 @@ header, footer, article, section, .table-of-contents {
 article, .table-of-contents {
   color: #000;
   background-color: #fff; }
+
+.footnotes {
+  margin: 1em 0;
+  padding: 1em 0;
+  border-top: 1px solid #4d4d4d; }
+  .footnotes sup {
+    vertical-align: top; }
+  .footnotes p {
+    display: inline-block;
+    padding: 0.5rem;
+    width: 85%;
+    vertical-align: top;
+    font-style: italic; }
 
 .table-of-contents ol, .table-of-contents li {
   padding: 0;

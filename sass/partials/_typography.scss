@@ -27,3 +27,13 @@ mark {
   font-weight: bold;
 }
 
+
+.text {
+  line-height: 2rem;
+  
+  sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.7em;
+  }
+}

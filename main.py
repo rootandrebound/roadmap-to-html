@@ -336,23 +336,36 @@ def extract_footnotes(soup):
         name='li', attrs={'id': is_footnote})
     index = {}
     for footnote in footnotes:
-        index[footnote['id'].split('-')[-1]] = footnote
+        number = footnote['id'].split('-')[-1]
+        del footnote['id']
+        annotation = soup.new_tag('sup', id='footnote-{}'.format(number))
+        annotation.append(number)
+        footnote.insert(0, annotation)
+        index[number] = footnote
         footnote.extract()
     return index
 
 
-def add_footnotes_to_article(content_item, footnote_index):
+def add_footnotes_to_article(soup, content_item, footnote_index):
     footnote_refs = []
     for node in content_item.contents:
         footnote_refs.extend(
             node.find_all(name='a', attrs={'id': is_footnote_ref}))
     footnote_ids = []
     if footnote_refs:
+        footnote_list = soup.new_tag('ol', **{'class': 'footnotes'})
         for ref in footnote_refs:
-            footnote_ids.append(ref['id'].split('-')[-1])
+            number = ref['id'].split('-')[-1]
+            footnote_ids.append(number)
+            ref.string = '[{}]'.format(number)
+            sup = ref.parent
+            if sup.parent.name == 'sup' and ref.parent.name == 'sup':
+                sup.parent.insert(0, ref.extract())
+                sup.extract()
         for footnote_id in sorted(footnote_ids):
-            content_item.contents.append(
-                footnote_index[footnote_id])
+            footnote = footnote_index[footnote_id]
+            footnote_list.append(footnote)
+        content_item.contents.append(footnote_list)
 
 
 def add_page_links_to_article(content_item):
@@ -427,7 +440,7 @@ def run():
         page_index = create_page_index(content_items)
         update_contents(soup, content_items)
         for content_item in content_items:
-            add_footnotes_to_article(content_item, footnote_index)
+            add_footnotes_to_article(soup, content_item, footnote_index)
             extract_redundant_title_heading(content_item)
             add_page_links_to_article(content_item)
         write_to_json(content_items)
