@@ -1,12 +1,16 @@
 import re
+import os
+import shutil
 import data
 import json
 from bs4 import BeautifulSoup
 from bs4.element import Tag, NavigableString
 
 STYLE_MAP_PATH = 'stylemap.txt'
-RAW_OUTPUT = 'roadmap-to-html/raw_index.html'
-OUTPUT_PATH = 'roadmap-to-html/nice_index.html'
+OUTPUT_DIRECTORY = 'roadmap-to-html'
+IMG_PATH = 'img'
+RAW_INDEX_PATH = os.path.join(OUTPUT_DIRECTORY, 'raw_index.html')
+NICE_INDEX_PATH = os.path.join(OUTPUT_DIRECTORY, 'nice_index.html')
 
 TOC_CLASSES = {'toc1', 'toc2', 'toc3', 'toc4'}
 
@@ -49,7 +53,7 @@ def is_toc_item(class_name):
 
 
 def write_prettified_raw_index(soup):
-    with open(OUTPUT_PATH, 'w') as index_file:
+    with open(NICE_INDEX_PATH, 'w') as index_file:
         index_file.write(soup.prettify())
 
 
@@ -404,10 +408,33 @@ def create_page_index(content_items):
     return page_index
 
 
+def move_img_files():
+    # find all the image files in the output directory
+    img_file_extensions = ('.png', '.tiff', '.jpeg', '.x-emf')
+    items = os.listdir(OUTPUT_DIRECTORY)
+    destination_folder = os.path.join(OUTPUT_DIRECTORY, 'img')
+    os.makedirs(destination_folder, exist_ok=True)
+    image_files = [
+        item for item in os.listdir(OUTPUT_DIRECTORY)
+        if os.path.splitext(item)[-1] in img_file_extensions
+    ]
+    for image_file in image_files:
+        from_path = os.path.join(OUTPUT_DIRECTORY, image_file)
+        to_path = os.path.join(destination_folder, image_file)
+        shutil.move(from_path, to_path)
+
+
+def adjust_all_img_src_paths(soup):
+    for img in soup.find_all('img'):
+        existing_src = img['src']
+        img['src'] = "/{}/{}".format(IMG_PATH, existing_src)
+
 
 def run():
-    with open(RAW_OUTPUT, 'r') as raw_html_input:
+    move_img_files()
+    with open(RAW_INDEX_PATH, 'r') as raw_html_input:
         soup = BeautifulSoup(raw_html_input, 'html.parser')
+        adjust_all_img_src_paths(soup)
         write_prettified_raw_index(soup)
         footnote_index = extract_footnotes(soup)
         chapters = parse_chapters(soup)
@@ -447,9 +474,7 @@ def run():
         data.global_context.update(
             chapters=[item for item in content_items if item.level == 0],
             page_index=page_index)
-        for item in content_items:
-            item.write()
-            print(item.get_path())
+        item = content_item
         splash_page = data.SplashPage(title='Home', level="splash")
         splash_page.write()
         print(splash_page.get_path())

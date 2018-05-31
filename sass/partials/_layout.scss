@@ -1,0 +1,22 @@
+nav ol {
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+/* PADDING */
+header, footer, article, section, .table-of-contents {
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  header, footer, article, section, .table-of-contents {
+    padding-left: $horizontal-padding--mobile;
+    padding-right: $horizontal-padding--mobile;
+  }
+}
+
