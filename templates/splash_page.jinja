@@ -9,20 +9,24 @@
 {%- endblock header_content %}
 
 {%- block main_content %}
-  <article>  
-  <h2>Chapters</h2>
-    <ol class="chapter-list">
-    {%- for chapter in chapters %}
-      <li>
-        <h3>
-          <a href="{{ prefix }}/{{ chapter.get_path() }}/">{{ chapter.title }}</a>
-        </h3>
-      </li>
-    {%- endfor %}
-    </ol>
+  <article>
+    <div class="column">
+      <h2>Chapters</h2>
+      <ol class="chapter-list">
+      {%- for chapter in chapters %}
+        <li>
+          <h3>
+            <a href="{{ prefix }}/{{ chapter.get_path() }}/">{{ chapter.title }}</a>
+          </h3>
+        </li>
+      {%- endfor %}
+      </ol>
+    </div>
   </article>
   <section class="popular-pages">
-    <h3 class="popular-pages__heading">Popular Pages</h3>
-    <ol class="popular-pages__list"></ol>
+    <div class="column">
+      <h3 class="popular-pages__heading">Popular Pages</h3>
+      <ol class="popular-pages__list"></ol>
+    </div>
   </section>
 {%- endblock main_content %}

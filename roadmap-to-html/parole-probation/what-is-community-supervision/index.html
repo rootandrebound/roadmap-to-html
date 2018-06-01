@@ -27,13 +27,16 @@
 
     <main role="main">
     <aside role="note" class="flash">
-  <p class="flash__text">
-    Welcome! This website is an experiment.
-    <a class="flash__link" href="mailto:roadmap@rootandrebound.org?subject=Roadmap%20website%20feedback">Please leave us feedback!</a>
-  </p>
+  <div class="column">
+    <p class="flash__text">
+      Welcome! This website is an experiment.
+      <a class="flash__link" href="mailto:roadmap@rootandrebound.org?subject=Roadmap%20website%20feedback">Please leave us feedback!</a>
+    </p>
+  </div>
 </aside>
       <!-- Header includes search, sites title and mobile menu -->
       <header role="banner" class="main-header">
+        <div class="column">
           <h3 class="site-title__organization">Root &amp; Rebound</h3>
           <h1 class="site-title">
             <a href="/">
@@ -49,38 +52,45 @@
   </span>
 </form>
         </div>
+        </div>
       </header>
-      <nav class="breadcrumbs">
+          <nav class="breadcrumbs">
   <ol>
-    <li><a href="/">Roadmap to Reentry (Home Page)</a></li>
-    <li><a href="/parole-probation">Parole & Probation</a></li>
-    <li><a href="/parole-probation/what-is-community-supervision">What is community supervision? (Current Page)</a></li>
+    <li><a href="/"><div class="column">Roadmap to Reentry (Home
+Page)</div></a></li>
+    <li><a href="/parole-probation"><div
+class="column">Parole & Probation</div></a></li>
+    <li><a href="/parole-probation/what-is-community-supervision"><div class="column">What is community supervision? (Current Page)</div></a></li>
   </ol>
 </nav>
 
-      <article>
-        <h1>What is community supervision?</h1>
-        <p class="text">Community supervision is a requirement that may apply to you — either as part of a sentence that you serve <em>after release </em>from incarceration, OR as a sentence that you serve <em>instead of</em> incarceration. If you are under community supervision, this means you are monitored by a correctional officer while living in the community, and you are subject to certain rules — like where you can live and work, who you can contact, and people or places where you must regularly report. </p>
-      </article>
-      <nav class="neighbors">
-        <ol>
-          <li class="previous">
-            <a href="/parole-probation">
-              <span class="neighbor-label">Previous</span>
-              <span class="neighbor-title">Parole & Probation</span>
-            </a>
-          </li>
-          <li class="next">
-            <a href="/parole-probation/why-is-it-important-to-know-what-type-of-supervisi">
-              <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">Why is it important to know what type of supervision I am on, and the rules I must follow?</span>
-            </a>
-          </li>
-        </ol>
-      </nav>
+          <article>
+            <div class="column">
+              <h1>What is community supervision?</h1>
+              <p class="text">Community supervision is a requirement that may apply to you — either as part of a sentence that you serve <em>after release </em>from incarceration, OR as a sentence that you serve <em>instead of</em> incarceration. If you are under community supervision, this means you are monitored by a correctional officer while living in the community, and you are subject to certain rules — like where you can live and work, who you can contact, and people or places where you must regularly report. </p>
+            </div>
+          </article>
+          <nav class="neighbors">
+            <div class="column">
+              <ol>
+                <li class="previous">
+                  <a href="/parole-probation">
+                    <span class="neighbor-label">Previous</span>
+                    <span class="neighbor-title">Parole & Probation</span>
+                  </a>
+                </li>
+                <li class="next">
+                  <a href="/parole-probation/why-is-it-important-to-know-what-type-of-supervisi">
+                    <span class="neighbor-label">Next</span>
+                    <span class="neighbor-title">Why is it important to know what type of supervision I am on, and the rules I must follow?</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </nav>
     
 <footer>
-  <div class="footer-main-contents">
+  <div class="footer-main-contents column">
     <ul class="footer-links">
       <li><a href="http://www.rootandrebound.org/donate">Donate</a></li>
       <li><a href="/">Roadmap Home</a></li>

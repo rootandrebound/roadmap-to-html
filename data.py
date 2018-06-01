@@ -182,6 +182,25 @@ class ContentItem:
             if tag.name in ('h1', 'h2', 'h3', 'h4', 'h5')
         ])
 
+    def has_img_tags(self):
+        for content in self.contents:
+            if content.find('img'):
+                return True
+
+    def get_img_tags(self):
+        for content in self.contents:
+            link = 'http://roadmap.rootandrebound.org/{}/'.format(
+                    self.get_path())
+            next_page = self.next.page_number if self.next else ''
+            page_range = '{} - {}'.format(self.page_number, next_page)
+            for tag in content.find_all('img'):
+                yield (
+                        link,
+                        page_range,
+                        self.title,
+                        tag['src'],
+                        tag.get('alt', ''))
+
     def text(self):
         return '\n'.join([tag.text for tag in self.contents])
 

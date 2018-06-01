@@ -17,7 +17,7 @@
   display: block;
   text-decoration: none;
 }
-.breadcrumbs a:after {
+.breadcrumbs a > .column:after {
   content: "›";
   margin-left: .3em;
   font-size: 2em;

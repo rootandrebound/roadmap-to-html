@@ -3,6 +3,7 @@
 /* COLORS */
 /* LAYOUT */
 /* KEYBOARD NAVIGATION */
+/* SIZES */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -78,8 +79,8 @@ footer {
 
 /* POPULAR PAGES */
 .popular-pages {
-  margin-top: 2em;
-  margin-bottom: 2em; }
+  padding-top: 2em;
+  padding-bottom: 2em; }
   .popular-pages__list {
     list-style-type: none;
     padding: 0; }
@@ -87,14 +88,6 @@ footer {
 .popular-page a {
   display: block;
   padding: .5em 0; }
-
-/* HEADINGS */
-nav ol {
-  padding: 1em 0; }
-
-p {
-  margin: 0;
-  padding: 1em 0; }
 
 /* TABLES */
 table {
@@ -161,6 +154,21 @@ footer ul {
 footer ul, footer p {
   text-align: center; }
 
+article, .table-of-contents {
+  color: #000;
+  background-color: #fff; }
+
+nav ol {
+  padding: 1em 0; }
+
+p {
+  margin: 0;
+  padding: 1em 0; }
+
+.column {
+  margin: 0 auto;
+  max-width: 50em; }
+
 /* PADDING */
 header, footer, article, section, .table-of-contents {
   padding-left: 2rem;
@@ -171,9 +179,14 @@ header, footer, article, section, .table-of-contents {
     padding-left: 1rem;
     padding-right: 1rem; } }
 
-article, .table-of-contents {
-  color: #000;
-  background-color: #fff; }
+img {
+  width: 100%; }
+
+.content-level-0 h1 + p strong > img {
+  width: 4rem; }
+
+.content-level-0 .chaptertitlesubheading + p strong > img {
+  width: 4rem; }
 
 .footnotes {
   margin: 1em 0;
@@ -361,7 +374,7 @@ article, .table-of-contents {
   display: block;
   text-decoration: none; }
 
-.breadcrumbs a:after {
+.breadcrumbs a > .column:after {
   content: "›";
   margin-left: .3em;
   font-size: 2em;

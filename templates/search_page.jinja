@@ -5,16 +5,18 @@
 
 {%- block main_content %}
   <section class="search-results__section">
-    <h3 class="search-results__heading">Search Results</h3>
-    <div class="search-results__metadata">
-    </div>
-    <ol class="search-results__list">
-    </ol>
-    <div class="search-result last-resort">
-     <h3 class="search-result__title">
-      Can't find what you want?
-      Email your questions to <mark><a href="mailto:{{ links.email_contact.1 }}">{{ links.email_contact.0 }}</a></mark>
-     </h3>
+    <div class="column">
+      <h3 class="search-results__heading">Search Results</h3>
+      <div class="search-results__metadata">
+      </div>
+      <ol class="search-results__list">
+      </ol>
+      <div class="search-result last-resort">
+        <h3 class="search-result__title">
+          Can't find what you want?
+          Email your questions to <mark><a href="mailto:{{ links.email_contact.1 }}">{{ links.email_contact.0 }}</a></mark>
+        </h3>
+      </div>
     </div>
   </section>
 {%- endblock main_content %}

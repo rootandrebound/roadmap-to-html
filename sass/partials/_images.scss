@@ -1,0 +1,15 @@
+img {
+  width: 100%;
+}
+.content-level-0 {
+  h1 + p {
+    strong > img {
+      width: $chapter-icon-width;
+    }
+  }
+  .chaptertitlesubheading + p {
+    strong > img {
+      width: $chapter-icon-width;
+    }
+  }
+}
