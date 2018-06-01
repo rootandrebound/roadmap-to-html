@@ -27,13 +27,16 @@
 
     <main role="main">
     <aside role="note" class="flash">
-  <p class="flash__text">
-    Welcome! This website is an experiment.
-    <a class="flash__link" href="mailto:roadmap@rootandrebound.org?subject=Roadmap%20website%20feedback">Please leave us feedback!</a>
-  </p>
+  <div class="column">
+    <p class="flash__text">
+      Welcome! This website is an experiment.
+      <a class="flash__link" href="mailto:roadmap@rootandrebound.org?subject=Roadmap%20website%20feedback">Please leave us feedback!</a>
+    </p>
+  </div>
 </aside>
       <!-- Header includes search, sites title and mobile menu -->
       <header role="banner" class="main-header">
+        <div class="column">
           <h3 class="site-title__organization">Root &amp; Rebound</h3>
           <h1 class="site-title">
             <a href="/">
@@ -49,47 +52,55 @@
   </span>
 </form>
         </div>
+        </div>
       </header>
-      <nav class="breadcrumbs">
+          <nav class="breadcrumbs">
   <ol>
-    <li><a href="/">Roadmap to Reentry (Home Page)</a></li>
-    <li><a href="/public-benefits">Public Benefits</a></li>
-    <li><a href="/public-benefits/veterans-benefits">VETERANS’ BENEFITS</a></li>
-    <li><a href="/public-benefits/veterans-benefits/how-do-i-apply-for-va-benefits">How do I apply for VA benefits? (Current Page)</a></li>
+    <li><a href="/"><div class="column">Roadmap to Reentry (Home
+Page)</div></a></li>
+    <li><a href="/public-benefits"><div
+class="column">Public Benefits</div></a></li>
+    <li><a href="/public-benefits/veterans-benefits"><div
+class="column">VETERANS’ BENEFITS</div></a></li>
+    <li><a href="/public-benefits/veterans-benefits/how-do-i-apply-for-va-benefits"><div class="column">How do I apply for VA benefits? (Current Page)</div></a></li>
   </ol>
 </nav>
 
-      <article>
-        <h1>How do I apply for VA benefits?</h1>
-        <p class="text">The required forms and steps vary for different types of VA benefits. For most VA benefits, you can submit your application online, by mail, or in person at a Regional Benefit Office.</p>
-        <p class="text">You can get more details about different VA benefits online, by phone, by mail, or in person: </p>
-        <ol class="text"><em>Online:</em> Visit the Veterans Benefits Administration website for a list of benefit types, along with links to forms and instructions on how to apply: <a href="http://www.benefits.va.gov/BENEFITS/Applying.asp">www.benefits.va.gov/BENEFITS/Applying.asp</a>. </ol>
-        <ol class="text"><em>By phone:</em> Call 1-800-827-1000 for questions about benefits; 1-877-222-8387 for questions about health care.</ol>
-        <ol class="text"><em>By mail:</em> Send a written request to one of the Regional Benefit Offices listed below.</ol>
-        <ol class="text">Los Angeles Regional Benefit Office: 11000 Wilshire Blvd., Los Angeles, CA 90024</ol>
-        <ol class="text">San Diego Regional Benefit Office: 8810 Rio San Diego Drive, San Diego, CA 92108</ol>
-        <ol class="text">Oakland Regional Benefit Office: 1301 Clay St., North Tower, Oakland, CA 94612</ol>
-        <ol class="text"><em>In person:</em> Visit a Regional Benefit Office listed above, or visit any Intake Site. To find an Intake Site near you, ask a Regional Benefit Office or search the online directory at <a href="http://www.va.gov/directory/guide/home.asp">www.va.gov/directory/guide/home.asp</a>. </ol>
-      </article>
-      <nav class="neighbors">
-        <ol>
-          <li class="previous">
-            <a href="/public-benefits/veterans-benefits/can-my-criminal-history-limit-my-ability-to-get-va">
-              <span class="neighbor-label">Previous</span>
-              <span class="neighbor-title">Can my criminal history limit my ability to get VA benefits?</span>
-            </a>
-          </li>
-          <li class="next">
-            <a href="/public-benefits/veterans-benefits/can-i-apply-for-va-benefits-while-incarcerated">
-              <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">Can I apply for VA benefits while incarcerated?</span>
-            </a>
-          </li>
-        </ol>
-      </nav>
+          <article>
+            <div class="column">
+              <h1>How do I apply for VA benefits?</h1>
+              <p class="text">The required forms and steps vary for different types of VA benefits. For most VA benefits, you can submit your application online, by mail, or in person at a Regional Benefit Office.</p>
+              <p class="text">You can get more details about different VA benefits online, by phone, by mail, or in person: </p>
+              <ol class="text"><em>Online:</em> Visit the Veterans Benefits Administration website for a list of benefit types, along with links to forms and instructions on how to apply: <a href="http://www.benefits.va.gov/BENEFITS/Applying.asp">www.benefits.va.gov/BENEFITS/Applying.asp</a>. </ol>
+              <ol class="text"><em>By phone:</em> Call 1-800-827-1000 for questions about benefits; 1-877-222-8387 for questions about health care.</ol>
+              <ol class="text"><em>By mail:</em> Send a written request to one of the Regional Benefit Offices listed below.</ol>
+              <ol class="text">Los Angeles Regional Benefit Office: 11000 Wilshire Blvd., Los Angeles, CA 90024</ol>
+              <ol class="text">San Diego Regional Benefit Office: 8810 Rio San Diego Drive, San Diego, CA 92108</ol>
+              <ol class="text">Oakland Regional Benefit Office: 1301 Clay St., North Tower, Oakland, CA 94612</ol>
+              <ol class="text"><em>In person:</em> Visit a Regional Benefit Office listed above, or visit any Intake Site. To find an Intake Site near you, ask a Regional Benefit Office or search the online directory at <a href="http://www.va.gov/directory/guide/home.asp">www.va.gov/directory/guide/home.asp</a>. </ol>
+            </div>
+          </article>
+          <nav class="neighbors">
+            <div class="column">
+              <ol>
+                <li class="previous">
+                  <a href="/public-benefits/veterans-benefits/can-my-criminal-history-limit-my-ability-to-get-va">
+                    <span class="neighbor-label">Previous</span>
+                    <span class="neighbor-title">Can my criminal history limit my ability to get VA benefits?</span>
+                  </a>
+                </li>
+                <li class="next">
+                  <a href="/public-benefits/veterans-benefits/can-i-apply-for-va-benefits-while-incarcerated">
+                    <span class="neighbor-label">Next</span>
+                    <span class="neighbor-title">Can I apply for VA benefits while incarcerated?</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </nav>
     
 <footer>
-  <div class="footer-main-contents">
+  <div class="footer-main-contents column">
     <ul class="footer-links">
       <li><a href="http://www.rootandrebound.org/donate">Donate</a></li>
       <li><a href="/">Roadmap Home</a></li>
