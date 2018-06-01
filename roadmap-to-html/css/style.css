@@ -54,23 +54,6 @@ mark {
     position: relative;
     top: -0.7em; }
 
-nav ol {
-  padding: 1em 0; }
-
-p {
-  margin: 0;
-  padding: 1em 0; }
-
-/* PADDING */
-header, footer, article, section, .table-of-contents {
-  padding-left: 2rem;
-  padding-right: 2rem; }
-
-@media screen and (max-width: 500px) {
-  header, footer, article, section, .table-of-contents {
-    padding-left: 1rem;
-    padding-right: 1rem; } }
-
 header {
   background-color: #e2c221;
   padding: 1em 0;
@@ -97,7 +80,7 @@ footer {
 /* POPULAR PAGES */
 .popular-pages {
   padding-top: 2em;
-  margin-bottom: 2em; }
+  padding-bottom: 2em; }
   .popular-pages__list {
     list-style-type: none;
     padding: 0; }
@@ -174,6 +157,27 @@ footer ul, footer p {
 article, .table-of-contents {
   color: #000;
   background-color: #fff; }
+
+nav ol {
+  padding: 1em 0; }
+
+p {
+  margin: 0;
+  padding: 1em 0; }
+
+.column {
+  margin: 0 auto;
+  max-width: 50em; }
+
+/* PADDING */
+header, footer, article, section, .table-of-contents {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+@media screen and (max-width: 500px) {
+  header, footer, article, section, .table-of-contents {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
 
 img {
   width: 100%; }
@@ -370,7 +374,7 @@ img {
   display: block;
   text-decoration: none; }
 
-.breadcrumbs a:after {
+.breadcrumbs a > .column:after {
   content: "›";
   margin-left: .3em;
   font-size: 2em;

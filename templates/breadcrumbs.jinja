@@ -1,15 +1,20 @@
 <nav class="breadcrumbs">
   <ol>
-    <li><a href="{{ prefix }}/">Roadmap to Reentry (Home Page)</a></li>
+    <li><a href="{{ prefix }}/"><div class="column">Roadmap to Reentry (Home
+Page)</div></a></li>
     {%- if page.parent and page.parent.parent and page.parent.parent.parent %}
-    <li><a href="{{ prefix }}/{{ page.parent.parent.parent.get_path() }}">{{ page.parent.parent.parent.title }}</a></li>
+    <li><a href="{{ prefix }}/{{ page.parent.parent.parent.get_path() }}"><div
+class="column">{{ page.parent.parent.parent.title }}</div></a></li>
     {%- endif %}
     {%- if page.parent and page.parent.parent %}
-    <li><a href="{{ prefix }}/{{ page.parent.parent.get_path() }}">{{ page.parent.parent.title }}</a></li>
+    <li><a href="{{ prefix }}/{{ page.parent.parent.get_path() }}"><div
+class="column">{{ page.parent.parent.title }}</div></a></li>
     {%- endif %}
     {%- if page.parent %}
-    <li><a href="{{ prefix }}/{{ page.parent.get_path() }}">{{ page.parent.title }}</a></li>
+    <li><a href="{{ prefix }}/{{ page.parent.get_path() }}"><div
+class="column">{{ page.parent.title }}</div></a></li>
     {%- endif %}
-    <li><a href="{{ prefix }}/{{ page.get_path() }}">{{ page.title }} (Current Page)</a></li>
+    <li><a href="{{ prefix }}/{{ page.get_path() }}"><div class="column">{{
+page.title }} (Current Page)</div></a></li>
   </ol>
 </nav>

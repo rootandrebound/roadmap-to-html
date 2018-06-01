@@ -474,7 +474,9 @@ def run():
         data.global_context.update(
             chapters=[item for item in content_items if item.level == 0],
             page_index=page_index)
-        item = content_item
+        for item in content_items:
+            item.write()
+            print(item.get_path())
         splash_page = data.SplashPage(title='Home', level="splash")
         splash_page.write()
         print(splash_page.get_path())

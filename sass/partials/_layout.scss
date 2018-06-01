@@ -7,6 +7,11 @@ p {
   padding: 1em 0;
 }
 
+.column {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
 /* PADDING */
 header, footer, article, section, .table-of-contents {
   padding-left: $horizontal-padding;

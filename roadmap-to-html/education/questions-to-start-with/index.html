@@ -27,13 +27,16 @@
 
     <main role="main">
     <aside role="note" class="flash">
-  <p class="flash__text">
-    Welcome! This website is an experiment.
-    <a class="flash__link" href="mailto:roadmap@rootandrebound.org?subject=Roadmap%20website%20feedback">Please leave us feedback!</a>
-  </p>
+  <div class="column">
+    <p class="flash__text">
+      Welcome! This website is an experiment.
+      <a class="flash__link" href="mailto:roadmap@rootandrebound.org?subject=Roadmap%20website%20feedback">Please leave us feedback!</a>
+    </p>
+  </div>
 </aside>
       <!-- Header includes search, sites title and mobile menu -->
       <header role="banner" class="main-header">
+        <div class="column">
           <h3 class="site-title__organization">Root &amp; Rebound</h3>
           <h1 class="site-title">
             <a href="/">
@@ -49,51 +52,60 @@
   </span>
 </form>
         </div>
+        </div>
       </header>
-      <nav class="breadcrumbs">
+          <nav class="breadcrumbs">
   <ol>
-    <li><a href="/">Roadmap to Reentry (Home Page)</a></li>
-    <li><a href="/education">Education</a></li>
-    <li><a href="/education/questions-to-start-with">Questions to start with (Current Page)</a></li>
+    <li><a href="/"><div class="column">Roadmap to Reentry (Home
+Page)</div></a></li>
+    <li><a href="/education"><div
+class="column">Education</div></a></li>
+    <li><a href="/education/questions-to-start-with"><div class="column">Questions to start with (Current Page)</div></a></li>
   </ol>
 </nav>
 
-      <article>
-        <h1>Questions to start with</h1>
-        <p class="text">Thinking through the following questions will help you set your educational goals and decide which path is best for you. </p>
-      </article>
-        <div class="table-of-contents">
-          <ol class="table-of-contents__list">
-            <li class="table-of-contents__listing">
-              <h3><a href="/education/questions-to-start-with/what-are-my-educational-options/">What are my educational options?</a></h3>
-            </li>
-            <li class="table-of-contents__listing">
-              <h3><a href="/education/questions-to-start-with/what-educational-options-do-i-have-while-im-on-pro/">What educational options do I have while I’m on probation or parole?</a></h3>
-            </li>
-            <li class="table-of-contents__listing">
-              <h3><a href="/education/questions-to-start-with/what-educational-options-do-i-have-while-im-incarc/">What educational options do I have while I’m incarcerated?</a></h3>
-            </li>
-          </ol>
-        </div>
-      <nav class="neighbors">
-        <ol>
-          <li class="previous">
-            <a href="/education">
-              <span class="neighbor-label">Previous</span>
-              <span class="neighbor-title">Education</span>
-            </a>
-          </li>
-          <li class="next">
-            <a href="/education/questions-to-start-with/what-are-my-educational-options">
-              <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">What are my educational options?</span>
-            </a>
-          </li>
-        </ol>
-      </nav>
+          <article>
+            <div class="column">
+              <h1>Questions to start with</h1>
+              <p class="text">Thinking through the following questions will help you set your educational goals and decide which path is best for you. </p>
+            </div>
+          </article>
+            <div class="table-of-contents">
+              <div class="column">
+                <ol class="table-of-contents__list">
+                  <li class="table-of-contents__listing">
+                    <h3><a href="/education/questions-to-start-with/what-are-my-educational-options/">What are my educational options?</a></h3>
+                  </li>
+                  <li class="table-of-contents__listing">
+                    <h3><a href="/education/questions-to-start-with/what-educational-options-do-i-have-while-im-on-pro/">What educational options do I have while I’m on probation or parole?</a></h3>
+                  </li>
+                  <li class="table-of-contents__listing">
+                    <h3><a href="/education/questions-to-start-with/what-educational-options-do-i-have-while-im-incarc/">What educational options do I have while I’m incarcerated?</a></h3>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          <nav class="neighbors">
+            <div class="column">
+              <ol>
+                <li class="previous">
+                  <a href="/education">
+                    <span class="neighbor-label">Previous</span>
+                    <span class="neighbor-title">Education</span>
+                  </a>
+                </li>
+                <li class="next">
+                  <a href="/education/questions-to-start-with/what-are-my-educational-options">
+                    <span class="neighbor-label">Next</span>
+                    <span class="neighbor-title">What are my educational options?</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </nav>
     
 <footer>
-  <div class="footer-main-contents">
+  <div class="footer-main-contents column">
     <ul class="footer-links">
       <li><a href="http://www.rootandrebound.org/donate">Donate</a></li>
       <li><a href="/">Roadmap Home</a></li>

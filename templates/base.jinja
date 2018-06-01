@@ -32,7 +32,8 @@
     {%- block main %}
       <!-- Header includes search, sites title and mobile menu -->
       <header role="banner" class="main-header">
-      {%- block header %}
+        <div class="column">
+        {%- block header %}
           <h3 class="site-title__organization">Root &amp; Rebound</h3>
           <h1 class="site-title">
             <a href="{{ prefix }}/">
@@ -40,80 +41,89 @@
             </a>
           </h1>
 
-        {%- block header_content %}
-        {%- endblock header_content %}
+          {%- block header_content %}
+          {%- endblock header_content %}
 
         <div class="main-header__search">
           {% include "search_form.jinja" %}
         </div>
-      {%- endblock header %}
+        {%- endblock header %}
+        </div>
       </header>
 
 
 
-      {%- block main_content %}
-      {% include "breadcrumbs.jinja" %}
+        {%- block main_content %}
+          {% include "breadcrumbs.jinja" %}
 
-      <article>
-        <h1>{{ page.title }}</h1>
-        {%- for tag in page.contents %}
-        {{ tag|safe }}
-        {%- endfor %}
-      </article>
-      {%- if page.level >= 3 or page.children|length == 1 %}
-        {%- for child in page.children %}
           <article>
-          <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
-          {%- for tag in child.contents %}
-            {{ tag|safe }}
-          {%- endfor %}
+            <div class="column">
+              <h1>{{ page.title }}</h1>
+              {%- for tag in page.contents %}
+              {{ tag|safe }}
+              {%- endfor %}
+            </div>
           </article>
-        {% endfor %}
-      {%- else %}
-        {#- we are on an index page #}
-        <div class="table-of-contents">
-          <ol class="table-of-contents__list">
-            {%- for child in page.children %}
-            <li class="table-of-contents__listing">
-              <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
-              {%- if child.children %}
-                <ol>
-                {%- for grandchild in child.children %}
-                  <li><h{{ 1 + (grandchild.level - page.level) }}><a href="{{ prefix }}/{{ grandchild.get_path() }}/">{{ grandchild.title }}</a></h{{ 1 + (grandchild.level - page.level) }}>
-                  </li>
-                {%- endfor %}
-                </ol>
-              {%- endif %}
-            </li>
-            {%- endfor %}
-          </ol>
-        </div>
-        
-      {%- endif %}
 
-      {%- if page.prev or page.next %}
-      <nav class="neighbors">
-        <ol>
-          {%- if page.prev %}
-          <li class="previous">
-            <a href="{{ prefix }}/{{ page.prev.get_path() }}">
-              <span class="neighbor-label">Previous</span>
-              <span class="neighbor-title">{{ page.prev.title }}</span>
-            </a>
-          </li>
+          {%- if page.level >= 3 or page.children|length == 1 %}
+            {%- for child in page.children %}
+              <article>
+                <div class="column">
+                  <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
+                  {%- for tag in child.contents %}
+                    {{ tag|safe }}
+                  {%- endfor %}
+                </div>
+              </article>
+            {% endfor %}
+          {%- else %}
+            {#- we are on an index page #}
+            <div class="table-of-contents">
+              <div class="column">
+                <ol class="table-of-contents__list">
+                  {%- for child in page.children %}
+                  <li class="table-of-contents__listing">
+                    <h{{ 1 + (child.level - page.level) }}><a href="{{ prefix }}/{{ child.get_path() }}/">{{ child.title }}</a></h{{ 1 + (child.level - page.level) }}>
+                    {%- if child.children %}
+                      <ol>
+                      {%- for grandchild in child.children %}
+                        <li><h{{ 1 + (grandchild.level - page.level) }}><a href="{{ prefix }}/{{ grandchild.get_path() }}/">{{ grandchild.title }}</a></h{{ 1 + (grandchild.level - page.level) }}>
+                        </li>
+                      {%- endfor %}
+                      </ol>
+                    {%- endif %}
+                  </li>
+                  {%- endfor %}
+                </ol>
+              </div>
+            </div>
           {%- endif %}
-          {%- if page.next %}
-          <li class="next">
-            <a href="{{ prefix }}/{{ page.next.get_path() }}">
-              <span class="neighbor-label">Next</span>
-              <span class="neighbor-title">{{ page.next.title }}</span>
-            </a>
-          </li>
+
+          {%- if page.prev or page.next %}
+          <nav class="neighbors">
+            <div class="column">
+              <ol>
+                {%- if page.prev %}
+                <li class="previous">
+                  <a href="{{ prefix }}/{{ page.prev.get_path() }}">
+                    <span class="neighbor-label">Previous</span>
+                    <span class="neighbor-title">{{ page.prev.title }}</span>
+                  </a>
+                </li>
+                {%- endif %}
+                {%- if page.next %}
+                <li class="next">
+                  <a href="{{ prefix }}/{{ page.next.get_path() }}">
+                    <span class="neighbor-label">Next</span>
+                    <span class="neighbor-title">{{ page.next.title }}</span>
+                  </a>
+                </li>
+                {%- endif %}
+              </ol>
+            </div>
+          </nav>
           {%- endif %}
-        </ol>
-      </nav>
-      {%- endif %}
-    {%- endblock main_content %}
+      {%- endblock main_content %}
     {%- endblock main %}
     {% include "footer.jinja" %}
 
