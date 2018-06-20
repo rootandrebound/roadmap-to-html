@@ -104,7 +104,8 @@ class TOCEntry:
         self.soup_index = soup_index
         self.element = element
         self.raw_text = element.text
-        toc_entry_text, page_number = element.text.split("\t")
+        toc_listing_chunks = element.text.split("\t")
+        toc_entry_text, page_number = toc_listing_chunks[-2:]
         self.text = remove_leading_roman_numerals(toc_entry_text)
         self.page_number = int(page_number.strip())
         self.content_link = None

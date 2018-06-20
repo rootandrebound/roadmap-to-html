@@ -14,3 +14,4 @@ pyvenv.cfg
 notes.md
 __pycache__
 *.pyc
+.idea

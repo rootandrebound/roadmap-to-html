@@ -48,6 +48,18 @@
     "path": "the-building-blocks-of-reentry-getting-id-other-ke/can-i-legally-change-my-name"
   },
   {
+    "title": "I am an undocumented person? Can I get official ID?",
+    "level": 4,
+    "heading_text": "",
+    "path": "the-building-blocks-of-reentry-getting-id-other-ke/i-am-an-undocumented-person-can-i-get-official-id"
+  },
+  {
+    "title": "I AM A TRIBAL MEMBER. CAN I GET A TRIBAL ID CARD?",
+    "level": 4,
+    "heading_text": "",
+    "path": "the-building-blocks-of-reentry-getting-id-other-ke/i-am-a-tribal-member-can-i-get-a-tribal-id-card"
+  },
+  {
     "title": "I believe my identity was stolen while I was incarcerated. What can I do?",
     "level": 4,
     "heading_text": "",
@@ -408,42 +420,6 @@
     "path": "the-building-blocks-of-reentry-getting-id-other-ke/california-state-id-driver-license-municipal-id/driver-license-suspensions-revocations/does-getting-my-criminal-conviction-expunged-help-"
   },
   {
-    "title": "Undocumented Immigrants: Some Options for ID",
-    "level": 1,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/undocumented-immigrants-some-options-for-id"
-  },
-  {
-    "title": "I am an undocumented person? Can I get official ID?",
-    "level": 4,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/undocumented-immigrants-some-options-for-id/i-am-an-undocumented-person-can-i-get-official-id"
-  },
-  {
-    "title": "Can I get an \u201cUndocumented Person\u201d California driver license?",
-    "level": 4,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/undocumented-immigrants-some-options-for-id/can-i-get-an-undocumented-person-california-driver"
-  },
-  {
-    "title": "Can the police report me to U.S. immigration officials for using an AB 60 \u201cUndocumented Person\u201d driver license in California?",
-    "level": 4,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/undocumented-immigrants-some-options-for-id/can-the-police-report-me-to-u-s-immigration-offici"
-  },
-  {
-    "title": "Whate are the other limited forms of ID for undocumented people?",
-    "level": 4,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/undocumented-immigrants-some-options-for-id/whate-are-the-other-limited-forms-of-id-for-undocu"
-  },
-  {
-    "title": "What other resources are there for undocumented people and immigrants in California?",
-    "level": 4,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/undocumented-immigrants-some-options-for-id/what-other-resources-are-there-for-undocumented-pe"
-  },
-  {
     "title": "U.S. PASSPORT",
     "level": 1,
     "heading_text": "",
@@ -478,30 +454,6 @@
     "level": 4,
     "heading_text": "",
     "path": "the-building-blocks-of-reentry-getting-id-other-ke/u-s-passport/how-do-i-apply-by-mail-for-a-renewal-of-my-u-s-pas"
-  },
-  {
-    "title": "Tribal ID Card",
-    "level": 1,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/tribal-id-card"
-  },
-  {
-    "title": "What is a tribal ID card and why would I need it?",
-    "level": 4,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/tribal-id-card/what-is-a-tribal-id-card-and-why-would-i-need-it"
-  },
-  {
-    "title": "How do I get a tribal ID card?",
-    "level": 4,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/tribal-id-card/how-do-i-get-a-tribal-id-card"
-  },
-  {
-    "title": "If I am registered with a tribe, will they have other identification documents on file for me or my family members?",
-    "level": 4,
-    "heading_text": "",
-    "path": "the-building-blocks-of-reentry-getting-id-other-ke/tribal-id-card/if-i-am-registered-with-a-tribe-will-they-have-oth"
   },
   {
     "title": "LIBRARY CARD",
@@ -810,58 +762,172 @@
     "path": "parole-probation/state-parole/basics-of-state-parole/when-is-the-post-release-community-supervision-prc"
   },
   {
+    "title": "Before Release: Common Questions on Preparing for Parole Board Hearings and on New Laws Affecting Sentencing and Release Dates",
+    "level": 2,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p"
+  },
+  {
     "title": "Preparing for Parole Consideration Hearings before the Board of Parole Hearings (BPH)",
     "level": 3,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/preparing-for-parole-consideration-hearings-before"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/preparing-for-parole-consideration-hearings-before"
   },
   {
     "title": "Who has to go before the Board of Parole Hearings to be released from California state prison?",
     "level": 4,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/preparing-for-parole-consideration-hearings-before/who-has-to-go-before-the-board-of-parole-hearings-"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/preparing-for-parole-consideration-hearings-before/who-has-to-go-before-the-board-of-parole-hearings-"
   },
   {
     "title": "Who can help me prepare for the Board of Parole hearings?",
     "level": 4,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/preparing-for-parole-consideration-hearings-before/who-can-help-me-prepare-for-the-board-of-parole-he"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/preparing-for-parole-consideration-hearings-before/who-can-help-me-prepare-for-the-board-of-parole-he"
   },
   {
     "title": "SB 260 and SB 261",
     "level": 3,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/sb-260-and-sb-261"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-260-and-sb-261"
   },
   {
-    "title": "What are SB 260 and SB 261?",
+    "title": "What are SENATE BILL 260 (SB 260) and SENATE BILL 261 (SB 261)?",
     "level": 4,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/sb-260-and-sb-261/what-are-sb-260-and-sb-261"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-260-and-sb-261/what-are-senate-bill-260-sb-260-and-senate-bill-26"
   },
   {
-    "title": "How can SB 260 and 261 help me?",
+    "title": "How can SENATE BILL 260 (SB 260) and SENATE BILL 261 (SB 261) help me?",
     "level": 4,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/sb-260-and-sb-261/how-can-sb-260-and-261-help-me"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-260-and-sb-261/how-can-senate-bill-260-sb-260-and-senate-bill-261"
+  },
+  {
+    "title": "SB 394: YOUTH OFFENDER PAROLE HEARINGS FOR People Sentenced to \u201cLWOP\u201d (Life without the Possibility of Parole)",
+    "level": 3,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-394-youth-offender-parole-hearings-for-people-s"
+  },
+  {
+    "title": "What IS Senate Bill 394 (SB 394)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-394-youth-offender-parole-hearings-for-people-s/what-is-senate-bill-394-sb-394"
+  },
+  {
+    "title": "How can SENATE bILL 394 (SB 394) help me?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-394-youth-offender-parole-hearings-for-people-s/how-can-senate-bill-394-sb-394-help-me"
+  },
+  {
+    "title": "ELDERLY PAROLE PROGRAM",
+    "level": 3,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/elderly-parole-program"
+  },
+  {
+    "title": "What IS THE ELDERLY PAROLE PROGRAM?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/elderly-parole-program/what-is-the-elderly-parole-program"
+  },
+  {
+    "title": "How can THE ELDERLY PAROLE PROGRAM help me?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/elderly-parole-program/how-can-the-elderly-parole-program-help-me"
   },
   {
     "title": "Proposition 57 (\u201cProp. 57\u201d)",
     "level": 3,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/proposition-57-prop-57"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57"
   },
   {
     "title": "What is Prop. 57?",
     "level": 4,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/proposition-57-prop-57/what-is-prop-57"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57/what-is-prop-57"
   },
   {
     "title": "How can Prop. 57 help me?",
     "level": 4,
     "heading_text": "",
-    "path": "parole-probation/state-parole/basics-of-state-parole/proposition-57-prop-57/how-can-prop-57-help-me"
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57/how-can-prop-57-help-me"
+  },
+  {
+    "title": "What is the Proposition 57 early parole process?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57/what-is-the-proposition-57-early-parole-process"
+  },
+  {
+    "title": "AM I eligible for the Proposition 57 early parole process if I am a nonviolent third striker?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57/am-i-eligible-for-the-proposition-57-early-parole-"
+  },
+  {
+    "title": "How does a Proposition 57 PAROLE hearing work?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57/how-does-a-proposition-57-parole-hearing-work"
+  },
+  {
+    "title": "How will the Board of Parole Hearings decide whether I pass the public safety screen?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57/how-will-the-board-of-parole-hearings-decide-wheth"
+  },
+  {
+    "title": "What changes did Proposition 57 make to credit earning?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57/what-changes-did-proposition-57-make-to-credit-ear"
+  },
+  {
+    "title": "How can I learn more about Proposition 57?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/proposition-57-prop-57/how-can-i-learn-more-about-proposition-57"
+  },
+  {
+    "title": "SB 620: unwarranted firearm enhancements",
+    "level": 3,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-620-unwarranted-firearm-enhancements"
+  },
+  {
+    "title": "What is SENATE BILL 620 (SB 620)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-620-unwarranted-firearm-enhancements/what-is-senate-bill-620-sb-620"
+  },
+  {
+    "title": "How can SENATE BILL 620 (SB 620) help me?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-620-unwarranted-firearm-enhancements/how-can-senate-bill-620-sb-620-help-me"
+  },
+  {
+    "title": "SB 180: DRUG SENTENCING REFORM",
+    "level": 3,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-180-drug-sentencing-reform"
+  },
+  {
+    "title": "What is SENATE BILL 180 (SB 180)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-180-drug-sentencing-reform/what-is-senate-bill-180-sb-180"
+  },
+  {
+    "title": "How can SENATE BIILL 180 (SB 180) help me?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/before-release-common-questions-on-preparing-for-p/sb-180-drug-sentencing-reform/how-can-senate-biill-180-sb-180-help-me"
   },
   {
     "title": "After Release: What to Expect in Your First Days Out on State Parole",
@@ -882,10 +948,16 @@
     "path": "parole-probation/state-parole/after-release-what-to-expect-in-your-first-days-ou/what-county-will-i-be-paroled-to-and-who-decides"
   },
   {
-    "title": "Do I get any financial assistance from parole when I first get out?",
+    "title": "Do I get any financial assistance or \u201cgate money\u201d from parole when I first get out?",
     "level": 4,
     "heading_text": "",
-    "path": "parole-probation/state-parole/after-release-what-to-expect-in-your-first-days-ou/do-i-get-any-financial-assistance-from-parole-when"
+    "path": "parole-probation/state-parole/after-release-what-to-expect-in-your-first-days-ou/do-i-get-any-financial-assistance-or-gate-money-fr"
+  },
+  {
+    "title": "What can I do if I don\u2019t get my gate money?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/after-release-what-to-expect-in-your-first-days-ou/what-can-i-do-if-i-dont-get-my-gate-money"
   },
   {
     "title": "Length of State Parole",
@@ -1122,10 +1194,10 @@
     "path": "parole-probation/state-parole/conditions-of-state-parole/special-conditions-of-state-parole-and-other-laws-/what-happens-if-my-failure-to-register-was-by-acci"
   },
   {
-    "title": "I am a noncitizen convicted of a sex offense that requires me to register. Will I face immigration consequences in addition to my time sentenced to jail or prison?",
+    "title": "Do I have special registration requirements as a tribal member?",
     "level": 4,
     "heading_text": "",
-    "path": "parole-probation/state-parole/conditions-of-state-parole/special-conditions-of-state-parole-and-other-laws-/i-am-a-noncitizen-convicted-of-a-sex-offense-that-"
+    "path": "parole-probation/state-parole/conditions-of-state-parole/special-conditions-of-state-parole-and-other-laws-/do-i-have-special-registration-requirements-as-a-t"
   },
   {
     "title": "I am a 290 registrant. Do I have to wear a GPS tracker? For how long?",
@@ -1330,6 +1402,12 @@
     "level": 4,
     "heading_text": "",
     "path": "parole-probation/state-parole/how-to-challenge-state-parole-conditions/i-filed-a-602-administrative-appeal-and-completed-"
+  },
+  {
+    "title": "I FILED A 602 APPEAL CHALLENGING A PAROLE CONDITION. What HAPPENS TO A PENDING 602 APPEAL IF I violate parole?",
+    "level": 4,
+    "heading_text": "",
+    "path": "parole-probation/state-parole/how-to-challenge-state-parole-conditions/i-filed-a-602-appeal-challenging-a-parole-conditio"
   },
   {
     "title": "How can I challenge a parole condition that I cannot follow because of a disability I have?",
@@ -2658,12 +2736,6 @@
     "path": "parole-probation/federal-community-supervision-federal-parole/after-release-what-to-expect-in-your-first-days-ou/after-i-am-released-to-federal-parole-when-and-to-"
   },
   {
-    "title": "I am not a U.S. citizen, and I am told I have an outstanding detainer against me. What is a detainer? What could happen to me?",
-    "level": 4,
-    "heading_text": "",
-    "path": "parole-probation/federal-community-supervision-federal-parole/after-release-what-to-expect-in-your-first-days-ou/i-am-not-a-u-s-citizen-and-i-am-told-i-have-an-out"
-  },
-  {
     "title": "Length of Federal Parole",
     "level": 2,
     "heading_text": "",
@@ -2976,10 +3048,10 @@
     "path": "housing/looking-for-identifying-good-housing-options/short-term-housing-overview/pre-release-transitional-housing-programs/what-types-of-pre-release-transitional-housing-pro"
   },
   {
-    "title": "What happents to my good time credits if I serve the last part of my sentence in a transitional house program?",
+    "title": "What happens to my good time credits if I serve the last part of my sentence in a transitional house program?",
     "level": 4,
     "heading_text": "",
-    "path": "housing/looking-for-identifying-good-housing-options/short-term-housing-overview/pre-release-transitional-housing-programs/what-happents-to-my-good-time-credits-if-i-serve-t"
+    "path": "housing/looking-for-identifying-good-housing-options/short-term-housing-overview/pre-release-transitional-housing-programs/what-happens-to-my-good-time-credits-if-i-serve-th"
   },
   {
     "title": "I\u2019m a lifer. Can I participate in CDCR\u2019s pre-release transitional housing programs?",
@@ -3078,34 +3150,52 @@
     "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/how-can-i-figure-out-if-i-am-applying-to-living-in"
   },
   {
-    "title": "Private Housing",
+    "title": "Private Housing: The Basics",
     "level": 3,
     "heading_text": "",
-    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/private-housing"
+    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/private-housing-the-basics"
   },
   {
-    "title": "Government-Assisted Housing",
+    "title": "Why would I be interested in living in private housing?",
+    "level": 4,
+    "heading_text": "",
+    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/private-housing-the-basics/why-would-i-be-interested-in-living-in-private-hou"
+  },
+  {
+    "title": "How can I find private housing?",
+    "level": 4,
+    "heading_text": "",
+    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/private-housing-the-basics/how-can-i-find-private-housing"
+  },
+  {
+    "title": "Who is my landlord if I live in private housing?",
+    "level": 4,
+    "heading_text": "",
+    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/private-housing-the-basics/who-is-my-landlord-if-i-live-in-private-housing"
+  },
+  {
+    "title": "Government-Assisted Housing: The Basics",
     "level": 3,
     "heading_text": "",
-    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/government-assisted-housing"
+    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/government-assisted-housing-the-basics"
   },
   {
     "title": "Why would I be interested in living in government-assisted housing?",
     "level": 4,
     "heading_text": "",
-    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/government-assisted-housing/why-would-i-be-interested-in-living-in-government-"
+    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/government-assisted-housing-the-basics/why-would-i-be-interested-in-living-in-government-"
   },
   {
     "title": "How can I find government-assisted housing?",
     "level": 4,
     "heading_text": "",
-    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/government-assisted-housing/how-can-i-find-government-assisted-housing"
+    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/government-assisted-housing-the-basics/how-can-i-find-government-assisted-housing"
   },
   {
     "title": "Who is my landlord if I live in government-assisted housing?",
     "level": 4,
     "heading_text": "",
-    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/government-assisted-housing/who-is-my-landlord-if-i-live-in-government-assiste"
+    "path": "housing/looking-for-identifying-good-housing-options/private-vs-government-assisted-housing-an-overview/government-assisted-housing-the-basics/who-is-my-landlord-if-i-live-in-government-assiste"
   },
   {
     "title": "APPLYING For & GETTING INTO HOUSING",
@@ -3172,6 +3262,12 @@
     "level": 4,
     "heading_text": "",
     "path": "housing/applying-for-getting-into-housing/criminal-record-bans-to-be-aware-of-before-you-app/1-criminal-record-bans-in-private-housing/can-a-private-landlord-refuse-to-rent-to-me-just-b"
+  },
+  {
+    "title": "Can a private landlord refuse to rent to me because my criminal record would increase their homeowner\u2019s insurance rates?",
+    "level": 4,
+    "heading_text": "",
+    "path": "housing/applying-for-getting-into-housing/criminal-record-bans-to-be-aware-of-before-you-app/1-criminal-record-bans-in-private-housing/can-a-private-landlord-refuse-to-rent-to-me-becaus"
   },
   {
     "title": "When might I be legally protected from a private landlord discriminating against me due to my criminal record?",
@@ -4236,10 +4332,10 @@
     "path": "public-benefits/health-care-benefits/medi-cal/am-i-eligible-for-medi-cal"
   },
   {
-    "title": "What benefits and services can I get through MediCal?",
+    "title": "What benefits and services can I get through Medi\u2011Cal?",
     "level": 4,
     "heading_text": "",
-    "path": "public-benefits/health-care-benefits/medi-cal/what-benefits-and-services-can-i-get-through-medic"
+    "path": "public-benefits/health-care-benefits/medi-cal/what-benefits-and-services-can-i-get-through-medi-"
   },
   {
     "title": "Can my criminal history limit my ability to get Medi-Cal benefits?",
@@ -4560,6 +4656,12 @@
     "path": "public-benefits/social-security-benefits/supplemental-security-income-ssi/i-believe-my-ssi-was-wrongly-denied-or-stopped-how"
   },
   {
+    "title": "Tribal Income and SSI",
+    "level": 3,
+    "heading_text": "",
+    "path": "public-benefits/social-security-benefits/supplemental-security-income-ssi/tribal-income-and-ssi"
+  },
+  {
     "title": "VETERANS\u2019 BENEFITS",
     "level": 1,
     "heading_text": "",
@@ -4644,10 +4746,10 @@
     "path": "public-benefits/lifeline-cell-phone-landline-benefits/what-documents-do-i-need-to-be-found-eligible"
   },
   {
-    "title": "Can my criminal backround limit my ability to get a California Lifeline phone?",
+    "title": "Can my criminal backGround limit my ability to get a California Lifeline phone?",
     "level": 4,
     "heading_text": "",
-    "path": "public-benefits/lifeline-cell-phone-landline-benefits/can-my-criminal-backround-limit-my-ability-to-get-"
+    "path": "public-benefits/lifeline-cell-phone-landline-benefits/can-my-criminal-background-limit-my-ability-to-get"
   },
   {
     "title": "Can I apply for a California LifeLine phone while incarcerated?",
@@ -4782,7 +4884,7 @@
     "path": "employment/introduction-looking-for-work/how-to-present-your-best-self/ace-the-job-application"
   },
   {
-    "title": "How can i have a successful job application?",
+    "title": "How can I have a successful job application?",
     "level": 4,
     "heading_text": "",
     "path": "employment/introduction-looking-for-work/how-to-present-your-best-self/ace-the-job-application/how-can-i-have-a-successful-job-application"
@@ -4824,112 +4926,94 @@
     "path": "employment/know-your-rights-on-employment-background-checks"
   },
   {
-    "title": "Your rights against employers",
+    "title": "Your rights against employers related to criminal background checks",
     "level": 2,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-"
   },
   {
     "title": "How can employers learn about my criminal record?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/how-can-employers-learn-about-my-criminal-record"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/how-can-employers-learn-about-my-criminal-record"
   },
   {
-    "title": "If the employer asks you directly about your criminal record",
+    "title": "When can (and can\u2019t) employers ask about my criminal record under the new Fair Chance Act (AB 1008)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/when-can-and-cant-employers-ask-about-my-criminal-"
+  },
+  {
+    "title": "My city or county already has a ban the box policy. Will the Fair Chance Act replace that policy?",
+    "level": 4,
+    "heading_text": "",
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/my-city-or-county-already-has-a-ban-the-box-policy"
+  },
+  {
+    "title": "Is there anything an employer can\u2019t ask about my criminal record?",
+    "level": 4,
+    "heading_text": "",
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/is-there-anything-an-employer-cant-ask-about-my-cr"
+  },
+  {
+    "title": "If the employer uses a private company to run a background check on you",
     "level": 3,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-asks-you-directly-about-your-crimi"
-  },
-  {
-    "title": "What can\u2019t employers ask about my criminal record?",
-    "level": 4,
-    "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-asks-you-directly-about-your-crimi/what-cant-employers-ask-about-my-criminal-record"
-  },
-  {
-    "title": "What can employers ask me about my criminal record?",
-    "level": 4,
-    "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-asks-you-directly-about-your-crimi/what-can-employers-ask-me-about-my-criminal-record"
-  },
-  {
-    "title": "When can (and can\u2019t) employers ask about my criminal record?",
-    "level": 4,
-    "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-asks-you-directly-about-your-crimi/when-can-and-cant-employers-ask-about-my-criminal-"
-  },
-  {
-    "title": "When can a public (government) employer in California ask about my criminal record?",
-    "level": 4,
-    "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-asks-you-directly-about-your-crimi/when-can-a-public-government-employer-in-californi"
-  },
-  {
-    "title": "When can a private employer in California ask about my criminal record?",
-    "level": 4,
-    "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-asks-you-directly-about-your-crimi/when-can-a-private-employer-in-california-ask-abou"
-  },
-  {
-    "title": "If the employer uses a private background check company to run a background check on you",
-    "level": 3,
-    "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba"
   },
   {
     "title": "Are employers legally allowed to run a background check on me?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/are-employers-legally-allowed-to-run-a-background-"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/are-employers-legally-allowed-to-run-a-background-"
   },
   {
     "title": "Can an employer consider my credit history?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/can-an-employer-consider-my-credit-history"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/can-an-employer-consider-my-credit-history"
   },
   {
     "title": "Are employers legally required to conduct criminal background checks?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/are-employers-legally-required-to-conduct-criminal"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/are-employers-legally-required-to-conduct-criminal"
   },
   {
     "title": "Since employers are allowed to run background checks on me, do I have any legal rights in the process?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/since-employers-are-allowed-to-run-background-chec"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/since-employers-are-allowed-to-run-background-chec"
   },
   {
     "title": "Can an employer decide not to hire me based on my record?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/can-an-employer-decide-not-to-hire-me-based-on-my-"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/can-an-employer-decide-not-to-hire-me-based-on-my-"
   },
   {
     "title": "What rules must an employer follow if they decide not to hire me based on my record?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/what-rules-must-an-employer-follow-if-they-decide-"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/what-rules-must-an-employer-follow-if-they-decide-"
   },
   {
     "title": "What can I do if there is inaccurate, incomplete, or illegal information in my background check report?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/what-can-i-do-if-there-is-inaccurate-incomplete-or"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/what-can-i-do-if-there-is-inaccurate-incomplete-or"
   },
   {
     "title": "If I am hired, can my employer run background checks on me in the future without my permission?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/if-i-am-hired-can-my-employer-run-background-check"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/if-i-am-hired-can-my-employer-run-background-check"
   },
   {
     "title": "What can I do if the employer has already received information from a background check report that it shouldn\u2019t have received by law?",
     "level": 4,
     "heading_text": "",
-    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers/if-the-employer-uses-a-private-background-check-co/what-can-i-do-if-the-employer-has-already-received"
+    "path": "employment/know-your-rights-on-employment-background-checks/your-rights-against-employers-related-to-criminal-/if-the-employer-uses-a-private-company-to-run-a-ba/what-can-i-do-if-the-employer-has-already-received"
   },
   {
     "title": "If the employer conducts an \u201cin-house\u201d background check",
@@ -4990,6 +5074,12 @@
     "level": 4,
     "heading_text": "",
     "path": "employment/know-your-rights-on-employment-background-checks/errors-in-employers-in-house-background-checks/what-can-i-do-if-the-employer-does-not-follow-any-"
+  },
+  {
+    "title": "What are my options if I believe an employer has violated one or more laws?",
+    "level": 4,
+    "heading_text": "",
+    "path": "employment/know-your-rights-on-employment-background-checks/errors-in-employers-in-house-background-checks/what-are-my-options-if-i-believe-an-employer-has-v"
   },
   {
     "title": "YOUR RIGHTS AGAINST BACKGROUND CHECK COMPANIES",
@@ -5376,19 +5466,19 @@
     "path": "court-ordered-debt"
   },
   {
-    "title": "What is court-ordered debt and why do I need to know about it?",
+    "title": "What is court-ordered debt, and why do I need to know about it?",
     "level": 4,
     "heading_text": "",
     "path": "court-ordered-debt/what-is-court-ordered-debt-and-why-do-i-need-to-kn"
   },
   {
-    "title": "I\u2019ve never received anything telling me that I owe money; so I must not have any court-ordered debt, right?",
+    "title": "I have never received anything telling me that I owe money; so I must not have any court-ordered debt, right?",
     "level": 4,
     "heading_text": "",
-    "path": "court-ordered-debt/ive-never-received-anything-telling-me-that-i-owe-"
+    "path": "court-ordered-debt/i-have-never-received-anything-telling-me-that-i-o"
   },
   {
-    "title": "What are the different types of court ordered debt?",
+    "title": "What are the different types of court-ordered debt?",
     "level": 4,
     "heading_text": "",
     "path": "court-ordered-debt/what-are-the-different-types-of-court-ordered-debt"
@@ -5538,16 +5628,22 @@
     "path": "court-ordered-debt/a-basic-overview-of-court-ordered-debt-restitution/traffic-fines-and-tickets/what-are-my-options-if-the-dmv-told-me-i-have-an-o"
   },
   {
-    "title": "I had a traffic ticket that was pending (unresolved) when I was incarcerated. What might have happened to it?",
+    "title": "I had a pending (unresolved) traffic ticket when I was incarcerated. What happened to it?",
     "level": 4,
     "heading_text": "",
-    "path": "court-ordered-debt/a-basic-overview-of-court-ordered-debt-restitution/traffic-fines-and-tickets/i-had-a-traffic-ticket-that-was-pending-unresolved"
+    "path": "court-ordered-debt/a-basic-overview-of-court-ordered-debt-restitution/traffic-fines-and-tickets/i-had-a-pending-unresolved-traffic-ticket-when-i-w"
   },
   {
-    "title": "I think my traffic ticket qualifies for dismissal. How can I get it dismissed?",
+    "title": "I believe I can get my traffic tickets dismissed under Vehicle code section 41500. How do I do that?",
     "level": 4,
     "heading_text": "",
-    "path": "court-ordered-debt/a-basic-overview-of-court-ordered-debt-restitution/traffic-fines-and-tickets/i-think-my-traffic-ticket-qualifies-for-dismissal-"
+    "path": "court-ordered-debt/a-basic-overview-of-court-ordered-debt-restitution/traffic-fines-and-tickets/i-believe-i-can-get-my-traffic-tickets-dismissed-u"
+  },
+  {
+    "title": "I have debt related to a federal court case. What can I do?",
+    "level": 4,
+    "heading_text": "",
+    "path": "court-ordered-debt/a-basic-overview-of-court-ordered-debt-restitution/traffic-fines-and-tickets/i-have-debt-related-to-a-federal-court-case-what-c"
   },
   {
     "title": "TAKING CONTROL OF YOUR COURT-ORDERED DEBT",
@@ -5562,16 +5658,22 @@
     "path": "court-ordered-debt/taking-control-of-your-court-ordered-debt/how-do-i-find-out-how-much-court-ordered-debt-i-ow"
   },
   {
+    "title": "State & Federal Restitution",
+    "level": 2,
+    "heading_text": "",
+    "path": "court-ordered-debt/taking-control-of-your-court-ordered-debt/state-federal-restitution"
+  },
+  {
     "title": "I haven\u2019t ever received notice that I owe any money for restitution, so I probably don\u2019t, right?",
     "level": 4,
     "heading_text": "",
-    "path": "court-ordered-debt/taking-control-of-your-court-ordered-debt/i-havent-ever-received-notice-that-i-owe-any-money"
+    "path": "court-ordered-debt/taking-control-of-your-court-ordered-debt/state-federal-restitution/i-havent-ever-received-notice-that-i-owe-any-money"
   },
   {
     "title": "I know how much restitution I owe. Can a court order more restitution after I\u2019ve already been sentenced?",
     "level": 4,
     "heading_text": "",
-    "path": "court-ordered-debt/taking-control-of-your-court-ordered-debt/i-know-how-much-restitution-i-owe-can-a-court-orde"
+    "path": "court-ordered-debt/taking-control-of-your-court-ordered-debt/state-federal-restitution/i-know-how-much-restitution-i-owe-can-a-court-orde"
   },
   {
     "title": "Court fines and penalties and court administrative fees",
@@ -5640,6 +5742,12 @@
     "path": "court-ordered-debt/paying-off-or-satisfying-my-court-ordered-debt/restitution/can-my-public-benefit-payments-be-garnished-to-pay"
   },
   {
+    "title": "IF I RECEIVE AN INHERITANCE, CAN IT BE TAKEN TO PAY OFF MY RESTITUTION?",
+    "level": 4,
+    "heading_text": "",
+    "path": "court-ordered-debt/paying-off-or-satisfying-my-court-ordered-debt/restitution/if-i-receive-an-inheritance-can-it-be-taken-to-pay"
+  },
+  {
     "title": "The victim never claimed restitution. Do I still have to pay?",
     "level": 4,
     "heading_text": "",
@@ -5682,22 +5790,16 @@
     "path": "court-ordered-debt/paying-off-or-satisfying-my-court-ordered-debt/traffic-fines-and-fees/how-do-i-pay-my-traffic-fines"
   },
   {
+    "title": "Can I go to traffic school to pay off my traffic tickets?",
+    "level": 4,
+    "heading_text": "",
+    "path": "court-ordered-debt/paying-off-or-satisfying-my-court-ordered-debt/traffic-fines-and-fees/can-i-go-to-traffic-school-to-pay-off-my-traffic-t"
+  },
+  {
     "title": "What options do I have if I cannot pay my traffic fines?",
     "level": 4,
     "heading_text": "",
     "path": "court-ordered-debt/paying-off-or-satisfying-my-court-ordered-debt/traffic-fines-and-fees/what-options-do-i-have-if-i-cannot-pay-my-traffic-"
-  },
-  {
-    "title": "Traffic Amnesty Program\u2014Ended March 31, 2017",
-    "level": 3,
-    "heading_text": "",
-    "path": "court-ordered-debt/paying-off-or-satisfying-my-court-ordered-debt/traffic-fines-and-fees/traffic-amnesty-program-ended-march-31-2017"
-  },
-  {
-    "title": "What was California\u2019s Traffic Amnesty Program?",
-    "level": 4,
-    "heading_text": "",
-    "path": "court-ordered-debt/paying-off-or-satisfying-my-court-ordered-debt/traffic-fines-and-fees/traffic-amnesty-program-ended-march-31-2017/what-was-californias-traffic-amnesty-program"
   },
   {
     "title": "Reducing or Forgiving Court-Ordered Debt",
@@ -5730,34 +5832,28 @@
     "path": "family-children"
   },
   {
-    "title": "Introduction",
-    "level": 1,
-    "heading_text": "",
-    "path": "family-children/introduction"
-  },
-  {
     "title": "Key Terms in the Family & Children Chapter",
     "level": 2,
     "heading_text": "",
-    "path": "family-children/introduction/key-terms-in-the-family-children-chapter"
+    "path": "family-children/key-terms-in-the-family-children-chapter"
   },
   {
     "title": "The Impact of a Criminal Record on a Legal Case About Your Child or Grandchild",
     "level": 2,
     "heading_text": "",
-    "path": "family-children/introduction/the-impact-of-a-criminal-record-on-a-legal-case-ab"
+    "path": "family-children/the-impact-of-a-criminal-record-on-a-legal-case-ab"
   },
   {
     "title": "How will my criminal record impact my ability to reconnect with my child or grandchild?",
     "level": 4,
     "heading_text": "",
-    "path": "family-children/introduction/the-impact-of-a-criminal-record-on-a-legal-case-ab/how-will-my-criminal-record-impact-my-ability-to-r"
+    "path": "family-children/the-impact-of-a-criminal-record-on-a-legal-case-ab/how-will-my-criminal-record-impact-my-ability-to-r"
   },
   {
     "title": "Are there any convictions that will automatically ban me from reconnecting with my child or grandchild?",
     "level": 4,
     "heading_text": "",
-    "path": "family-children/introduction/the-impact-of-a-criminal-record-on-a-legal-case-ab/are-there-any-convictions-that-will-automatically-"
+    "path": "family-children/the-impact-of-a-criminal-record-on-a-legal-case-ab/are-there-any-convictions-that-will-automatically-"
   },
   {
     "title": "The Rights of Parents & Grandparents",
@@ -6108,6 +6204,30 @@
     "path": "family-children/probate-court-guardianships/scenario-2-becoming-the-probate-guardian-of-someon/how-could-the-probate-court-help-me-financially-ta"
   },
   {
+    "title": "CARING FOR ADULTS: Becoming the Probate CONSERVATOR FOR AN ELDERLY OR DISABLED PERSON When You Have a Record",
+    "level": 2,
+    "heading_text": "",
+    "path": "family-children/probate-court-guardianships/caring-for-adults-becoming-the-probate-conservator"
+  },
+  {
+    "title": "What is a conservatorship?",
+    "level": 4,
+    "heading_text": "",
+    "path": "family-children/probate-court-guardianships/caring-for-adults-becoming-the-probate-conservator/what-is-a-conservatorship"
+  },
+  {
+    "title": "How do i become a loved one\u2019s conservator?",
+    "level": 4,
+    "heading_text": "",
+    "path": "family-children/probate-court-guardianships/caring-for-adults-becoming-the-probate-conservator/how-do-i-become-a-loved-ones-conservator"
+  },
+  {
+    "title": "Can I be a loved one\u2019s conservator if i have a criminal record?",
+    "level": 4,
+    "heading_text": "",
+    "path": "family-children/probate-court-guardianships/caring-for-adults-becoming-the-probate-conservator/can-i-be-a-loved-ones-conservator-if-i-have-a-crim"
+  },
+  {
     "title": "Juvenile dependency court",
     "level": 1,
     "heading_text": "",
@@ -6228,18 +6348,6 @@
     "path": "family-children/juvenile-dependency-court/scenario-2-becoming-a-foster-care-parent-or-guardi/becoming-a-foster-care-parent-with-a-record-throug/what-is-the-background-check-process-for-potential"
   },
   {
-    "title": "What convictions will bar me from becoming a foster parent?",
-    "level": 4,
-    "heading_text": "",
-    "path": "family-children/juvenile-dependency-court/scenario-2-becoming-a-foster-care-parent-or-guardi/becoming-a-foster-care-parent-with-a-record-throug/what-convictions-will-bar-me-from-becoming-a-foste"
-  },
-  {
-    "title": "What convictions might prevent me from becoming a foster parent?",
-    "level": 4,
-    "heading_text": "",
-    "path": "family-children/juvenile-dependency-court/scenario-2-becoming-a-foster-care-parent-or-guardi/becoming-a-foster-care-parent-with-a-record-throug/what-convictions-might-prevent-me-from-becoming-a-"
-  },
-  {
     "title": "Becoming a Guardian with a Record through Dependency Court",
     "level": 3,
     "heading_text": "",
@@ -6318,6 +6426,12 @@
     "path": "family-children/becoming-an-adoptive-parent-with-a-record/can-i-adopt-a-child-if-i-have-a-criminal-record"
   },
   {
+    "title": "I have a felony conviction that automatically bans me from adopting a child. can record clearing remedies help me adopt?",
+    "level": 4,
+    "heading_text": "",
+    "path": "family-children/becoming-an-adoptive-parent-with-a-record/i-have-a-felony-conviction-that-automatically-bans"
+  },
+  {
     "title": "My child was adopted out while I was incarcerated. What can I do to reconnect?",
     "level": 4,
     "heading_text": "",
@@ -6366,7 +6480,7 @@
     "path": "family-children/family-issues-inside-prison-or-jail/restrictions-on-children-visiting-currently-incarc/how-do-i-get-a-court-order-to-reinstate-visitation"
   },
   {
-    "title": "What is the Institution Classification Committee and how do I request contact visits through it?",
+    "title": "What is the Institution Classification Committee, and how do I request contact visits through it?",
     "level": 4,
     "heading_text": "",
     "path": "family-children/family-issues-inside-prison-or-jail/restrictions-on-children-visiting-currently-incarc/what-is-the-institution-classification-committee-a"
@@ -6568,6 +6682,12 @@
     "level": 4,
     "heading_text": "",
     "path": "family-children/managing-navigating-spousal-child-support/child-support-debt/managing-your-child-support-payments/can-i-get-rid-of-my-past-overdue-child-support-deb"
+  },
+  {
+    "title": "Can I discharge my child support arrears by filing for bankruptcy?",
+    "level": 4,
+    "heading_text": "",
+    "path": "family-children/managing-navigating-spousal-child-support/child-support-debt/managing-your-child-support-payments/can-i-discharge-my-child-support-arrears-by-filing"
   },
   {
     "title": "I receive public benefits. Can a portion of my public benefits be taken to pay for child support?",
@@ -6822,12 +6942,6 @@
     "path": "education/practical-tips-for-applying-to-school"
   },
   {
-    "title": "What important documents will I need to continue my education?",
-    "level": 4,
-    "heading_text": "",
-    "path": "education/practical-tips-for-applying-to-school/what-important-documents-will-i-need-to-continue-m"
-  },
-  {
     "title": "What are \u201cimmunization/vaccination records\u201d and why do I need them?",
     "level": 4,
     "heading_text": "",
@@ -6852,76 +6966,52 @@
     "path": "education/setting-your-educational-goals"
   },
   {
-    "title": "Some questions for you to think about on your personal educational journey",
+    "title": "Creating a strong plan for your personal educational journey",
     "level": 2,
     "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers"
+    "path": "education/setting-your-educational-goals/creating-a-strong-plan-for-your-personal-education"
   },
   {
-    "title": "What are your short-term and long-term educational goals?",
+    "title": "Step 1: Assess your background, skills and talents.",
     "level": 4,
     "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-are-your-short-term-and-long-term-educational"
+    "path": "education/setting-your-educational-goals/creating-a-strong-plan-for-your-personal-education/step-1-assess-your-background-skills-and-talents"
   },
   {
-    "title": "What practical considerations do you need to take into account?",
+    "title": "Step 2: Determine which careers match your strengths and goals",
     "level": 4,
     "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-practical-considerations-do-you-need-to-take-"
+    "path": "education/setting-your-educational-goals/creating-a-strong-plan-for-your-personal-education/step-2-determine-which-careers-match-your-strength"
   },
   {
-    "title": "What type of job do you want?",
+    "title": "Step 3: Research the qualifications, education, licenses, and/or certificates your desired field requires",
     "level": 4,
     "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-type-of-job-do-you-want"
+    "path": "education/setting-your-educational-goals/creating-a-strong-plan-for-your-personal-education/step-3-research-the-qualifications-education-licen"
   },
   {
-    "title": "What skills, training, and job experience do you already have?",
+    "title": "Step 4: Research any job barriers you may face because of your arrest or conviction history",
     "level": 4,
     "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-skills-training-and-job-experience-do-you-alr"
+    "path": "education/setting-your-educational-goals/creating-a-strong-plan-for-your-personal-education/step-4-research-any-job-barriers-you-may-face-beca"
   },
   {
-    "title": "What are your interests?",
+    "title": "Step 5: Set yourself up for stability and success by planning for practical needs",
     "level": 4,
     "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-are-your-interests"
+    "path": "education/setting-your-educational-goals/creating-a-strong-plan-for-your-personal-education/step-5-set-yourself-up-for-stability-and-success-b"
   },
   {
-    "title": "What natural talents do you have? What are you good at?",
+    "title": "Step 6: Get assessed to determine your educational and learning needs",
     "level": 4,
     "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-natural-talents-do-you-have-what-are-you-good"
+    "path": "education/setting-your-educational-goals/creating-a-strong-plan-for-your-personal-education/step-6-get-assessed-to-determine-your-educational-"
   },
   {
-    "title": "Does the job or career you are interested in have restrictions against people with criminal records?",
+    "title": "Step 7: Collect identification documents and other records required for attending school",
     "level": 4,
     "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/does-the-job-or-career-you-are-interested-in-have-"
-  },
-  {
-    "title": "What are the jobs that have legal restrictions for people with criminal records?",
-    "level": 4,
-    "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-are-the-jobs-that-have-legal-restrictions-for"
-  },
-  {
-    "title": "What is a professional/occupational license and what does it require?",
-    "level": 4,
-    "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-is-a-professional-occupational-license-and-wh"
-  },
-  {
-    "title": "What kinds of jobs require a professional/occupational license?",
-    "level": 4,
-    "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-kinds-of-jobs-require-a-professional-occupati"
-  },
-  {
-    "title": "What type of skills or education could help you get the job you want?",
-    "level": 4,
-    "heading_text": "",
-    "path": "education/setting-your-educational-goals/some-questions-for-you-to-think-about-on-your-pers/what-type-of-skills-or-education-could-help-you-ge"
+    "path": "education/setting-your-educational-goals/creating-a-strong-plan-for-your-personal-education/step-7-collect-identification-documents-and-other-"
   },
   {
     "title": "How your criminal record and incarceration may affect your educational goals",
@@ -7482,6 +7572,12 @@
     "path": "education/paying-for-your-education/federal-student-aid/can-i-get-federal-student-aid-while-i-am-on-parole"
   },
   {
+    "title": "Can I get federal student aid while i live in subsidized housing?",
+    "level": 4,
+    "heading_text": "",
+    "path": "education/paying-for-your-education/federal-student-aid/can-i-get-federal-student-aid-while-i-live-in-subs"
+  },
+  {
     "title": "How do I apply for federal student aid?",
     "level": 4,
     "heading_text": "",
@@ -7536,22 +7632,22 @@
     "path": "education/paying-for-your-education/california-state-student-aid/cal-grants/am-i-eligible-for-a-cal-grant"
   },
   {
-    "title": "Board of Governor\u2019s Fee Waiver (BOGFW): Free Enrollment for low-income students to california community colleges",
+    "title": "California College Promise Grant (formerly the Board of Governor\u2019s Fee Waiver): Free Enrollment for low-income students to California community colleges",
     "level": 3,
     "heading_text": "",
-    "path": "education/paying-for-your-education/california-state-student-aid/board-of-governors-fee-waiver-bogfw-free-enrollmen"
+    "path": "education/paying-for-your-education/california-state-student-aid/california-college-promise-grant-formerly-the-boar"
   },
   {
     "title": "Will my criminal history disqualify me from state-based student aid?",
     "level": 4,
     "heading_text": "",
-    "path": "education/paying-for-your-education/california-state-student-aid/board-of-governors-fee-waiver-bogfw-free-enrollmen/will-my-criminal-history-disqualify-me-from-state-"
+    "path": "education/paying-for-your-education/california-state-student-aid/california-college-promise-grant-formerly-the-boar/will-my-criminal-history-disqualify-me-from-state-"
   },
   {
     "title": "How do I apply for state-based student aid?",
     "level": 4,
     "heading_text": "",
-    "path": "education/paying-for-your-education/california-state-student-aid/board-of-governors-fee-waiver-bogfw-free-enrollmen/how-do-i-apply-for-state-based-student-aid"
+    "path": "education/paying-for-your-education/california-state-student-aid/california-college-promise-grant-formerly-the-boar/how-do-i-apply-for-state-based-student-aid"
   },
   {
     "title": "School-Based Financial Aid",
@@ -7606,12 +7702,6 @@
     "level": 0,
     "heading_text": "",
     "path": "understanding-cleaning-up-your-criminal-record"
-  },
-  {
-    "title": "INTRODUCTION",
-    "level": 1,
-    "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/introduction"
   },
   {
     "title": "Key Concepts for Understanding your Criminal Record & Fixing Errors\u2014Early in Reentry",
@@ -7938,6 +8028,12 @@
     "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/california-expungement-of-state-convictions/who-can-see-my-record-even-if-it-is-expunged"
   },
   {
+    "title": "If I successfully obtained a dismissal under prop. 36 or penal code section 1000, do i ever have to disclose the underlying conviction?",
+    "level": 4,
+    "heading_text": "",
+    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/california-expungement-of-state-convictions/if-i-successfully-obtained-a-dismissal-under-prop-"
+  },
+  {
     "title": "Can a private employer find out about my expunged conviction?",
     "level": 4,
     "heading_text": "",
@@ -8052,7 +8148,7 @@
     "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/reducing-felonies-to-misdemeanors/what-is-the-process-for-getting-a-felony-wobbler-c"
   },
   {
-    "title": "My conviction was for a felony and I was sentenced to state prison. What, if anthing, could I do to get it expunged?",
+    "title": "My conviction was for a felony and I was sentenced to state prison. What, if anYthing, could I do to get it expunged?",
     "level": 4,
     "heading_text": "",
     "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/reducing-felonies-to-misdemeanors/my-conviction-was-for-a-felony-and-i-was-sentenced"
@@ -8154,6 +8250,12 @@
     "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/proposition-64-californias-new-adult-use-of-mariju/who-can-get-prop-64-relief"
   },
   {
+    "title": "WHAT NEW INFRACTIONS ARE CREATED UNDER PROP. 64?",
+    "level": 4,
+    "heading_text": "",
+    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/proposition-64-californias-new-adult-use-of-mariju/what-new-infractions-are-created-under-prop-64"
+  },
+  {
     "title": "Can I be resentenced under Prop. 64?",
     "level": 4,
     "heading_text": "",
@@ -8182,6 +8284,12 @@
     "level": 4,
     "heading_text": "",
     "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/proposition-64-californias-new-adult-use-of-mariju/if-i-get-my-felony-reduced-under-prop-64-can-i-the"
+  },
+  {
+    "title": "If I get my felony reduced under Prop. 64, WILL IT RESTORE MY GUN RIGHTS?",
+    "level": 4,
+    "heading_text": "",
+    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/proposition-64-californias-new-adult-use-of-mariju/if-i-get-my-felony-reduced-under-prop-64-will-it-r"
   },
   {
     "title": "What if I have a gun possession conviction, or other offense/enhancement that I would not have had without my felony marijuana conviction or sentence?",
@@ -8346,16 +8454,22 @@
     "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/sealing-california-state-adult-arrest-records/what-does-it-mean-to-have-an-arrest-record-sealed-"
   },
   {
-    "title": "What arrest records can be sealed by the court?",
+    "title": "Which arrest records can be sealed by the court (under SB 393)?",
     "level": 4,
     "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/sealing-california-state-adult-arrest-records/what-arrest-records-can-be-sealed-by-the-court"
+    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/sealing-california-state-adult-arrest-records/which-arrest-records-can-be-sealed-by-the-court-un"
   },
   {
-    "title": "Are there other legal requirements for getting an arrest record sealed?",
+    "title": "Which arrest records cannot be sealed (under SB 393)?",
     "level": 4,
     "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/sealing-california-state-adult-arrest-records/are-there-other-legal-requirements-for-getting-an-"
+    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/sealing-california-state-adult-arrest-records/which-arrest-records-cannot-be-sealed-under-sb-393"
+  },
+  {
+    "title": "I was arrested for a crime that cannot be sealed under SB 393. Can I still try to get my arrest record sealed?",
+    "level": 4,
+    "heading_text": "",
+    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/sealing-california-state-adult-arrest-records/i-was-arrested-for-a-crime-that-cannot-be-sealed-u"
   },
   {
     "title": "When could I get my arrest record sealed?",
@@ -8460,48 +8574,6 @@
     "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/u-s-presidential-pardons/how-do-i-go-about-applying-for-a-presidential-pard"
   },
   {
-    "title": "Understanding & Reducing the Immigration Consequence of Criminal Records",
-    "level": 2,
-    "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/understanding-reducing-the-immigration-consequence"
-  },
-  {
-    "title": "How much have deportations increased under President Trump\u2019s administration?",
-    "level": 4,
-    "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/understanding-reducing-the-immigration-consequence/how-much-have-deportations-increased-under-preside"
-  },
-  {
-    "title": "How have U.S. immigration policies changed under President Trump?",
-    "level": 4,
-    "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/understanding-reducing-the-immigration-consequence/how-have-u-s-immigration-policies-changed-under-pr"
-  },
-  {
-    "title": "What protections are available under California\u2019s state laws and the local practices of \u201csanctuary\u201d cities and counties in the state?",
-    "level": 4,
-    "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/understanding-reducing-the-immigration-consequence/what-protections-are-available-under-californias-s"
-  },
-  {
-    "title": "Do I have any options if I pled \u201cguilty\u201d or \u201cno contest\u201d in a criminal case if I didn\u2019t know the immigration consequences of that decision?",
-    "level": 4,
-    "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/understanding-reducing-the-immigration-consequence/do-i-have-any-options-if-i-pled-guilty-or-no-conte"
-  },
-  {
-    "title": "Are there any other ways that I can clean up my record that might help me for immigration purposes?",
-    "level": 4,
-    "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/understanding-reducing-the-immigration-consequence/are-there-any-other-ways-that-i-can-clean-up-my-re"
-  },
-  {
-    "title": "As a person with a record, what resources are there to help me with my immigration questions?",
-    "level": 4,
-    "heading_text": "",
-    "path": "understanding-cleaning-up-your-criminal-record/cleaning-up-your-criminal-record-later-in-reentry/understanding-reducing-the-immigration-consequence/as-a-person-with-a-record-what-resources-are-there"
-  },
-  {
     "title": "REGISTRATION REQUIREMENTS\u2014SEX, ARSON, & DRUG OffenseS",
     "level": 1,
     "heading_text": "",
@@ -8590,6 +8662,726 @@
     "level": 1,
     "heading_text": "",
     "path": "understanding-cleaning-up-your-criminal-record/expungement-appendix"
+  },
+  {
+    "title": "Tribal Issues",
+    "level": 0,
+    "heading_text": "",
+    "path": "tribal-issues"
+  },
+  {
+    "title": "Introduction",
+    "level": 1,
+    "heading_text": "",
+    "path": "tribal-issues/introduction"
+  },
+  {
+    "title": "What is a federally-recognized tribe?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/introduction/what-is-a-federally-recognized-tribe"
+  },
+  {
+    "title": "What is the relationship between tribes and the U.S. and state governments?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/introduction/what-is-the-relationship-between-tribes-and-the-u-"
+  },
+  {
+    "title": "What is the Bureau of Indian Affairs (BIA)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/introduction/what-is-the-bureau-of-indian-affairs-bia"
+  },
+  {
+    "title": "Tribal Enrollment & Identification",
+    "level": 1,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification"
+  },
+  {
+    "title": "Tribal Enrollment",
+    "level": 2,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-enrollment"
+  },
+  {
+    "title": "What is tribal enrollment?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-enrollment/what-is-tribal-enrollment"
+  },
+  {
+    "title": "What are the requirements for enrollment in a federally-recognized tribe?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-enrollment/what-are-the-requirements-for-enrollment-in-a-fede"
+  },
+  {
+    "title": "How do I apply for enrollment in my ancestors\u2019 tribe?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-enrollment/how-do-i-apply-for-enrollment-in-my-ancestors-trib"
+  },
+  {
+    "title": "Can I be disenrolled or prevented from enrolling in my tribe because of my criminal record?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-enrollment/can-i-be-disenrolled-or-prevented-from-enrolling-i"
+  },
+  {
+    "title": "Once I am officially enrolled, how do I register to vote in tribal elections?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-enrollment/once-i-am-officially-enrolled-how-do-i-register-to"
+  },
+  {
+    "title": "Tribal ID Cards",
+    "level": 2,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-id-cards"
+  },
+  {
+    "title": "What is a tribal ID card, and why would I need it?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-id-cards/what-is-a-tribal-id-card-and-why-would-i-need-it"
+  },
+  {
+    "title": "How do I get a tribal ID card?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-id-cards/how-do-i-get-a-tribal-id-card"
+  },
+  {
+    "title": "If I am registered with a tribe, will they have other identification documents on file for me or my family members?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-enrollment-identification/tribal-id-cards/if-i-am-registered-with-a-tribe-will-they-have-oth"
+  },
+  {
+    "title": "TriBal Registration for Sex OFfenses",
+    "level": 1,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-registration-for-sex-offenses"
+  },
+  {
+    "title": "If I am a 290 registrant, do I have to register with my Tribe?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-registration-for-sex-offenses/if-i-am-a-290-registrant-do-i-have-to-register-wit"
+  },
+  {
+    "title": "My tribe requires registration. When do I have to register?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-registration-for-sex-offenses/my-tribe-requires-registration-when-do-i-have-to-r"
+  },
+  {
+    "title": "Do I have to appear in person after I register?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-registration-for-sex-offenses/do-i-have-to-appear-in-person-after-i-register"
+  },
+  {
+    "title": "How long do I have to remain registered with my tribe, and how often do I have to appear in person?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-registration-for-sex-offenses/how-long-do-i-have-to-remain-registered-with-my-tr"
+  },
+  {
+    "title": "What happens if I fail to register with my tribe?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-registration-for-sex-offenses/what-happens-if-i-fail-to-register-with-my-tribe"
+  },
+  {
+    "title": "HOUSING FOR TRIBAL MEMBERS",
+    "level": 1,
+    "heading_text": "",
+    "path": "tribal-issues/housing-for-tribal-members"
+  },
+  {
+    "title": "What are tribal housing programs?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/housing-for-tribal-members/what-are-tribal-housing-programs"
+  },
+  {
+    "title": "What types of tribal housing are available?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/housing-for-tribal-members/what-types-of-tribal-housing-are-available"
+  },
+  {
+    "title": "Which tribes in California offer some form of tribal housing?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/housing-for-tribal-members/which-tribes-in-california-offer-some-form-of-trib"
+  },
+  {
+    "title": "Who can rent units through tribal housing programs?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/housing-for-tribal-members/who-can-rent-units-through-tribal-housing-programs"
+  },
+  {
+    "title": "can my criminal record affect my ability to get tribal housing?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/housing-for-tribal-members/can-my-criminal-record-affect-my-ability-to-get-tr"
+  },
+  {
+    "title": "What can I do if I am served an eviction notice from tribal housing?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/housing-for-tribal-members/what-can-i-do-if-i-am-served-an-eviction-notice-fr"
+  },
+  {
+    "title": "TRIBAL PUBLIC BENEFITS & HEALTHCARE",
+    "level": 1,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare"
+  },
+  {
+    "title": "Indian Health Service (IHS)",
+    "level": 2,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/indian-health-service-ihs"
+  },
+  {
+    "title": "What is the Indian Health Service (IHS)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/indian-health-service-ihs/what-is-the-indian-health-service-ihs"
+  },
+  {
+    "title": "What services does the Indian Health Service (IHS) offer?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/indian-health-service-ihs/what-services-does-the-indian-health-service-ihs-o"
+  },
+  {
+    "title": "Am I eligible for Indian Health Service (IHS)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/indian-health-service-ihs/am-i-eligible-for-indian-health-service-ihs"
+  },
+  {
+    "title": "Can my criminal record prevent me from receiving Indian Health Service (IHS) benefits?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/indian-health-service-ihs/can-my-criminal-record-prevent-me-from-receiving-i"
+  },
+  {
+    "title": "How do I enroll in the Indian Health Service (IHS)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/indian-health-service-ihs/how-do-i-enroll-in-the-indian-health-service-ihs"
+  },
+  {
+    "title": "Once I am enrolled in the Indian Health Service (IHS), where can I receive health care?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/indian-health-service-ihs/once-i-am-enrolled-in-the-indian-health-service-ih"
+  },
+  {
+    "title": "Where are Indian Health Service (IHS) offices located in California?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/indian-health-service-ihs/where-are-indian-health-service-ihs-offices-locate"
+  },
+  {
+    "title": "Tribal Income and SSI Eligibility",
+    "level": 2,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/tribal-income-and-ssi-eligibility"
+  },
+  {
+    "title": "I am a tribal member receiving per capita payments from government settlement funds. Will this impact my eligibility for SSI?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/tribal-income-and-ssi-eligibility/i-am-a-tribal-member-receiving-per-capita-payments"
+  },
+  {
+    "title": "Do other forms of tribal income impact my eligibility for SSI?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/tribal-income-and-ssi-eligibility/do-other-forms-of-tribal-income-impact-my-eligibil"
+  },
+  {
+    "title": "The Tribal Temporary Assistance for Needy Families (TANF) program",
+    "level": 2,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families"
+  },
+  {
+    "title": "What is the Tribal TANF program?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/what-is-the-tribal-tanf-program"
+  },
+  {
+    "title": "What benefits and services can I get through Tribal TANF?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/what-benefits-and-services-can-i-get-through-triba"
+  },
+  {
+    "title": "Am I eligible for Tribal TANF?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/am-i-eligible-for-tribal-tanf"
+  },
+  {
+    "title": "Who is considered \u201clow-income\u201d for being able to receive TRIBAL TANF?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/who-is-considered-low-income-for-being-able-to-rec"
+  },
+  {
+    "title": "Once I am enrolled in the program, for how long can I receive Tribal TANF benefits?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/once-i-am-enrolled-in-the-program-for-how-long-can"
+  },
+  {
+    "title": "Will my criminal record prevent me from receiving Tribal TANF benefits?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/will-my-criminal-record-prevent-me-from-receiving-"
+  },
+  {
+    "title": "How do I apply for Tribal TANF benefits?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/how-do-i-apply-for-tribal-tanf-benefits"
+  },
+  {
+    "title": "Can I apply for Tribal TANF while I am incarcerated?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/can-i-apply-for-tribal-tanf-while-i-am-incarcerate"
+  },
+  {
+    "title": "I believe my Tribal TANF was wrongly denied or stopped. How do I challenge this decision?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/i-believe-my-tribal-tanf-was-wrongly-denied-or-sto"
+  },
+  {
+    "title": "Once I am receiving Tribal TANF benfits, what rules must I follow?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/tribal-public-benefits-healthcare/the-tribal-temporary-assistance-for-needy-families/once-i-am-receiving-tribal-tanf-benfits-what-rules"
+  },
+  {
+    "title": "Overview of the Indian Child Welfare Act (ICWA)",
+    "level": 1,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa"
+  },
+  {
+    "title": "What is the Indian Child Welfare Act (ICWA)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa/what-is-the-indian-child-welfare-act-icwa"
+  },
+  {
+    "title": "What children does the Indian Child Welfare Act (ICWA) apply to?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa/what-children-does-the-indian-child-welfare-act-ic"
+  },
+  {
+    "title": "What types of cases does the Indian Child Welfare Act (ICWA) apply to?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa/what-types-of-cases-does-the-indian-child-welfare-"
+  },
+  {
+    "title": "What are the extra responsibilities REQUIRED under the Indian Child Welfare Act (ICWA)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa/what-are-the-extra-responsibilities-required-under"
+  },
+  {
+    "title": "Are there unique permanency options for indian children?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa/are-there-unique-permanency-options-for-indian-chi"
+  },
+  {
+    "title": "Can an indian tribe intervene as a party in an icwa case?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa/can-an-indian-tribe-intervene-as-a-party-in-an-icw"
+  },
+  {
+    "title": "How are child custody (DEPENDENCY) cases transferred to tribal court?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa/how-are-child-custody-dependency-cases-transferred"
+  },
+  {
+    "title": "What is the most important thing for a parent to do in an icwa case?",
+    "level": 4,
+    "heading_text": "",
+    "path": "tribal-issues/overview-of-the-indian-child-welfare-act-icwa/what-is-the-most-important-thing-for-a-parent-to-d"
+  },
+  {
+    "title": "Immigration",
+    "level": 0,
+    "heading_text": "",
+    "path": "immigration"
+  },
+  {
+    "title": "INTRODUCTION",
+    "level": 1,
+    "heading_text": "",
+    "path": "immigration/introduction"
+  },
+  {
+    "title": "Key terms in the immigration chapter",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/introduction/key-terms-in-the-immigration-chapter"
+  },
+  {
+    "title": "IDENTIFICATION & KEY DOCUMENTS for NONCITIZENs & Undocumented People",
+    "level": 1,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc"
+  },
+  {
+    "title": "I am a noncitizen. What types of ID can I get?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/i-am-a-noncitizen-what-types-of-id-can-i-get"
+  },
+  {
+    "title": "Social security numbers & cards for Noncitizens",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/social-security-numbers-cards-for-noncitizens"
+  },
+  {
+    "title": "What types of noncitizens can get a social security number and card?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/social-security-numbers-cards-for-noncitizens/what-types-of-noncitizens-can-get-a-social-securit"
+  },
+  {
+    "title": "How do I obtain a birth certificate from my country of origin?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/social-security-numbers-cards-for-noncitizens/how-do-i-obtain-a-birth-certificate-from-my-countr"
+  },
+  {
+    "title": "I am an undocumented person. Can I get a social security number or card?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/social-security-numbers-cards-for-noncitizens/i-am-an-undocumented-person-can-i-get-a-social-sec"
+  },
+  {
+    "title": "California driver licenses and ID cards for Noncitizens",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/california-driver-licenses-and-id-cards-for-noncit"
+  },
+  {
+    "title": "Which types of noncitizens can get a California ID card?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/california-driver-licenses-and-id-cards-for-noncit/which-types-of-noncitizens-can-get-a-california-id"
+  },
+  {
+    "title": "I am an undocumented person. Can I get a California ID card?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/california-driver-licenses-and-id-cards-for-noncit/i-am-an-undocumented-person-can-i-get-a-california"
+  },
+  {
+    "title": "What is an \u201cUndocumented Person\u201d California driver license?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/california-driver-licenses-and-id-cards-for-noncit/what-is-an-undocumented-person-california-driver-l"
+  },
+  {
+    "title": "Can the police report me to U.S. immigration officials for using an AB 60 \u201cUndocumented Person\u201d driver license in California?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/california-driver-licenses-and-id-cards-for-noncit/can-the-police-report-me-to-u-s-immigration-offici"
+  },
+  {
+    "title": "What are the other limited forms of ID for undocumented people?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/california-driver-licenses-and-id-cards-for-noncit/what-are-the-other-limited-forms-of-id-for-undocum"
+  },
+  {
+    "title": "Traveling as a noncitizen",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/traveling-as-a-noncitizen"
+  },
+  {
+    "title": "I am a noncitizen. Am I allowed to travel outside of California?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/identification-key-documents-for-noncitizens-undoc/traveling-as-a-noncitizen/i-am-a-noncitizen-am-i-allowed-to-travel-outside-o"
+  },
+  {
+    "title": "parole & probation issues affecting noncitizens",
+    "level": 1,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens"
+  },
+  {
+    "title": "ICE detainers",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/ice-detainers"
+  },
+  {
+    "title": "What is the relationship between the CDCR and Immigrations & Customs Enforcement (ICE)?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/ice-detainers/what-is-the-relationship-between-the-cdcr-and-immi"
+  },
+  {
+    "title": "I am a noncitizen, and I am told I have an outstanding detainer against me. What is a detainer? What could happen to me?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/ice-detainers/i-am-a-noncitizen-and-i-am-told-i-have-an-outstand"
+  },
+  {
+    "title": "Noncitizens on State parole",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/noncitizens-on-state-parole"
+  },
+  {
+    "title": "I am a noncitizen convicted of a sex offense that requires me to register. Will I face immigration consequences in addition to my time sentenced to jail or prison?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/noncitizens-on-state-parole/i-am-a-noncitizen-convicted-of-a-sex-offense-that-"
+  },
+  {
+    "title": "I am undocumented and was just released onto state parole. Will my undocumented immigration status prevent me from getting services?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/noncitizens-on-state-parole/i-am-undocumented-and-was-just-released-onto-state"
+  },
+  {
+    "title": "Noncitizens on Federal parole",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/noncitizens-on-federal-parole"
+  },
+  {
+    "title": "I am a noncitizen and will be released on federal parole. Could I face special conditions related to my immigration status?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/noncitizens-on-federal-parole/i-am-a-noncitizen-and-will-be-released-on-federal-"
+  },
+  {
+    "title": "I was released on federal parole and subsequently deported. Does my deportation cancel or end my parole term?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/parole-probation-issues-affecting-noncitizens/noncitizens-on-federal-parole/i-was-released-on-federal-parole-and-subsequently-"
+  },
+  {
+    "title": "Housing issues affecting noncitizens",
+    "level": 1,
+    "heading_text": "",
+    "path": "immigration/housing-issues-affecting-noncitizens"
+  },
+  {
+    "title": "I am undocumented. Can my landlord report me (or threaten to report me) to immigration authorities?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/housing-issues-affecting-noncitizens/i-am-undocumented-can-my-landlord-report-me-or-thr"
+  },
+  {
+    "title": "What is an \u201cICE raid?\u201d",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/housing-issues-affecting-noncitizens/what-is-an-ice-raid"
+  },
+  {
+    "title": "Public benefits for noncitizens",
+    "level": 1,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens"
+  },
+  {
+    "title": "Cash Assistance Program for Immigrants (CAPI)",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/cash-assistance-program-for-immigrants-capi"
+  },
+  {
+    "title": "What IS CAPI? Who is eligible?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/cash-assistance-program-for-immigrants-capi/what-is-capi-who-is-eligible"
+  },
+  {
+    "title": "Food stamps",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/food-stamps"
+  },
+  {
+    "title": "I am a noncitizen. Can I get food stamps?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/food-stamps/i-am-a-noncitizen-can-i-get-food-stamps"
+  },
+  {
+    "title": "I am undocumented but my children are here legally. Can I apply for food stamps for them?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/food-stamps/i-am-undocumented-but-my-children-are-here-legally"
+  },
+  {
+    "title": "Healthcare",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/healthcare"
+  },
+  {
+    "title": "I am a noncitizen. Can I get healthcare in California?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/healthcare/i-am-a-noncitizen-can-i-get-healthcare-in-californ"
+  },
+  {
+    "title": "I am undocumented but my children are here legally. Can I apply for healthcare on their behalf?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/healthcare/i-am-undocumented-but-my-children-are-here-legally"
+  },
+  {
+    "title": "Will getting government healthcare coverage affect my immigration status?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/public-benefits-for-noncitizens/healthcare/will-getting-government-healthcare-coverage-affect"
+  },
+  {
+    "title": "Employment & Education issues affecting noncitizens in reentry",
+    "level": 1,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-"
+  },
+  {
+    "title": "Employment",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/employment"
+  },
+  {
+    "title": "I am undocumented. Can my employer ask about my immigration status?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/employment/i-am-undocumented-can-my-employer-ask-about-my-imm"
+  },
+  {
+    "title": "I am undocumented. Can my employer threaten to report me to ICE?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/employment/i-am-undocumented-can-my-employer-threaten-to-repo"
+  },
+  {
+    "title": "What is an ICE worksite raid?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/employment/what-is-an-ice-worksite-raid"
+  },
+  {
+    "title": "What should I do if ICE raids my workplace?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/employment/what-should-i-do-if-ice-raids-my-workplace"
+  },
+  {
+    "title": "Education",
+    "level": 2,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/education"
+  },
+  {
+    "title": "I am a noncitizen. Can I attend college in California?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/education/i-am-a-noncitizen-can-i-attend-college-in-californ"
+  },
+  {
+    "title": "I am a noncitizen. Can I apply for Federal financial aid?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/education/i-am-a-noncitizen-can-i-apply-for-federal-financia"
+  },
+  {
+    "title": "I am a noncitizen. Can I apply for state financial Aid?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/education/i-am-a-noncitizen-can-i-apply-for-state-financial-"
+  },
+  {
+    "title": "Will applying for state financial aid jeopardize my immigration status?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/employment-education-issues-affecting-noncitizens-/education/will-applying-for-state-financial-aid-jeopardize-m"
+  },
+  {
+    "title": "protecting your Family & children from immigration consequences",
+    "level": 1,
+    "heading_text": "",
+    "path": "immigration/protecting-your-family-children-from-immigration-c"
+  },
+  {
+    "title": "What is a family preparedness plan?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/protecting-your-family-children-from-immigration-c/what-is-a-family-preparedness-plan"
+  },
+  {
+    "title": "Understanding & Reducing the Immigration Consequence of Criminal Records",
+    "level": 1,
+    "heading_text": "",
+    "path": "immigration/understanding-reducing-the-immigration-consequence"
+  },
+  {
+    "title": "How much have deportations increased under President Trump?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/understanding-reducing-the-immigration-consequence/how-much-have-deportations-increased-under-preside"
+  },
+  {
+    "title": "How have U.S. immigration policies changed under President Trump?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/understanding-reducing-the-immigration-consequence/how-have-u-s-immigration-policies-changed-under-pr"
+  },
+  {
+    "title": "What protections are available under California\u2019s state laws and the local practices of \u201csanctuary\u201d cities and counties in the state?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/understanding-reducing-the-immigration-consequence/what-protections-are-available-under-californias-s"
+  },
+  {
+    "title": "Do I have any options if I pled \u201cguilty\u201d or \u201cno contest\u201d in a criminal case if I didn\u2019t know the immigration consequences of that decision?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/understanding-reducing-the-immigration-consequence/do-i-have-any-options-if-i-pled-guilty-or-no-conte"
+  },
+  {
+    "title": "Are there any other ways that I can clean up my record that might help me for immigration purposes?",
+    "level": 4,
+    "heading_text": "",
+    "path": "immigration/understanding-reducing-the-immigration-consequence/are-there-any-other-ways-that-i-can-clean-up-my-re"
   },
   {
     "title": "Legal Aid Providers In California",
