@@ -430,6 +430,14 @@ def adjust_all_img_src_paths(soup):
         img['src'] = "/{}/{}".format(IMG_PATH, existing_src)
 
 
+def save_image_file_table(content_items):
+    with open('image_files.tsv', 'w') as image_table:
+        for item in content_items:
+            for tag in item.get_img_tags():
+                image_table.write('\t'.join(tag) + '\n')
+    print('Image file data written to image_files.tsv')
+
+
 def run():
     move_img_files()
     with open(RAW_INDEX_PATH, 'r') as raw_html_input:
@@ -471,6 +479,7 @@ def run():
             extract_redundant_title_heading(content_item)
             add_page_links_to_article(content_item)
         write_to_json(content_items)
+        # save_image_file_table(content_items)
         data.global_context.update(
             chapters=[item for item in content_items if item.level == 0],
             page_index=page_index)
