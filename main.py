@@ -57,10 +57,6 @@ def write_prettified_raw_index(soup):
         index_file.write(soup.prettify())
 
 
-def get_msword_toc_number(element_id):
-    return element_id[len(TOC_CONTENT_SIGNIFIER):]
-
-
 def get_toc_content_text(item, soup):
     if item.parent != soup:
         return item.parent.text
@@ -71,6 +67,21 @@ def get_toc_content_text(item, soup):
         return item.next_sibling.text
     else:
         return item.text
+
+
+def get_appendix_toc_content_text(item, soup):
+    """Get the text of the next sibling
+
+    Example HTML:
+        <div class="appendix">
+          Appendix E
+        </div>
+        <div class="appendixtitle">
+          Franchise Tax Board, Identity Theft Affidavit
+        </div>
+    """
+    return item.next_sibling.text
+
 
 def is_valid_toc_content_item(prospective_item):
     """
@@ -92,9 +103,21 @@ def parse_toc_entries(soup):
     for toc_entry in toc_items:
         level = int(toc_entry['class'][0][-1:])
         soup_index = get_soup_index(soup, toc_entry)
-        entry = data.TOCEntry(level, soup_index, toc_entry)
+        entry = data.ChapterTOCEntry(level, soup_index, toc_entry)
         parsed_toc_entries.append(entry)
     return parsed_toc_entries
+
+
+def parse_appendix_toc_entries(soup):
+    parsed_appendix_toc_entries = []
+    appendix_toc_list_tags = soup.find_all(class_='appendixlist')
+    appendix_toc_header_tags = soup.find_all(class_='appendixtocheading')
+    for appendix_toc_listing in appendix_toc_list_tags:
+        level = 4
+        soup_index = get_soup_index(soup, appendix_toc_listing)
+        entry = data.AppendixTOCEntry(level, soup_index, appendix_toc_listing)
+        parsed_appendix_toc_entries.append(entry)
+    return parsed_appendix_toc_entries
 
 
 def parse_toc_content(soup):
@@ -103,12 +126,23 @@ def parse_toc_content(soup):
     parsed_content_links = []
     for element in valid_items:
         soup_index = get_soup_index(soup, element)
-        msword_index = get_msword_toc_number(element['id'])
         text = get_toc_content_text(element, soup)
-        item = data.TOCLinkItem(
-            element, soup_index, msword_index, text, element.contents)
+        item = data.TOCLinkItem(element, soup_index, text, element.contents)
         parsed_content_links.append(item)
     return parsed_content_links
+
+
+def parse_appendix_toc_content(soup):
+    appendices = soup.find_all(class_='appendix')
+    appendix_titles = soup.find_all(class_='appendixtitle')
+    parsed_appendix_toc_contents = []
+    for appendix_tag in appendices:
+        soup_index = get_soup_index(soup, appendix_tag)
+        text = get_appendix_toc_content_text(appendix_tag, soup)
+        item = data.TOCLinkItem(
+                appendix_tag, soup_index, text, appendix_tag.contents)
+        parsed_appendix_toc_contents.append(item)
+    return parsed_appendix_toc_contents
 
 
 def get_soup_contents_between_compound_indices(soup, start, end=None):
@@ -144,6 +178,14 @@ def find_parent_of_index(index, items):
     return None
 
 
+def get_content_class_for_entry(entry):
+    if isinstance(entry, data.AppendixTOCEntry):
+        return data.SingleAppendixArticle
+    elif 'APPENDIX' in entry.text:
+        return data.ChapterAppendix
+    return data.level_definitions[entry.level]
+
+
 def build_content_items(toc_entries):
     items = []
     for i, entry in enumerate(toc_entries):
@@ -154,7 +196,7 @@ def build_content_items(toc_entries):
             level=entry.level,
             page_number=entry.page_number
         )
-        ContentClass = data.level_definitions[entry.level]
+        ContentClass = get_content_class_for_entry(entry)
         items.append(ContentClass(**init_kwargs))
     return items
 
@@ -394,11 +436,17 @@ def add_page_links_to_article(content_item):
 
 
 def extract_redundant_title_heading(content_item):
-    first_item = content_item.contents[0]
-    is_heading = first_item.name in ('h1', 'h2', 'h3', 'h4')
-    is_title = content_item.title.lower() in first_item.text.lower()
-    if is_heading and is_title:
-        content_item.contents.pop(0)
+    first_couple_items = content_item.contents[:2]
+    for item in first_couple_items:
+        item_class = item.get('class', [''])[0]
+        is_appendix_lettering = item_class == 'appendix'
+        is_appendix_title = \
+            item_class in ['appendixtitle', 'appendixtocheading']
+        is_heading = item.name in ('h1', 'h2', 'h3', 'h4')
+        is_title_heading_tag = is_appendix_title or is_heading
+        is_title = content_item.title.lower() in item.text.lower()
+        if is_appendix_lettering or (is_title_heading_tag and is_title):
+            content_item.contents.remove(item)
 
 
 def create_page_index(content_items):
@@ -447,7 +495,9 @@ def run():
         footnote_index = extract_footnotes(soup)
         chapters = parse_chapters(soup)
         link_items = parse_toc_content(soup)
+        link_items += parse_appendix_toc_content(soup)
         toc_entries = parse_toc_entries(soup)
+        toc_entries += parse_appendix_toc_entries(soup)
         toc_entry_lookup = {
             entry.text: entry
             for entry in toc_entries}

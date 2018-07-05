@@ -1,4 +1,5 @@
 import os
+import re
 from collections import OrderedDict
 from slugify import slugify
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -104,24 +105,50 @@ class TOCEntry:
         self.soup_index = soup_index
         self.element = element
         self.raw_text = element.text
-        toc_listing_chunks = element.text.split("\t")
+        self.parse_text_and_page(element.text)
+        self.content_link = None
+
+    def parse_text_and_page(*args):
+        raise NotImplementedError("override this method in subclasses")
+
+    def __repr__(self):
+        return "{}({}, {}, PG. {})".format(
+            self.__class__.__name__, self.level, self.text, self.page_number)
+
+
+class ChapterTOCEntry(TOCEntry):
+
+    def parse_text_and_page(self, raw_text):
+        toc_listing_chunks = raw_text.split("\t")
         toc_entry_text, page_number = toc_listing_chunks[-2:]
         self.text = remove_leading_roman_numerals(toc_entry_text)
         self.page_number = int(page_number.strip())
-        self.content_link = None
 
-    def __repr__(self):
-        return "TOCEntry({}, {}, PG. {})".format(
-            self.level, self.text, self.page_number)
+
+class AppendixTOCEntry(TOCEntry):
+
+    def parse_text_and_page(self, raw_text):
+        toc_listing_chunks = raw_text.split('PG.')
+        dashes = '-–—'
+        found_a_dash = False
+        toc_entry_text = ''
+        for character in reversed(toc_listing_chunks[0]):
+            if character in dashes and not found_a_dash:
+                found_a_dash = True
+            else:
+                toc_entry_text = character + toc_entry_text
+        self.text = toc_entry_text.strip()
+        page_info = toc_listing_chunks[-1]
+        page_number = page_info.split()[-1]
+        self.page_number = int(re.sub("[^0-9]", "", page_number))
 
 
 class TOCLinkItem:
 
     def __init__(
-            self, element, soup_index, ms_word_index, text, contents=None):
+            self, element, soup_index, text, contents=None):
         self.element = element
         self.soup_index = soup_index
-        self.ms_word_index = ms_word_index
         self.text = text.strip()
         self.contents = contents
         self.linked_entry = None
@@ -229,12 +256,28 @@ class SingleArticle(ContentPage):
     pass
 
 
+class SingleAppendixArticle(ContentPage):
+    pass
+
+
 class CompoundArticle(ContentPage):
     pass
 
 
 class ChapterSubsection(ContentIndex):
     pass
+
+
+class ChapterAppendix(ContentIndex):
+
+    def remove_appendix_toc_from_contents(self):
+        self.contents = [
+            item for item in self.contents
+            if 'appendixlist' not in item.attrs.get('class', [''])[0]
+        ]
+
+    def post_process_contents(self):
+        self.remove_appendix_toc_from_contents()
 
 
 class ChapterSection(ContentIndex):

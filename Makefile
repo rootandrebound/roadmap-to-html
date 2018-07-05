@@ -23,3 +23,7 @@ install:
 
 deploy:
 	git subtree push --prefix roadmap-to-html origin gh-pages
+
+test:
+	python -m unittest
+
