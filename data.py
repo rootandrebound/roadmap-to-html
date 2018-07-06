@@ -162,7 +162,8 @@ class ContentItem:
 
     def __init__(
             self, title, level, soup_index=None, page_number=None, parent=None,
-            contents=None, next_item=None, prev_item=None):
+            contents=None, next_item=None, prev_item=None, toc_listing=None, 
+            content_anchor=None):
         self.level = level
         self.title = title
         self.soup_index = soup_index
@@ -172,6 +173,8 @@ class ContentItem:
         self.prev = prev_item
         self.children = []
         self.contents = contents
+        self.toc_listing = toc_listing
+        self.content_anchor = content_anchor
 
     def __repr__(self):
         return '{class_}("{title}")'.format(
@@ -257,7 +260,16 @@ class SingleArticle(ContentPage):
 
 
 class SingleAppendixArticle(ContentPage):
-    pass
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.appendix_letter = self.contents[0].text.strip().split()[-1]
+
+    def add_appendix_letter_to_title(self):
+        pass
+
+    def post_process_contents(self):
+        self.add_appendix_letter_to_title()
 
 
 class CompoundArticle(ContentPage):

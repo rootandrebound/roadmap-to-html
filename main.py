@@ -5,6 +5,8 @@ import data
 import json
 from bs4 import BeautifulSoup
 from bs4.element import Tag, NavigableString
+import Levenshtein
+
 
 STYLE_MAP_PATH = 'stylemap.txt'
 OUTPUT_DIRECTORY = 'roadmap-to-html'
@@ -55,6 +57,10 @@ def is_toc_item(class_name):
 def write_prettified_raw_index(soup):
     with open(NICE_INDEX_PATH, 'w') as index_file:
         index_file.write(soup.prettify())
+
+
+def remove_trailing_footnote_text(string):
+    return re.sub(r"\[\d+\]", '', string)
 
 
 def get_toc_content_text(item, soup):
@@ -111,7 +117,6 @@ def parse_toc_entries(soup):
 def parse_appendix_toc_entries(soup):
     parsed_appendix_toc_entries = []
     appendix_toc_list_tags = soup.find_all(class_='appendixlist')
-    appendix_toc_header_tags = soup.find_all(class_='appendixtocheading')
     for appendix_toc_listing in appendix_toc_list_tags:
         level = 4
         soup_index = get_soup_index(soup, appendix_toc_listing)
@@ -126,7 +131,8 @@ def parse_toc_content(soup):
     parsed_content_links = []
     for element in valid_items:
         soup_index = get_soup_index(soup, element)
-        text = get_toc_content_text(element, soup)
+        text = remove_trailing_footnote_text(
+                get_toc_content_text(element, soup))
         item = data.TOCLinkItem(element, soup_index, text, element.contents)
         parsed_content_links.append(item)
     return parsed_content_links
@@ -134,11 +140,11 @@ def parse_toc_content(soup):
 
 def parse_appendix_toc_content(soup):
     appendices = soup.find_all(class_='appendix')
-    appendix_titles = soup.find_all(class_='appendixtitle')
     parsed_appendix_toc_contents = []
     for appendix_tag in appendices:
         soup_index = get_soup_index(soup, appendix_tag)
-        text = get_appendix_toc_content_text(appendix_tag, soup)
+        text = remove_trailing_footnote_text(
+                get_appendix_toc_content_text(appendix_tag, soup))
         item = data.TOCLinkItem(
                 appendix_tag, soup_index, text, appendix_tag.contents)
         parsed_appendix_toc_contents.append(item)
@@ -194,7 +200,9 @@ def build_content_items(toc_entries):
             contents=entry.content_link.contents,
             soup_index=entry.content_link.soup_index,
             level=entry.level,
-            page_number=entry.page_number
+            page_number=entry.page_number,
+            toc_listing=entry,
+            content_anchor=entry.content_link
         )
         ContentClass = get_content_class_for_entry(entry)
         items.append(ContentClass(**init_kwargs))
@@ -273,7 +281,8 @@ def clean_chapter_text(chapters):
         text = chapter.text.split('(')[0]
         text = ':'.join(text.split(':'))
         text = ' '.join(text.split())
-        chapter.text = text.strip()
+        text = text.strip()
+        chapter.text = text.strip(':')
 
 
 def should_be_excluded(chapter):
@@ -486,6 +495,62 @@ def save_image_file_table(content_items):
     print('Image file data written to image_files.tsv')
 
 
+def soup_sorted(iterable):
+    return sorted(iterable, key=lambda n: n.soup_index)
+
+
+def find_first_preceding_match(target, potential_matches):
+    '''We only want to produce a match if entry in the table of contents
+    is in fact _before_ the content we are trying to link it to.
+    '''
+    for potential_match in potential_matches:
+        if potential_match.soup_index < target.soup_index:
+            return potential_match
+
+
+def link_listing_to_content(listing, content):
+    content.linked_entry = listing
+    listing.content_link = content
+
+
+def find_listings_with_close_key(target, lookup):
+    similarity_threshold = 0.97
+    target_text = target.text
+    lookup_keys = tuple(lookup.keys())
+    potential_matches = []
+    for key in lookup_keys:
+        similarity = Levenshtein.ratio(key, target_text)
+        if similarity > similarity_threshold:
+            potential_matches.append((similarity, key))
+    if potential_matches:
+        best_key = sorted(potential_matches, key=lambda n: n[0])[0][1]
+        return lookup[best_key]
+
+
+def link_toc_entries_to_matching_content(toc_listings, toc_targets):
+    sorted_listings = soup_sorted(toc_listings)
+    sorted_targets = soup_sorted(toc_targets)
+    lookup = {}
+    # create lists for each unique entry text key
+    for listing in sorted_listings:
+        if listing.text in lookup:
+            lookup[listing.text].append(listing)
+        else:
+            lookup[listing.text] = [listing]
+    all_lookup_keys = tuple(lookup.keys())
+    # find toc entry based on text and pull first match
+    # ignore targets with no listings.
+    for target in sorted_targets:
+        matched_listings = lookup.get(target.text, None)
+        if not matched_listings:
+            matched_listings = find_listings_with_close_key(target, lookup)
+        if matched_listings:
+            match = find_first_preceding_match(target, matched_listings)
+            if match:
+                matched_listings.remove(match)
+                link_listing_to_content(match, target)
+
+
 def run():
     move_img_files()
     with open(RAW_INDEX_PATH, 'r') as raw_html_input:
@@ -495,35 +560,25 @@ def run():
         footnote_index = extract_footnotes(soup)
         chapters = parse_chapters(soup)
         link_items = parse_toc_content(soup)
-        link_items += parse_appendix_toc_content(soup)
+        appendix_link_items = parse_appendix_toc_content(soup)
+        link_items += appendix_link_items
         toc_entries = parse_toc_entries(soup)
-        toc_entries += parse_appendix_toc_entries(soup)
-        toc_entry_lookup = {
-            entry.text: entry
-            for entry in toc_entries}
-        for link in link_items:
-            toc_entry = toc_entry_lookup.get(link.text, None)
-            link.linked_entry = toc_entry
-            if toc_entry:
-                toc_entry.content_link = link
-        usable_entries = [
-            link for link in link_items
-            if link.linked_entry]
-        sorted_toc_links = sorted(
-            usable_entries,
-            key=lambda e: e.soup_index
-        )
+        appendix_toc_entries = parse_appendix_toc_entries(soup)
+        toc_entries += appendix_toc_entries
+        link_toc_entries_to_matching_content(toc_entries, link_items)
+        usable_links = [link for link in link_items if link.linked_entry]
+        sorted_toc_links = soup_sorted(usable_links)
         extract_toc_entry_contents(sorted_toc_links, soup)
-        usable_sorted_toc_entries = sorted(
-            [entry for entry in toc_entries if entry.content_link],
-            key=lambda e: e.soup_index
-        )
+        usable_sorted_toc_entries = soup_sorted(
+            [entry for entry in toc_entries if entry.content_link])
+
         content_items = build_content_items(usable_sorted_toc_entries)
         content_items = add_chapters_to_content_items(
             content_items, chapters, soup)
         link_parents_and_neighbors(content_items)
         page_index = create_page_index(content_items)
         update_contents(soup, content_items)
+
         for content_item in content_items:
             add_footnotes_to_article(soup, content_item, footnote_index)
             extract_redundant_title_heading(content_item)

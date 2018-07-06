@@ -35,3 +35,16 @@ class TestMain(TestCase):
         self.assertIn(
             '<a class="page_link" href="/page-index/#page_590">PG.\xa0590</a>',
             results)
+
+    def test_remove_trailing_footnote_text(self):
+        test_strings = [
+            'How do[7653] services or programs?[34]'
+        ]
+        for test_string in test_strings:
+            with self.subTest(test_string=test_string):
+                result = main.remove_trailing_footnote_text(test_string)
+                self.assertEqual(
+                        result, 'How do services or programs?')
+
+
+
